@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.line.timeline.view.AlphaLinearLayout android:orientation="horizontal" android:id="@id/home_header_music_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.timeline.view.HomeHeaderMusicView android:id="@id/home_header_music_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/home_header_music_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_header_ic_more" android:contentDescription="@string/access_music_more" />
+</com.linecorp.line.timeline.view.AlphaLinearLayout>

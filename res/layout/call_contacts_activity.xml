@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/call_contacts_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <fragment android:name="jp.naver.line.android.activity.callhistory.contacts.CallContactsListFragment" android:id="@id/contacts_list_fragment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/header" android:layout_alignParentBottom="true" />
+</RelativeLayout>

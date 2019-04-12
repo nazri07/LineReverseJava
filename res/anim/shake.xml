@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="true" android:fillAfter="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="200" android:fromDegrees="0.0" android:toDegrees="20.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="0" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="180" android:fromDegrees="0.0" android:toDegrees="-40.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="200" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="160" android:fromDegrees="0.0" android:toDegrees="30.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="380" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="140" android:fromDegrees="0.0" android:toDegrees="-20.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="540" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="120" android:fromDegrees="0.0" android:toDegrees="15.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="680" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="100" android:fromDegrees="0.0" android:toDegrees="-10.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="800" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="100" android:fromDegrees="0.0" android:toDegrees="8.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="900" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="100" android:fromDegrees="0.0" android:toDegrees="-6.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="1000" />
+    <rotate android:interpolator="@android:anim/bounce_interpolator" android:duration="100" android:fromDegrees="0.0" android:toDegrees="3.0" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="1100" />
+</set>

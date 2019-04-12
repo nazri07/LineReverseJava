@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/media_picker_option_original_view_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/media_picker_option_original_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_picker_option_checkbox" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/media_picker_contents_bottom_selected_viewgroup" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/media_picker_contents_bottom_selected_count_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.5dip" android:maxWidth="105.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/media_picker_contents_bottom_selected_count_arrow_imageview" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_open" />
+    </LinearLayout>
+</RelativeLayout>

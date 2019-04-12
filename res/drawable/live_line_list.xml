@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/com_list_more_padding" android:insetRight="@dimen/com_list_more_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="@color/profile_line_bg" />
+    </shape>
+</inset>

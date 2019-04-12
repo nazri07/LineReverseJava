@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/relay_write_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/home_relay_write_stub" android:layout="@layout/home_relay_write_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/home_relay_joined_stub" android:layout="@layout/home_relay_joined_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/home_relay_textcard_stub" android:layout="@layout/home_relay_textcard_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/home_relay_guide_stub" android:layout="@layout/home_relay_guide_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="3.0dip" android:paddingBottom="5.0dip" android:layout_width="230.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/group_post_guide_top_arrow" android:background="@drawable/timeline_tooltip_img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/group_post_bg" android:background="@drawable/timeline_tooltip_img_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_below="@id/group_post_guide_top_arrow">
+        <TextView android:gravity="center_vertical" android:id="@id/group_post_guide_text" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="25.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" style="@style/text_timeline_tooltip_guide" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/group_post_move_to_btn" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/group_post_move_to_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/tooltip_img_arrow" android:scaleType="center" android:layout_alignTop="@id/group_post_move_to_btn_text" android:layout_alignBottom="@id/group_post_move_to_btn_text" android:layout_alignParentRight="true" />
+            <TextView android:gravity="center_vertical" android:id="@id/group_post_move_to_btn_text" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/group_post_move_to_arrow" style="@style/text_timeline_tooltip_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/group_post_guide_bottom_arrow" android:background="@drawable/timeline_tooltip_img_arrow02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="-1.0dip" android:layout_below="@id/group_post_bg" />
+</RelativeLayout>

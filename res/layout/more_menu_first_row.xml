@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.activity.moremenu.MoreMenuTopRowContainerLayout android:layout_width="fill_parent" android:layout_height="75.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.activity.moremenu.MoreMenuTopRowSideLayout android:id="@id/item_cell1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:cellPosition="left">
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/more_menu_first_row_item_left" />
+    </jp.naver.line.android.activity.moremenu.MoreMenuTopRowSideLayout>
+    <jp.naver.line.android.activity.moremenu.MoreMenuTopRowCenterLayout android:id="@id/item_cell2" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" app:cellWidthMax="172.0dip">
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/more_menu_first_row_item_center" />
+    </jp.naver.line.android.activity.moremenu.MoreMenuTopRowCenterLayout>
+    <jp.naver.line.android.activity.moremenu.MoreMenuTopRowSideLayout android:id="@id/item_cell3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:cellPosition="right">
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/more_menu_first_row_item_right" />
+    </jp.naver.line.android.activity.moremenu.MoreMenuTopRowSideLayout>
+</jp.naver.line.android.activity.moremenu.MoreMenuTopRowContainerLayout>

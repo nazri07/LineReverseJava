@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/square_post_announcement_tooltip" android:background="@color/home_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom" android:background="@drawable/square_img_tooltip_bg" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="30.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="15.0dip" android:minHeight="42.0dip" android:text="@string/square_post_announcement_guide" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/square_post_announce_tooltip_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="27.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/square_img_tooltip_x" />
+</FrameLayout>

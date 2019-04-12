@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/chathistory_row_music_thumb" android:background="@drawable/error_thumbnail" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.5dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/chathistory_row_music_info_background" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="10.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0sp" android:textColor="#88111111" android:id="@id/chathistory_row_music_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linemusic" />
+            <TextView android:textSize="14.5sp" android:textColor="#ff111111" android:id="@id/chathistory_row_music_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" />
+            <TextView android:textSize="11.0sp" android:textColor="#b3111111" android:id="@id/chathistory_row_music_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chathistory_row_music_playmode_topic_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <ImageView android:id="@id/chathistory_row_music_playmode_topic_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_topic_default" android:contentDescription="@null" />
+                <TextView android:id="@id/chathistory_row_music_playmode_topic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linemusic_topic" style="@style/message_mugic_play_mode_text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chathistory_row_music_playmode_playlist_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <ImageView android:id="@id/chathistory_row_music_playmode_playlist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_playlist_default" android:contentDescription="@null" />
+                <TextView android:id="@id/chathistory_row_music_playmode_playlist_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linemusic_playlist" style="@style/message_mugic_play_mode_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <jp.naver.line.android.activity.chathistory.list.msg.MusicPlayButton android:id="@id/chathistory_row_music_playbtn" android:paddingTop="13.349976dip" android:paddingRight="10.0dip" android:paddingBottom="13.349976dip" android:layout_width="33.329987dip" android:layout_height="50.0dip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/shop_setting_tab_height" style="@style/shop_setting_tab" />
+    <View android:id="@id/tab_layout_divider" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

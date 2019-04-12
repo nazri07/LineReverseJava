@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/video_editor_header_view_default_mode_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:id="@id/video_editor_mute_btn" android:background="@drawable/selector_camera_editor_mute_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:textOn="" android:textOff="" />
+    <ImageButton android:id="@id/video_editor_trim_btn" android:background="@drawable/selector_camera_editor_trim_button" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+</LinearLayout>

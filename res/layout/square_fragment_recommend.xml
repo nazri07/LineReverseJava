@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/friendrequest_list_more_row" />
+    </androidx.core.widget.NestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</RelativeLayout>

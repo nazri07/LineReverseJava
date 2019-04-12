@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hashtag_grid_item_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/hashtag_grid_content_text_card_bg" android:background="@color/timeline_hashtag_grid_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/hashtag_grid_item_dim" />
+    <com.linecorp.line.timeline.view.ClickableStyleSpanTextView android:gravity="center" android:id="@id/text_view" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/text_hashtag_grid_item_text_card" />
+    <include layout="@layout/hashtag_grid_list_item_content" />
+</RelativeLayout>

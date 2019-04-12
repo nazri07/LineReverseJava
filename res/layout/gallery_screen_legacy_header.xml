@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:id="@id/infobar_top_layout" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/image_viewer_top_bar_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:layout_gravity="center" android:id="@id/index_display" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/infobar_top_index_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_header_title" />
+        <TextView android:id="@id/infobar_top_index_seperator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" style="@style/text_header_title" />
+        <TextView android:id="@id/infobar_top_total_count_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_header_title" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/image_select_layout" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="3.3299866dip" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/infobar_top_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_image_select_02" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/image_list_layout" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent" android:contentDescription="@string/access_photo_back_reduction">
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_gallery_header_ic_album_btn" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

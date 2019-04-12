@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/sticker_sticon_input_message_horizontal_padding" android:paddingTop="@dimen/sticker_sticon_input_message_vertical_padding" android:paddingRight="@dimen/sticker_sticon_input_message_horizontal_padding" android:paddingBottom="@dimen/sticker_sticon_input_message_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sticker_dialog_suggest_download_desc" style="@style/sticker_sticon_input_message_title" />
+            <TextView android:gravity="center" android:id="@id/sticker_grid_first_for_migration_navigation_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sticker_dialog_suggest_download_navi" style="@style/sticker_sticon_input_message_content" />
+            <Space android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <Button android:gravity="center" android:id="@id/sticker_grid_first_for_migration_download_btn" android:background="@drawable/button_chatroom_zero_selector" android:paddingLeft="@dimen/eskview_sticker_download_button_horizontal_padding" android:paddingTop="@dimen/eskview_sticker_download_button_vertical_padding" android:paddingRight="@dimen/eskview_sticker_download_button_horizontal_padding" android:paddingBottom="@dimen/eskview_sticker_download_button_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stickershop_dl_btn_label_download" android:stateListAnimator="@null" style="@style/sticker_sticon_input_primary_button_text" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

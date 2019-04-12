@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sticker_mypackage_item_imgbtn" android:duplicateParentState="true" android:layout_width="@dimen/sticker_stickon_button_width" android:layout_height="@dimen/sticker_stickon_button_height" android:src="@drawable/chatroom_ic_sticker_add" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@string/access_sticker_mypackage_item_sticker_shop" />
+    <View android:layout_width="@dimen/sticker_sticon_input_package_selector_settings_shop_width" android:layout_height="@dimen/sticker_sticon_input_package_selected_indicator_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

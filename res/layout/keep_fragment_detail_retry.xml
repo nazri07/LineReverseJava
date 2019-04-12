@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_fragment_detail_retry_layout" android:background="@color/com_black_with_alpha_60" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_detail_retry_left_margin" android:layout_marginRight="@dimen/keep_detail_retry_right_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_detail_retry_left_margin" android:layout_marginEnd="@dimen/keep_detail_retry_right_margin">
+        <TextView android:gravity="center" android:id="@id/keep_fragment_detail_retry_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/keep_error_endpage_image" android:layout_centerHorizontal="true" style="@style/text_end_info05" />
+        <Button android:id="@id/keep_fragment_detail_retry_button" android:background="@drawable/keep_selector_button_r08" android:layout_width="140.0dip" android:layout_height="36.0dip" android:layout_marginTop="16.0dip" android:text="@string/keep_error_endpage_retry" android:layout_below="@id/keep_fragment_detail_retry_textview" android:layout_centerHorizontal="true" style="@style/text_retry_button" />
+    </RelativeLayout>
+</RelativeLayout>

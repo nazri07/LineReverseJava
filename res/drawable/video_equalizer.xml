@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/eq_001" />
+    <item android:duration="50" android:drawable="@drawable/eq_002" />
+    <item android:duration="50" android:drawable="@drawable/eq_003" />
+    <item android:duration="50" android:drawable="@drawable/eq_004" />
+    <item android:duration="50" android:drawable="@drawable/eq_005" />
+    <item android:duration="50" android:drawable="@drawable/eq_006" />
+    <item android:duration="50" android:drawable="@drawable/eq_007" />
+    <item android:duration="50" android:drawable="@drawable/eq_008" />
+    <item android:duration="50" android:drawable="@drawable/eq_009" />
+    <item android:duration="50" android:drawable="@drawable/eq_010" />
+    <item android:duration="50" android:drawable="@drawable/eq_011" />
+    <item android:duration="50" android:drawable="@drawable/eq_012" />
+    <item android:duration="50" android:drawable="@drawable/eq_013" />
+    <item android:duration="50" android:drawable="@drawable/eq_014" />
+    <item android:duration="50" android:drawable="@drawable/eq_015" />
+    <item android:duration="50" android:drawable="@drawable/eq_016" />
+    <item android:duration="50" android:drawable="@drawable/eq_017" />
+    <item android:duration="50" android:drawable="@drawable/eq_018" />
+    <item android:duration="50" android:drawable="@drawable/eq_019" />
+    <item android:duration="50" android:drawable="@drawable/eq_020" />
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_list_header_view" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_header_item_height" android:alpha="0.9" app:slm_headerDisplay="inline|sticky" app:slm_isHeader="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/keep_list_item_header_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" style="@style/text_list_date" />
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.5dip" android:textColor="#ffffffff" android:background="@drawable/call_img_tooltip" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:text="@string/faceplay_videocall_tooltip" android:maxLines="2" android:includeFontPadding="false" />
+    <ImageView android:layout_width="12.5dip" android:layout_height="10.0dip" android:layout_marginLeft="38.0dip" android:src="@drawable/call_img_tooltip_arrow02" android:scaleType="fitXY" />
+</LinearLayout>

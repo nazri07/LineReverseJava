@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/image_editor_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/image_editor_reset" android:background="@drawable/selector_camera_image_editor_reset_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/image_editor_crop" android:background="@drawable/selector_camera_image_editor_crop_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/image_editor_sticker" android:background="@drawable/selector_camera_image_editor_sticker_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/image_editor_text" android:background="@drawable/selector_camera_image_editor_text_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/image_editor_doodle" android:background="@drawable/selector_camera_image_editor_doodle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/image_editor_filter" android:background="@drawable/selector_camera_image_editor_filter_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

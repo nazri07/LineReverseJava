@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.line.media.picker.fragment.detail.MediaImageViewPager android:id="@id/media_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.line.media.picker.fragment.sticker.view.DraggableAnchorLayout android:id="@id/media_sticker_layer" android:background="#d91f1f1f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:splitMotionEvents="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_sticker_recycler_view" android:paddingLeft="20.0dip" android:paddingTop="46.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.linecorp.line.media.picker.fragment.sticker.view.DraggableAnchorLayout>
+    <RelativeLayout android:id="@id/media_picker_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <View android:background="@drawable/dimmed_gradient_from_top" android:layout_width="fill_parent" android:layout_height="@dimen/media_picker_gradient_height" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/media_picker_header" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/media_picker_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/dimmed_gradient_from_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/media_picker_gradient_height" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/media_picker_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.linecorp.line.media.picker.fragment.detail.MediaImageFilterListView android:id="@id/media_filter_list" android:background="@android:color/black" android:paddingTop="@dimen/media_effect_layer_padding_top" android:paddingBottom="@dimen/media_effect_layer_padding_bottom" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/media_effect_layer_padding_left" android:paddingEnd="@dimen/media_effect_layer_padding_right" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <RelativeLayout android:id="@id/media_bottom_default_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/media_detail_progress" android:background="@color/media_picker_body_area_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+    <CheckBox android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/media_detail_item_check_box" android:background="@drawable/media_picker_detail_checkbox" android:padding="4.5dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:button="@null" android:shadowColor="#0f000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentBottom="true" android:layout_marginStart="12.5dip" android:layout_alignParentStart="true" />
+</RelativeLayout>

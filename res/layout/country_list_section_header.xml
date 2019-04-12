@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/country_list_section_line" android:background="#ffefefef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff818796" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/country_list_section_text" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:includeFontPadding="false" android:layout_centerInParent="true" style="@style/setting_menu_text" />
+</LinearLayout>

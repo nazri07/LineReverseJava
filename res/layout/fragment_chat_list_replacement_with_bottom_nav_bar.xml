@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/view_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/main_tab_fragments_top_padding">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chatlist" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:overScrollMode="never" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/chatlist_loading" android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:indeterminate="true" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/chatlist_zeroview" android:layout="@layout/zeroview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/main_tab_fragments_top_padding" />
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:id="@id/download_all_button" android:background="@drawable/selector_button_01" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_btn_height" style="@style/settings_confirm_button" />
+        <TextView android:id="@id/cancel_all_button" android:background="@drawable/selector_button_02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_btn_height" android:text="@string/cancel" style="@style/settings_confirm_button" />
+    </LinearLayout>
+    <include layout="@layout/shop_sticker_no_result_screen" />
+    <include layout="@layout/shop_loading_spinner" />
+</FrameLayout>

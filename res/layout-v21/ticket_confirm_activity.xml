@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.ticket.ui.view.TicketHeaderView android:id="@id/e_ticket_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ticket_confirm_top_layout" android:layout_width="fill_parent" android:layout_height="125.0sp" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_below="@id/e_ticket_header">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ticket_confirm_disable" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ffbcbcbc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_confirmation_desc_multipleticket" android:lineSpacingExtra="7.0sp" android:letterSpacing="-0.04" />
+            <com.linecorp.line.ticket.ui.view.ConfirmIndicatorView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ticket_confirm_able" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/header_ani_confirm" android:visibility="visible" android:layout_width="120.0dip" android:layout_height="100.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+                <TextView android:textSize="24.0sp" android:textColor="#ff242424" android:id="@id/confirm_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="-0.04" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:id="@id/confirm_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:letterSpacing="-0.04" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/is_admission_ticket" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/header_ani_enter_ticket" android:visibility="visible" android:layout_width="120.0dip" android:layout_height="100.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+                <TextView android:textSize="24.0sp" android:textColor="#ff242424" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_confirmation_button_admission" android:letterSpacing="-0.04" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/ticket_confirmation_desc_admission" android:letterSpacing="-0.04" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/ticket_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:fillViewport="true" android:layout_below="@id/ticket_confirm_top_layout">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/ticket_recycler_view" android:paddingLeft="18.5dip" android:paddingRight="18.5dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

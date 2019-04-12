@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="#26000000">
+            <jp.naver.toybox.drawablefactory.DImageView android:id="@id/bg_image" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <com.linecorp.line.timeline.view.util.TopCropScaleDImageView android:layout_gravity="center|top" android:id="@id/thumb" android:background="#ffebebeb" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/dimmed_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/timeline_img_gra_bottom" android:scaleType="fitXY" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="15.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/text_timeline_media_linkcard_title" />
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@id/first_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:singleLine="true" style="@style/text_timeline_media_linkcard_text1" />
+                <TextView android:ellipsize="end" android:gravity="left" android:id="@id/second_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:singleLine="true" style="@style/text_timeline_media_linkcard_text2" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/video_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/common_ic_play04_disable" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/no_img_content_layout" android:background="#fff7f7f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="87.0dip">
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="26.0dip">
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/no_img_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/text_timeline_media_linkcard_without_img_title" />
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/no_img_first_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:singleLine="true" style="@style/text_timeline_media_linkcard_without_img_text1" />
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/no_img_second_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:singleLine="true" style="@style/text_timeline_media_linkcard_without_img_text2" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

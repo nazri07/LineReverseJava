@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/square_fragment_input_member_profile_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:layout_gravity="center" android:tag="binding_1" android:layout_width="130.0dip" android:layout_height="130.0dip" android:contentDescription="@string/square_access_profile_image">
+                    <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/thumbnail" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/selector_group_ic_camera02" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <com.linecorp.square.common.ui.customview.CustomActionWithMultiLineEditText android:id="@id/name" android:background="@drawable/group_img_input03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:maxHeight="110.0dip" android:minHeight="63.0dip" android:layout_centerInParent="true" android:imeOptions="actionDone" style="@style/text_group_info03" />
+            </LinearLayout>
+            <View android:background="#19ffffff" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/guide" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:paddingBottom="29.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" style="@style/text_group_info04" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

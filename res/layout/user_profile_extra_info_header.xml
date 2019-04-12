@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_root" android:background="@drawable/header_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.SingleLineDoubleTextVIew android:gravity="center_vertical" android:id="@id/header_title" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:layout_marginLeft="@dimen/header_left_padding" android:layout_marginRight="@dimen/header_left_padding" android:singleLine="true" style="@style/text_header_title" />
+</FrameLayout>

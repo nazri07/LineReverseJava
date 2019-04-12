@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/message_input_menu_height_portrait"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:gravity="fill" android:id="@id/chathistory_gallery_menu_grid" android:background="@drawable/v2_chathistory_attach_item_bg" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" />
+    <View android:layout_gravity="top" android:id="@id/chathistory_attach_menu_divider" android:background="@color/chathistory_attach_menu_divider" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+    <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/chathistory_gallery_menu_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/chathistory_gallery_menu_button_margin" android:src="@drawable/chatroom_ic_photo_list01_selector" android:contentDescription="@string/access_chathistory_gallery_all_button" style="@style/image_button" />
+    <include android:id="@id/chathistory_gallery_menu_empty_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/chathistory_gallery_menu_empty" />
+</FrameLayout>

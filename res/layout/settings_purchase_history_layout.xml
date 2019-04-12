@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:gravity="center" android:id="@id/purchase_history_no_result_last_three_months_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/call_purchase_history_no_result_last_three_months" android:layout_weight="1.0" />
+    <ListView android:id="@id/purchase_history_list" android:background="@color/setting_background" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/setting_background" android:cacheColorHint="@null" android:divider="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:gravity="center" android:id="@id/purchase_history_no_result_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/call_purchase_history_no_result" />
+</LinearLayout>

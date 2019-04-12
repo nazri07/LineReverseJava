@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.view.RoundedFrameLayout android:id="@id/chathistory_row_message" android:background="@color/chathistory_message_balloon_receive_bg_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chathistory_row_location_receive_margin_left" android:layout_marginStart="@dimen/chathistory_row_location_receive_margin_left" map:cornerRadius="@dimen/chathistory_row_bubble_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:map="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.gms.maps.MapView android:id="@id/chathistory_row_location_map" android:background="@color/chathistory_message_location_thumbnail_bg" android:layout_width="@dimen/chathistory_row_location_width" android:layout_height="@dimen/chathistory_row_location_height" map:liteMode="true" map:mapType="none" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/chathistory_row_location_text_margin_left" android:paddingTop="@dimen/chathistory_row_location_text_margin_top" android:paddingRight="@dimen/chathistory_row_location_text_margin_right" android:paddingBottom="@dimen/chathistory_row_location_text_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/chathistory_row_location_text_margin_left" android:paddingEnd="@dimen/chathistory_row_location_text_margin_right">
+            <TextView android:ellipsize="end" android:id="@id/chathistory_row_location_message_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:maxLines="2" style="@style/chathistory_location_receive_title_text" />
+            <TextView android:ellipsize="end" android:id="@id/chathistory_row_location_message_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/chathistory_location_receive_address_text" />
+        </LinearLayout>
+    </LinearLayout>
+</com.linecorp.view.RoundedFrameLayout>

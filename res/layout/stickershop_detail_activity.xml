@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shop_detail_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/shop_detail_progress" android:visibility="gone" android:layout_width="@dimen/shop_progressbar_size" android:layout_height="@dimen/shop_progressbar_size" android:layout_centerInParent="true" />
+        <ViewStub android:id="@id/error_screen_view_stub" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <jp.naver.line.android.customview.CustomScrollView android:id="@id/shop_detail_main_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ViewStub android:id="@id/stickershop_detail_event_layer_stub" android:layout="@layout/shop_product_promotion_detail_layer" android:inflatedId="@id/stickershop_detail_event_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/stickershop_detail_sticker_info_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="13.5dip" android:paddingTop="10.0dip" android:paddingRight="13.5dip" android:paddingBottom="@dimen/shop_product_detail_button_area_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                            <include android:id="@id/sticker_detail_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/stickershop_sticker_detail_layout" />
+                            <jp.naver.line.android.activity.shop.view.StickerDetailButtons android:id="@id/shop_detail_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                            <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/shop_product_detail_caution_text" android:paddingTop="@dimen/shop_product_detail_caution_text_padding_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/shop_product_detail_caution_text" />
+                            <ViewStub android:id="@id/edit_name_sticker_view_stub" android:visibility="gone" android:layout="@layout/stickershop_detail_edit_custom_sticker_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="7.0dip" android:layout_marginStart="6.5dip" android:layout_marginEnd="6.5dip" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="#ff858585" android:gravity="left" android:id="@id/stickershop_detail_preview_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" />
+                        <TextView android:textSize="13.329987sp" android:textColor="#ffadadad" android:id="@id/stickershop_detail_preview_tap_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/stickershop_sticker_preview_tap" android:layout_below="@id/stickershop_detail_preview_text" android:layout_alignWithParentIfMissing="true" />
+                        <include android:id="@id/preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/stickershop_detail_preview_tap_guide" android:layout_alignWithParentIfMissing="true" layout="@layout/stickershop_preview_layout" />
+                        <TextView android:textSize="11.0sp" android:textColor="#ff949699" android:gravity="center" android:id="@id/stickershop_detail_copyright_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/preview_layout" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" />
+                    </RelativeLayout>
+                    <ViewStub android:layout_gravity="center" android:id="@id/stickershop_report_button_view_stub" android:layout="@layout/shop_product_detail_report_button_layout" android:layout_width="@dimen/shop_product_detail_report_button_width" android:layout_height="@dimen/shop_product_detail_report_button_height" android:layout_marginBottom="22.0dip" />
+                    <jp.naver.line.android.activity.shop.sticker.RecommendShopView android:id="@id/recommend_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:recommendHeight="@dimen/recommendation_sticker_layout_height" app:recommendTitleText="@string/stickershop_recommend_sticker_title" />
+                </LinearLayout>
+            </RelativeLayout>
+        </jp.naver.line.android.customview.CustomScrollView>
+        <ViewStub android:id="@id/popup_sticker_preview_view_stub" android:visibility="gone" android:layout="@layout/stickershop_popup_sticker_preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

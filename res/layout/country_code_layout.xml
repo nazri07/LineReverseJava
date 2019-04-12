@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/country_list_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/country_code_header" />
+    <ListView android:id="@id/country_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:groupIndicator="@null" android:divider="@null" android:layout_below="@id/country_list_top" />
+    <View android:id="@id/country_dimmed" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="86.66998dip" />
+    <include android:id="@id/country_no_result_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="86.66998dip" layout="@layout/search_no_result_layout" />
+</RelativeLayout>

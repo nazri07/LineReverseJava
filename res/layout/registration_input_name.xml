@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.customview.ime.KeyboardRecognizableLinearLayout android:orientation="vertical" android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:line="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="123.5dip" android:layout_height="123.5dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/registration_profile_image" android:layout_width="123.5dip" android:layout_height="123.5dip" android:scaleType="centerCrop" android:contentDescription="@string/access_registration_profileimage_setting" />
+                <ImageView android:layout_gravity="bottom|center|right" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/profile_ic_photo" />
+            </FrameLayout>
+            <jp.naver.line.android.customview.RegistrationTextView android:id="@id/registration_input_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="30.0dip" line:_textColor="@color/registration_input_form_text" line:_textSize="27.0sp" line:clearButtonId="@id/clear_btn" line:hint="@string/registration_title_input_name" line:minHeight="27.0dip" line:templateLayout="@layout/default_registration_edit_text_template" line:textColorHint="@color/registration_input_form_hint" line:textCursorDrawable="@drawable/cursor_input_name" line:textViewId="@id/text" line:underlineMarginTop="3.0dip" line:underlineViewId="@id/underline" />
+            <LinearLayout android:orientation="vertical" android:id="@id/registration_layout_under_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/registration_info_text" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_profile_description" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                <LinearLayout android:orientation="vertical" android:id="@id/registration_contact_setting_area" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/registration_info_text" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:text="@string/registration_confirm_sending_contacts_description" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/registration_contact_setting_checkboxes" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/registration_setting_use_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                            <ImageView android:gravity="center_vertical" android:background="@drawable/registration_use_contact_checkbox" android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                            <TextView android:enabled="true" android:textSize="18.0sp" android:textColor="#ff0a0a0a" android:id="@id/registration_setting_title_use_contacts" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/settings_add_friends_my_list" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/registration_setting_allow_add_me" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                            <ImageView android:gravity="center_vertical" android:background="@drawable/registration_use_contact_checkbox" android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                            <TextView android:enabled="true" android:textSize="18.0sp" android:textColor="#ff0a0a0a" android:id="@id/registration_setting_title_allow_add_me" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/settings_add_friends_other_list" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                <Button android:id="@id/registration_btn_input_name" android:layout_width="fill_parent" android:layout_height="@dimen/registration_button_height" android:text="@string/registration" android:layout_alignParentBottom="true" style="@style/registration_green_and_gray_button" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</jp.naver.line.android.customview.ime.KeyboardRecognizableLinearLayout>

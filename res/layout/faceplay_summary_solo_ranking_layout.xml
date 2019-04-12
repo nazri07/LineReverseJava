@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/faceplay_summary_solo_ranking_progress" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <include layout="@layout/faceplay_loading_circle_progress" />
+    </FrameLayout>
+    <TextView android:id="@id/faceplay_summary_solo_ranking_empty" android:visibility="gone" android:text="@string/faceplay_single_rank_norecord" style="@style/faceplay_summary_empty_text" />
+    <LinearLayout android:orientation="vertical" android:id="@id/faceplay_summary_solo_ranking_list" android:paddingTop="11.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#4cffffff" android:layout_gravity="center_horizontal" android:id="@id/faceplay_summary_solo_ranking_more" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="66.5dip" android:text="@string/faceplay_common_more" android:drawableRight="@drawable/faceplay_ic_arrow_03" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+</FrameLayout>

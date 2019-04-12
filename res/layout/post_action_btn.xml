@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffefeff1" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <LinearLayout android:gravity="center" android:id="@id/post_action_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_space">
+        <ImageView android:id="@id/post_action_btn_left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.5dip" />
+        <TextView android:id="@id/post_action_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/commonFont" />
+        <ImageView android:id="@id/post_action_btn_right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <Space android:id="@id/bottom_space" android:layout_width="fill_parent" android:layout_height="2.5dip" android:layout_alignParentBottom="true" />
+</merge>

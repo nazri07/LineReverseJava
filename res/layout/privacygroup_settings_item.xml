@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_bg" android:background="@drawable/row_user" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_divider_common" android:background="#ffececec" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_alignParentTop="true" />
+    <View android:id="@id/bottom_divider_common" android:background="#ffececec" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_below="@id/privacygroup_settings_item_root" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/privacygroup_settings_item_root" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <FrameLayout android:id="@id/privacygroup_settings_item_group_delete" android:paddingLeft="16.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center" android:id="@id/privacygroup_settings_item_group_delete_bg" android:background="@drawable/list_ic_delete_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center" android:id="@id/privacygroup_settings_item_group_delete_minus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/list_ic_delete_minus" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="10.0dip">
+            <RelativeLayout android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="28.0dip">
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/user_profile2_bg" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/timeline_img_thumb_line" />
+                <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/user_profile2" android:background="@drawable/circle_white_drawable" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip">
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/user_profile1_bg" android:background="@drawable/timeline_img_thumb_line" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+                <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/user_profile1" android:background="@drawable/circle_white_drawable" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="24.0dip" android:layout_height="24.0dip">
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/user_profile0_bg" android:background="@drawable/timeline_img_thumb_line" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+                <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/user_profile0" android:background="@drawable/circle_white_drawable" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:id="@id/privacygroup_settings_item_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@style/text_list_category_content07" />
+            <TextView android:ellipsize="end" android:id="@id/privacygroup_settings_item_group_member_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" style="@style/text_list_category_content06" />
+        </LinearLayout>
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/privacygroup_settings_item_move_button" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/list_ic_displace" />
+    </LinearLayout>
+</RelativeLayout>

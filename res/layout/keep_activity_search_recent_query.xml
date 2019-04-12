@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/keep_recent_search_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keep_fragment_list_item_foreground" />
+    <TextView android:ellipsize="end" android:id="@id/keep_activity_search_recent_query_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:maxLines="1" android:minLines="1" android:layout_toLeftOf="@id/keep_activity_search_recent_query_delete_button_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_toStartOf="@id/keep_activity_search_recent_query_delete_button_layout" android:layout_alignParentStart="true" style="@style/text_list_title01" />
+    <RelativeLayout android:id="@id/keep_activity_search_recent_query_delete_button_layout" android:paddingLeft="@dimen/keep_recent_delete_button_left_margin" android:paddingRight="@dimen/keep_list_item_right_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:paddingStart="@dimen/keep_recent_delete_button_left_margin" android:paddingEnd="@dimen/keep_list_item_right_margin" android:layout_alignParentEnd="true">
+        <ImageView android:clickable="true" android:layout_width="@dimen/keep_recent_delete_button_width" android:layout_height="@dimen/keep_recent_delete_button_height" android:src="@drawable/ke_list_icon_x02" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

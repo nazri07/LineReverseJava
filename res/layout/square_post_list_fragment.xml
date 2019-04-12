@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/myhome_postlist_root" android:background="@color/home_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/spost_recyclerview" android:paddingBottom="6.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/square_post_announce_area" />
+    <ViewStub android:id="@id/square_post_list_empty" android:layout="@layout/home_empty_post_view_viewstub" android:layout_width="fill_parent" android:layout_height="@dimen/square_home_joined_post_list_height" android:layout_below="@id/square_post_announce_area" android:layout_alignWithParentIfMissing="true" />
+    <ViewStub android:id="@id/error" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/square_post_announce_area" />
+    <RelativeLayout android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/square_home_joined_post_list_height" android:layout_below="@id/square_post_announce_area">
+        <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/square_post_list_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

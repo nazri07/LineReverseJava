@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/floating_menu_item_bottom_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/action_text" android:text="@string/myhome_write_timeline_menu" style="@style/text_home_floating_button" />
+    <com.linecorp.line.timeline.floatingmenu.FloatingMenuButton android:id="@id/action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/action_text" android:alpha="0.0" app:colorNormal="@color/floating_menu_item_button_normal_color" app:colorPressed="@color/floating_menu_item_button_pressed_color" app:icon="@drawable/floating_ic_write_02" app:type="item" />
+</RelativeLayout>

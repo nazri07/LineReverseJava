@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/manual_input_button" android:background="#ff000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/pay_button_manual_code_input_text" android:id="@id/pay_tv_code_reader_bottom" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" />
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/pay_selector_img_scan_arrow" android:layout_toRightOf="@id/pay_tv_code_reader_bottom" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.linecorp.linepay.legacy.customview.LayoutEventCaptureRelativeLayout android:id="@id/layout_event_capture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/manual_input_button">
+        <View android:id="@id/background_top" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:id="@id/background_bottom" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <SurfaceView android:id="@id/pay_feedback_surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <View android:id="@id/view_finder" android:background="@drawable/pay_img_scan_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pay_layout_code_detection_guide" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/pay_ib_nfc_on_off" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+            <TextView android:textSize="12.0sp" android:textColor="#72ffffff" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/pay_tv_code_detection_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+        </LinearLayout>
+    </com.linecorp.linepay.legacy.customview.LayoutEventCaptureRelativeLayout>
+    <TextView android:textColor="#c0ffffff" android:gravity="center" android:id="@id/guide_text_view" android:background="@drawable/pay_ellipse_bg" android:visibility="gone" android:layout_width="125.0dip" android:layout_height="28.0dip" android:layout_marginTop="21.0dip" android:text="@string/pay_ipass_code_reader_how_to_shoot" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/guide_popup_layout" android:background="#cc000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/pay_btn_white_normal" android:layout_width="273.0dip" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="end" android:id="@id/guide_popup_close_button" android:background="@null" android:padding="15.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/pay_ic_popup_x" android:layout_marginEnd="14.0dip" />
+            <jp.naver.toybox.drawablefactory.DImageView android:layout_gravity="center_horizontal" android:id="@id/guide_popup_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="37.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

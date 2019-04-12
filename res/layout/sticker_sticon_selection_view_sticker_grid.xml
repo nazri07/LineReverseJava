@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.customview.AutoFitGridRecyclerView android:id="@id/sticker_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/sticker_sticon_input_margin" android:layout_marginEnd="@dimen/sticker_sticon_input_margin" app:columnWidth="@dimen/eskview_sticker_item_size" />
+    <include android:id="@id/sticker_preview" layout="@layout/sticker_preview" />
+</FrameLayout>

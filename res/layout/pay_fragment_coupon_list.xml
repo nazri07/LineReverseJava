@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@id/pay_coupon_scroll_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/pay_coupon_header_layout" layout="@layout/pay_coupon_header_layout" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/pay_coupon_items_recycler_view" android:paddingTop="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/pay_coupon_item_empty_layout" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:id="@id/pay_coupon_bottom_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:enabled="false" android:textSize="15.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/pay_coupon_ok_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/pay_confirm" android:fontFamily="sans-serif" style="@style/pay_common_full_button_green" />
+    </LinearLayout>
+</RelativeLayout>

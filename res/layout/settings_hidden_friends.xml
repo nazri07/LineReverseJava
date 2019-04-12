@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <include layout="@layout/base_setting_warning_message" />
+        <ListView android:id="@id/settings_hidden_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/listitem_bottomline" android:dividerHeight="1.0px" />
+        <TextView android:gravity="center" android:id="@id/settings_hidden_list_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/text_zeropage_subtitle" />
+    </LinearLayout>
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" />
+</RelativeLayout>

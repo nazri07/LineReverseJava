@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.linepay.legacy.activity.main.view.MainCardPageContainer android:id="@id/pay_tw_ipass_main_deck_viewpager_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linecorp.linepay.common.PayCardAspectRatioViewPager android:layout_gravity="center_horizontal" android:id="@id/pay_tw_ipass_main_deck_viewpager" android:layout_width="200.0dip" android:layout_height="0.0dip" android:layout_marginTop="13.5dip" />
+    </com.linecorp.linepay.legacy.activity.main.view.MainCardPageContainer>
+    <com.linecorp.linepay.legacy.activity.main.view.CreditCardPageNavigation android:gravity="bottom|center" android:id="@id/pay_tw_ipass_main_deck_navidot" android:layout_width="fill_parent" android:layout_height="17.0dip" app:layout_constraintTop_toBottomOf="@id/pay_tw_ipass_main_deck_viewpager_container" />
+    <View android:id="@id/pay_tw_ipass_main_deck_navidot_bottomMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" app:layout_constraintTop_toBottomOf="@id/pay_tw_ipass_main_deck_navidot" />
+</androidx.constraintlayout.widget.ConstraintLayout>

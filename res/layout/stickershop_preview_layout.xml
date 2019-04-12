@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/main_preview_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:adjustViewBounds="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/preview_progress_bar" android:layout_width="@dimen/shop_progressbar_size" android:layout_height="@dimen/shop_progressbar_size" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/preview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    <ViewStub android:id="@id/preview_retry_viewstub" android:layout="@layout/stickershop_custom_sticker_preview_retry_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

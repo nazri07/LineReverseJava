@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_main_dummy_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/main_tab_container" android:background="@drawable/gnb_bg_normal" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/main_gnb_height" android:layout_below="@id/header" />
+    <ImageView android:id="@id/capture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

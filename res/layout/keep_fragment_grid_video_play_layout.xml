@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_grid_video_play_layout" android:background="@color/com_black_with_alpha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/common_ic_play04_normal" android:layout_centerInParent="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

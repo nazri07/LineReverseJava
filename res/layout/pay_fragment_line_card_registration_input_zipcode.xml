@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff848484" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/pay_line_card_registration_input_zipcode_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/pay_shape_white_rectangle_r1_5" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip">
+        <EditText android:textSize="18.0sp" android:textColor="#ff404040" android:textColorHint="#ffe5e5e5" android:id="@id/name" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/pay_join_zipcode_hint" android:singleLine="true" android:maxLength="@integer/pay_zip_max_length" android:layout_weight="1.0" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <Button android:id="@id/next_button" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/pay_next" style="@style/pay_common_full_button_green_r01" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:layout_marginTop="17.5dip" android:layout_marginRight="17.5dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_icon_info" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_line_card_registration_input_address_guide" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

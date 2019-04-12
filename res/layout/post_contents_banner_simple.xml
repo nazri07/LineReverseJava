@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/content_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_alignBottom="@id/video_content_layout" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/image_content_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/background">
+            <View android:id="@id/image_content_button_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/image_content_button_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/video_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linecorp.line.timeline.view.post.PostVideoView android:id="@id/post_video" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/video_content_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/video_content_button_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <View android:id="@id/video_content_button_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/close_layout" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/close_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/banner_icon_close" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

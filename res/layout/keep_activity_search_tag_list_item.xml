@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/keep_search_tag_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keep_fragment_list_item_foreground" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin">
+        <TextView android:ellipsize="end" android:id="@id/keep_search_tag_list_item_tag_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:minLines="1" android:singleLine="true" android:layout_centerVertical="true" style="@style/text_list_title01" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

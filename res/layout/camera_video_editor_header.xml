@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/video_editor_header_layout" />
+    <RelativeLayout android:id="@id/camera_editor_header_view_trim_mode_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/camera_image_header_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:id="@id/camera_editor_header_view_trim_cancel_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_cancel" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/text_video_trim_top_btn" />
+        <TextView android:id="@id/camera_editor_header_view_trim_done_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/btn_done" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/text_video_trim_top_btn" />
+    </RelativeLayout>
+</RelativeLayout>

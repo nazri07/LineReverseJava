@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#26ffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/face_sticker_item_list" android:paddingTop="5.0dip" android:paddingBottom="58.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.59" />
+    <TextView android:textSize="15.0sp" android:textStyle="normal" android:textColor="#ffb2b2b2" android:id="@id/empty_item_guide_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_effect_tab_guidemessage_my" android:fontFamily="sans-serif" app:layout_constraintBottom_toTopOf="@id/guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

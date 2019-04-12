@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff848484" android:id="@id/pay_line_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="13.0dip" android:text="@string/pay_line_card_registration_select_card_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pay_common_full_button_height" android:layout_below="@id/pay_line_card_title">
+        <com.linecorp.linepay.legacy.customview.RadioGroupView android:id="@id/linecard_radio_group" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/pay_line_card_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/pay_line_card_later_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_later_reg" android:layout_weight="1.0" style="@style/pay_common_full_button_navy" />
+        <Button android:id="@id/pay_line_card_next_button" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_next" android:layout_weight="1.0" style="@style/pay_common_full_button_green" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/skip_alert_layout" android:background="#ffffffff" android:paddingLeft="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="62.0dip" android:layout_above="@id/pay_line_card_button_layout">
+        <TextView android:textSize="14.5sp" android:textColor="#ff3f3f3f" android:layout_gravity="center_vertical" android:id="@id/skip_alert" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tip_close" android:paddingLeft="21.5dip" android:paddingRight="12.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pay_tip_close" />
+    </LinearLayout>
+</RelativeLayout>

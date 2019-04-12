@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/stickershop_preset_box_activity_root_view" android:background="@color/shop_theme_setting_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/stickershop_tab_layout" android:layout_width="fill_parent" android:layout_height="35.329987dip" android:layout_below="@id/header">
+        <Button android:textSize="15.0sp" android:textColor="#ff687180" android:gravity="center" android:id="@id/stickershop_presentbox_tab_receive" android:background="@drawable/selector_stickershop_present_tab_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stickershop_present_box_tab_receive" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:textColor="#ff687180" android:gravity="center" android:id="@id/stickershop_presentbox_tab_send" android:background="@drawable/selector_stickershop_present_tab_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stickershop_present_box_tab_send" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/stickershop_tab_layout" layout="@layout/stickershop_listview" />
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" />
+</RelativeLayout>

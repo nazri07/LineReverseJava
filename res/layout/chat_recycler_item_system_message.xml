@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/chat_recycler_item_system_message_0" android:background="@drawable/live_recorder_system_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.5dip" android:layout_marginRight="2.5dip" android:layout_marginBottom="2.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/text" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" style="@style/text_shadow_default" />
+</LinearLayout>

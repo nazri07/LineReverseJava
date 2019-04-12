@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="190.0dip" android:layout_height="wrap_content" android:minWidth="95.0dip" android:minHeight="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chathistory_row_groupcall_icon" android:layout_width="60.0dip" android:layout_height="32.0dip" android:layout_marginTop="15.0dip" />
+    <TextView android:gravity="center" android:id="@id/chathistory_row_groupcall_text" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="17.0dip" android:layout_centerHorizontal="true" style="@style/text_chatroom_write_message05" />
+</LinearLayout>

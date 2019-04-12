@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.toybox.drawablefactory.DImageView android:layout_gravity="bottom" android:id="@id/profile" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginBottom="37.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

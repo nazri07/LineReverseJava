@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/message_source_balloon" android:background="@color/chathistory_message_balloon_send_bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/message_source_divider" android:background="@color/chathistory_message_send_divider_bg" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_row_divider_height" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/chathistory_message_source_left_margin" android:layout_marginRight="@dimen/chathistory_message_source_right_margin" android:layout_marginStart="@dimen/chathistory_message_source_left_margin" android:layout_marginEnd="@dimen/chathistory_message_source_right_margin" layout="@layout/chathistory_row_send_msg_message_source_content" />
+</FrameLayout>

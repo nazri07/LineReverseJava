@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/contents_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/camera_surface_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" />
+        <FrameLayout android:id="@id/camera_surface_view_replacement_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/focus_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_ic_focus" />
+            <com.linecorp.line.camera.view.autofocus.FaceRectView android:id="@id/focus_face_rect_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/camera_contents_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_horizontal_margin" android:layout_marginRight="@dimen/camera_horizontal_margin">
+                <ImageButton android:id="@id/flash_button" android:background="@drawable/camera_ic_flash_on_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" />
+                <ImageButton android:id="@id/timer_button" android:background="@drawable/camera_ic_timer_off_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/ratio_button" app:layout_constraintLeft_toRightOf="@id/flash_button" app:layout_constraintRight_toLeftOf="@id/ratio_button" app:layout_constraintStart_toEndOf="@id/flash_button" />
+                <ImageButton android:id="@id/ratio_button" android:background="@drawable/camera_ic_ratio_9_to_16_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/turn_button" app:layout_constraintLeft_toRightOf="@id/timer_button" app:layout_constraintRight_toLeftOf="@id/turn_button" app:layout_constraintStart_toEndOf="@id/timer_button" />
+                <ImageButton android:id="@id/turn_button" android:background="@drawable/camera_ic_rotate_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintRight_toRightOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/filter_list_view_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:id="@id/filter_intensity_indicator_text_view" android:visibility="gone" android:layout_width="fill_parent" style="@style/intensity_indicator_text_view" />
+                <SeekBar android:id="@id/filter_intensity_seek_bar" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:progress="100" style="@style/intensity_seek_bar" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/list_view_filter" android:background="@color/camera_sticker_filter_list_bg_color" android:paddingLeft="8.0dip" android:paddingTop="24.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            </LinearLayout>
+            <include layout="@layout/face_sticker_view" />
+            <RelativeLayout android:id="@id/camera_bottom_layout" android:background="@drawable/camera_layout_gradient" android:paddingLeft="@dimen/camera_horizontal_padding" android:paddingRight="@dimen/camera_horizontal_padding" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/scrollable_camera_mode_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip">
+                    <ImageView android:id="@id/camera_mode_selected_indicator" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CameraModeIndicator" />
+                    <HorizontalScrollView android:id="@id/camera_mode_container_scroll_view" android:paddingTop="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/camera_mode_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:id="@id/camera_mode_button_photo" android:text="@string/common_photo" style="@style/CameraModeButton" />
+                            <TextView android:id="@id/camera_mode_button_video" android:layout_marginLeft="@dimen/camera_mode_buttons_distance" android:text="@string/common_video" android:layout_marginStart="@dimen/camera_mode_buttons_distance" style="@style/CameraModeButton" />
+                            <TextView android:id="@id/camera_mode_button_gif" android:layout_marginLeft="@dimen/camera_mode_buttons_distance" android:text="@string/common_gif" android:layout_marginStart="@dimen/camera_mode_buttons_distance" style="@style/CameraModeButton" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <RelativeLayout android:id="@id/record_bottom_button_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/camera_bottom_recording_button_size" android:layout_marginBottom="18.0dip" android:layout_below="@id/scrollable_camera_mode_container">
+                    <com.linecorp.line.camera.view.record.RecordingAnimationView android:layout_gravity="center" android:id="@id/record_animation" android:background="@color/transparent" android:layout_width="@dimen/camera_bottom_recording_button_size" android:layout_height="@dimen/camera_bottom_recording_button_size" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:soundEffectsEnabled="false" android:contentDescription="@string/access_camera_shoot" />
+                    <RelativeLayout android:id="@id/face_sticker_icon_container" android:focusable="true" android:clickable="true" android:layout_width="@dimen/sticker_button_size" android:layout_height="@dimen/sticker_button_size" android:layout_centerVertical="true">
+                        <ImageButton android:background="@drawable/camera_ic_effect" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/access_camera_effect" />
+                        <ImageView android:id="@id/face_sticker_button_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/camera_ic_dot02" android:layout_alignParentRight="true" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/screen_filter_icon_container" android:focusable="true" android:clickable="true" android:layout_width="@dimen/filter_button_size" android:layout_height="@dimen/filter_button_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                        <ImageButton android:background="@drawable/camera_ic_filter02" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/access_camera_filter" />
+                        <ImageView android:id="@id/filter_button_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/camera_ic_dot02" android:layout_alignParentRight="true" android:layout_marginEnd="9.0dip" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                    <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <ImageButton android:id="@id/resume_pause_button" android:background="@drawable/camera_ic_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/access_video_record_pause" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.linecorp.line.camera.view.CameraLayoutView android:id="@id/camera_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <ViewStub android:id="@id/camera_surface_circle_guide_view" android:visibility="gone" android:layout="@layout/line_custom_camera_circle_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

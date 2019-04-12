@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/beacon_agreement_dialog_background" android:layout_width="300.0dip" android:layout_height="482.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_beacon_img" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff9095a2" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/beacon_permission_popup_description1" android:lineSpacingExtra="4.0dip" />
+    <TextView android:textSize="11.0sp" android:textColor="#ffb4b6bb" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/beacon_permission_popup_description2" android:lineSpacingExtra="2.0dip" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/beacon_agreement_btn_accept" android:background="@drawable/beacon_agreement_dialog_button" android:layout_width="fill_parent" android:layout_height="63.0dip" android:text="@string/beacon_permission_popup_btn_ok" />
+</LinearLayout>

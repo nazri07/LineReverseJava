@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.view.SizeLimitedFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/chathistory_mention_suggest_list" android:background="@color/chathistory_mention_suggest_bg_normal" android:paddingTop="@dimen/chathistory_mention_suggest_list_padding_top" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/chathistory_mention_suggest_close" android:padding="@dimen/chathistory_mention_suggest_close_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chatroom_ic_x" android:contentDescription="@string/access_close" />
+</com.linecorp.view.SizeLimitedFrameLayout>

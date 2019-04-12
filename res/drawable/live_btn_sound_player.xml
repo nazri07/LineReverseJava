@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/live_btn_player_soundoff_press" />
+    <item android:state_checked="true" android:drawable="@drawable/live_btn_player_soundoff_normal" />
+    <item android:state_pressed="true" android:drawable="@drawable/live_btn_player_soundon_press" />
+    <item android:drawable="@drawable/live_btn_player_soundon_normal" />
+</selector>

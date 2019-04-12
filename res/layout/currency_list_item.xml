@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/currency_layout" android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/currency_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_centerVertical="true" style="@style/setting_list_item_button_layout" />
+    <ImageView android:id="@id/currency_check_image" android:background="@drawable/call_list_ic_check" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:layout_alignParentBottom="true" style="@style/setting_division_line" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_input_area_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/common_bottom_second_button" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_button_height" android:layout_marginRight="2.669983dip" android:layout_weight="0.5" style="@style/v2_common_button_bottom_grey" />
+    <TextView android:id="@id/common_bottom_first_button" android:background="@drawable/selector_button_01" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ChatHistoryTextInEdit" />
+</LinearLayout>

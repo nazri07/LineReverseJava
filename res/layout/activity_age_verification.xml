@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/registration_check_age_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/registration_check_age_update" android:includeFontPadding="false" android:drawableTop="@drawable/zeropage_img_none13" android:drawablePadding="16.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5" style="@style/text_registration_simple_info02" />
+</androidx.constraintlayout.widget.ConstraintLayout>

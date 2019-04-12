@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupform_profile_layout" android:background="@color/settings_group_profile_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/setting_group_profile_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/groupform_thumbnail_layout" android:layout_width="@dimen/setting_group_profile_thumbnail_size" android:layout_height="@dimen/setting_group_profile_thumbnail_size" android:layout_marginLeft="@dimen/setting_group_profile_thumbnail_margin">
+        <ImageView android:id="@id/groupform_thumbnail_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="bottom|center|right" android:layout_width="@dimen/settings_group_profile_photo_size" android:layout_height="@dimen/settings_group_profile_photo_size" android:src="@drawable/profile_ic_photo" />
+    </FrameLayout>
+    <TextView android:gravity="center_vertical" android:id="@id/groupform_groupname" android:padding="@dimen/settings_group_name_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_group_name_margin_left" android:layout_marginRight="@dimen/settings_group_name_margin_right" android:drawableRight="@drawable/selector_timeline_icon_more" android:drawablePadding="@dimen/settings_group_name_drawable_padding" style="@style/text_group_title" />
+</LinearLayout>

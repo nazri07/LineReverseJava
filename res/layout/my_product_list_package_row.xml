@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/row_user" android:layout_width="fill_parent" android:layout_height="@dimen/shop_my_product_list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/my_sticker_list_package_row_thumbnail" />
+    <include layout="@layout/my_sticker_list_package_row_name_status" />
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/shop_my_product_list_row_arrow_margin_right" android:src="@drawable/friendlist_arrow" />
+    <LinearLayout android:id="@id/download_icon" android:paddingLeft="@dimen/shop_my_product_list_row_download_icon_padding_left" android:paddingRight="@dimen/shop_my_product_list_row_download_icon_padding_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_app_dl" />
+    </LinearLayout>
+    <ImageView android:id="@id/warning_icon" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/sticker_ic_error" android:contentDescription="@string/access_cantdownload" />
+</LinearLayout>

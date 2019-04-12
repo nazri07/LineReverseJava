@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/myhome_postlist_infoitem_profile_btn" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/myhome_postlist_infoitem_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/selector_timeline_icon_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/selector_timeline_home_profile_description_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/myhome_postlist_infoitem_profile_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="19.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_toLeftOf="@id/myhome_postlist_infoitem_arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/middle_line" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/myhome_postlist_infoitem_profile_btn" />
+</RelativeLayout>

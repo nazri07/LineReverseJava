@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.voip.ui.freecall.video.view.FreeCallVideoRenderView android:id="@id/voip_free_call_video_renderer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:renderViewMode="my_view_full_and_peer_view_floating" />
+    <com.linecorp.voip.ui.freecall.video.view.FreeCallVideoView android:id="@id/voip_free_call_video_viewgroup" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/voip_free_call_face_play_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

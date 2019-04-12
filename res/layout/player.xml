@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <SurfaceView android:id="@id/video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/replay_frame" android:background="#55000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="center" android:onClick="replay" />
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/player_menu" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:id="@id/save" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="save" />
+        <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="cancel" />
+    </LinearLayout>
+</LinearLayout>

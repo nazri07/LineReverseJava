@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_bg" android:background="@drawable/row_user" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/localcontact_invite_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/FriendListNameText" />
+        <TextView android:ellipsize="end" android:id="@id/localcontact_invite_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/FriendListSimpleProfileText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/invite_single_user_button" android:background="@drawable/localcontact_invite_btn_background" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="9.329987dip" android:onClick="onClickInviteByMail">
+        <ImageView android:id="@id/friend_row_checkbox_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.669983dip" android:layout_marginRight="3.3299866dip" android:src="@drawable/tm_btn_privacy_add" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/friend_row_checkbox_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.669983dip" android:text="@string/invite" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/localcontact_invite_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_onair" />
+</LinearLayout>

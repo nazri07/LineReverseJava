@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.customview.SwipeRefreshLayoutForListView android:orientation="vertical" android:id="@id/swipe_refresh_layout" android:tag="layout/square_post_announcement_list_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:background="@color/home_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/post_announce_recyclerview" android:paddingBottom="6.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/square_announce_list_empty" android:layout="@layout/home_empty_post_view_viewstub" android:layout_width="fill_parent" android:layout_height="@dimen/square_home_joined_post_list_height" android:layout_alignWithParentIfMissing="true" />
+            <ViewStub android:id="@id/error" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/square_home_joined_post_list_height">
+                <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/square_post_list_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</jp.naver.line.android.customview.SwipeRefreshLayoutForListView>

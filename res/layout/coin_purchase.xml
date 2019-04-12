@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/coin_purchase_root" android:background="#fffbfbfb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:id="@id/coin_purchase_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:id="@id/coin_purchase_loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" />
+                <ListView android:id="@id/coin_purcase_charge_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:divider="#ffefefef" android:dividerHeight="0.6700001dip" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/coin_shop_maintenance_and_error_view" />
+    </FrameLayout>
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/faceplay_summary_album_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="164.0dip" android:text="@string/faceplay_screenshot_no" style="@style/faceplay_summary_empty_text" />
+    <com.linecorp.voip.faceplay.mode.common.end.FacePlayAlbumItemView android:id="@id/faceplay_summary_album_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="73.5dip" />
+</merge>

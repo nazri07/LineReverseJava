@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/chathistory_row_system_msg_layout" android:background="@drawable/img_chats_date" android:paddingLeft="@dimen/chathistory_system_message_padding_horizontal" android:paddingTop="@dimen/chathistory_system_message_padding_top" android:paddingRight="@dimen/chathistory_system_message_padding_horizontal" android:paddingBottom="@dimen/chathistory_system_message_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/chathistory_system_message_margin" android:minHeight="@dimen/chathistory_system_message_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/chathistory_row_system_msg_space_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_spammer_warning_message_extra_vertical_space" />
+    <TextView android:gravity="center" android:id="@id/chathistory_row_system_msg_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chathistory_system_message" />
+    <TextView android:gravity="center" android:id="@id/chathistory_row_system_msg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chathistory_system_message" />
+    <Space android:id="@id/chathistory_row_system_msg_space_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_spammer_warning_message_extra_vertical_space" />
+</LinearLayout>

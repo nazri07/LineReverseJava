@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/common_btn_bg_normal" android:layout_width="fill_parent" android:layout_height="@dimen/wallet_relative_service_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wallet_tab_subimg_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:layout_width="45.0dip" android:layout_height="40.5dip">
+            <FrameLayout android:id="@id/item_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+                <jp.naver.toybox.drawablefactory.DImageView android:id="@id/item_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+                <ImageView android:id="@id/item_default" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/more_img_thumb_zero_01" />
+            </FrameLayout>
+            <ImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:src="@drawable/more_img_new" android:layout_alignTop="@id/item_icon_layout" android:layout_alignRight="@id/item_icon_layout" android:contentDescription="@string/access_new_item_badge" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/wallet_lower_button_text_color" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_toRightOf="@id/wallet_tab_subimg_layout" android:layout_centerVertical="true" android:layout_toEndOf="@id/wallet_tab_subimg_layout" />
+</RelativeLayout>

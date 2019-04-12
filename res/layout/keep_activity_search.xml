@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_search_activity_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/com_white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/keep_activity_select_button">
+        <requestFocus />
+        <RelativeLayout android:id="@id/keep_activity_search_text_no_result_layout" android:background="@color/com_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_error_search_no_result" android:layout_centerInParent="true" style="@style/text_zero" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/keep_activity_search_recent_query_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Keep.Searchbar.ListDivider" />
+        <RelativeLayout android:id="@id/keep_activity_search_result_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/keep_activity_search_result_recycler_view" android:background="@android:color/transparent" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/keep_send_button" />
+</RelativeLayout>

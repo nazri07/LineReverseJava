@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_info_layout" android:background="@drawable/pay_main_top_notice_bg" android:paddingLeft="17.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="43.0dip">
+        <ImageView android:id="@id/info_icon7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/pay_icon_info7" />
+        <TextView android:textSize="13.5sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/pay_btn_next_white_04" />
+    </LinearLayout>
+    <View android:id="@id/pay_top_info_divider" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+</LinearLayout>

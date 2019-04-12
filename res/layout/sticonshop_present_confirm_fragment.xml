@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/shop_detail_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="@dimen/shop_progressbar_size" android:layout_height="@dimen/shop_progressbar_size" android:layout_centerInParent="true" />
+    <jp.naver.line.android.customview.RetryErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+        <ViewStub android:id="@id/detail_top_view_stub" android:layout="@layout/sticonshop_detail_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/present_purchase_layout" android:layout_width="fill_parent" android:layout_height="@dimen/shop_purchase_button_height" android:layout_marginLeft="@dimen/sticonshop_sticon_info_left_margin" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/sticonshop_sticon_info_right_margin" android:layout_marginStart="@dimen/sticonshop_sticon_info_left_margin" android:layout_marginEnd="@dimen/sticonshop_sticon_info_right_margin" layout="@layout/sticonshop_present_button_layout" />
+        <View android:background="@color/shop_detail_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="18.0dip" />
+        <TextView android:gravity="center" android:paddingLeft="10.669983dip" android:paddingRight="10.669983dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.329987dip" android:text="@string/stickershop_present_confirm_select_templete" style="@style/shop_detail_present_template_guide" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/present_templates_view" android:paddingLeft="10.669983dip" android:paddingRight="10.669983dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="9.669983dip" />
+    </LinearLayout>
+</RelativeLayout>

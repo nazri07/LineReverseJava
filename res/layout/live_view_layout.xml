@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linecorp.andromeda.video.view.ATextureView android:id="@id/live_bg_renderview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/live_dimmed_left" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.22" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.56">
+            <com.linecorp.andromeda.video.view.ATextureView android:id="@id/live_renderview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/live_dimmed_center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/live_dimmed_center_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+                <TextView android:textSize="11.0sp" android:textColor="#80ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/live_dimmed_center_icon_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/groupcall_video_guide_steaming_on" android:includeFontPadding="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <View android:id="@id/live_dimmed_right" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.22" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="top" android:background="@drawable/live_img_gra_top" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/live_img_gra_bottom" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+    <RelativeLayout android:layout_gravity="top" android:id="@id/live_top_area" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <ImageView android:id="@id/live_pip_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_live_pip_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/access_chatlive_enterpip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/live_full_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_live_full_selector" android:contentDescription="@string/access_ad_enterFullscreen" />
+            <ImageView android:id="@id/live_finish_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_live_close_selector" android:contentDescription="@string/access_chatlive_close" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/live_bottom_area" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+        <include android:id="@id/live_info_viewgroup" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0" layout="@layout/layout_live_info_viewgroup" />
+        <ImageView android:id="@id/live_camera_swich_btn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/btn_live_camera_front_back_selector" android:contentDescription="@string/access_videocall_switchcamera" />
+        <ImageView android:id="@id/live_audio_mute_btn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/btn_live_audio_mute_selector" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linecorp.voip.ui.live.view.ChatLiveViewerListAnimateViewGroup android:layout_gravity="bottom" android:id="@id/live_viewer_list_animate_group" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/live_viewer_clean_effect" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="7.0dip" />
+    </FrameLayout>
+    <com.linecorp.voip.core.effect.view.SendEffectHorizontalListView android:layout_gravity="bottom" android:id="@id/live_viewer_send_effect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" />
+    <com.linecorp.voip.core.effect.view.EffectHorizontalListView android:layout_gravity="bottom" android:id="@id/live_sender_effect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" />
+    <com.linecorp.voip.ui.TruncatableTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/live_effect_sender_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" android:layout_marginRight="65.0dip" />
+    <TextView android:layout_gravity="center" android:id="@id/live_info_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="53.0dip" android:layout_marginRight="53.0dip" style="@style/live_info_toast_text" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <com.linecorp.line.timeline.view.util.TopCropScaleDImageView android:id="@id/thumb_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/dimmed_bottom" android:layout_width="fill_parent" android:layout_height="219.0dip" android:src="@drawable/timeline_img_gra_bottom" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <ImageButton android:id="@id/delete_btn" android:background="@null" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/write_img_x02_selector" android:layout_alignParentRight="true" android:contentDescription="@string/access_delete" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:paddingLeft="16.0dip" android:paddingTop="20.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/link_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/play_image">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/link_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:textColor="#ccffffff" android:ellipsize="end" android:id="@id/link_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="10.0sp" android:textColor="#99ffffff" android:ellipsize="end" android:id="@id/link_url_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <ImageView android:id="@id/play_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/common_ic_play04_disable" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

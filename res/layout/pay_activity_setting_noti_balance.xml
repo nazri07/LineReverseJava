@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pay_setting_noti_balance_onoff_bg" android:paddingTop="@dimen/pay_setting_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linecorp.linepay.legacy.activity.setting.PaySettingButton android:id="@id/use_noti_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.linecorp.linepay.legacy.activity.setting.PaySettingButton android:id="@id/min_balance_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/pay_setting_noti_balance_edit_min_balance_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff7d7d7d" android:gravity="center_vertical" android:paddingLeft="7.5dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/pay_setting_noti_balance_lack_input_hint" />
+            <com.linecorp.linepay.legacy.customview.MoneyInputView android:id="@id/pay_setting_noti_balance_edit_input_money" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/pay_normal_btn" android:gravity="center" android:id="@id/pay_setting_noti_balance_edit_input_money_confirm" android:background="@drawable/pay_selector_normal_btn" android:layout_width="140.0dip" android:layout_height="34.0dip" android:layout_marginTop="10.0dip" android:text="@string/confirm" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

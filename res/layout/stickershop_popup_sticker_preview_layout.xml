@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#d8fafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.widget.stickersticoninput.sticker.PopupStickerView android:id="@id/popup_sticker_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/preview_popup_progress" android:layout_width="@dimen/shop_progressbar_size" android:layout_height="@dimen/shop_progressbar_size" />
+</FrameLayout>

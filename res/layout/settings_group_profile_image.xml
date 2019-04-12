@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/settings_group_profile_image_root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/settings_skin_select_list" android:fadingEdge="none" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/settings_skin_select_margin" android:layout_above="@id/bottom_layout" android:layout_below="@id/header" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:textColor="@color/selector_gray_btn_text" android:id="@id/call_camera" android:background="@drawable/selector_button_02" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/take_photo" android:layout_weight="1.0" />
+        <View android:background="#ff71798e" android:layout_width="0.6700001dip" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0sp" android:textColor="@color/selector_gray_btn_text" android:id="@id/call_gallery" android:background="@drawable/selector_button_02" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/pick_gallery" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pay_tw_ipass_signup_credit_card_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/manual_input_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/pay_ipass_signup_select_credit_card_manual_input" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin" style="@style/pay_ipass_signup_checkbox" />
+    <TextView android:textSize="11.5sp" android:textColor="@color/pay_ipass_signup_extra_desc_text_color" android:id="@id/supported_debit_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/pay_ipass_signup_select_credit_card_debit_desc" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin" />
+</LinearLayout>

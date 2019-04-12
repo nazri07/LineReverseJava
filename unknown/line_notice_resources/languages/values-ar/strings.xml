@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="ok">موافق</string>
+<string name="go_link">تحقق الآن</string>
+<string name="close">إغلاق</string>
+<string name="update">تحديث</string>
+<string name="later">لاحقًا</string>
+<string name="do_not_show">لا تعرض الرسالة مرة أخرى</string>
+<string name="terminate">النهاية</string>
+<string name="board_title_notice">إشعارات</string>
+<string name="board_title_help">التعليمات</string>
+<string name="board_title_terms_service">شروط الخدمة</string>
+<string name="board_title_legal_notice">الإشعارات القانونية</string>
+<string name="show_contents">عرض</string>
+</resources>

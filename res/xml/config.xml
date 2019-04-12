@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="jp.naver.line.android" version="4.9.0">
+    <feature name="App">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginApp" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginCamera" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginNetwork" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginDevice" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginNotification" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginGeolocation" />
+    </feature>
+    <feature name="SocialGraph">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.SocialGraph" />
+    </feature>
+    <feature name="LineAuthentication">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.Authentication" />
+    </feature>
+    <feature name="LineNativeUI">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.NativeUI" />
+    </feature>
+    <feature name="ChannelBrowser">
+        <param name="android-package" value="com.linecorp.channel.plugin.ChannelBrowser" />
+    </feature>
+    <feature name="LineApi">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.LineApi" />
+    </feature>
+    <feature name="Beacon">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.BeaconApi" />
+    </feature>
+    <feature name="LineLocalStorage">
+        <param name="android-package" value="com.linecorp.channel.plugin.LocalStorage" />
+    </feature>
+    <feature name="LineCoin">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.LineCoin" />
+    </feature>
+    <feature name="LineTitleBar">
+        <param name="android-package" value="jp.naver.line.android.channel.plugin.LineChannelTitleBar" />
+    </feature>
+    <feature name="DummyWhitelist">
+        <param name="android-package" value="com.linecorp.channel.plugin.CustomCordovaPluginDummyWhitelist" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>

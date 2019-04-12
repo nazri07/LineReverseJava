@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_00" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_01" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_02" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_03" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_04" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_05" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_06" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_07" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_08" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_09" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_10" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_11" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_12" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_13" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_14" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_15" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_16" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_17" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_18" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_19" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_20" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_21" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_22" />
+    <item android:duration="30" android:drawable="@drawable/call_icon_dot04_23" />
+</animation-list>

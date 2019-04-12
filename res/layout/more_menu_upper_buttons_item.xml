@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_common_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/item_padding_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="13.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="77.5dip">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/item_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="3.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6.0dip" android:src="@drawable/group_img_new" android:layout_alignTop="@id/item_icon" android:layout_alignRight="@id/item_icon" android:contentDescription="@string/access_new_item_badge" />
+        <TextView android:gravity="center_horizontal" android:id="@id/item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:includeFontPadding="false" android:layout_below="@id/item_icon" style="@style/text_more_category_subtitle" />
+    </RelativeLayout>
+    <Space android:id="@id/item_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="11.0dip" />
+</LinearLayout>

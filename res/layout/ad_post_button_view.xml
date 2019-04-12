@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_root_view" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="62.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/ad_contents_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ad_action_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/ad_action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ad_action_button_text_view" android:background="@drawable/selector_button_r26" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="83.0dip" android:minHeight="30.0dip" android:includeFontPadding="false" />
+            <View android:id="@id/ad_action_button_icon_view" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_alignTop="@id/ad_action_button_text_view" android:layout_alignRight="@id/ad_action_button_text_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/ad_action_button_top_border_line" android:background="#14000000" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_alignTop="@id/content_root_view" />
+    <View android:id="@id/ad_action_button_bottom_border_line" android:background="#14000000" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_alignBottom="@id/content_root_view" />
+</merge>

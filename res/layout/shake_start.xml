@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/start_shake_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.669983dip" android:src="@drawable/img_shake_shake" />
+            <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.669983dip" android:layout_marginRight="22.669983dip" android:text="@string/shake_start_message_shake" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffc6ff99" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.669983dip" android:layout_marginTop="12.0dip" android:layout_marginRight="22.669983dip" android:text="@string/shake_information_more" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+            <View android:background="#ff6ad914" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.329987dip" android:src="@drawable/icon_shake_official" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffc3fa9c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip" android:text="@string/shake_officialaccount_found_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/no_friends_found_message_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_friends_found_tap_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.669983dip" android:src="@drawable/img_shake_shake" />
+            <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="#fff6ff01" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.669983dip" android:layout_marginRight="22.669983dip" android:text="@string/shake_start_message_failed" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffc6ff99" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.669983dip" android:layout_marginTop="12.0dip" android:layout_marginRight="22.669983dip" android:text="@string/shake_start_message_shake" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffc6ff99" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.669983dip" android:layout_marginRight="22.669983dip" android:text="@string/shake_information_more" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ff36b311" android:layout_width="fill_parent" android:layout_height="60.0dip" android:baselineAligned="true">
+            <View android:background="#ff35ad11" android:layout_width="fill_parent" android:layout_height="1.3299866dip" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffbcfb8e" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/shake_other_found" android:includeFontPadding="false" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.3299866dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/shake_search_by_id" android:paddingRight="9.329987dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_name_idsearch" android:includeFontPadding="false" />
+                    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/shake_search_by_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_name_qrcode" android:includeFontPadding="false" />
+                    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shake_searching_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-77.66998dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/shake_circles" android:background="@drawable/shake_circle_animation" android:layout_width="186.66dip" android:layout_height="186.66dip" />
+            <ImageView android:layout_gravity="center" android:layout_width="21.329987dip" android:layout_height="31.329987dip" android:src="@drawable/icon_shake_loading" />
+        </FrameLayout>
+        <TextView android:textSize="17.329987sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.329987dip" android:text="@string/searching" />
+    </LinearLayout>
+</LinearLayout>

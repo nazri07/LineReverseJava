@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/view_common" android:paddingLeft="@dimen/search_row_leftright_margin" android:paddingRight="@dimen/search_row_leftright_margin" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_yp_location_setting_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/selector_search_yp_setting_text_color" android:id="@id/search_yp_location_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_yp_location_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/selector_yp_location_set_arrow" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_yp_location_current_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_yp_location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/selector_yp_location_search_btn" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/selector_search_yp_location_text_color" android:id="@id/search_yp_location_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_set_current_location" android:includeFontPadding="false" />
+    </LinearLayout>
+</RelativeLayout>

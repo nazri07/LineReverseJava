@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/my_activity_detail_activity_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <jp.naver.line.android.customview.thumbnail.ThumbImageView android:tag="binding_1" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="22.0dip" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222222" android:gravity="center_horizontal" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/activity_card" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/post_activitycard" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+</RelativeLayout>

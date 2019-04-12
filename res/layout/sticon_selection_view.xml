@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/sticon_input_downloading" android:layout="@layout/sticker_sticon_downloading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticon_input_download_error" android:layout="@layout/sticon_selection_view_failed_to_download" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticon_input_sticon_grid" android:layout="@layout/sticon_selection_view_sticon_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticon_input_kaomoji_grid" android:layout="@layout/sticon_selection_view_kaomoji" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticon_input_empty_history" android:layout="@layout/sticker_sticon_grid_empty_history" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

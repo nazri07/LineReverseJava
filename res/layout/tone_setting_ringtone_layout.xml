@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.voip.tone.view.ring.RingtoneSettingView android:orientation="vertical" android:id="@id/tone_setting_view" android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/tone_setting_normal_mode_container" android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/tone_setting_current_tone_container" android:background="@drawable/btn_setting_menu_selector" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:id="@id/tone_setting_current_tone_title" android:paddingTop="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/settings_ringtone_current" style="@style/setting_list_item_title_font" />
+                        <TextView android:id="@id/tone_setting_current_tone_name" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/setting_list_item_info_font" />
+                    </LinearLayout>
+                    <ImageButton android:id="@id/tone_setting_current_tone_stop_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ringtone_item_stop_play_button_selector" android:contentDescription="@string/access_ringtone_stoppreview" style="@style/setting_ringtone_list_item_stop_play_button_layout" />
+                </LinearLayout>
+                <View android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/setting_division_line" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tone_setting_basic_tone_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tone_setting_basic_tone_title" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/settings_ringtone_default" style="@style/setting_ringtone_category_title_layout" />
+                <com.linecorp.voip.tone.view.ToneListView android:id="@id/tone_setting_basic_tone_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_ringtone_list_view_layout" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tone_setting_music_tone_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tone_setting_music_tone_title" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/settings_ringtone_music" style="@style/setting_ringtone_category_title_layout" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/tone_setting_create_music_tone_button" android:background="@drawable/btn_setting_menu_selector" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="3.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/tone_setting_create_music_tone_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_ringtone_create" android:layout_weight="1.0" style="@style/setting_ringtone_list_item_msg_layout" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/setting_ic_ringtone" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/setting_tone_img_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/setting_division_line" />
+                <com.linecorp.voip.tone.view.ToneListView android:id="@id/tone_setting_music_tone_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_ringtone_list_view_layout" />
+                <TextView android:id="@id/tone_setting_music_tone_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_ringtone_explanation_layout" />
+                <View style="@style/setting_division_line" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tone_setting_music_tone_share_container" android:background="@drawable/btn_setting_menu_selector" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_ringtone_share_menu" android:singleLine="true" style="@style/text_setting_category_list01" />
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/settings_ringtone_share_desc" style="@style/text_setting_category_list_info" />
+                    </LinearLayout>
+                    <CheckBox android:id="@id/tone_setting_music_tone_share_checkbox" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="@dimen/setting_checkbox_width" android:layout_height="@dimen/setting_checkbox_height" android:layout_marginLeft="16.0dip" style="@style/setting_check_box" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/tone_setting_tone_delete_mode_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/tone_setting_tone_delete_mode_title" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/settings_ringtone_music" style="@style/setting_ringtone_category_title_layout" />
+        <ListView android:id="@id/tone_setting_tone_delete_mode_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_ringtone_list_view_layout" />
+    </LinearLayout>
+</com.linecorp.voip.tone.view.ring.RingtoneSettingView>

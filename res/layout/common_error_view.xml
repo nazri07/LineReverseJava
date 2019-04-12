@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:tag="layout/common_error_view_0" android:background="@color/base_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/error_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" />
+    <com.linecorp.linelive.player.component.widget.TextViewCompat android:id="@id/error_text" style="@style/zero_text" />
+    <com.linecorp.linelive.player.component.widget.TextViewCompat android:id="@id/error_subtext" android:visibility="gone" style="@style/zero_subtext" />
+    <Button android:id="@id/error_button" android:background="@drawable/live_btn_round_grey02" android:layout_marginTop="13.5dip" style="@style/btn_round_retry" />
+</LinearLayout>

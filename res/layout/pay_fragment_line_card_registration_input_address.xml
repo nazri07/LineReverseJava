@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/confirm" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_line_card_application_confirm" android:layout_alignParentBottom="true" style="@style/pay_common_full_button_green" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/confirm">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff848484" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/pay_line_card_registration_input_address_title" />
+            <LinearLayout android:orientation="vertical" android:id="@id/address_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_marginTop="4.5dip" android:layout_marginRight="7.5dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:layout_marginTop="17.5dip" android:layout_marginRight="17.5dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_icon_info5" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/pay_line_card_delivery_notice" android:includeFontPadding="false" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/agreement_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:layout_marginTop="25.0dip" android:layout_marginRight="17.5dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:id="@id/signup_notice_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="17.5dip" android:layout_marginBottom="20.0dip" android:includeFontPadding="false" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/view_common" android:tag="layout/square_activity_common_multi_selectable_list_0" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <jp.naver.line.android.customview.SearchBoxView android:id="@id/searchBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintText="@string/friend_search_hint" app:notApplyTheme="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/common_multi_selectable_list_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/common_multi_selectable_list_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:id="@id/settings_app_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/zeropage_subtitle_01_text_color" android:gravity="center" android:id="@id/common_multi_selectable_list_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/localcontacts_search_no_result" android:includeFontPadding="false" />
+            <jp.naver.line.android.customview.RetryErrorView android:id="@id/common_multi_selectable_list_retry_layout" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:layout_gravity="bottom" android:id="@id/selectchat_send_thumbnaillist_divider" android:background="@drawable/bottom_gra" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/selectchat_send_thumbnaillist_layout" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linecorp.line.timeline.view.HorizontalThumbnailListView android:id="@id/common_multi_selectable_list_thumbnail_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/selector_bottom_button_text_color" android:gravity="center" android:id="@id/common_multi_selectable_list_first_bottom_button" android:tag="binding_2" android:background="@drawable/selector_button_04" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/common_bottom_btn_height" android:text="@string/delete" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/selector_bottom_button_text_color" android:gravity="center" android:id="@id/common_multi_selectable_list_second_bottom_button" android:tag="binding_3" android:background="@drawable/selector_button_01" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/common_bottom_btn_height" android:text="@string/square_group_settings_managemembers_request_accept" android:includeFontPadding="false" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/common_multi_selectable_list_header_tooltip" android:tag="binding_4" android:background="@drawable/group_img_tooltip_bg" android:paddingLeft="14.0dip" android:paddingTop="17.0dip" android:paddingRight="14.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="188.0dip" android:layout_height="wrap_content" android:layout_marginTop="37.0dip" android:layout_marginRight="10.0dip" android:text="@string/square_group_settings_managemembers_request_noti_tooltip" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

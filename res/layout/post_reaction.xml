@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/post_reaction_top_divider" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/post_reaction_area" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/post_reaction_top_divider">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/post_reaction_close_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@drawable/timeline_ic_like_cancel" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:gravity="bottom" android:id="@id/post_reaction_icon_area" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/post_reaction_like_icon" android:background="@drawable/selector_timeline_like_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_like" />
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/post_reaction_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_reply" android:contentDescription="@string/access_timeline_comments" />
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/post_reaction_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_share" android:contentDescription="@string/access_timeline_share" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/top_likes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/post_like_text" android:layout_alignTop="@id/post_reaction_icon_area" android:layout_alignBottom="@id/post_reaction_icon_area">
+                <View android:id="@id/like2" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true" />
+                <View android:id="@id/like1" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+                <View android:id="@id/like0" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:gravity="center_vertical" android:id="@id/post_like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_alignTop="@id/post_reaction_icon_area" android:layout_alignBottom="@id/post_reaction_icon_area" android:layout_alignParentRight="true" style="@style/text_timeline_reaction_like_count" />
+        </RelativeLayout>
+        <View android:id="@id/post_reaction_bottom_padding" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_below="@id/post_reaction_area" />
+    </RelativeLayout>
+</merge>

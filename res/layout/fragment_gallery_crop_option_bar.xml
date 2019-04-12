@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rotate" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/rotate_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_rotate_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_edit_rotate" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_free" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_free_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_free_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_custom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_original" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_original_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_original_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_original" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_11" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_11_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_11_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_11" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_43" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_43_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_43_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_43" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_34" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_34_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_34_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_34" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_169" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_169_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_169_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_169" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/crop_916" android:layout_width="0.0dip" android:layout_height="85.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/crop_916_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_ic_crop_916_btn" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/media_crop_icon_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_crop_916" />
+    </LinearLayout>
+</LinearLayout>

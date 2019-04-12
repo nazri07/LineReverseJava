@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/video_ad_content_loading_view" android:background="#fffafbfb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.linecorp.multimedia.ui.LineVideoView android:id="@id/video_ad_content_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/video_ad_content_thumbnail_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/video_ad_content_video_loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/video_ad_content_fail_view" android:background="#fff5f6f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_ic_error" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/video_ad_overlayview_layout" />
+</RelativeLayout>

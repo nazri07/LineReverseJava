@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/message_source_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/message_source_icon" android:layout_width="@dimen/chathistory_message_source_icon_width" android:layout_height="@dimen/chathistory_message_source_icon_height" android:layout_marginRight="3.0dip" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginEnd="3.0dip" />
+    <TextView android:ellipsize="end" android:id="@id/message_source_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" style="@style/chathistory_agent_source_send_source_text" />
+    <ImageView android:id="@id/message_source_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/img_gruopboard_seeall" android:contentDescription="@null" android:layout_marginStart="3.0dip" />
+</LinearLayout>

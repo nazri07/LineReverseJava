@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="66" android:drawable="@drawable/ticket_c_01" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_02" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_03" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_04" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_05" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_06" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_07" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_08" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_09" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_10" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_11" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_12" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_13" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_14" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_15" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_16" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_17" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_18" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_19" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_20" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_21" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_22" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_23" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_34" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_35" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_36" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_37" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_38" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_39" />
+    <item android:duration="66" android:drawable="@drawable/ticket_c_40" />
+</animation-list>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff2f2f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/photo_info_container" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="22.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <RelativeLayout android:id="@id/sender_user_row" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/photo_info_item_row">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_image_sender" style="@style/photo_info_item_title_font" />
+            <TextView android:id="@id/send_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="170.0dip" style="@style/photo_info_item_data_font" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/send_date_row" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/photo_info_item_row">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_image_date_sent" style="@style/photo_info_item_title_font" />
+            <TextView android:id="@id/send_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/photo_info_item_data_font" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/photo_info_format_item_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/photo_info_item_row">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Format" style="@style/photo_info_item_title_font" />
+            <TextView android:id="@id/photo_info_format_item_data" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/photo_info_item_data_font" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/photo_info_image_size_row" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/photo_info_item_row">
+            <TextView android:id="@id/image_size_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/photo_info_item_title_font" />
+            <TextView android:id="@id/image_size" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/photo_info_item_data_font" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/photo_info_item_resolution_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/photo_info_item_row">
+            <TextView android:id="@id/resolution_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/photo_info_item_title_font" />
+            <TextView android:id="@id/image_resolution" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/photo_info_item_data_font" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@drawable/gnb_gra" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/photo_info_container" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_play_01" android:contentDescription="@string/media_play_type" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/icon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/media_play_type_01" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/faceplay_summary_dual_ranking_progress" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <include layout="@layout/faceplay_loading_circle_progress" />
+    </FrameLayout>
+    <TextView android:id="@id/faceplay_summary_dual_ranking_empty" android:visibility="gone" android:text="@string/faceplay_single_rank_norecord" style="@style/faceplay_summary_empty_text" />
+    <LinearLayout android:orientation="vertical" android:id="@id/faceplay_summary_dual_ranking_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.5dip">
+        <com.linecorp.voip.faceplay.mode.ranking.summary.view.SummaryDualRankingItemView android:id="@id/faceplay_summary_dual_ranking_my_view" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="8.5dip" />
+        <View android:background="@drawable/faceplay_ranking_separator" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/faceplay_summary_dual_ranking_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.5dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+</FrameLayout>

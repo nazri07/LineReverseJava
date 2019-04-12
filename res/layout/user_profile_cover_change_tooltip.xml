@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/user_profile_cover_change_circle" android:layout_width="850.0dip" android:layout_height="850.0dip" android:layout_marginTop="-298.0dip" android:src="@drawable/user_profile_cover_change_tooltip_circle" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/user_profile_cover_change_description_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/user_profile_cover_change_text_top_margin" android:minWidth="200.0dip" android:minHeight="33.0dip">
+        <ImageView android:id="@id/user_profile_cover_change_text_bg" android:background="@drawable/user_profile_cover_change_tooltip_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/user_profile_cover_change_text_close_container" android:layout_alignTop="@id/user_profile_cover_change_text_close_container" android:layout_alignRight="@id/user_profile_cover_change_text_close_container" android:layout_alignBottom="@id/user_profile_cover_change_text_close_container" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/user_profile_cover_change_text_close_container" android:paddingLeft="20.0dip" android:paddingTop="9.5dip" android:paddingRight="13.0dip" android:paddingBottom="9.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ff313439" android:id="@id/user_profile_cover_change_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/home_profilecoverphoto_desc_longtap" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <ImageView android:id="@id/user_profile_cover_change_close" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="24.5dip" android:layout_height="fill_parent" android:src="@drawable/profile_img_tooltip_close" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

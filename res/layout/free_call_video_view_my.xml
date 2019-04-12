@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.customview.FitAndCenterCropImageView android:id="@id/videocall_profile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.andromeda.video.view.ATextureView android:layout_gravity="center|left|top" android:id="@id/videocall_view_on" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.voip.core.effect.view.SponsoredEffectLogoView android:layout_gravity="bottom|center|left" android:id="@id/videocall_sponsor_logo_view" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <View android:id="@id/videocall_view_off_connecting_bg" android:background="#25000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/videocall_view_off" android:background="@color/video_call_toast_remote_camera_off_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/videocall_my_view_off_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videocall_ic_my_video" android:layout_centerInParent="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/video_call_toast_text_color" android:gravity="center" android:id="@id/videocall_view_off_message" android:paddingLeft="60.0dip" android:paddingRight="60.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/call_cameraoff_me" android:includeFontPadding="false" android:layout_below="@id/videocall_my_view_off_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

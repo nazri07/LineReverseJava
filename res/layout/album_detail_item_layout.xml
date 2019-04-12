@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo_image" android:background="#fff3f4f6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/checked_bg" android:background="@drawable/selector_album_photo_checked_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <CheckedTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/checked_number_text" android:background="@drawable/media_picker_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

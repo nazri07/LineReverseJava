@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/e_ticket_header" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/e_ticket_header_top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/header_title_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/e_ticket_header_title" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/header_information_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_information_title" android:lineSpacingExtra="7.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/e_ticket_header_right_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/close_button" android:layout_width="58.0dip" android:layout_height="60.0dip" android:src="@drawable/e_ticket_top_01_button_04" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="#14000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/e_ticket_header" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keep_fragment_list_item_foreground" />
+    <RelativeLayout android:paddingTop="@dimen/keep_more_tag_item_top_margin" android:paddingBottom="@dimen/keep_more_tag_item_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin">
+        <TextView android:id="@id/keep_more_tag_list_item_title_prefix_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="\#" android:layout_alignParentLeft="true" android:inputType="text" style="@style/text_list_title01" />
+        <TextView android:gravity="top" android:id="@id/keep_more_tag_list_item_title_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keep_more_tag_item_textview_left_margin" android:layout_toRightOf="@id/keep_more_tag_list_item_title_prefix_textview" android:inputType="textMultiLine" android:layout_marginStart="@dimen/keep_more_tag_item_textview_left_margin" style="@style/text_list_title01" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

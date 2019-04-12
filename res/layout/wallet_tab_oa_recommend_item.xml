@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/oa_item_layout" android:background="@drawable/selector_wallet_item_view_bg" android:paddingLeft="14.0dip" android:paddingTop="8.0dip" android:paddingRight="35.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/oa_recommend_image" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+        <ImageView android:id="@id/oa_recommend_default" android:visibility="gone" android:layout_width="71.0dip" android:layout_height="71.0dip" android:src="@drawable/more_img_thumb_zero_02" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff31384a" android:ellipsize="end" android:id="@id/incentive_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff5670b0" android:id="@id/incentive_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/play_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.5dip" android:src="@drawable/more_img_dot" />
+            <TextView android:textSize="12.0sp" android:textColor="#802b3751" android:ellipsize="end" android:id="@id/oa_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

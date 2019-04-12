@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_video_progressbar_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.linekeep.widget.AnimatingProgressBar android:id="@id/keep_video_progressbar" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_item_progress_height" android:indeterminateOnly="false" android:progressDrawable="@drawable/keep_listview_upload_progress" android:layout_toLeftOf="@id/keep_item_delete_button" android:layout_centerVertical="true" android:layout_toStartOf="@id/keep_item_delete_button" style="?android:progressBarStyleHorizontal" />
+    <Button android:id="@id/keep_item_delete_button" android:background="@drawable/ke_list_icon_x" android:layout_width="@dimen/keep_list_item_delete_button_width" android:layout_height="@dimen/keep_list_item_delete_button_height" android:layout_marginLeft="@dimen/keep_list_item_delete_button_left_margin" android:layout_alignParentRight="true" android:layout_marginStart="@dimen/keep_list_item_delete_button_left_margin" android:layout_alignParentEnd="true" />
+</RelativeLayout>

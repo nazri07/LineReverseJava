@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_effect_selector_03" android:contentDescription="@string/access_call_effects" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/effect_new_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/call_ic_new" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip">
+        <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/square_thumb_setting_max_width_height" android:layout_height="@dimen/square_thumb_setting_max_width_height">
+            <jp.naver.toybox.drawablefactory.DImageView android:id="@id/square_chat_setting_thumbnail" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="bottom|center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/selector_profile_ic_photo02" />
+        </FrameLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/square_chat_setting_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/selector_timeline_ic_arrow" />
+    </LinearLayout>
+    <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="app_specific_language_codes" />
+    <style name="app_specific_language_ga_codes" />
+    <style name="autosize_text_sizes" />
+    <style name="media_picker_edit_colors" />
+    <style name="profile_edit_icon_menu" />
+    <style name="profile_edit_icon_menu_no_image" />
+    <style name="question" />
+    <style name="report_reasons" />
+    <style name="square_chat_max_member_counts" />
+    <style name="tutorial_double_tab" />
+    <style name="tutorial_drag_drop" />
+</resources>

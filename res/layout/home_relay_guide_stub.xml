@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/relay_guide_layout" android:background="@drawable/timeline_img_event_intro_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/relay_intro_content" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="274.0dip" android:layout_height="199.0dip" android:layout_marginBottom="28.0dip" android:src="@drawable/timeline_img_event_intro" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="@string/timeline_relay_new" android:lineSpacingExtra="5.0sp" style="@style/commonFont" />
+            <TextView android:textSize="15.0sp" android:textColor="#99ffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="85.0dip" android:text="@string/timeline_relay_new_desc" android:lineSpacingExtra="5.0sp" style="@style/commonFont" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/selector_timeline_relay_guide_button" android:gravity="center" android:id="@id/relay_open_guide" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginRight="27.0dip" android:layout_marginBottom="27.0dip" android:minHeight="53.0dip" android:text="@string/timeline_relay_new_btn" android:maxLines="2" style="@style/commonFont" />
+</LinearLayout>

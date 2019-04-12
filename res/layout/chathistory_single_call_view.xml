@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/chathistory_singlecall_layer_start_call_button" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_groupcall_ready_lower_height" android:weightSum="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chathistory_singlecall_layer_voice_button" android:background="@drawable/selector_chathistory_start_call_button_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center_horizontal" android:id="@id/chathistory_singlecall_layer_voice_button_image" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/chatroom_option_ic_call" />
+            <TextView android:textColor="@color/selector_chathistory_groupcall_start_button" android:layout_gravity="center" android:id="@id/chathistory_singlecall_layer_voice_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/voip_voice_call" style="@style/chathistory_groupcall_layer_button" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chathistory_singlecall_layer_video_button" android:background="@drawable/selector_chathistory_start_call_button_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center_horizontal" android:id="@id/chathistory_singlecall_layer_video_button_image" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/chatroom_option_ic_video" />
+            <TextView android:textColor="@color/selector_chathistory_groupcall_start_button" android:layout_gravity="center" android:id="@id/chathistory_singlecall_layer_video_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/voip_video_call" style="@style/chathistory_groupcall_layer_button" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/chathistory_singlecall_bottom_divider_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+</LinearLayout>

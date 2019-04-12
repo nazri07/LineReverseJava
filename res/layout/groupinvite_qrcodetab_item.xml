@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/groupinvite_tabitem_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/group_invite_tabitem" style="@style/groupinvite_tabitem_layout">
+        <ImageView android:id="@id/group_invite_tabitem_icon" style="@style/groupinvite_tabitem_image" />
+        <TextView android:id="@id/group_invite_tabitem_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/v2_add_friend_top_button_text" />
+    </LinearLayout>
+</LinearLayout>

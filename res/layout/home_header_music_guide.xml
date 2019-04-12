@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/timeline_img_tooltip_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/purchase_linemusic_ticket" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_centerHorizontal="true">
+        <Space android:layout_width="1.0dip" android:layout_height="18.0dip" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/home_header_music_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeline_home_bgm_popup1_desc" android:lineSpacingExtra="3.0sp" style="@style/text_timeline_profile_music_popup_desc" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+            <TextView android:id="@id/home_header_music_link_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeline_home_bgm_popup1_link" style="@style/text_timeline_profile_music_popup_link" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/timeline_img_tooltip_arrow" />
+        </LinearLayout>
+        <Space android:layout_width="1.0dip" android:layout_height="16.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/timeline_img_tooltip_close" android:layout_alignParentRight="true" android:contentDescription="@string/access_music_closepopup" />
+</RelativeLayout>

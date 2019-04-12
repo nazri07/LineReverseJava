@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="53.0dip" android:minHeight="53.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginRight="14.0dip" android:minHeight="53.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/members_profile" android:paddingLeft="14.0dip" android:paddingTop="5.5dip" android:paddingRight="10.0dip" android:paddingBottom="5.5dip" android:clickable="true" android:layout_width="66.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/members_name" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/members_invite" android:background="@drawable/btn_members_selector" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:minWidth="60.0dip" android:text="@string/groupcall_video_members_invite" style="@style/voip_invite_button_enable" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingTop="15.0dip" android:paddingRight="16.0dip" android:paddingBottom="26.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/coin_purchase_notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_shop_notice_title" style="@style/text_setting_charge_info" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/coin_info_head_dot" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_shop_notice_4" android:includeFontPadding="false" android:lineSpacingExtra="2.0dip" style="@style/text_setting_coin_info01" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/coin_info_head_dot" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_shop_notice_3" android:includeFontPadding="false" android:lineSpacingExtra="2.0dip" style="@style/text_setting_coin_info01" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff579ad2" android:textColorLink="#ff579ad2" android:id="@id/coin_purchase_settlement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/coin_shop_jp_notice_1" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff579ad2" android:textColorLink="#ff579ad2" android:id="@id/coin_purchase_ebiz_rules" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.669983dip" android:text="@string/coin_shop_jp_notice_2" />
+</LinearLayout>

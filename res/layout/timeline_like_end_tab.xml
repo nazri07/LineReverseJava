@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/icon" android:layout_width="23.0dip" android:layout_height="26.0dip" android:layout_marginRight="4.0dip" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/selector_timeline_like_end_tab_text" android:id="@id/like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/commonFont" />
+</LinearLayout>

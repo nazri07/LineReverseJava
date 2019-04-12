@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contactinfo_action_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/contactinfo_action_item_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/text_call_info_tab" />
+    <ImageView android:id="@id/contactinfo_action_item_lineout_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+</LinearLayout>

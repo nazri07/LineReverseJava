@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_layout" android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/unknown_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/unknown_text" android:text="@string/call_setting_cli_unknown_number" style="@style/setting_list_item_button_layout" />
+                <View style="@style/setting_division_line" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/settings_my_phone_number_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/settings_my_phone_number" style="@style/setting_list_item_button_layout" />
+                <View style="@style/setting_division_line" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/monthly_plan_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/line_out_free_setting_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/setting_division_margin" />
+                <TextView android:id="@id/line_out_free_layout" android:text="@string/call_settings_lineoutfree" style="@style/setting_list_item_button_layout" />
+                <View style="@style/setting_division_line" />
+            </LinearLayout>
+            <View style="@style/setting_division_margin" />
+            <TextView android:id="@id/credit_charge_layout" android:text="@string/call_settings_credit_charge" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <TextView android:id="@id/redeem_layout" android:text="@string/call_setting_redeem_credit" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <TextView android:id="@id/purchase_history_layout" android:text="@string/call_settings_purchase_history" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <TextView android:id="@id/usage_history_layout" android:text="@string/call_settings_usage_history" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <TextView android:id="@id/price_table_layout" android:text="@string/call_settings_price_table" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <View style="@style/setting_division_margin" />
+            <LinearLayout android:orientation="vertical" android:id="@id/currency_setting_layout" android:background="@drawable/btn_setting_menu_selector" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/call_settings_display_currency_setting" style="@style/setting_list_item_title_font" />
+                <TextView android:id="@id/currency_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@plurals/call_settings_display_currency_credit_plural" style="@style/setting_list_item_info_font" />
+            </LinearLayout>
+            <View style="@style/setting_division_line" />
+            <View style="@style/setting_division_margin" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/call_directly_profile_layout" android:background="@drawable/btn_setting_menu_selector" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/call_settings_call_directly_profile" style="@style/setting_list_item_title_font" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_settings_call_directly_profile_info" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+                </LinearLayout>
+                <ImageView android:id="@id/call_directly_profile_image" android:background="@drawable/check_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" />
+            </LinearLayout>
+            <View style="@style/setting_division_line" />
+            <View style="@style/setting_division_margin" />
+            <TextView android:id="@id/line_call_shortcut_layout" android:text="@string/call_make_shortcut_button" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <View style="@style/setting_division_margin" />
+            <TextView android:id="@id/help_layout" android:text="@string/call_setting_help" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <TextView android:id="@id/terms_layout" android:text="@string/call_settings_terms" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+            <TextView android:id="@id/about_line_call_layout" android:text="@string/call_settings_about_line_call" style="@style/setting_list_item_button_layout" />
+            <View style="@style/setting_division_line" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

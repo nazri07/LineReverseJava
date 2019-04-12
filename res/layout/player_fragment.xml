@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.linelive.player.component.widget.FitsSystemWindowsFrameLayout android:id="@id/root" android:tag="layout/player_fragment_0" android:background="@color/mini_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/player_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linecorp.videoplayer.widget.VideoTextureView android:id="@id/player_view" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/player_image" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/suspended_error_message" android:tag="binding_2" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/com_zero_center">
+                <ImageView android:src="@drawable/img_live_zero_notice" style="@style/zero_img" />
+                <com.linecorp.linelive.player.component.widget.TextViewCompat android:textAppearance="@style/text_zero_subtext" android:textColor="@color/white60" android:text="@string/player_error_temporary" style="@style/zero_subtext" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/player_gradation_group" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/live_player_backdrop_portrait" />
+        <FrameLayout android:id="@id/ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+    </FrameLayout>
+    <CheckBox android:layout_gravity="bottom|center|right" android:id="@id/btn_ad_sound" android:tag="binding_3" android:background="@drawable/live_btn_sound_player" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="112.0dip" android:button="@null" />
+    <include android:id="@id/player_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="9.0dip" android:layout_alignParentTop="true" layout="@layout/player_header" />
+    <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/chat_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="bottom|center" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/player_bottom_container" />
+    <RelativeLayout android:id="@id/broadcast_finish_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="bottom" android:id="@id/player_controller_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/player_bottom_container_height" layout="@layout/player_controller" />
+    <FrameLayout android:id="@id/trivia_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/click_blocking_view" android:tag="binding_4" android:background="@android:color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/gift_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.linelive.player.component.chat.CommentInputView android:layout_gravity="bottom" android:id="@id/comment_input_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.linecorp.linelive.player.component.widget.FitsSystemWindowsFrameLayout>

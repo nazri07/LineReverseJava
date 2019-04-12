@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.line.timeline.common.view.ViewEventRelativeLayout android:id="@id/view_event_notification_layout" android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/neta_summary_card_and_post" />
+</com.linecorp.line.timeline.common.view.ViewEventRelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/home_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.line.timeline.view.LoadMoreRecyclerView android:id="@id/user_profile_media_post_listview" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:loadmore_layout="@layout/user_profile_post_read_more" />
+    <ViewStub android:id="@id/user_profile_medialist_empty" android:layout="@layout/user_profile_post_empty_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignWithParentIfMissing="true" />
+    <ViewStub android:id="@id/error" android:layout="@layout/user_profile_retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/media_info_view_stub" android:layout="@layout/user_profile_extra_info_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

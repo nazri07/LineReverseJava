@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_detail_expired_layout" android:background="@color/com_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_detail_expired_left_margin" android:layout_marginRight="@dimen/keep_detail_expired_right_margin" android:layout_centerInParent="true" android:layout_marginStart="@dimen/keep_detail_expired_left_margin" android:layout_marginEnd="@dimen/keep_detail_expired_right_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/keep_detail_expired_imageview" android:background="@drawable/ke_end_icon_info" android:layout_width="@dimen/keep_detail_expired_icon_width" android:layout_height="@dimen/keep_detail_expired_icon_width" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_detail_expired_textview_top_margin" android:text="@string/keep_detailview_expiredfile_message" android:layout_below="@id/keep_detail_expired_imageview" android:layout_centerHorizontal="true" style="@style/text_end_info05" />
+</RelativeLayout>

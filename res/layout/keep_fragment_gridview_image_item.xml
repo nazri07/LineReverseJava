@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_grid_item_layout" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/keep_grid_item_imageview" android:background="@color/com_whitesilver" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ke_thumb_icon_none02" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="bottom|center|left" android:id="@id/keep_fragment_grid_gif_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keep_grid_item_gif_layout_left_margin" android:layout_marginBottom="@dimen/keep_grid_item_gif_layout_bottom_margin" android:layout_marginStart="@dimen/keep_grid_item_gif_layout_left_margin">
+        <include layout="@layout/keep_fragment_grid_gif_layout" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_grid_video_play_layout" />
+    <include layout="@layout/keep_fragment_grid_item_text_icon_background_layout" />
+    <include layout="@layout/keep_fragment_grid_item_foreground" />
+    <include layout="@layout/keep_fragment_gridview_sync_imageview" />
+    <include layout="@layout/keep_fragment_gridview_dimmed_layout" />
+    <include layout="@layout/keep_fragment_gridview_button_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" layout="@layout/keep_fragment_gridview_progress" />
+    <include layout="@layout/keep_fragment_grid_item_expiry_text_layout" />
+</RelativeLayout>

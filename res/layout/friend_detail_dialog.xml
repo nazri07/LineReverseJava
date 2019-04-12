@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/frienddetaildialog_button_biz" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/profile_popup_biz_btn_height" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/frienddetaildialog_button_biz_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_popup_ic_arrow02" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/frienddetaildialog_button_biz_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/frienddetaildialog" android:background="@drawable/popup_system_bg" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/profile_dialog_width_portrait" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription=" ">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/frienddetaildialog_main_area" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/frienddetaildialog_cover" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="190.0dip">
+                <jp.naver.toybox.drawablefactory.DImageView android:id="@id/frienddetaildialog_cover_img" android:background="#ffbacdd8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/access_profile_image" />
+                <ImageView android:background="@drawable/profile_popup_gra_top" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_alignParentTop="true" />
+                <ImageView android:background="@drawable/profile_popup_gra_bottom" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_alignParentBottom="true" />
+                <FrameLayout android:id="@id/frienddetaildialog_photo3" android:visibility="invisible" android:layout_width="@dimen/profile_dialog_home_photo_size" android:layout_height="@dimen/profile_dialog_home_photo_size" android:layout_marginTop="12.5dip" android:layout_marginRight="12.5dip" android:foreground="@drawable/profile_popup_img_frame" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true">
+                    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/frienddetaildialog_photo_img" android:layout_width="@dimen/profile_dialog_home_photo_size" android:layout_height="@dimen/profile_dialog_home_photo_size" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/frienddetaildialog_photo2" android:visibility="invisible" android:layout_width="@dimen/profile_dialog_home_photo_size" android:layout_height="@dimen/profile_dialog_home_photo_size" android:layout_marginTop="12.5dip" android:layout_marginRight="5.0dip" android:foreground="@drawable/profile_popup_img_frame" android:layout_toLeftOf="@id/frienddetaildialog_photo3" android:layout_alignWithParentIfMissing="true">
+                    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/frienddetaildialog_photo_img" android:layout_width="@dimen/profile_dialog_home_photo_size" android:layout_height="@dimen/profile_dialog_home_photo_size" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/frienddetaildialog_photo1" android:visibility="invisible" android:layout_width="@dimen/profile_dialog_home_photo_size" android:layout_height="@dimen/profile_dialog_home_photo_size" android:layout_marginTop="12.5dip" android:layout_marginRight="5.0dip" android:foreground="@drawable/profile_popup_img_frame" android:layout_toLeftOf="@id/frienddetaildialog_photo2" android:layout_alignWithParentIfMissing="true">
+                    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/frienddetaildialog_photo_img" android:layout_width="@dimen/profile_dialog_home_photo_size" android:layout_height="@dimen/profile_dialog_home_photo_size" />
+                </FrameLayout>
+            </RelativeLayout>
+            <jp.naver.line.android.activity.profiledialog.ProfileMusicView android:id="@id/frienddetaildialog_music" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_marginTop="12.5dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <jp.naver.line.android.activity.profiledialog.ProfileDialogUserView android:id="@id/user_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="142.5dip" />
+            <jp.naver.line.android.activity.profiledialog.ProfileDialogGroupView android:id="@id/group_profile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="195.0dip" android:layout_below="@id/frienddetaildialog_cover" />
+        </RelativeLayout>
+        <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_centerHorizontal="true" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/frienddetaildialog_button_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_weight="0.0" />
+    </LinearLayout>
+</RelativeLayout>

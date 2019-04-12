@@ -1,0 +1,952 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: LINE_FreeCallsamp;Messages_9.4.5_apk-dl.com.apk
+compressionType: false
+doNotCompress:
+- arsc
+- assets/M_SenseME_Face_Video_5.3.0_v1.model
+- assets/M_SenseME_Segment_1.5.0.model
+- assets/Y_Vision_1.0.0.tflite
+- png
+- assets/drawable/weibosdk_dialog_bg.9.png
+- assets/looks/face_mask
+- assets/looks/lip_mask
+- assets/looks/lip_mask_gradation
+- dat
+- res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/agree_btn_default.9.png
+- res/drawable-hdpi-v4/agree_btn_press.9.png
+- res/drawable-hdpi-v4/al_bg_popup_01.9.png
+- res/drawable-hdpi-v4/al_bg_popup_02.9.png
+- res/drawable-hdpi-v4/bg_bottom.9.png
+- res/drawable-hdpi-v4/bg_description.9.png
+- res/drawable-hdpi-v4/bg_event1.9.png
+- res/drawable-hdpi-v4/bg_event2.9.png
+- res/drawable-hdpi-v4/bg_passlock.9.png
+- res/drawable-hdpi-v4/bg_stickerbox.9.png
+- res/drawable-hdpi-v4/bg_subtitle.9.png
+- res/drawable-hdpi-v4/bg_tab_off01.9.png
+- res/drawable-hdpi-v4/bg_tab_off02.9.png
+- res/drawable-hdpi-v4/bg_tab_off03.9.png
+- res/drawable-hdpi-v4/bg_tab_on01.9.png
+- res/drawable-hdpi-v4/bg_tab_on02.9.png
+- res/drawable-hdpi-v4/bg_tab_on03.9.png
+- res/drawable-hdpi-v4/bottom_bg.9.png
+- res/drawable-hdpi-v4/bt_tooltip_01.9.png
+- res/drawable-hdpi-v4/bt_tooltip_01_pressed.9.png
+- res/drawable-hdpi-v4/btn_04.9.png
+- res/drawable-hdpi-v4/btn_04_disabled.9.png
+- res/drawable-hdpi-v4/btn_04_press.9.png
+- res/drawable-hdpi-v4/btn_05.9.png
+- res/drawable-hdpi-v4/btn_05_disabled.9.png
+- res/drawable-hdpi-v4/btn_05_press.9.png
+- res/drawable-hdpi-v4/btn_bg.9.png
+- res/drawable-hdpi-v4/btn_gray.9.png
+- res/drawable-hdpi-v4/btn_gray_over.9.png
+- res/drawable-hdpi-v4/btn_theme_01.9.png
+- res/drawable-hdpi-v4/btn_theme_02.9.png
+- res/drawable-hdpi-v4/btn_theme_02_pressed.9.png
+- res/drawable-hdpi-v4/btn_theme_03.9.png
+- res/drawable-hdpi-v4/btn_theme_03_pressed.9.png
+- res/drawable-hdpi-v4/cafe_error_btn_01_normal.9.png
+- res/drawable-hdpi-v4/cafe_error_btn_01_pressed.9.png
+- res/drawable-hdpi-v4/cafe_speech_bubble_image_border.9.png
+- res/drawable-hdpi-v4/certify_bg_01.9.png
+- res/drawable-hdpi-v4/channel_fp_bg_sending_progress.9.png
+- res/drawable-hdpi-v4/channel_fp_p_bar_active.9.png
+- res/drawable-hdpi-v4/channel_fp_p_bar_bg.9.png
+- res/drawable-hdpi-v4/channel_fp_p_bar_dimmed_bg.9.png
+- res/drawable-hdpi-v4/channel_fp_thumb_skin.9.png
+- res/drawable-hdpi-v4/chat_attach_top_bg.9.png
+- res/drawable-hdpi-v4/chat_bgm_guide_tooltip.9.png
+- res/drawable-hdpi-v4/chat_bgm_tooltip.9.png
+- res/drawable-hdpi-v4/chat_iconpopup_kaomoji_01.9.png
+- res/drawable-hdpi-v4/chat_iconpopup_kaomoji_02.9.png
+- res/drawable-hdpi-v4/chat_mappopup_bg.9.png
+- res/drawable-hdpi-v4/chat_sticker_select.9.png
+- res/drawable-hdpi-v4/coin_topbg_01.9.png
+- res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png
+- res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- jpg
+- res/drawable-hdpi-v4/divice_line.9.png
+- res/drawable-hdpi-v4/divide_bg.9.png
+- res/drawable-hdpi-v4/error_bt.9.png
+- res/drawable-hdpi-v4/error_bt_press.9.png
+- res/drawable-hdpi-v4/event_charator_bloon01.9.png
+- res/drawable-hdpi-v4/friend_img_effect.9.png
+- res/drawable-hdpi-v4/gallery_img_tooltip02.9.png
+- res/drawable-hdpi-v4/gbubble.9.png
+- res/drawable-hdpi-v4/gift_ballon_bg.9.png
+- res/drawable-hdpi-v4/gift_bt.9.png
+- res/drawable-hdpi-v4/gift_bt_press.9.png
+- res/drawable-hdpi-v4/gr_top_bt.9.png
+- res/drawable-hdpi-v4/gr_top_bt_press.9.png
+- res/drawable-hdpi-v4/gr_write_popup_box.9.png
+- res/drawable-hdpi-v4/ic_searchbar_bt.9.png
+- res/drawable-hdpi-v4/ic_searchbar_bt_press.9.png
+- res/drawable-hdpi-v4/ic_theme_loading.9.png
+- res/drawable-hdpi-v4/img_album_tooltip_02_1.9.png
+- res/drawable-hdpi-v4/img_chats_bg_01.9.png
+- res/drawable-hdpi-v4/img_chats_bg_01_pressed.9.png
+- res/drawable-hdpi-v4/img_chats_bg_02.9.png
+- res/drawable-hdpi-v4/img_chats_bg_02_pressed.9.png
+- res/drawable-hdpi-v4/img_chats_date.9.png
+- res/drawable-hdpi-v4/img_photo_expired.9.png
+- res/drawable-hdpi-v4/img_progress.9.png
+- res/drawable-hdpi-v4/img_progress_bg.9.png
+- res/drawable-hdpi-v4/img_searchbar.9.png
+- res/drawable-hdpi-v4/img_searchbar_bg.9.png
+- res/drawable-hdpi-v4/img_topbar_bg.9.png
+- res/drawable-hdpi-v4/info_br_bt.9.png
+- res/drawable-hdpi-v4/info_br_bt_press.9.png
+- res/drawable-hdpi-v4/invite_btn_normal.9.png
+- res/drawable-hdpi-v4/invite_btn_pressed.9.png
+- res/drawable-hdpi-v4/list_bt_02.9.png
+- res/drawable-hdpi-v4/list_bt_02_tap.9.png
+- res/drawable-hdpi-v4/map_search_shadow.9.png
+- res/drawable-hdpi-v4/more_game_tb.9.png
+- res/drawable-hdpi-v4/n_navigation_bt_01.9.png
+- res/drawable-hdpi-v4/n_navigation_bt_01tap.9.png
+- res/drawable-hdpi-v4/n_navigation_bt_02.9.png
+- res/drawable-hdpi-v4/n_navigation_bt_02tap.9.png
+- res/drawable-hdpi-v4/n_navigation_bt_04.9.png
+- res/drawable-hdpi-v4/n_navigation_bt_04tap.9.png
+- res/drawable-hdpi-v4/n_topbar_bg.9.png
+- res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-hdpi-v4/notification_bg_normal.9.png
+- res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-hdpi-v4/popup_btn01.9.png
+- res/drawable-hdpi-v4/popup_btn01_disabled.9.png
+- res/drawable-hdpi-v4/popup_btn01_pressed.9.png
+- res/drawable-hdpi-v4/popup_btn02.9.png
+- res/drawable-hdpi-v4/popup_btn02_pressed.9.png
+- res/drawable-hdpi-v4/popup_btn_bg.9.png
+- res/drawable-hdpi-v4/popup_text_bg.9.png
+- res/drawable-hdpi-v4/popup_title_bg.9.png
+- res/drawable-hdpi-v4/regi_btn_01.9.png
+- res/drawable-hdpi-v4/regi_btn_01_deactivation.9.png
+- res/drawable-hdpi-v4/regi_btn_03_tab.9.png
+- res/drawable-hdpi-v4/scroll.9.png
+- res/drawable-hdpi-v4/serialnum_inputbg.9.png
+- res/drawable-hdpi-v4/setting_list_alert_bg.9.png
+- res/drawable-hdpi-v4/snapmovie_progressbar_01.9.png
+- res/drawable-hdpi-v4/snapmovie_progressbar_02.9.png
+- res/drawable-hdpi-v4/stickershop_bg_mylist.9.png
+- res/drawable-hdpi-v4/stickershop_btn_mail.9.png
+- res/drawable-hdpi-v4/stickershop_btn_mail_over.9.png
+- res/drawable-hdpi-v4/stickershop_loadingbar.9.png
+- res/drawable-hdpi-v4/tabmenu3.9.png
+- res/drawable-hdpi-v4/tabmenu3_on.9.png
+- res/drawable-hdpi-v4/tabmenu4.9.png
+- res/drawable-hdpi-v4/tabmenu4_on.9.png
+- res/drawable-hdpi-v4/thumbnail_del_bg.9.png
+- res/drawable-hdpi-v4/thumbnail_effect.9.png
+- res/drawable-hdpi-v4/thumbnail_shape.9.png
+- res/drawable-hdpi-v4/tm_btn_go_more_normal.9.png
+- res/drawable-hdpi-v4/tm_btn_go_more_pressed.9.png
+- res/drawable-hdpi-v4/tm_navigation_bt_01dimmed.9.png
+- res/drawable-hdpi-v4/tm_profile_popup_h_bg_nobtn.9.png
+- res/drawable-hdpi-v4/v2_bg_popup_01.9.png
+- res/drawable-hdpi-v4/v2_bg_popup_bt_01.9.png
+- res/drawable-hdpi-v4/v2_bg_popup_top_01.9.png
+- res/drawable-hdpi-v4/v2_btn_big_01_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_big_01_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_big_02_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_big_02_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_big_03.9.png
+- res/drawable-hdpi-v4/v2_btn_big_05_dimmed.9.png
+- res/drawable-hdpi-v4/v2_btn_bottom_02_delete.9.png
+- res/drawable-hdpi-v4/v2_btn_bottom_02_delete_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_bottom_02_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_bottom_02_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_bottom_02_select.9.png
+- res/drawable-hdpi-v4/v2_btn_bottom_02_select_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_delete_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_delete_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_gray_01.9.png
+- res/drawable-hdpi-v4/v2_btn_gray_01_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_popup_01_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_popup_01_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_popup_02_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_popup_02_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_pushpopup_02_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_pushpopup_02_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_small_01_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_small_01_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_small_02_nomal.9.png
+- res/drawable-hdpi-v4/v2_btn_small_02_pressed.9.png
+- res/drawable-hdpi-v4/v2_btn_small_03.9.png
+- res/drawable-hdpi-v4/v2_img_bottom_bg_02.9.png
+- res/drawable-hdpi-v4/v2_img_chats_date.9.png
+- res/drawable-hdpi-v4/v2_img_id_searchbar.9.png
+- res/drawable-hdpi-v4/v2_img_number_bg_01.9.png
+- res/drawable-hdpi-v4/v2_img_number_bg_02.9.png
+- res/drawable-hdpi-v4/v2_img_topbar_bg.9.png
+- res/drawable-hdpi-v4/video_call_bottom_left_btn.9.png
+- res/drawable-hdpi-v4/video_call_bottom_left_btn_press.9.png
+- res/drawable-hdpi-v4/video_call_bottom_middle_btn.9.png
+- res/drawable-hdpi-v4/video_call_bottom_middle_btn_press.9.png
+- res/drawable-hdpi-v4/video_call_bottom_right_btn.9.png
+- res/drawable-hdpi-v4/video_call_bottom_right_btn_press.9.png
+- res/drawable-hdpi-v4/video_call_btn_answer.9.png
+- res/drawable-hdpi-v4/video_call_btn_answer_tab.9.png
+- res/drawable-hdpi-v4/video_call_btn_end.9.png
+- res/drawable-hdpi-v4/video_call_btn_end_tab.9.png
+- res/drawable-hdpi-v4/video_call_btn_lgnore.9.png
+- res/drawable-hdpi-v4/video_call_btn_lgnore_tab.9.png
+- res/drawable-hdpi-v4/video_call_btn_only.9.png
+- res/drawable-hdpi-v4/video_call_btn_only_tab.9.png
+- res/drawable-hdpi-v4/video_call_change_bg_default.9.png
+- res/drawable-hdpi-v4/video_call_change_bg_tap.9.png
+- res/drawable-hdpi-v4/video_rotate_popup_btn_normal.9.png
+- res/drawable-hdpi-v4/video_rotate_popup_btn_pressed.9.png
+- res/drawable-hdpi-v4/voice_call_bt_default.9.png
+- res/drawable-hdpi-v4/voice_call_bt_ok_default.9.png
+- res/drawable-hdpi-v4/voice_call_bt_ok_on.9.png
+- res/drawable-hdpi-v4/voice_call_bt_on.9.png
+- res/drawable-hdpi-v4/voice_call_bt_reject_default.9.png
+- res/drawable-hdpi-v4/voice_call_bt_reject_on.9.png
+- res/drawable-hdpi-v4/voice_call_end_bt_default.9.png
+- res/drawable-hdpi-v4/voice_call_end_bt_on.9.png
+- res/drawable-hdpi-v4/voice_call_hide_bt.9.png
+- res/drawable-hdpi-v4/voice_call_hide_bt_tap.9.png
+- res/drawable-hdpi-v4/welcome_bg.9.png
+- res/drawable-hdpi-v4/write_01_mine_btn_normal.9.png
+- res/drawable-hdpi-v4/write_01_mine_btn_pressed.9.png
+- res/drawable-hdpi-v4/write_link_bg.9.png
+- res/drawable-hdpi-v4/write_order_line.9.png
+- res/drawable-hdpi-v4/write_order_photo_line.9.png
+- res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png
+- res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-mdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-mdpi-v4/notification_bg_normal.9.png
+- res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/activity_img_btn_normal.9.png
+- res/drawable-xhdpi-v4/activity_img_btn_pressed.9.png
+- res/drawable-xhdpi-v4/ad_img_gra_bottom.9.png
+- res/drawable-xhdpi-v4/ad_img_gra_top.9.png
+- res/drawable-xhdpi-v4/ad_img_shadow.9.png
+- res/drawable-xhdpi-v4/album_img_num_bg.9.png
+- res/drawable-xhdpi-v4/bg_bottom.9.png
+- res/drawable-xhdpi-v4/bg_list_zero.9.png
+- res/drawable-xhdpi-v4/birth_popup_btn_bg.9.png
+- res/drawable-xhdpi-v4/bottom_gra.9.png
+- res/drawable-xhdpi-v4/brush_imb_bg_white.9.png
+- res/drawable-xhdpi-v4/brush_img_bg_color.9.png
+- res/drawable-xhdpi-v4/btn_01.9.png
+- res/drawable-xhdpi-v4/btn_02.9.png
+- res/drawable-xhdpi-v4/btn_02_dimmed.9.png
+- res/drawable-xhdpi-v4/btn_02_press.9.png
+- res/drawable-xhdpi-v4/btn_03.9.png
+- res/drawable-xhdpi-v4/btn_03_press.9.png
+- res/drawable-xhdpi-v4/btn_bottom_01.9.png
+- res/drawable-xhdpi-v4/btn_bottom_01_press.9.png
+- res/drawable-xhdpi-v4/btn_bottom_02.9.png
+- res/drawable-xhdpi-v4/btn_bottom_02_press.9.png
+- res/drawable-xhdpi-v4/btn_regi_01.9.png
+- res/drawable-xhdpi-v4/button_chatroom_zero_normal.9.png
+- res/drawable-xhdpi-v4/button_chatroom_zero_pressed.9.png
+- res/drawable-xhdpi-v4/button_d19_normal.9.png
+- res/drawable-xhdpi-v4/button_r00_normal.9.png
+- res/drawable-xhdpi-v4/button_r00_pressed.9.png
+- res/drawable-xhdpi-v4/button_r01_normal.9.png
+- res/drawable-xhdpi-v4/button_r01_pressed.9.png
+- res/drawable-xhdpi-v4/button_r02_normal.9.png
+- res/drawable-xhdpi-v4/button_r02_pressed.9.png
+- res/drawable-xhdpi-v4/button_r03_normal.9.png
+- res/drawable-xhdpi-v4/button_r03_pressed.9.png
+- res/drawable-xhdpi-v4/button_r04_normal.9.png
+- res/drawable-xhdpi-v4/button_r04_pressed.9.png
+- res/drawable-xhdpi-v4/button_r05_normal.9.png
+- res/drawable-xhdpi-v4/button_r05_pressed.9.png
+- res/drawable-xhdpi-v4/button_r06_normal.9.png
+- res/drawable-xhdpi-v4/button_r06_pressed.9.png
+- res/drawable-xhdpi-v4/button_r07_normal.9.png
+- res/drawable-xhdpi-v4/button_r07_pressed.9.png
+- res/drawable-xhdpi-v4/button_r08_normal.9.png
+- res/drawable-xhdpi-v4/button_r08_pressed.9.png
+- res/drawable-xhdpi-v4/button_r09_disable.9.png
+- res/drawable-xhdpi-v4/button_r10_disable.9.png
+- res/drawable-xhdpi-v4/button_r12_pressed.9.png
+- res/drawable-xhdpi-v4/button_r14_normal.9.png
+- res/drawable-xhdpi-v4/button_r14_pressed.9.png
+- res/drawable-xhdpi-v4/button_r16_normal.9.png
+- res/drawable-xhdpi-v4/button_r16_pressed.9.png
+- res/drawable-xhdpi-v4/button_r17_disable.9.png
+- res/drawable-xhdpi-v4/button_r17_normal.9.png
+- res/drawable-xhdpi-v4/button_r17_pressed.9.png
+- res/drawable-xhdpi-v4/button_r18_normal.9.png
+- res/drawable-xhdpi-v4/button_r18_pressed.9.png
+- res/drawable-xhdpi-v4/button_r19_normal.9.png
+- res/drawable-xhdpi-v4/button_r19_pressed.9.png
+- res/drawable-xhdpi-v4/button_r21_normal.9.png
+- res/drawable-xhdpi-v4/button_r21_pressed.9.png
+- res/drawable-xhdpi-v4/button_r22_normal.9.png
+- res/drawable-xhdpi-v4/button_r22_pressed.9.png
+- res/drawable-xhdpi-v4/button_r23_normal.9.png
+- res/drawable-xhdpi-v4/button_r23_pressed.9.png
+- res/drawable-xhdpi-v4/button_r24_normal.9.png
+- res/drawable-xhdpi-v4/button_r24_pressed.9.png
+- res/drawable-xhdpi-v4/button_r25_normal.9.png
+- res/drawable-xhdpi-v4/button_r25_pressed.9.png
+- res/drawable-xhdpi-v4/button_r26_disable.9.png
+- res/drawable-xhdpi-v4/button_r26_normal.9.png
+- res/drawable-xhdpi-v4/button_r26_pressed.9.png
+- res/drawable-xhdpi-v4/button_r28_disable.9.png
+- res/drawable-xhdpi-v4/button_r28_normal.9.png
+- res/drawable-xhdpi-v4/button_r28_pressed.9.png
+- res/drawable-xhdpi-v4/call_button_r11_normal.9.png
+- res/drawable-xhdpi-v4/call_button_r11_pressed.9.png
+- res/drawable-xhdpi-v4/call_header_gra.9.png
+- res/drawable-xhdpi-v4/call_image_toast_bg.9.png
+- res/drawable-xhdpi-v4/call_img_toast_bg.9.png
+- res/drawable-xhdpi-v4/call_img_tooltip.9.png
+- res/drawable-xhdpi-v4/call_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/call_img_tooltip_bg_02.9.png
+- res/drawable-xhdpi-v4/call_index_img_scrollbar_normal.9.png
+- res/drawable-xhdpi-v4/call_index_img_scrollbar_pressed.9.png
+- res/drawable-xhdpi-v4/call_setting_img_input.9.png
+- res/drawable-xhdpi-v4/camera_brush_color_02_bg.9.png
+- res/drawable-xhdpi-v4/camera_brush_white_02_bg.9.png
+- res/drawable-xhdpi-v4/camera_checkbox_num_bg_selected.9.png
+- res/drawable-xhdpi-v4/camera_effect_filter.9.png
+- res/drawable-xhdpi-v4/camera_effect_filter_tab.9.png
+- res/drawable-xhdpi-v4/camera_effect_img_frame.9.png
+- res/drawable-xhdpi-v4/camera_effect_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/camera_img_doodle_size.9.png
+- res/drawable-xhdpi-v4/camera_img_num_bg.9.png
+- res/drawable-xhdpi-v4/camera_img_trim_frame.9.png
+- res/drawable-xhdpi-v4/camera_img_zoom_bg.9.png
+- res/drawable-xhdpi-v4/camera_seek_img_bar02_disable.9.png
+- res/drawable-xhdpi-v4/camera_seek_img_bar_disable.9.png
+- res/drawable-xhdpi-v4/camera_seek_img_bg.9.png
+- res/drawable-xhdpi-v4/camera_seek_img_bg02.9.png
+- res/drawable-xhdpi-v4/camera_seek_img_bg02_disable.9.png
+- res/drawable-xhdpi-v4/camera_seek_img_bg_disable.9.png
+- res/drawable-xhdpi-v4/chatroom_call_img_shadow.9.png
+- res/drawable-xhdpi-v4/chatroom_call_layer_img_bg.9.png
+- res/drawable-xhdpi-v4/chatroom_checkbox_num_bg_selected.9.png
+- res/drawable-xhdpi-v4/chatroom_fail_img_border.9.png
+- res/drawable-xhdpi-v4/chatroom_gallery_img_gra.9.png
+- res/drawable-xhdpi-v4/chatroom_img_voicemessage_count_bg.9.png
+- res/drawable-xhdpi-v4/chatroom_img_voicemessage_info_bg.9.png
+- res/drawable-xhdpi-v4/chatroom_input_bg.9.png
+- res/drawable-xhdpi-v4/chatroom_input_bg_line.9.png
+- res/drawable-xhdpi-v4/chatroom_input_bg_solid.9.png
+- res/drawable-xhdpi-v4/chatroom_onair_img_shadow_bottom.9.png
+- res/drawable-xhdpi-v4/chatroom_onair_img_shadow_top.9.png
+- res/drawable-xhdpi-v4/chatroom_thumbnail_img_border.9.png
+- res/drawable-xhdpi-v4/chatroom_voice_img01.9.png
+- res/drawable-xhdpi-v4/chatroom_voice_img01_shadow.9.png
+- res/drawable-xhdpi-v4/check_number.9.png
+- res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png
+- res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png
+- res/drawable-xhdpi-v4/com_img_input.9.png
+- res/drawable-xhdpi-v4/com_tooltip_img_bg.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-xhdpi-v4/divide_bg.9.png
+- res/drawable-xhdpi-v4/divide_title_shadow.9.png
+- res/drawable-xhdpi-v4/e_ticket_bg_bottom_2.9.png
+- res/drawable-xhdpi-v4/e_ticket_bg_middle_2.9.png
+- res/drawable-xhdpi-v4/e_ticket_bg_top.9.png
+- res/drawable-xhdpi-v4/e_ticket_bg_whitebg.9.png
+- res/drawable-xhdpi-v4/effect_ic_frame.9.png
+- res/drawable-xhdpi-v4/faceplay_img_shadow_bottom_03.9.png
+- res/drawable-xhdpi-v4/faceplay_img_shadow_top.9.png
+- res/drawable-xhdpi-v4/faceplay_img_shadow_top_03.9.png
+- res/drawable-xhdpi-v4/faceplay_img_shadow_top_05.9.png
+- res/drawable-xhdpi-v4/faceplay_img_showdow_bottom.9.png
+- res/drawable-xhdpi-v4/faceplay_img_showdow_top.9.png
+- res/drawable-xhdpi-v4/gallery_filter_img_select.9.png
+- res/drawable-xhdpi-v4/gallery_img_gra.9.png
+- res/drawable-xhdpi-v4/gif_img_bg.9.png
+- res/drawable-xhdpi-v4/gif_img_size.9.png
+- res/drawable-xhdpi-v4/gnb_gra.9.png
+- res/drawable-xhdpi-v4/gr_4.9.png
+- res/drawable-xhdpi-v4/gr_4_press.9.png
+- res/drawable-xhdpi-v4/group_img_badge_bg.9.png
+- res/drawable-xhdpi-v4/group_img_gnb_gra.9.png
+- res/drawable-xhdpi-v4/group_img_gra.9.png
+- res/drawable-xhdpi-v4/group_img_gra_bottom.9.png
+- res/drawable-xhdpi-v4/group_img_gra_top.9.png
+- res/drawable-xhdpi-v4/group_img_input01.9.png
+- res/drawable-xhdpi-v4/group_img_input02.9.png
+- res/drawable-xhdpi-v4/group_img_input03.9.png
+- res/drawable-xhdpi-v4/group_img_input04.9.png
+- res/drawable-xhdpi-v4/group_img_input05.9.png
+- res/drawable-xhdpi-v4/group_img_input06.9.png
+- res/drawable-xhdpi-v4/group_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/group_img_tooltip_bg02.9.png
+- res/drawable-xhdpi-v4/group_img_tooltip_bg03.9.png
+- res/drawable-xhdpi-v4/group_thumb_img_gra.9.png
+- res/drawable-xhdpi-v4/group_video_gra_bottom.9.png
+- res/drawable-xhdpi-v4/group_video_gra_top.9.png
+- res/drawable-xhdpi-v4/groupcall_img_scrollbar.9.png
+- res/drawable-xhdpi-v4/imageloading_bar_01.9.png
+- res/drawable-xhdpi-v4/imageloading_bar_02.9.png
+- res/drawable-xhdpi-v4/img_live_btn_blue03.9.png
+- res/drawable-xhdpi-v4/img_live_btn_blue03_press.9.png
+- res/drawable-xhdpi-v4/img_live_btn_round01.9.png
+- res/drawable-xhdpi-v4/img_live_dialog_bottom.9.png
+- res/drawable-xhdpi-v4/img_live_event_gauge_tooltip.9.png
+- res/drawable-xhdpi-v4/img_live_event_text_bg.9.png
+- res/drawable-xhdpi-v4/img_live_trivia_particle.9.png
+- res/drawable-xhdpi-v4/img_loading_bar.9.png
+- res/drawable-xhdpi-v4/img_loading_bar_bg.9.png
+- res/drawable-xhdpi-v4/img_player_caster_chat.9.png
+- res/drawable-xhdpi-v4/img_player_my_chat.9.png
+- res/drawable-xhdpi-v4/img_player_my_gift.9.png
+- res/drawable-xhdpi-v4/img_player_user_chat.9.png
+- res/drawable-xhdpi-v4/img_player_user_gift.9.png
+- res/drawable-xhdpi-v4/infotable_bg01.9.png
+- res/drawable-xhdpi-v4/infotable_bg02.9.png
+- res/drawable-xhdpi-v4/infotable_bg03.9.png
+- res/drawable-xhdpi-v4/ke_button_r08_normal.9.png
+- res/drawable-xhdpi-v4/ke_button_r08_pressed.9.png
+- res/drawable-xhdpi-v4/ke_end_img_bar01.9.png
+- res/drawable-xhdpi-v4/ke_end_img_bar01_disable.9.png
+- res/drawable-xhdpi-v4/ke_end_img_bar02.9.png
+- res/drawable-xhdpi-v4/ke_end_img_box.9.png
+- res/drawable-xhdpi-v4/ke_gif_img_bg02.9.png
+- res/drawable-xhdpi-v4/ke_img_btn01_normal.9.png
+- res/drawable-xhdpi-v4/ke_img_btn01_pressed.9.png
+- res/drawable-xhdpi-v4/ke_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/ke_thumb_img_shadow.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_mid_normal.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_mid_press.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_onebtn_normal.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_onebtn_press.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_top_normal.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_top_press.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_twobtn_left_normal.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_twobtn_left_press.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_twobtn_right_normal.9.png
+- res/drawable-xhdpi-v4/line_popup_bg02_twobtn_right_press.9.png
+- res/drawable-xhdpi-v4/list_category_ic_badge.9.png
+- res/drawable-xhdpi-v4/list_category_img_num_bg.9.png
+- res/drawable-xhdpi-v4/live_btn_recorder_request_num.9.png
+- res/drawable-xhdpi-v4/live_img_gra_bottom.9.png
+- res/drawable-xhdpi-v4/live_img_gra_bottom02.9.png
+- res/drawable-xhdpi-v4/live_img_gra_bottom03.9.png
+- res/drawable-xhdpi-v4/live_img_gra_top.9.png
+- res/drawable-xhdpi-v4/live_img_gra_top02.9.png
+- res/drawable-xhdpi-v4/live_img_message_bg.9.png
+- res/drawable-xhdpi-v4/live_img_viewer_bg.9.png
+- res/drawable-xhdpi-v4/live_tooltip_img_bg.9.png
+- res/drawable-xhdpi-v4/location_img_floating_bg_02_normal.9.png
+- res/drawable-xhdpi-v4/location_img_floating_bg_02_pressed.9.png
+- res/drawable-xhdpi-v4/location_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/more_img_label_bg.9.png
+- res/drawable-xhdpi-v4/nearby_bg_badge.9.png
+- res/drawable-xhdpi-v4/nearby_thumbnail_gr.9.png
+- res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-xhdpi-v4/notification_bg_normal.9.png
+- res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-xhdpi-v4/pay_bg_badge.9.png
+- res/drawable-xhdpi-v4/pay_bg_bubble2_left.9.png
+- res/drawable-xhdpi-v4/pay_bg_bubble2_right.9.png
+- res/drawable-xhdpi-v4/pay_bg_bubble_left.9.png
+- res/drawable-xhdpi-v4/pay_bg_bubble_right.9.png
+- res/drawable-xhdpi-v4/pay_bg_notice_point.9.png
+- res/drawable-xhdpi-v4/pay_bg_select_postal_code.9.png
+- res/drawable-xhdpi-v4/pay_bg_shipping_tab_select_left.9.png
+- res/drawable-xhdpi-v4/pay_bg_shipping_tab_select_right.9.png
+- res/drawable-xhdpi-v4/pay_bg_splitbill_request_code.9.png
+- res/drawable-xhdpi-v4/pay_btn_bottom_02.9.png
+- res/drawable-xhdpi-v4/pay_btn_bottom_02_press.9.png
+- res/drawable-xhdpi-v4/pay_btn_green_normal.9.png
+- res/drawable-xhdpi-v4/pay_btn_green_press.9.png
+- res/drawable-xhdpi-v4/pay_btn_red_normal.9.png
+- res/drawable-xhdpi-v4/pay_btn_red_press.9.png
+- res/drawable-xhdpi-v4/pay_btn_regi_01.9.png
+- res/drawable-xhdpi-v4/pay_btn_setting_list_default.9.png
+- res/drawable-xhdpi-v4/pay_btn_setting_list_pressed.9.png
+- res/drawable-xhdpi-v4/pay_btn_small_normal.9.png
+- res/drawable-xhdpi-v4/pay_btn_small_press.9.png
+- res/drawable-xhdpi-v4/pay_btn_white_normal.9.png
+- res/drawable-xhdpi-v4/pay_btn_white_press.9.png
+- res/drawable-xhdpi-v4/pay_button_r01_normal.9.png
+- res/drawable-xhdpi-v4/pay_button_r01_pressed.9.png
+- res/drawable-xhdpi-v4/pay_button_r06_normal.9.png
+- res/drawable-xhdpi-v4/pay_button_r06_pressed.9.png
+- res/drawable-xhdpi-v4/pay_button_r07_disable.9.png
+- res/drawable-xhdpi-v4/pay_button_r07_normal.9.png
+- res/drawable-xhdpi-v4/pay_button_r07_pressed.9.png
+- res/drawable-xhdpi-v4/pay_button_r09_disable.9.png
+- res/drawable-xhdpi-v4/pay_coupon_item_bg.9.png
+- res/drawable-xhdpi-v4/pay_img_bg_outline.9.png
+- res/drawable-xhdpi-v4/pay_img_header_gra.9.png
+- res/drawable-xhdpi-v4/pay_img_password_paste.9.png
+- res/drawable-xhdpi-v4/pay_img_qr_bg.9.png
+- res/drawable-xhdpi-v4/pay_img_scan_box.9.png
+- res/drawable-xhdpi-v4/pay_img_scan_id_box.9.png
+- res/drawable-xhdpi-v4/pay_ipass_bg_bubble_left.9.png
+- res/drawable-xhdpi-v4/pay_ipass_bg_bubble_right.9.png
+- res/drawable-xhdpi-v4/pay_payment_selected_coupon_bg.9.png
+- res/drawable-xhdpi-v4/pay_tooltip_box.9.png
+- res/drawable-xhdpi-v4/photoedit_pressed.9.png
+- res/drawable-xhdpi-v4/photoview_filter_thumb_mask.9.png
+- res/drawable-xhdpi-v4/photoview_filter_thumb_select.9.png
+- res/drawable-xhdpi-v4/popup_noti_bg_bottom.9.png
+- res/drawable-xhdpi-v4/popup_noti_bg_top.9.png
+- res/drawable-xhdpi-v4/popup_noti_img_num_bg.9.png
+- res/drawable-xhdpi-v4/popup_push_bg.9.png
+- res/drawable-xhdpi-v4/popup_system_bg.9.png
+- res/drawable-xhdpi-v4/profile_gra_bottom.9.png
+- res/drawable-xhdpi-v4/profile_gra_top.9.png
+- res/drawable-xhdpi-v4/profile_img_badge_bg.9.png
+- res/drawable-xhdpi-v4/profile_img_btn_bg.9.png
+- res/drawable-xhdpi-v4/profile_img_toast_bg.9.png
+- res/drawable-xhdpi-v4/profile_popup_btn_all.9.png
+- res/drawable-xhdpi-v4/profile_popup_btn_center.9.png
+- res/drawable-xhdpi-v4/profile_popup_btn_left.9.png
+- res/drawable-xhdpi-v4/profile_popup_btn_more_normal.9.png
+- res/drawable-xhdpi-v4/profile_popup_btn_more_pressed.9.png
+- res/drawable-xhdpi-v4/profile_popup_btn_right.9.png
+- res/drawable-xhdpi-v4/profile_popup_gra_bottom.9.png
+- res/drawable-xhdpi-v4/profile_popup_gra_top.9.png
+- res/drawable-xhdpi-v4/profile_popup_img_frame.9.png
+- res/drawable-xhdpi-v4/profile_popup_img_frame02.9.png
+- res/drawable-xhdpi-v4/reader_img_frame.9.png
+- res/drawable-xhdpi-v4/regi_terms_box_02.9.png
+- res/drawable-xhdpi-v4/report_list_bg.9.png
+- res/drawable-xhdpi-v4/search_ic_recent_bg.9.png
+- res/drawable-xhdpi-v4/search_img_date_bg.9.png
+- res/drawable-xhdpi-v4/search_input_pressed.9.png
+- res/drawable-xhdpi-v4/setting_list_number_bg.9.png
+- res/drawable-xhdpi-v4/shake_popup_img_line.9.png
+- res/drawable-xhdpi-v4/slide_img_divider.9.png
+- res/drawable-xhdpi-v4/square_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/sticker_img_bg.9.png
+- res/drawable-xhdpi-v4/sticker_img_gra.9.png
+- res/drawable-xhdpi-v4/sticker_img_list_type_01_bg.9.png
+- res/drawable-xhdpi-v4/sticker_img_list_type_04_bg_01.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_01_bg.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_04_bg_01.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_04_bg_02.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_05_bg.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_06_bg.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_07_bg_01.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_07_bg_02.9.png
+- res/drawable-xhdpi-v4/sticker_img_type_07_bg_03.9.png
+- res/drawable-xhdpi-v4/tab_img_bg.9.png
+- res/drawable-xhdpi-v4/tab_img_left_off.9.png
+- res/drawable-xhdpi-v4/tab_img_right_off.9.png
+- res/drawable-xhdpi-v4/tab_num_bg.9.png
+- res/drawable-xhdpi-v4/theme_thumb_shadow.9.png
+- res/drawable-xhdpi-v4/theme_thumb_shadow_pressed.9.png
+- res/drawable-xhdpi-v4/ticket_bg_g_bottom.9.png
+- res/drawable-xhdpi-v4/ticket_bg_g_top.9.png
+- res/drawable-xhdpi-v4/timeline_ad_viewer_img_bar.9.png
+- res/drawable-xhdpi-v4/timeline_ad_viewer_img_bar_bg.9.png
+- res/drawable-xhdpi-v4/timeline_ad_viewer_img_shadow.9.png
+- res/drawable-xhdpi-v4/timeline_event_bg_disable.9.png
+- res/drawable-xhdpi-v4/timeline_event_bg_normal.9.png
+- res/drawable-xhdpi-v4/timeline_event_bg_pressed.9.png
+- res/drawable-xhdpi-v4/timeline_img_badge.9.png
+- res/drawable-xhdpi-v4/timeline_img_box.9.png
+- res/drawable-xhdpi-v4/timeline_img_box_bottom.9.png
+- res/drawable-xhdpi-v4/timeline_img_box_top.9.png
+- res/drawable-xhdpi-v4/timeline_img_carousel_bg.9.png
+- res/drawable-xhdpi-v4/timeline_img_event_bg01.9.png
+- res/drawable-xhdpi-v4/timeline_img_event_bg02.9.png
+- res/drawable-xhdpi-v4/timeline_img_event_gra.9.png
+- res/drawable-xhdpi-v4/timeline_img_gra_bottom.9.png
+- res/drawable-xhdpi-v4/timeline_img_gra_top.9.png
+- res/drawable-xhdpi-v4/timeline_img_gra_top02.9.png
+- res/drawable-xhdpi-v4/timeline_img_gra_top03.9.png
+- res/drawable-xhdpi-v4/timeline_img_retry_bg.9.png
+- res/drawable-xhdpi-v4/timeline_img_retry_bg_02.9.png
+- res/drawable-xhdpi-v4/timeline_img_share_bg_top.9.png
+- res/drawable-xhdpi-v4/timeline_img_thumb_gra.9.png
+- res/drawable-xhdpi-v4/timeline_img_toast_bg_normal.9.png
+- res/drawable-xhdpi-v4/timeline_img_toast_bg_pressed.9.png
+- res/drawable-xhdpi-v4/timeline_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/timeline_live_viewer_img_shadow.9.png
+- res/drawable-xhdpi-v4/timeline_oa_img_badge.9.png
+- res/drawable-xhdpi-v4/timeline_oa_img_gra.9.png
+- res/drawable-xhdpi-v4/timeline_tooltip_img_bg.9.png
+- res/drawable-xhdpi-v4/timeline_viewer_dim_bg_bottom.9.png
+- res/drawable-xhdpi-v4/timeline_viewer_dim_bg_bottom03.9.png
+- res/drawable-xhdpi-v4/timeline_viewer_dim_bg_top.9.png
+- res/drawable-xhdpi-v4/timeline_viewer_dim_bg_top02.9.png
+- res/drawable-xhdpi-v4/timeline_viewer_img_gra_bottom.9.png
+- res/drawable-xhdpi-v4/timeline_viewer_img_gra_top.9.png
+- res/drawable-xhdpi-v4/tm_chat_input.9.png
+- res/drawable-xhdpi-v4/tm_chat_input_tap.9.png
+- res/drawable-xhdpi-v4/tm_retry_btn_normal.9.png
+- res/drawable-xhdpi-v4/tm_retry_btn_pressed.9.png
+- res/drawable-xhdpi-v4/trim_img_border.9.png
+- res/drawable-xhdpi-v4/user_profile_timeline_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/v2_btn_big_04_disabled.9.png
+- res/drawable-xhdpi-v4/v2_btn_big_04_normal.9.png
+- res/drawable-xhdpi-v4/v2_btn_big_04_pressed.9.png
+- res/drawable-xhdpi-v4/videocall_gra_bottom02.9.png
+- res/drawable-xhdpi-v4/videocall_gra_bottom03.9.png
+- res/drawable-xhdpi-v4/videocall_gra_bottom04.9.png
+- res/drawable-xhdpi-v4/videocall_gra_top.9.png
+- res/drawable-xhdpi-v4/videocall_ic_my_video_off.9.png
+- res/drawable-xhdpi-v4/videocall_ic_my_video_on.9.png
+- res/drawable-xhdpi-v4/videocall_img_frame.9.png
+- res/drawable-xhdpi-v4/videocall_img_layer.9.png
+- res/drawable-xhdpi-v4/videocall_img_noti_bg.9.png
+- res/drawable-xhdpi-v4/videocall_img_thumb_shadow.9.png
+- res/drawable-xhdpi-v4/view_popup_btn01_normal.9.png
+- res/drawable-xhdpi-v4/view_popup_btn01_pressed.9.png
+- res/drawable-xhdpi-v4/view_popup_btn_normal.9.png
+- res/drawable-xhdpi-v4/view_popup_btn_pressed.9.png
+- res/drawable-xhdpi-v4/write_img_stroke.9.png
+- res/drawable-xhdpi-v4/write_img_stroke02.9.png
+- res/drawable-xhdpi-v4/write_img_tooltip_bg.9.png
+- res/drawable-xhdpi-v4/write_img_tooltip_bg01.9.png
+- res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png
+- res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable/focus_rect.9.png
+- wav
+- ogg
+- m4a
+- gif
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '28'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  LICENSES: '8'
+  androidsupportmultidexversion.txt: '8'
+  countries.txt: '8'
+  emojis.json: '8'
+  firebase-analytics-impl.properties: '8'
+  firebase-analytics.properties: '8'
+  firebase-common.properties: '8'
+  firebase-core.properties: '8'
+  firebase-iid-interop.properties: '8'
+  firebase-iid.properties: '8'
+  firebase-measurement-connector-impl.properties: '8'
+  firebase-measurement-connector.properties: '8'
+  firebase-messaging.properties: '8'
+  line.notice.version.properties: '8'
+  play-services-ads-base.properties: '8'
+  play-services-ads-identifier.properties: '8'
+  play-services-ads-lite.properties: '8'
+  play-services-ads-tag-lite-sdk.properties: '8'
+  play-services-ads.properties: '8'
+  play-services-analytics-impl.properties: '8'
+  play-services-analytics.properties: '8'
+  play-services-auth-api-phone.properties: '8'
+  play-services-auth-base.properties: '8'
+  play-services-auth.properties: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-clearcut.properties: '8'
+  play-services-flags.properties: '8'
+  play-services-gass.properties: '8'
+  play-services-identity.properties: '8'
+  play-services-location.properties: '8'
+  play-services-maps.properties: '8'
+  play-services-measurement-api.properties: '8'
+  play-services-measurement-base.properties: '8'
+  play-services-phenotype.properties: '8'
+  play-services-places-placereport.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tagmanager-v4-impl.properties: '8'
+  play-services-tapandpay.properties: '8'
+  play-services-tasks.properties: '8'
+  play-services-vision-common.properties: '8'
+  play-services-vision.properties: '8'
+  com/fasterxml/jackson/core/json/VERSION.txt: '8'
+  com/google/api/client/googleapis/google.jks: '8'
+  com/google/auto/value/processor/autoannotation.vm: '8'
+  com/google/auto/value/processor/autovalue.vm: '8'
+  com/google/auto/value/processor/gwtserializer.vm: '8'
+  com/google/auto/value/processor/escapevelocity/NOTICE: '8'
+  com/google/auto/value/processor/escapevelocity/README.md: '8'
+  ezvcard/commons-codec.license: '8'
+  ezvcard/ez-vcard.license: '8'
+  ezvcard/ez-vcard.properties: '8'
+  ezvcard/messages.properties: '8'
+  ezvcard/io/html/hcard-template.html: '8'
+  ezvcard/io/html/no-profile.png: '0'
+  ezvcard/io/html/translucent-bg.png: '0'
+  line_notice_resources/images/btn_back_bg.png: '0'
+  line_notice_resources/images/btn_close_normal.png: '0'
+  line_notice_resources/images/btn_close_normal_s.png: '0'
+  line_notice_resources/images/btn_close_pressed.png: '0'
+  line_notice_resources/images/btn_close_pressed_s.png: '0'
+  line_notice_resources/images/btn_retry_normal.9.png: '0'
+  line_notice_resources/images/btn_retry_pressed.9.png: '0'
+  line_notice_resources/images/img_topbar_bg.9.png: '0'
+  line_notice_resources/images/popup_notice_icon.png: '0'
+  line_notice_resources/images/popup_shadow.9.png: '0'
+  line_notice_resources/images/retry_icon.png: '0'
+  line_notice_resources/images/retry_icon_s.png: '0'
+  line_notice_resources/languages/values-ar/strings.xml: '8'
+  line_notice_resources/languages/values-de/strings.xml: '8'
+  line_notice_resources/languages/values-es/strings.xml: '8'
+  line_notice_resources/languages/values-in/strings.xml: '8'
+  line_notice_resources/languages/values-ja/strings.xml: '8'
+  line_notice_resources/languages/values-ko/strings.xml: '8'
+  line_notice_resources/languages/values-th/strings.xml: '8'
+  line_notice_resources/languages/values-zh-rCN/strings.xml: '8'
+  line_notice_resources/languages/values-zh-rTW/strings.xml: '8'
+  line_notice_resources/languages/values/strings.xml: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/apache/commons/codec/language/dmrules.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_any.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_common.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_cyrillic.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_english.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_french.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_german.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_hungarian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_polish.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_romanian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_russian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_approx_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_any.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_approx_common.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_common.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_cyrillic.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_english.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_french.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_german.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_hungarian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_polish.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_romanian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_russian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_exact_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/ash_hebrew_common.txt: '8'
+  org/apache/commons/codec/language/bm/ash_lang.txt: '8'
+  org/apache/commons/codec/language/bm/ash_languages.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_any.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_cyrillic.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_english.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_french.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_german.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_hungarian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_polish.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_romanian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_russian.txt: '8'
+  org/apache/commons/codec/language/bm/ash_rules_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_any.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_arabic.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_common.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_cyrillic.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_czech.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_dutch.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_english.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_french.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_german.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_greek.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_greeklatin.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_hungarian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_italian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_polish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_portuguese.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_romanian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_russian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_approx_turkish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_any.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_approx_common.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_arabic.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_common.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_cyrillic.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_czech.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_dutch.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_english.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_french.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_german.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_greek.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_greeklatin.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_hungarian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_italian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_polish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_portuguese.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_romanian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_russian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_exact_turkish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_hebrew_common.txt: '8'
+  org/apache/commons/codec/language/bm/gen_lang.txt: '8'
+  org/apache/commons/codec/language/bm/gen_languages.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_any.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_arabic.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_cyrillic.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_czech.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_dutch.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_english.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_french.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_german.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_greek.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_greeklatin.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_hungarian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_italian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_polish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_portuguese.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_romanian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_russian.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/gen_rules_turkish.txt: '8'
+  org/apache/commons/codec/language/bm/lang.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_any.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_common.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_french.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_italian.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_portuguese.txt: '8'
+  org/apache/commons/codec/language/bm/sep_approx_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_any.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_approx_common.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_common.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_french.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_italian.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_portuguese.txt: '8'
+  org/apache/commons/codec/language/bm/sep_exact_spanish.txt: '8'
+  org/apache/commons/codec/language/bm/sep_hebrew_common.txt: '8'
+  org/apache/commons/codec/language/bm/sep_lang.txt: '8'
+  org/apache/commons/codec/language/bm/sep_languages.txt: '8'
+  org/apache/commons/codec/language/bm/sep_rules_any.txt: '8'
+  org/apache/commons/codec/language/bm/sep_rules_french.txt: '8'
+  org/apache/commons/codec/language/bm/sep_rules_hebrew.txt: '8'
+  org/apache/commons/codec/language/bm/sep_rules_italian.txt: '8'
+  org/apache/commons/codec/language/bm/sep_rules_portuguese.txt: '8'
+  org/apache/commons/codec/language/bm/sep_rules_spanish.txt: '8'
+  org/apache/cordova/camera/xml/camera_provider_paths.xml: '8'
+  org/apache/http/version.properties: '8'
+  org/apache/http/client/version.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+  templates/release-notes.vm: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.4
+versionInfo:
+  versionCode: '19090405'
+  versionName: 9.4.5

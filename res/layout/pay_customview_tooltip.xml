@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/pay_l_tooltip" android:background="@drawable/pay_tooltip_box" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/pay_iv_tooltip_arrow_up">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/pay_tv_tooltip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="25.5dip" android:layout_marginBottom="30.5dip" android:includeFontPadding="false" android:layout_weight="1.0" android:layout_marginStart="25.5dip" />
+        <ImageView android:id="@id/pay_iv_tooltip_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:src="@drawable/pay_tooltip_close" android:scaleType="fitStart" android:minHeight="32.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.5dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/pay_iv_tooltip_arrow_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-6.0dip" android:src="@drawable/pay_tooltip_arrow_up" android:layout_marginStart="20.0dip" />
+    <ImageView android:id="@id/pay_iv_tooltip_arrow_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" android:src="@drawable/pay_tooltip_arrow_down" android:layout_below="@id/pay_l_tooltip" android:layout_marginStart="20.0dip" />
+</RelativeLayout>

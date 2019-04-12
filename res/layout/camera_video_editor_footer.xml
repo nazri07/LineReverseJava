@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/camera_editor_footer_view_default_mode_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="4.0dip">
+        <ImageButton android:id="@id/camera_video_editor_back_btn" android:background="@drawable/selector_camera_editor_back_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" />
+        <ImageButton android:id="@id/camera_video_editor_download_btn" android:background="@drawable/selector_camera_editor_save_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/camera_video_editor_back_btn" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" android:layout_toEndOf="@id/camera_video_editor_back_btn" />
+        <ImageButton android:id="@id/camera_video_editor_send_btn" android:background="@drawable/selector_camera_editor_send_button" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/camera_editor_footer_view_trim_mode_layout" android:background="@color/media_picker_edit_color_18" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/camera_editor_bottom_play_btn" android:background="@drawable/selector_camera_editor_trim_play_button" android:layout_width="40.0dip" android:layout_height="35.0dip" android:layout_marginBottom="6.5dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

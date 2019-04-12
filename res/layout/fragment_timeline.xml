@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/myhome_postlist_root" android:background="@color/home_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/timeline_swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/timeline_list" android:background="#00000000" android:paddingTop="@dimen/main_tab_fragments_top_padding" android:scrollbars="vertical" android:fadingEdge="none" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:smoothScrollbar="false" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.linecorp.line.timeline.activity.timeline.TimelineExtraInfoView android:id="@id/timeline_extra_infoview" android:paddingTop="@dimen/main_tab_fragments_top_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.line.timeline.floatingmenu.FloatingMenuButton android:id="@id/timeline_floating_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/floating_menu_right_margin" android:layout_marginBottom="@dimen/floating_menu_bottom_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:icon="@drawable/floating_ic_plus" />
+    <FrameLayout android:id="@id/timeline_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/video_ad_content_loading_view" android:background="#fffafbfb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.linecorp.multimedia.ui.LineVideoView android:id="@id/video_ad_content_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/video_ad_content_thumbnail_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/video_ad_content_video_loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/video_ad_content_fail_view" android:background="#fff5f6f7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_ic_error" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/video_ad_content_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/video_ad_content_shadow_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+            <ImageView android:background="@drawable/ad_img_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/video_ad_content_action_while_playing_button" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#99000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="2.0" android:drawableRight="@drawable/more_ad_ic_arrow" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/video_ad_content_equalizer_icon" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_equalizer" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/video_ad_content_play_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_play02" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/video_ad_content_finish_layout" android:background="#66000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/video_ad_content_replay_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/replay" android:includeFontPadding="false" android:drawableLeft="@drawable/selector_common_ic_play04" android:drawablePadding="9.0dip" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/video_ad_content_action_at_finish_page_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/action_button_icon_1002" android:drawablePadding="9.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

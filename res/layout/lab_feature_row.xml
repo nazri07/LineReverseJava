@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/feature_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.5dip" android:layout_marginRight="25.0dip">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ff111111" android:id="@id/feature_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feature Title" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/feature_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/com_img_new02" android:layout_toRightOf="@id/feature_title" />
+        <ImageView android:id="@id/feature_check" android:layout_width="@dimen/setting_checkbox_width" android:layout_height="@dimen/setting_checkbox_height" android:src="@drawable/selector_checkbox_with_selected_status" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff95969b" android:id="@id/feature_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="25.0dip" android:text="@string/settings_linelabs_desc" android:lineSpacingExtra="1.5dip" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffc1c1c6" android:id="@id/feature_terms" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="8.5dip" android:text="@string/settings_about_tos" />
+</LinearLayout>

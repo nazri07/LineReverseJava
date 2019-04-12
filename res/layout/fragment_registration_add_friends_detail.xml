@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_registration_add_friends_detail_0" android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/auto_add_friends" layout="@layout/registration_add_friends_detail_checkbox" />
+        <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginBottom="13.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="12.0dip" android:text="@string/registration_confirm_sending_contacts_message1" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+        <include android:id="@id/bullet1" layout="@layout/registration_add_friends_detail_bullet_textview" />
+        <include android:id="@id/bullet2" layout="@layout/registration_add_friends_detail_bullet_textview" />
+        <include android:id="@id/bullet3" layout="@layout/registration_add_friends_detail_bullet_textview" />
+        <include android:id="@id/bullet4" layout="@layout/registration_add_friends_detail_bullet_textview" />
+        <include android:id="@id/bullet5" layout="@layout/registration_add_friends_detail_bullet_textview" />
+        <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginTop="21.0dip" />
+        <include android:id="@id/allow_others_to_add" layout="@layout/registration_add_friends_detail_checkbox" />
+        <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="12.0dip" android:text="@string/registration_confirm_sending_contacts_message4" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+        <include android:id="@id/bullet6" layout="@layout/registration_add_friends_detail_bullet_textview" />
+        <include android:id="@id/bullet7" layout="@layout/registration_add_friends_detail_bullet_textview" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/guide_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sticker_shop_detail_customsticker_edit_desc" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/custom_sticker_text_view" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/shop_custom_sticker_edit_guide" />
+    <TextView android:id="@id/custom_sticker_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="@string/sticker_shop_detail_customsticker_edit_button" android:drawablePadding="3.0dip" android:drawableEnd="@drawable/shop_ic_edit" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" style="@style/shop_custom_sticker_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

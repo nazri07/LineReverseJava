@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/white_01" />
+    <item android:duration="50" android:drawable="@drawable/white_02" />
+    <item android:duration="50" android:drawable="@drawable/white_03" />
+    <item android:duration="50" android:drawable="@drawable/white_04" />
+    <item android:duration="50" android:drawable="@drawable/white_05" />
+    <item android:duration="50" android:drawable="@drawable/white_06" />
+    <item android:duration="50" android:drawable="@drawable/white_07" />
+    <item android:duration="50" android:drawable="@drawable/white_08" />
+    <item android:duration="50" android:drawable="@drawable/white_09" />
+    <item android:duration="50" android:drawable="@drawable/white_10" />
+    <item android:duration="50" android:drawable="@drawable/white_11" />
+    <item android:duration="50" android:drawable="@drawable/white_12" />
+    <item android:duration="50" android:drawable="@drawable/white_13" />
+    <item android:duration="50" android:drawable="@drawable/white_14" />
+    <item android:duration="50" android:drawable="@drawable/white_15" />
+    <item android:duration="50" android:drawable="@drawable/white_16" />
+    <item android:duration="50" android:drawable="@drawable/white_17" />
+    <item android:duration="50" android:drawable="@drawable/white_18" />
+</animation-list>

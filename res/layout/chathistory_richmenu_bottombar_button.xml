@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/official_account_bottombar_button" android:background="@color/richmenu_bottombar_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/official_account_bottombar_menu_opened_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:src="@drawable/chatroom_ic_arrow" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+    <TextView android:ellipsize="end" android:id="@id/official_account_bottombar_menu_text" android:paddingTop="@dimen/richmenu_bottombar_button_top_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/richmenu_bottombar_button_horizontal_margin" android:layout_marginRight="@dimen/richmenu_bottombar_button_horizontal_margin" android:singleLine="true" android:layout_centerInParent="true" style="@style/text_chatroom_oa_menu2" />
+</RelativeLayout>

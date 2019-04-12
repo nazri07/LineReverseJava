@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <jp.naver.line.android.customview.SearchBoxView android:id="@id/searchBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintText="@string/friend_search_hint" app:notApplyTheme="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/localcontact_invite_listview_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/localcontact_invite_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/localcontact_invite_noresults_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/localcontact_invite_noresults_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="80.0dip" android:text="@string/localcontacts_search_no_result" style="@style/NoContentsViewText" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/localcontact_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:id="@id/localcontact_loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/common_bottom_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/selectchat_send_timeline_btn_height" android:baselineAligned="true">
+        <LinearLayout android:gravity="center" android:id="@id/common_bottom_second_button" android:background="@drawable/selector_button_02" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="onClickCancelButton">
+            <TextView android:textColor="@color/selector_gray_btn_text" android:id="@id/common_bottom_second_text" android:paddingBottom="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unselected" style="@style/v2_common_button_bottom" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/common_bottom_first_button" android:background="@drawable/selector_button_01" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="onClickInviteBySmsButton">
+            <TextView android:textColor="@color/selector_green_btn_text" android:id="@id/common_bottom_first_text" android:paddingBottom="1.3299866dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite" style="@style/v2_common_button_bottom" />
+            <TextView android:textColor="@color/selector_green_btn_text" android:id="@id/invite_button_count" android:paddingBottom="1.3299866dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" style="@style/v2_common_button_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

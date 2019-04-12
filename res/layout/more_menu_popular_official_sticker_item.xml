@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="77.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.5dip" android:layout_marginTop="14.0dip" android:layout_marginRight="8.5dip" android:layout_marginBottom="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/sticker_img" android:layout_width="72.0dip" android:layout_height="72.0dip" />
+    <ImageView android:id="@id/sticker_sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/sticker_img" android:layout_alignParentRight="true" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/sticker_title" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/sticker_img" style="@style/text_more_category_subtitle05" />
+</RelativeLayout>

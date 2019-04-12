@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/group_video_horizontal_capture_item" layout="@layout/group_video_horizontal_item" />
+    <com.linecorp.voip.ui.groupcall.video.view.GroupCallHorizontalListView android:id="@id/group_video_horizontal_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/group_video_horizontal_capture_item" />
+    <FrameLayout android:id="@id/group_video_horizontal_shadow_left" android:background="@drawable/videocall_img_thumb_shadow" android:visibility="gone" android:layout_width="4.0dip" android:layout_height="90.0dip" android:layout_toRightOf="@id/group_video_horizontal_capture_item" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/search_recent_line" android:background="@color/common_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:textSize="12.5dip" android:textColor="@color/selector_search_recent_save_btn" android:gravity="center_vertical" android:id="@id/search_recent_remove_all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_recent_all_removed" android:singleLine="true" android:includeFontPadding="false" />
+        <View android:id="@id/search_recent_divider" android:background="#ffe5e5e5" android:layout_width="0.6700001dip" android:layout_height="11.5dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+        <TextView android:textSize="12.5dip" android:textColor="@color/selector_search_recent_save_btn" android:gravity="center_vertical" android:id="@id/search_recent_save_onoff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_recent_auto_save_off" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

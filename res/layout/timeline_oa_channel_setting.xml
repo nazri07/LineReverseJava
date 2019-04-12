@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_view">
+        <ListView android:id="@id/listView" android:fadingEdge="none" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" />
+        <include layout="@layout/friendlist_no_result" />
+    </RelativeLayout>
+</RelativeLayout>

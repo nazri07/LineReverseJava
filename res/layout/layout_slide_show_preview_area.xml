@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/media_slideshow_preview_layout" android:background="@color/media_picker_slideshow_edit_thumbnail_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.opengl.GLSurfaceView android:id="@id/media_slideshow_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.linecorp.line.media.picker.fragment.slideshow.SlideShowCenterPannableImageView android:id="@id/media_slideshow_edit_center_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.linecorp.line.media.picker.fragment.slideshow.SlideShowCenterPannableImageGridGuideView android:id="@id/media_slideshow_edit_center_image_grid_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="18.0dip">
+            <Button android:id="@id/media_slideshow_pause_button" android:background="@drawable/slide_ic_play" android:layout_width="23.0dip" android:layout_height="26.0dip" />
+            <TextView android:id="@id/media_slideshow_preview_time_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:shadowDx="1.2" android:shadowDy="2.0" android:shadowRadius="8.0" android:importantForAccessibility="no" android:fontFamily="sans-serif" style="@style/text_slide_show_preview_time" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="14.0dip">
+            <ImageView android:id="@id/media_slideshow_preview_effect_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/slide_ic_effect" />
+            <ImageView android:id="@id/media_slideshow_preview_fit_image" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/slide_ic_ratio" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/media_slideshow_preview_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="24.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="@color/media_picker_slideshow_title_hint" android:gravity="center" android:layout_gravity="center" android:id="@id/media_slideshow_preview_main_title_textview" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="31.0dip" android:text="Title" android:hint="@string/slideshow_title_guide_text" android:maxLines="1" android:shadowColor="#33000000" android:shadowRadius="5.0" android:textCursorDrawable="@null" android:fontFamily="sans-serif" />
+            <EditText android:textSize="15.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:textColorHint="@color/media_picker_slideshow_title_hint" android:gravity="center" android:layout_gravity="center" android:id="@id/media_slideshow_preview_sub_title_textview" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="19.0dip" android:text="" android:hint="@string/slideshow_subtitle_guide_text" android:maxLines="1" android:shadowColor="#33000000" android:shadowRadius="5.0" android:textCursorDrawable="@null" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </FrameLayout>
+    <SeekBar android:layout_gravity="top" android:id="@id/media_slideshow_preview_seekbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" style="@style/SlideShowPreviewSeekBarStyle" />
+</LinearLayout>

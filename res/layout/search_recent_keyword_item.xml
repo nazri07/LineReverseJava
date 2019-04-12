@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/search_recent_keyword_item" android:background="@drawable/row_user" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/search_recent_keyword_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/search_recent_keyword_delete" />
+    <ImageView android:id="@id/search_recent_keyword_delete" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/search_list_img_close" android:layout_alignParentRight="true" />
+</RelativeLayout>

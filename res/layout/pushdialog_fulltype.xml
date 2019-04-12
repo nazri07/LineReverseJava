@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/pushpopup_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pushdialog_title_bg" android:background="@drawable/popup_noti_bg_top" android:paddingTop="5.3299866dip" android:paddingBottom="7.3299866dip" android:layout_width="fill_parent" android:layout_height="@dimen/pushpopup_header_height">
+        <include layout="@layout/header_sidespace" />
+        <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/pushdialog_thumbnail" android:layout_width="@dimen/v2_thumbnail_size_push_popup" android:layout_height="@dimen/v2_thumbnail_size_push_popup" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="14.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/pushdialog_fromuser_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/pushdialog_group_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.3299866dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/pushdialog_pop_setting_button" android:padding="5.669983dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pushdialog_pop_setting_button_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_noti_ic_setting" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/pushdialog_count_text" android:background="@drawable/popup_noti_img_num_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" style="@style/pushdialog_count_text" />
+        <include layout="@layout/header_sidespace" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pushdialog_content_area" android:background="@drawable/popup_noti_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <jp.naver.line.android.activity.pushdialog.PushDialogContentView android:id="@id/pushdialog_content" android:paddingTop="5.0dip" android:fadingEdge="none" android:layout_width="@dimen/v2_pushpopup_content_width" android:layout_height="@dimen/v2_pushpopup_content_height" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/pushdialog_content_arrow_prev" android:visibility="invisible" android:layout_width="@dimen/pushpopup_arrow_width" android:layout_height="@dimen/pushpopup_arrow_height" android:layout_marginRight="16.0dip" android:src="@drawable/notipopup_img_arrow" android:layout_toLeftOf="@id/pushdialog_content" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/pushdialog_content_arrow_next" android:visibility="invisible" android:layout_width="@dimen/pushpopup_arrow_width" android:layout_height="@dimen/pushpopup_arrow_height" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/pushdialog_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/pushdialog_reply_area" android:paddingLeft="21.0dip" android:paddingRight="21.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/pushdialog_reply_button" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.3299866dip" android:src="@drawable/selector_pushdialog_reply_btn" android:layout_alignParentRight="true" />
+            <View android:id="@id/pushdialog_reply_underline" android:background="@drawable/selector_pushdialog_reply_underline_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            <EditText android:id="@id/pushdialog_reply_dummy" android:background="#00000000" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <jp.naver.line.android.customview.sticon.SticonEditText android:textSize="16.0sp" android:textColor="#ff404040" android:textColorHint="#ffd3d6dc" android:id="@id/pushdialog_reply_text" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="1000" android:layout_toLeftOf="@id/pushdialog_reply_button" android:imeOptions="actionSend" />
+            <LinearLayout android:id="@id/pushdialog_reply_progress" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_circle_small" style="?android:progressBarStyleSmall" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/pushpopup_bottom_height">
+            <TextView android:gravity="center" android:id="@id/pushdialog_cancel_btn" android:background="@drawable/selector_button_12" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="7.5dip" android:text="@string/close" android:layout_weight="1.0" style="@style/pushdialog_button" />
+            <TextView android:gravity="center" android:id="@id/pushdialog_ok_btn" android:background="@drawable/selector_button_12" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.5dip" android:text="@string/pushdialog_show_button" android:layout_weight="1.0" style="@style/pushdialog_button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

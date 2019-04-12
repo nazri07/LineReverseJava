@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:id="@id/keep_retry_button" android:background="@drawable/ke_list_icon_retry" android:layout_width="@dimen/keep_retry_button_width" android:layout_height="@dimen/keep_retry_button_height" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

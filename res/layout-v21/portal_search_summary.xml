@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/portal_search_summary_bg" android:background="#fff8fafe" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/portal_search_summary_div_top" android:background="@color/common_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="18.0dip" android:paddingRight="17.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/portal_search_summary_img" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/search_ic_search_02" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff0bb203" android:id="@id/portal_search_summary_query" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" android:letterSpacing="-0.01" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/portal_search_summary_collections" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="4.0dip" android:letterSpacing="-0.01" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff8d939d" android:id="@id/portal_search_summary_result_more" android:paddingTop="1.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_result_portal" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/portal_search_summary_div_bottom" android:background="@color/common_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+</LinearLayout>

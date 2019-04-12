@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_setting_menu_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" style="@style/setting_ringtone_list_item_layout">
+        <TextView android:id="@id/tone_setting_tone_list_item_display_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/setting_ringtone_list_item_msg_layout" />
+        <ImageButton android:id="@id/tone_setting_tone_list_item_stop_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ringtone_item_stop_play_button_selector" android:contentDescription="@string/access_ringtone_stoppreview" style="@style/setting_ringbacktone_list_item_stop_play_button_layout" />
+        <ImageButton android:id="@id/tone_setting_tone_list_item_set_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tone_item_set_button_selector" style="@style/setting_ringbacktone_list_item_set_button_layout" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/tone_setting_tone_list_item_set_progress" android:padding="5.5dip" android:visibility="gone" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginRight="16.0dip" android:contentDescription="@string/access_ringtone_progressreview" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/tone_setting_tone_list_item_delete_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" style="@style/setting_ringtone_list_item_delete_button_layout" />
+        <TextView android:id="@id/tone_setting_tone_list_item_disabled_explanation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_ringtone_notavailable" style="@style/setting_ringtone_list_item_disabled_sub_msg_layout" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.6700001dip" style="@style/setting_division_line" />
+</LinearLayout>

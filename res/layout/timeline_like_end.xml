@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/timeline_list_end_root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/screen_myhome_listend_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/screen_myhome_listend_title">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="47.0dip" app:tabIndicatorColor="#ff181818" app:tabIndicatorHeight="2.0dip" app:tabMode="scrollable" />
+        <View android:id="@id/separator" android:background="#ffefeff3" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_below="@id/tab_layout" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/separator" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/screen_myhome_listend_error_layer" android:background="@color/home_default_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/screen_myhome_listend_title" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/screen_myhome_listend_loading_layer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:layout_marginRight="6.669983dip" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff808080" android:id="@id/screen_myhome_listend_no_data_layer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/screen_myhome_listend_title" />
+</RelativeLayout>

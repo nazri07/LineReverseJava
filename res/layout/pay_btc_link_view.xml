@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/btc_link_layout" android:tag="layout/pay_btc_link_view_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pay="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:id="@id/btc_link_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_main_transfer_number" pay:layout_constraintStart_toStartOf="parent" />
+    <ImageView android:id="@id/btc_link_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_btn_linepayb_2_c_more" android:layout_marginStart="5.0dip" pay:layout_constraintBottom_toBottomOf="@id/btc_link_text" pay:layout_constraintStart_toEndOf="@id/btc_link_text" pay:layout_constraintTop_toTopOf="@id/btc_link_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

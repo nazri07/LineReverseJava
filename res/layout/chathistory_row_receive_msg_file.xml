@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/chathistory_row_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="195.32999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/chathistory_row_file_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.329987dip" android:layout_marginTop="12.669983dip" android:src="@drawable/icn_send_file01" android:contentDescription="@string/access_attached_file" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.669983dip" android:layout_marginTop="13.669983dip" android:layout_marginRight="6.669983dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="13.329987sp" android:textStyle="bold" android:textColor="@color/chathistory_recv_text" android:id="@id/chathistory_row_file_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="219.32999dip" android:minWidth="130.0dip" android:maxLines="2" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff737989" android:id="@id/chathistory_row_file_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.3299866dip" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff737989" android:id="@id/chathistory_row_file_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/chathistory_row_file_more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.329987dip" android:src="@drawable/img_balloon_seeall_01" android:contentDescription="@null" />
+</LinearLayout>

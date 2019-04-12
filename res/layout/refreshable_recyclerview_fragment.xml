@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/refreshable_recyclerview_fragment_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.linelive.player.component.widget.WorkAroundSwipeRefreshLayout android:id="@id/swipelayout" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.linecorp.linelive.player.component.widget.DataBindableErrorView android:id="@id/error" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false" />
+            <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="13.0sp" android:textColor="@color/black_grey6" android:gravity="center" android:id="@id/empty_view" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/player_fan_no_result" android:layout_centerInParent="true" />
+            <ProgressBar android:id="@id/progress" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </com.linecorp.linelive.player.component.widget.WorkAroundSwipeRefreshLayout>
+</RelativeLayout>

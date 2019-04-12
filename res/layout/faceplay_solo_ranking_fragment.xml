@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/faceplay_ranking_header" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/faceplay_ranking_game_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52.5dip" android:fadeScrollbars="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/faceplay_ranking_game_name" android:paddingTop="2.5dip" android:paddingBottom="2.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="50.0dip" android:includeFontPadding="false" />
+    <LinearLayout android:orientation="vertical" android:id="@id/faceplay_solo_ranking_my_rank_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.5dip">
+        <include android:id="@id/faceplay_solo_ranking_my_rank_item_view" android:layout_width="fill_parent" android:layout_height="53.0dip" layout="@layout/faceplay_ranking_item_layout" />
+        <View android:background="@drawable/faceplay_ranking_separator" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="8.5dip" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/faceplay_solo_ranking_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:fadeScrollbars="true" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView android:textSize="15.0sp" android:textColor="#4cffffff" android:gravity="center" android:id="@id/faceplay_solo_ranking_empty_scores" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:gravity="center" android:id="@id/faceplay_solo_ranking_progress" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/faceplay_loading_circle_progress" />
+    </FrameLayout>
+</LinearLayout>

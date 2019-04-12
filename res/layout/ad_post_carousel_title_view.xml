@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="74.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.ad.timeline.view.AdClickableStyleSpanTextView android:textSize="13.899994sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+    <com.linecorp.line.ad.timeline.view.AdClickableStyleSpanTextView android:textSize="12.0sp" android:textColor="#ff737373" android:id="@id/sub_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:maxLines="2" android:includeFontPadding="false" />
+</LinearLayout>

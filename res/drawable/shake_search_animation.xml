@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00000" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00001" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00002" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00003" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00004" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00005" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00006" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00007" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00008" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00009" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00010" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00011" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00012" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00013" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00014" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00015" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00016" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00017" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00018" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00019" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00020" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00021" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00022" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00023" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00024" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00025" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00026" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00027" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00028" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00029" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00030" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00031" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00032" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00033" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00034" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00035" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00036" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00037" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00038" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00039" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00040" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00041" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00042" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00043" />
+    <item android:duration="50" android:drawable="@drawable/popup_img_shake_00044" />
+</animation-list>

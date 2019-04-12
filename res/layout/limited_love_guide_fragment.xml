@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/limited_love_guide_fragment_0" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog" android:tag="binding_1" android:background="@drawable/limited_love_guide_background" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/title_text_view" android:paddingTop="23.0dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newheart_guide_title" />
+        <WebView android:id="@id/guide_web_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:tag="binding_2" android:paddingLeft="25.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newheart_guide_disable_popup" android:layout_toLeftOf="@id/do_not_show_again_checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/do_not_show_again_checkbox" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/live_radio04" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button android:id="@id/close_button" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/newheart_guide_go_gifting_button" style="@style/btn_limited_love_guide" />
+    </LinearLayout>
+</RelativeLayout>

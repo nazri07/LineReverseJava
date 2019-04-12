@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="25.0dip" android:paddingTop="36.0dip" android:paddingRight="25.0dip" android:paddingBottom="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:src="@drawable/faceplay_popup_ic_skin" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_skin_body" android:lineSpacingExtra="3.0sp" android:fontFamily="sans-serif" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.5dip" android:layout_marginBottom="6.0dip" android:src="@drawable/faceplay_popup_ic_trophy" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_trophy_body" android:lineSpacingExtra="3.0sp" android:fontFamily="sans-serif" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.5dip" android:layout_marginBottom="6.0dip" android:src="@drawable/faceplay_popup_ic_score" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_winlose_body" android:lineSpacingExtra="3.0sp" android:fontFamily="sans-serif" />
+</LinearLayout>

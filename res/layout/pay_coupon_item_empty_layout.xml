@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/pay_layout_mycode_coupon_empty" android:paddingBottom="80.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:src="@drawable/pay_payment_empty_coupon" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffaeafb0" android:gravity="center_horizontal" android:id="@id/pay_tv_mycode_coupon_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_coupon_empty_message" />
+</LinearLayout>

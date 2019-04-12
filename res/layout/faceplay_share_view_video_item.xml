@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.view.RoundedFrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:cornerRadius="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.linecorp.multimedia.ui.LineVideoView android:id="@id/faceplay_share_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/faceplay_img_shadow_top" android:layout_width="fill_parent" android:layout_height="86.0dip" />
+    </com.linecorp.view.RoundedFrameLayout>
+    <ImageView android:id="@id/faceplay_share_select_round_bg" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/faceplay_share_content_border" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/right_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.945" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/top_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.03" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/left_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.05" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/faceplay_share_select" android:background="@drawable/faceplay_img_checkbox" android:layout_width="28.0dip" android:layout_height="28.0dip" app:layout_constraintRight_toRightOf="@id/right_guideline" app:layout_constraintTop_toTopOf="@id/top_guideline" />
+    <ImageView android:id="@id/faceplay_share_video_mute_icon" android:layout_width="23.0dip" android:layout_height="20.0dip" android:src="@drawable/faceplay_video_play_mute_selector" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="@id/left_guideline" app:layout_constraintTop_toTopOf="@id/top_guideline" />
+</androidx.constraintlayout.widget.ConstraintLayout>

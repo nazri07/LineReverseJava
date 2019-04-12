@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/main_image_view" android:layout_width="@dimen/shop_product_detail_thumbnail_image_width" android:layout_height="@dimen/shop_product_detail_thumbnail_image_height" android:layout_marginLeft="@dimen/sticonshop_sticon_info_left_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginStart="@dimen/sticonshop_sticon_info_left_margin" android:layout_marginEnd="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/sticonshop_sticon_info_right_margin" android:layout_marginEnd="@dimen/sticonshop_sticon_info_right_margin">
+        <jp.naver.line.android.customview.ExactWidthTextView android:id="@id/artist_or_recipient_user_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shop_detail_artist_name_text" />
+        <TextView android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.669983dip" style="@style/shop_detail_title_text" />
+        <TextView android:id="@id/period_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shop_detail_period_text" />
+        <View android:background="@color/shop_detail_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="8.5dip" android:layout_marginBottom="9.5dip" />
+        <ViewStub android:id="@id/price_view_stub" android:visibility="gone" android:layout="@layout/shop_product_detail_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

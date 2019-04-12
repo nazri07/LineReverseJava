@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="7.5dip" android:paddingRight="7.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/pay_common_money_input_edit_text" android:id="@id/money_input_title_text" android:paddingLeft="8.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="money.title" />
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/pay_shape_white_rectangle_r2" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <TextView android:textSize="29.0sp" android:textColor="@color/pay_common_money_input_edit_text" android:id="@id/money_currency_prefix_symbol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <EditText android:textSize="28.5sp" android:textColor="@color/pay_common_money_input_edit_text" android:textColorHint="@color/pay_common_money_input_hint_text" android:gravity="right" android:id="@id/money_edit_text" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="numberDecimal" />
+        <TextView android:textSize="28.5sp" android:textColor="@color/pay_common_money_input_edit_text" android:id="@id/money_unit_text" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="22.5sp" android:textColor="@color/pay_common_money_input_edit_text" android:id="@id/money_currency_suffix_symbol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/money_increase_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.5dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/money_increase_button_1" android:background="@drawable/pay_selector_white_rectangle_r2" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pay_common_money_input_incread_money_text" android:id="@id/money_increase_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:drawableLeft="@drawable/pay_icon_plus" android:drawablePadding="4.5dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/money_increase_button_2" android:background="@drawable/pay_selector_white_rectangle_r2" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginRight="4.5dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pay_common_money_input_incread_money_text" android:id="@id/money_increase_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" android:drawableLeft="@drawable/pay_icon_plus" android:drawablePadding="4.5dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/money_increase_button_3" android:background="@drawable/pay_selector_white_rectangle_r2" android:layout_width="wrap_content" android:layout_height="41.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/pay_common_money_input_incread_money_text" android:id="@id/money_increase_text_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10000" android:drawableLeft="@drawable/pay_icon_plus" android:drawablePadding="4.5dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

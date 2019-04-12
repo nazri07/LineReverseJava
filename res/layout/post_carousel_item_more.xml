@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="81.0dip" android:layout_height="360.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myhome_see_more" style="@style/text_timeline_carousel_item_more" />
+        <ImageButton android:id="@id/post_carousel_more" android:background="@drawable/timeline_oa_ic_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dip" android:layout_marginBottom="22.0dip" />
+    </LinearLayout>
+</RelativeLayout>

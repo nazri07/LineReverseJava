@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textColor="@color/d_day_text_color" android:id="@id/keep_grid_item_expiry_date_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_grid_item_expirydate_side_margin" android:layout_marginRight="@dimen/keep_grid_item_expirydate_side_margin" android:layout_marginBottom="@dimen/keep_grid_item_expirydate_bottom_margin" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/keep_grid_item_expirydate_side_margin" android:layout_marginEnd="@dimen/keep_grid_item_expirydate_side_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

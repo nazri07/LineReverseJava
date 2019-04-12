@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00001" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00002" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00003" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00004" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00005" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00006" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00007" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00008" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00009" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00010" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00011" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00012" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00013" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00014" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00015" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00016" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00017" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00018" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00019" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00020" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00021" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00022" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00023" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00024" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00025" />
+    <item android:duration="100" android:drawable="@drawable/tutorial_longtab_00026" />
+</animation-list>

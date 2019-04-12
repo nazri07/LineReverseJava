@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.multimedia.ui.LineVideoView android:id="@id/line_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/access_picker_video" />
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/thumb_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/play_button_viewstub" android:layout="@layout/media_play_type_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/pause_button" android:paddingBottom="26.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_pause_01" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+    <TextView android:gravity="center" android:id="@id/error_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/gallery_video_corruptedfile" android:drawableTop="@drawable/com_img_error03" android:drawablePadding="15.0dip" android:layout_centerInParent="true" style="@style/text_zeropage_subtitle04" />
+</RelativeLayout>

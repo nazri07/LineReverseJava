@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/pay_main_base_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linecorp.linepay.legacy.activity.main.view.PayMainTopInfoView android:id="@id/pay_main_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linecorp.linepay.legacy.activity.main.view.PayMainBalanceView android:id="@id/pay_main_balance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linecorp.linepay.legacy.activity.main.view.PayMainCreditCardView android:id="@id/pay_main_credit_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linecorp.linepay.legacy.activity.main.view.PayMainMiddleNoticeView android:id="@id/pay_main_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linecorp.linepay.legacy.activity.main.view.PayMainCreditCardList android:id="@id/pay_main_credit_card_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linecorp.linepay.legacy.activity.main.view.LinePayMainButtonView android:id="@id/pay_main_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/pay_main_menu_divider" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+        <com.linecorp.linepay.legacy.activity.main.view.LinePayMainHorizontalMenuView android:id="@id/pay_main_horizontal_menu" android:background="#fffcfcfc" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/pay_main_banner_divider" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+        <com.linecorp.linepay.legacy.activity.main.view.PayMainBottomBannerView android:id="@id/pay_main_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

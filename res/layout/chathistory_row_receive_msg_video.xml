@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.view.RoundedFrameLayout android:id="@id/chathistory_row_video_thumbnail_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chathistory_message_image_receive_padding_left" android:layout_marginBottom="@dimen/chathistory_message_image_padding_bottom" android:contentDescription="@string/access_attached_video" android:layout_marginStart="@dimen/chathistory_message_image_receive_padding_left" app:cornerRadius="@dimen/chathistory_thumbnail_round"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/chathistory_row_video_thumbnail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/chathistory_row_video_thumbnail_center_button" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Space android:layout_width="1.0dip" android:layout_height="12.0sp" android:layout_marginBottom="2.0dip" />
+        <ImageView android:id="@id/chathistory_row_video_play_button" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_ic_play03" />
+        <ImageView android:id="@id/chathistory_row_video_error_icon" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/error_image" />
+        <ViewStub android:id="@id/chathistory_row_upload_cancel_button_stub" android:duplicateParentState="true" android:layout="@layout/chathistory_row_send_upload_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/chathistory_row_thumbnail_metadata_text" android:layout_width="wrap_content" android:layout_height="12.0sp" android:layout_margin="3.0dip" style="@style/chathistory_thumbnail_metadata_text" />
+    </LinearLayout>
+</com.linecorp.view.RoundedFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.5sp" android:textColor="#ffb8bdc7" android:id="@id/groupform_description_invitees_max" android:paddingLeft="19.5dip" android:paddingTop="10.0dip" android:paddingRight="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/v2_shadow_down_67" />
+    <TextView android:textSize="13.5sp" android:textColor="#ffb8bdc7" android:paddingLeft="19.5dip" android:paddingTop="10.0dip" android:paddingRight="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/comment_create_group" style="@style/v2_shadow_down_67" />
+    <TextView android:textSize="13.5sp" android:textColor="#ffb8bdc7" android:id="@id/groupform_description_1" android:paddingLeft="19.5dip" android:paddingTop="10.0dip" android:paddingRight="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/groupform_description_album" style="@style/v2_shadow_down_67" />
+    <TextView android:textSize="13.5sp" android:textColor="#ffb8bdc7" android:id="@id/groupform_description_2" android:paddingLeft="19.5dip" android:paddingTop="2.5dip" android:paddingRight="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/groupform_description_note" style="@style/v2_shadow_down_67" />
+    <TextView android:textSize="13.5sp" android:textColor="#ffb8bdc7" android:id="@id/groupform_description_3" android:paddingLeft="19.5dip" android:paddingTop="2.5dip" android:paddingRight="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/groupform_description_delete_chat" style="@style/v2_shadow_down_67" />
+</merge>

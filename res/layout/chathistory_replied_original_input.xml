@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/content_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.customview.thumbnail.ThumbImageView android:layout_gravity="center_vertical" android:id="@id/sender_avatar" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="12.0dip" android:layout_marginStart="12.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+        <TextView android:ellipsize="end" android:id="@id/sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/message_input_reply_original_message_sender_name" />
+        <TextView android:ellipsize="end" android:id="@id/content_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:maxLines="1" style="@style/message_input_reply_original_message_content_text" />
+    </LinearLayout>
+    <com.linecorp.view.RoundedFrameLayout android:layout_gravity="center_vertical" android:id="@id/content_thumbnail_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/content_thumbnail" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_icon_play_06_normal" android:contentDescription="@null" />
+    </com.linecorp.view.RoundedFrameLayout>
+    <ImageView android:id="@id/close" android:padding="@dimen/message_input_reply_original_message_close_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chatroom_ic_x" android:contentDescription="@string/access_cancel" />
+</LinearLayout>

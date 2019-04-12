@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_location_poi_item" android:layout_width="fill_parent" android:layout_height="63.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_weight="1.0" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/location_ic_cafe" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:ellipsize="end" android:id="@id/address" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52.5dip" android:layout_marginTop="1.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="52.5dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/icon_go_map" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_ic_map" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/icon_go_check" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_ic_share" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

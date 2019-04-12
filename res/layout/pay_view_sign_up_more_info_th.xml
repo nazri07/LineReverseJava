@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/buttons_container" android:paddingTop="10.5dip" android:paddingBottom="10.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.linepay.th.biz.signup.PaySignUpAddressLayout android:id="@id/pay_layout_update_id_card_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" app:layoutTitleText="@string/pay_th_signup_id_card_address" app:shouldShowCheckBox="false" />
+    <com.linecorp.linepay.th.biz.signup.PaySignUpAddressLayout android:id="@id/pay_layout_update_actual_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" app:layoutTitleText="@string/pay_th_signup_actual_address" app:shouldShowCheckBox="true" />
+    <com.linecorp.linepay.legacy.customview.InputButton android:id="@id/pay_input_button_more_info_job" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.5dip" />
+    <com.linecorp.linepay.th.biz.signup.PaySignUpAddressLayout android:id="@id/pay_layout_update_workplace_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" app:layoutTitleText="@string/pay_th_signup_workplace_address" app:shouldShowCheckBox="true" />
+</LinearLayout>

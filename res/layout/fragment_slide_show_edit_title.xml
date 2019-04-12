@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/media_picker_crop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/media_slideshow_edit_header_layout" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:layout_alignParentTop="true">
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/media_slideshow_cancel_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/gallery_slideshow_button_cancel" android:layout_alignParentLeft="true" style="@style/text_slide_show_send_btn" />
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/media_slideshow_done_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/gallery_slideshow_button_done" android:layout_alignParentRight="true" style="@style/text_slide_show_send_btn" />
+    </RelativeLayout>
+    <FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/media_slideshow_edit_header_layout">
+        <FrameLayout android:id="@id/media_slideshow_edit_title_preview_area_layout" android:background="@color/media_picker_slideshow_edit_thumbnail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.linecorp.line.media.picker.fragment.slideshow.SlideShowCenterPannableImageView android:id="@id/media_slideshow_edit_title_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <View android:id="@id/media_slideshow_edit_title_dimmed_view" android:background="@color/media_picker_text_dimmed_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="24.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="@color/media_picker_slideshow_title_hint" android:gravity="center" android:layout_gravity="center" android:id="@id/media_slideshow_edit_title_main_title_edit" android:background="@null" android:layout_width="wrap_content" android:layout_height="31.0dip" android:hint="@string/slideshow_title_guide_text" android:maxLines="1" android:shadowColor="#33000000" android:shadowRadius="5.0" android:inputType="text" android:textCursorDrawable="@null" android:fontFamily="sans-serif">
+                    <requestFocus />
+                </EditText>
+                <EditText android:textSize="15.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:textColorHint="@color/media_picker_slideshow_title_hint" android:gravity="center" android:layout_gravity="center" android:id="@id/media_slideshow_edit_title_sub_title_edit" android:background="@null" android:layout_width="wrap_content" android:layout_height="19.0dip" android:hint="@string/slideshow_subtitle_guide_text" android:maxLines="1" android:shadowColor="#33000000" android:shadowRadius="5.0" android:inputType="text" android:textCursorDrawable="@null" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

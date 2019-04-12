@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/short_cut_tootip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/short_cut__tootip_arrow" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/keep_main_shortcut_tooptip_arrow_height" android:layout_marginRight="@dimen/keep_main_shortcut_tooptip_arrow_right_margin" android:src="@drawable/ke_img_tooltip_arrow02" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:gravity="center_vertical" android:id="@id/short_cut_tootip_text" android:background="@drawable/ke_img_tooltip_bg" android:padding="@dimen/keep_main_shortcut_tooptip_padding" android:layout_width="@dimen/keep_main_shortcut_tooptip_max_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_main_shortcut_tooptip_top_margin" android:layout_marginRight="@dimen/keep_main_shortcut_tooptip_right_margin" android:text="@string/keep_create_shortcut_tooltip_guide" android:layout_below="@id/short_cut__tootip_arrow" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/text_tooltip_content" />
+</RelativeLayout>

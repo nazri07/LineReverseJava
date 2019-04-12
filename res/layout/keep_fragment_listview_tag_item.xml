@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_list_tag_view" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_tag_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/keep_list_item_tag_more_layout" android:paddingLeft="@dimen/keep_list_tag_item_arrow_icon_left_margin" android:paddingRight="@dimen/keep_list_item_right_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:paddingStart="@dimen/keep_list_tag_item_arrow_icon_left_margin" android:paddingEnd="@dimen/keep_list_item_right_margin" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/keep_list_item_tag_more_image" android:layout_width="@dimen/keep_list_tag_item_arrow_icon_width" android:layout_height="@dimen/keep_list_tag_item_arrow_icon_height" android:src="@drawable/ke_list_icon_arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_toLeftOf="@id/keep_list_item_tag_more_layout" android:layout_alignParentLeft="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_toStartOf="@id/keep_list_item_tag_more_layout" android:layout_alignParentStart="true">
+        <com.linecorp.linekeep.widget.TagView android:textSize="13.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/keep_list_item_tag_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_centerVertical="true" android:lineSpacingExtra="0.0dip" app:tag_isReadOnlyMode="true" app:tag_isTagSingleLine="true" app:tag_textColor="@color/tag_blue" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

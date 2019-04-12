@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="#fffafafa" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="54.0dip">
+        <RelativeLayout android:clipChildren="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/post_upload_thumb_image" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/post_upload_video_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/write_thumb_ic_video" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/post_upload_read_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-4.0dip" android:layout_marginBottom="-4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/post_upload_retry_btn" android:background="@null" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/write_ic_retry_selector" android:contentDescription="@string/access_retry" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ProgressBar android:id="@id/post_upload_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Post.Upload.ProgressBar" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff4d4d4d" android:id="@id/post_upload_status_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="47.0dip" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/post_upload_circle_progress" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="19.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/post_upload_delete_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:src="@drawable/write_ic_cancel_selector" android:layout_alignParentRight="true" android:contentDescription="@string/access_delete" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

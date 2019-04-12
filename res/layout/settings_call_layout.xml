@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/text_category" android:paddingLeft="16.0dip" android:paddingTop="27.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_calls" style="@style/text_setting_category_title" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_allow_voice_call" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/settings_talk_receive_call" style="@style/setting_list_item_title_font" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_talk_receive_call_notice" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+            </LinearLayout>
+            <CheckBox android:id="@id/check_allow_voice_call" android:focusable="false" android:clickable="false" android:layout_width="@dimen/call_setting_checkbox_width" android:layout_height="@dimen/call_setting_checkbox_height" android:layout_marginLeft="16.0dip" style="@style/call_setting_check_box" />
+        </LinearLayout>
+        <View style="@style/setting_division_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_compact_call_mode" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/settings_call_pip" style="@style/setting_list_item_title_font" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_call_pip_description" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+            </LinearLayout>
+            <CheckBox android:id="@id/check_compact_call_mode" android:focusable="false" android:clickable="false" android:layout_width="@dimen/call_setting_checkbox_width" android:layout_height="@dimen/call_setting_checkbox_height" android:layout_marginLeft="16.0dip" style="@style/call_setting_check_box" />
+        </LinearLayout>
+        <View style="@style/setting_division_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_video_effect_filters" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/settings_call_effect" style="@style/setting_list_item_title_font" />
+            <TextView android:id="@id/text_video_effect_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/settings_call_effect_check" android:includeFontPadding="false" style="@style/setting_list_item_value_font" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_call_effect_description" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+        </LinearLayout>
+        <View style="@style/setting_division_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_hd_video_call" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/settings_call_hdvideo_title" style="@style/setting_list_item_title_font" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_call_hdvideo_body" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+                </LinearLayout>
+                <CheckBox android:id="@id/check_hd_video_call" android:focusable="false" android:clickable="false" android:layout_width="@dimen/call_setting_checkbox_width" android:layout_height="@dimen/call_setting_checkbox_height" android:layout_marginLeft="16.0dip" style="@style/call_setting_check_box" />
+            </LinearLayout>
+            <View android:layout_marginTop="14.0dip" style="@style/setting_division_line" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_test_call" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/settings_testcall" style="@style/setting_list_item_title_font" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/settings_testcall_description" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+            <View android:layout_marginTop="14.0dip" style="@style/setting_division_line" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_ringtone" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/settings_ringtone" style="@style/setting_list_item_title_font" />
+            <TextView android:id="@id/text_ringtone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:includeFontPadding="false" style="@style/setting_list_item_value_font" />
+            <View android:layout_marginTop="14.0dip" style="@style/setting_division_line" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_ringbacktone" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/settings_ringbacktone" style="@style/setting_list_item_title_font" />
+            <TextView android:id="@id/text_ringbacktone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:includeFontPadding="false" style="@style/setting_list_item_value_font" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/settings_ringtone_description" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+            <View android:layout_marginTop="14.0dip" style="@style/setting_division_line" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/btn_additionaltab" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/text_additionaltab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" style="@style/setting_list_item_title_font" />
+            <TextView android:id="@id/text_additionaltab_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:includeFontPadding="false" style="@style/setting_list_item_value_font" />
+            <TextView android:id="@id/text_additionaltab_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:includeFontPadding="false" style="@style/setting_list_item_check_info_font" />
+            <View android:layout_marginTop="14.0dip" style="@style/setting_division_line" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

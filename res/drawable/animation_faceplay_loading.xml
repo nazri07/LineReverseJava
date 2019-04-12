@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/selected" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00000" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00001" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00002" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00003" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00004" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00005" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00006" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00007" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00008" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00009" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00010" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00011" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00012" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00013" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00014" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00015" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00016" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00017" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00018" />
+    <item android:duration="67" android:drawable="@drawable/faceplay_loading_00019" />
+</animation-list>

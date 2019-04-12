@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#fa333747" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/message_close" android:layout_width="11.5dip" android:layout_height="11.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/btn_videocall_message_cancel_selector" />
+    <TextView android:textSize="12.0sp" android:textColor="#ccffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/message_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="8.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_weight="1.0" />
+</LinearLayout>

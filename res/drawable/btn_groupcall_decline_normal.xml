@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/layer_drawable_item_call_button_image_bg" android:drawable="@drawable/call_reject_btn_image_bg_normal" />
+    <item android:drawable="@drawable/groupcall_dial_icon" />
+</layer-list>

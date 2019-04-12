@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/player_active_user_recycler_item_0" android:layout_width="31.0dip" android:layout_height="33.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/active_user_icon" android:layout_width="24.5dip" android:layout_height="24.5dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="7.5dip" />
+    <ImageView android:id="@id/active_user_icon_frame" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="7.5dip" android:src="@drawable/live_player_thumbnail_frame_gift02" />
+    <ImageView android:id="@id/active_user_rank_frame_1st" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="33.0dip" android:src="@drawable/live_ic_gift_active_rank_01" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/active_user_rank_frame_2nd" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="33.0dip" android:src="@drawable/live_ic_gift_active_rank_02" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/active_user_rank_frame_3rd" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="33.0dip" android:src="@drawable/live_ic_gift_active_rank_03" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.liff.SwipeDismissLayout android:layout_gravity="bottom" android:id="@id/swipe_dismiss_container" android:layout_width="fill_parent" android:layout_height="@dimen/liff_layout_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/liff_container_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/liff_header_view" android:visibility="gone" android:layout="@layout/liff_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <com.linecorp.liff.RoundedViewContainer android:id="@id/liff_webview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/liff_header_bg">
+            <WebView android:id="@id/liff_webview" android:background="@color/liff_webview_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/liff_error_view" android:visibility="gone" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/iab_location_prompt" />
+        </com.linecorp.liff.RoundedViewContainer>
+        <ProgressBar android:id="@id/liff_webview_progress" android:layout_width="fill_parent" android:layout_height="@dimen/liff_layout_default_progress_height" android:progressDrawable="@drawable/liff_progress_bar" android:layout_alignBottom="@id/liff_header_bg" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+</com.linecorp.liff.SwipeDismissLayout>

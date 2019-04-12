@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="192.5dip" android:layout_marginBottom="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/pay_line_card_image" android:background="@drawable/pay_shape_line_card_default_r10" android:layout_width="fill_parent" android:layout_height="192.5dip" />
+    <RadioButton android:id="@id/pay_line_card_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:button="@drawable/pay_selector_line_card_radio" />
+    <com.todddavies.components.progressbar.ProgressWheel android:id="@id/pay_line_card_progress_wheel" android:focusable="false" android:layout_width="@dimen/comment_progress_dimension" android:layout_height="@dimen/comment_progress_dimension" android:layout_centerInParent="true" custom:pwBarColor="@color/white" custom:pwBarLength="25.0dip" custom:pwBarWidth="1.5dip" custom:pwRimColor="#ffaaaaaa" custom:pwRimWidth="1.5dip" custom:pwText="" custom:pwTextColor="#ff28be01" custom:pwTextSize="16.0sp" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pay_line_card_error_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/pay_line_card_reload" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_icon_reload" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff848484" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_line_card_error_failed_to_load_image" />
+    </LinearLayout>
+</RelativeLayout>

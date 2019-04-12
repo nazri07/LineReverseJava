@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/chat_media_recycler_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/chat_media_recycler_view" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/common_bottom_btn_height" />
+        <include android:visibility="gone" layout="@layout/gallery_recyclerview_item_section_in_chat" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/empty_view" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zeropage_img_none12" android:contentDescription="@null" />
+            <TextView android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/gallery_no_photos" style="@style/text_zeropage_title02" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/chat_visual_media_bottom_button_container" android:background="@color/chat_gallery_bottom_color_background" android:layout_width="fill_parent" android:layout_height="@dimen/common_bottom_btn_height">
+        <include layout="@layout/gallery_bottom_action_bar_chat_selected_mode" />
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/chat_visual_media_selection_mode_button" android:background="@drawable/selector_btn_01" android:paddingLeft="22.669983dip" android:paddingRight="22.669983dip" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/gallery_save_to_photos" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/v2_common_button_bottom" />
+    </RelativeLayout>
+</FrameLayout>

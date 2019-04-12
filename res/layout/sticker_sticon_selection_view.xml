@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/sticker_grid_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/sticker_sticon_selection_view_sticker_grid" />
+    <include android:id="@id/sticon_grid_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/sticon_selection_view_sticon_grid" />
+    <ViewStub android:id="@id/sticker_sticon_packge_download_available_view_stub" android:layout="@layout/sticker_sticon_package_download" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticker_sticon_input_downloading_view_stub" android:layout="@layout/sticker_sticon_downloading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticker_sticon_input_download_error_view_stub" android:layout="@layout/sticker_sticon_selection_view_failed_to_download" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticker_sticon_input_empty_history_view_stub" android:layout="@layout/sticker_sticon_grid_empty_history" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticker_sticon_input_expired_contents_view_stub" android:layout="@layout/sticker_sticon_expired_contents" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/sticker_sticon_input_invalid_name_sticker_contents_view_stub" android:layout="@layout/sticker_sticon_invalid_custom_sticker_contents" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

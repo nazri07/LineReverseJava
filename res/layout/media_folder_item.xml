@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/media_selector_folder_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/media_folder_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/media_folder_item_top_divider_view" android:background="#ffced4da" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="56.5dip" />
+    <TextView android:gravity="center" android:id="@id/media_folder_item_selected_count_textview" android:background="@drawable/header_checkbox_num_bg_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/media_folder_list_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gallery_check_num01" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/media_folder_list_item_padding_left" android:layout_marginRight="25.0dip" android:layout_toLeftOf="@id/media_folder_item_selected_count_textview" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <FrameLayout android:id="@id/media_folder_last_taken_item_layout" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginRight="15.0dip">
+                <jp.naver.toybox.drawablefactory.DImageView android:id="@id/media_folder_last_taken_item_imageview" android:background="#fff2f4f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <View android:id="@id/media_folder_last_taken_item_check_dimmed_imageview" android:background="@drawable/media_picker_folder_selected_item_check_dimmed_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center" android:id="@id/media_folder_last_taken_item_check_imageview" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/gallery_ic_check_03" />
+            </FrameLayout>
+            <ImageView android:id="@id/media_folder_item_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/gallery_ic_external" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/media_folder_item_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffb7bfc7" android:id="@id/media_folder_item_count_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

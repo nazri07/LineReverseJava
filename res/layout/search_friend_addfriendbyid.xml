@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_bg" android:background="@drawable/row_user" android:paddingLeft="@dimen/search_row_leftright_margin" android:layout_width="fill_parent" android:layout_height="@dimen/list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_friend_addfriendbyid_icon" android:layout_width="@dimen/search_row_icon_width" android:layout_height="@dimen/search_row_icon_width" android:layout_marginRight="@dimen/search_row_icon_right_margin" android:src="@drawable/search_thumbnail_img_id" />
+    <TextView android:id="@id/search_friend_addfriendbyid_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_list_category_name01" />
+</LinearLayout>

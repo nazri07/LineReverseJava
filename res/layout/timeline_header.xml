@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/timeline_writing_form_bg" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/post_upload_view_stub" android:layout="@layout/home_post_upload_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

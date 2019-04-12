@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/meme_frame_root" android:background="@android:color/black" android:padding="2.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgBg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <FrameLayout android:id="@id/meme_frame" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <ImageView android:id="@id/img_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.5dip" android:src="@drawable/meme_img_hot" />
+    <FrameLayout android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/layout_ad_button_frame" android:background="#ff000000" android:layout_width="143.0dip" android:layout_height="35.0dip" android:layout_marginBottom="12.5dip">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/layout_ad_button" android:background="#ffa5e8f6" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="140.0dip" android:layout_height="32.0dip">
+            <TextView android:textSize="13.099976sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/text_ad_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/img_arrow" />
+            <ImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.5dip" android:src="@drawable/meme_ic_arrow" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

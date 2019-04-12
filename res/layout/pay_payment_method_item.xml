@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pay_payment_method_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="84.0dip">
+        <RadioButton android:id="@id/pay_method_radio" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.5dip" android:layout_marginRight="14.0dip" style="@style/pay_payment_radio_button" />
+        <LinearLayout android:orientation="vertical" android:id="@id/pay_method_content_layout" android:paddingTop="23.0dip" android:paddingBottom="23.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="84.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_text_404040" android:id="@id/pay_method_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/common_text_404040" android:id="@id/pay_method_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <jp.naver.toybox.drawablefactory.DImageView android:id="@id/pay_method_card_img" android:layout_width="29.0dip" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <com.linecorp.linepay.legacy.customview.MoneyTextView android:id="@id/pay_method_balance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/common_text_404040" android:id="@id/pay_method_start_use_balance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_payment_start_use_balance" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/pay_method_button" android:background="@drawable/pay_selector_button_r07" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="28.5dip" android:layout_marginRight="20.0dip" android:minWidth="58.0dip" android:minHeight="27.0dip" />
+    </LinearLayout>
+</LinearLayout>

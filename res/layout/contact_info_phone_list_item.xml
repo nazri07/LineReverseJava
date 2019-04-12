@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/contactinfo_phone_item_bg_normal" android:paddingLeft="@dimen/contact_info_content_horizontal_padding" android:paddingRight="@dimen/contact_info_content_horizontal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/contact_info_phone_list_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contactinfo_phone_button" android:background="@null" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="23.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="23.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:id="@id/contactinfo_phone_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" android:layout_toLeftOf="@id/contactinfo_phone_button" android:layout_toStartOf="@id/contactinfo_phone_button" style="@style/text_call_info_title" />
+    <TextView android:id="@id/contactinfo_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toLeftOf="@id/contactinfo_phone_button" android:layout_below="@id/contactinfo_phone_title" android:layout_toStartOf="@id/contactinfo_phone_button" style="@style/text_call_info_content01" />
+</RelativeLayout>

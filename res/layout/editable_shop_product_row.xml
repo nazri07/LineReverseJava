@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/row_user" android:layout_width="fill_parent" android:layout_height="@dimen/shop_my_product_list_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/move_handle" android:paddingLeft="5.0dip" android:layout_width="34.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_width="19.329987dip" android:layout_height="19.329987dip" android:src="@drawable/stickershop_list_switch" />
+    </LinearLayout>
+    <include layout="@layout/my_sticker_list_package_row_thumbnail" />
+    <include layout="@layout/my_sticker_list_package_row_name_status" />
+    <TextView android:id="@id/delete_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.6700001dip" android:layout_marginRight="10.669983dip" android:text="@string/delete" style="@style/v2_common_button_list_red" />
+</LinearLayout>

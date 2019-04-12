@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/message_input_menu_height_portrait"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:gravity="fill" android:id="@id/chathistory_attach_menu_grid" android:background="@drawable/v2_chathistory_attach_item_bg" android:paddingBottom="@dimen/chathistory_attach_menu_bottom_margin" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" />
+    <View android:layout_gravity="top" android:id="@id/chathistory_attach_menu_divider" android:background="@color/chathistory_attach_menu_divider" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+</FrameLayout>

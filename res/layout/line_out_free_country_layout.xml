@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/country_code_list_item_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/country_image" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.linecorp.voip.ui.TruncatableTextView android:textSize="16.0sp" android:textColor="@color/country_code_list_name_search_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/country_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="11.0sp" android:textColor="#ffbec1cc" android:id="@id/country_phone_free_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/country_check_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/call_list_ic_check" android:contentDescription="@string/access_state_selected" />
+    </LinearLayout>
+</LinearLayout>

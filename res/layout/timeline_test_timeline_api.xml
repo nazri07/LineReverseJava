@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Custom error code :" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/test_timeline_api_errorcode_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="number" />
+                <Button android:id="@id/test_timeline_api_save" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" android:onClick="onSaveErrorCode" />
+                <Button android:id="@id/test_timeline_api_cancel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" android:onClick="onResetErrorCode" />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Num of post when read more :" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/test_timeline_post_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="number" />
+                <Button android:id="@id/test_timeline_post_count_save" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" />
+                <Button android:id="@id/test_timeline_post_count_reset" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Timeline new post check interval (msec):" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/test_timeline_new_post_check_interval" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="number" />
+                <Button android:id="@id/test_timeline_new_post_check_interval_save" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" />
+                <Button android:id="@id/test_timeline_new_post_check_interval_reset" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Image crop size &amp; quality setting :" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="c." />
+                <EditText android:id="@id/test_timeline_image_crop_size_width_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="306" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x" />
+                <EditText android:id="@id/test_timeline_image_crop_size_height_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="245" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\?q=" />
+                <EditText android:id="@id/test_timeline_image_quality_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="50" android:layout_weight="1.0" android:inputType="number" />
+                <ToggleButton android:id="@id/test_timeline_image_crop_size_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ff123456" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="comment/like activation test" />
+                <RadioGroup android:id="@id/test_timeline_api_commentlike_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/radioButton1">
+                    <RadioButton android:id="@id/radioButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="디버그 값 사용 안 함" />
+                    <RadioButton android:id="@id/radioButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="디버그 값 사용 함" />
+                </RadioGroup>
+                <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="코멘트 사용" />
+                <CheckBox android:id="@id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="라이크 사용" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

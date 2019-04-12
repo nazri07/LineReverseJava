@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/auto_complete_background" android:background="@color/auto_complete_background" android:paddingLeft="@dimen/search_auto_complete_lr_padding" android:paddingRight="@dimen/search_auto_complete_lr_padding" android:layout_width="fill_parent" android:layout_height="39.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/auto_complete_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/search_auto_complete_icon_right_margin" android:src="@drawable/search_ic_search" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/auto_complete_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/auto_complete_divider" android:background="@color/auto_complete_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/square_chat_list_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/schat_recyclerview" android:paddingTop="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffafb6c3" android:gravity="center" android:id="@id/schat_empty_desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="@dimen/square_home_empty_margin_top" android:layout_marginRight="50.0dip" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/slide_show_edit_bottom_list_item_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/selected_media_item_image_layout" android:padding="@dimen/slide_show_edit_bottom_list_item_image_layout_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <View android:id="@id/selected_media_item_default_bg" android:background="@color/media_picker_slideshow_edit_thumbnail_bg" android:layout_width="@dimen/slide_show_selected_image_item_image" android:layout_height="@dimen/slide_show_selected_image_item_image" />
+        <com.linecorp.line.media.picker.fragment.slideshow.SlideShowEditMediaListThumbnailView android:id="@id/selected_media_item_thumbnail" android:layout_width="@dimen/slide_show_selected_image_item_image" android:layout_height="@dimen/slide_show_selected_image_item_image" android:scaleType="center" />
+        <ImageView android:id="@id/selected_media_item_check_imageview" android:background="@drawable/slide_show_bottom_image_check_bg_drawable" android:visibility="gone" android:layout_width="@dimen/slide_show_selected_image_item_image" android:layout_height="@dimen/slide_show_selected_image_item_image" android:src="@drawable/slide_ic_check" android:scaleType="center" />
+        <View android:id="@id/selected_media_item_divider" android:background="#1f000000" android:visibility="gone" android:layout_width="0.6700001dip" android:layout_height="@dimen/slide_show_selected_image_item_image" />
+        <View android:layout_gravity="center" android:id="@id/selected_media_item_edit_title" android:background="@drawable/slide_ic_text_normal" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" />
+        <View android:id="@id/selected_media_item_edit_title_dimmed" android:background="@color/media_picker_slideshow_edit_bottom_list_title_item_empty" android:visibility="gone" android:layout_width="@dimen/slide_show_selected_image_item_image" android:layout_height="@dimen/slide_show_selected_image_item_image" />
+    </FrameLayout>
+</RelativeLayout>

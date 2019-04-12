@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/item_purchase_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/coin_topbg_01" android:padding="14.669983dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/coin_item_purchase_cp_icon" android:background="@color/transparent" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff747d8d" android:id="@id/coin_item_purchase_cp_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.669983dip" android:layout_marginTop="4.0dip" android:text="CP NAME" android:includeFontPadding="false" android:shadowColor="#ffffffff" android:shadowDy="0.67" android:layout_toRightOf="@id/coin_item_purchase_cp_icon" android:layout_alignParentTop="true" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff1d2636" android:id="@id/coin_item_purchase_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.3299866dip" android:text="Item Name AAAA BBBBB CCCC DDDD EEE FF GGGGG" android:shadowColor="#ffffffff" android:shadowDy="0.67" android:layout_below="@id/coin_item_purchase_cp_name" android:layout_alignLeft="@id/coin_item_purchase_cp_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.3299866dip" android:layout_below="@id/coin_item_purchase_item_name" android:layout_alignLeft="@id/coin_item_purchase_item_name">
+                <ImageView android:id="@id/coin_item_purchase_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/newcoin_02" />
+                <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/coin_item_purchase_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="200" android:includeFontPadding="false" android:shadowColor="#ffffffff" android:shadowDy="0.67" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/coin_item_purchase_view_enough" android:visibility="gone" android:layout="@layout/coin_item_purchase_enough" android:inflatedId="@id/coin_item_purchase_view_enough" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/coin_item_purchase_view_not_enough" android:visibility="gone" android:layout="@layout/coin_item_purchase_not_enough" android:inflatedId="@id/coin_item_purchase_view_not_enough" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/coin_item_purchase_maintenance" android:visibility="gone" android:layout="@layout/coin_shop_maintenance_small" android:inflatedId="@id/coin_item_purchase_maintenance" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/coin_item_purchase_loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" />
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/item_purchase_error" android:layout="@layout/coin_shop_errorview" android:inflatedId="@id/item_purchase_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

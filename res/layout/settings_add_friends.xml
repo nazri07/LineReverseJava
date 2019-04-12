@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/common_setting_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/settings_add_friends_sync_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/settings_add_friends_sync_now" android:background="@drawable/setting_ic_re" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/settings_add_friends_lastupdate_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="16.0dip" android:text="@string/settings_add_friends_lastupdate" android:singleLine="true" android:layout_toLeftOf="@id/settings_add_friends_sync_now" android:layout_alignParentLeft="true" style="@style/text_setting_category_list01" />
+                <TextView android:id="@id/settings_add_friends_lastupdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="14.0dip" android:layout_below="@id/settings_add_friends_lastupdate_title" android:layout_alignLeft="@id/settings_add_friends_lastupdate_title" android:layout_alignRight="@id/settings_add_friends_lastupdate_title" style="@style/text_setting_category_list_option01" />
+                <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="15.0dip" android:layout_below="@id/settings_add_friends_lastupdate" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

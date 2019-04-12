@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/search_popular_category" android:background="@drawable/row_user" android:layout_width="@dimen/search_popular_category_icon_width" android:layout_height="@dimen/search_popular_category_icon_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="35.0dip" android:layout_height="35.0dip">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_popular_category_item_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/search_popular_category_progress" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/search_popular_category_icon_fontsize" android:textColor="#ff9298a7" android:ellipsize="end" android:gravity="center" android:id="@id/search_popular_category_item_title" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:includeFontPadding="false" />
+</LinearLayout>

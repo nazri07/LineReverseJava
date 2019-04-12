@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/square_fragment_settings_manage_members_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/square_settings_manage_members_loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/settings_app_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/square_settings_manage_members_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_manage_members_join_request_button" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managemembers_request" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_manage_members_prevent_rejoin_list_button" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managemembers_blocktojoin" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

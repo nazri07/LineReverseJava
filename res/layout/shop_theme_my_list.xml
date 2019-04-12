@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/stickershop_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:id="@id/shop_theme_my_list_no_result_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_my_theme_editmode_noresult" style="@style/StickershopNoContentsViewText" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/themelist_progress" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+    <ListView android:id="@id/shop_theme_my_list_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@color/list_divider_color" android:dividerHeight="1.0px" android:layout_below="@id/header" />
+    <ViewStub android:id="@id/shop_theme_my_list_errorview" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" />
+</RelativeLayout>

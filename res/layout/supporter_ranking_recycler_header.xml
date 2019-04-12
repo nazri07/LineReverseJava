@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/supporter_ranking_recycler_header_0" android:layout_width="fill_parent" android:layout_height="39.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="22.0dip">
+        <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="12.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fanranking_gift_sent" />
+        <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="12.0sp" android:textColor="@color/light_green" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="4.0dip" />
+        <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="12.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fanranking_gift_sent_pt" />
+    </LinearLayout>
+</LinearLayout>

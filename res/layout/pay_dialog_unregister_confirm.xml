@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff888888" android:id="@id/pay_unregister_confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="2.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff4a607e" android:id="@id/pay_unregister_confirm_link_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:includeFontPadding="false" />
+    <CheckBox android:textSize="14.0sp" android:textColor="#ff888888" android:id="@id/pay_unregister_confirm_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:button="@drawable/selector_dialog_checkbox" />
+</LinearLayout>

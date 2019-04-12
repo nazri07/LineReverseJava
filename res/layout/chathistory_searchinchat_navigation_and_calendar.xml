@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/chathistory_searchinchat_navigation_container" android:background="@color/view_common_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_searchinchat_navigation_view_height">
+        <FrameLayout android:id="@id/chathistory_searchinchat_arrow_up_button" android:paddingLeft="4.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="4.0dip" android:paddingEnd="3.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center_vertical" android:id="@id/chathistory_searchinchat_arrow_up_button_image_view" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_ic_arrow_up_selector" android:contentDescription="@string/access_chat_search_up" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/chathistory_searchinchat_arrow_down_button" android:paddingLeft="3.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="3.0dip" android:paddingEnd="4.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center_vertical" android:id="@id/chathistory_searchinchat_arrow_down_button_image_view" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_ic_arrow_down_selector" android:contentDescription="@string/access_chat_search_down" />
+        </FrameLayout>
+        <TextView android:layout_gravity="center_vertical" android:id="@id/chathistory_searchinchat_position_indicator" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" android:layout_marginStart="14.0dip" android:layout_marginEnd="8.0dip" style="@style/searchinchat_navigation_bar_text" />
+        <FrameLayout android:id="@id/chathistory_searchinchat_show_calendar_button" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center_vertical" android:id="@id/chathistory_searchinchat_show_calendar_button_image_view" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_ic_calendar_selector" android:contentDescription="@string/access_chat_search_calendar" />
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/chathistory_searchinchat_calender_viewstub" android:layout="@layout/chathistory_searchinchat_calendar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

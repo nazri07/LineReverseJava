@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="190.0dip" android:layout_height="wrap_content" android:minWidth="95.0dip" android:minHeight="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chathistory_row_groupcall_container" android:padding="15.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/chathistory_row_groupcall_icon" android:layout_width="60.0dip" android:layout_height="32.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:ellipsize="middle" android:gravity="center" android:id="@id/chathistory_row_groupcall_text" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/chathistory_row_groupcall_icon" android:layout_centerHorizontal="true" style="@style/text_chatroom_write_message02" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/chathistory_row_groupcall_join_button_container" android:layout_width="fill_parent" android:layout_height="37.0dip" android:maxWidth="@dimen/chathistory_message_max_width">
+        <View android:id="@id/chathistory_row_groupcall_bottom_divider" android:background="@color/chathistory_message_receive_divider_bg" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_row_divider_height" />
+        <TextView android:layout_gravity="center" android:id="@id/chathistory_row_groupcall_join_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chathistory_layer_groupcall_join_btn" style="@style/text_chatroom_write_message04" />
+    </FrameLayout>
+</LinearLayout>

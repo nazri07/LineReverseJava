@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_title_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/frame_title" android:layout_width="255.0dip" android:layout_height="255.0dip">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/tv_relay_post_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="54.0dip" android:layout_marginBottom="8.0dip" android:maxWidth="255.0dip" android:maxLines="3" android:layout_centerHorizontal="true" android:lineSpacingExtra="3.0sp" style="@style/text_timeline_event_title01" />
+        <TextView android:textSize="12.5sp" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tv_relay_post_scope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.5dip" android:layout_marginRight="17.5dip" android:maxLines="2" android:drawablePadding="3.0dip" android:layout_below="@id/tv_relay_post_title" android:layout_centerHorizontal="true" style="@style/text_timeline_ad_link_subtitle" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_layout" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5dip">
+                <com.linecorp.line.timeline.view.post.PostProfileImageView android:id="@id/iv_master_profile" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerHorizontal="true" custom:profileHeight="35.0dip" custom:profileWidth="35.0dip" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-2.0dip" android:layout_marginBottom="-1.0dip" android:src="@drawable/timeline_ic_badge_master" android:layout_alignRight="@id/iv_master_profile" android:layout_alignBottom="@id/iv_master_profile" />
+            </RelativeLayout>
+            <TextView android:textSize="12.5sp" android:id="@id/tv_master_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" style="@style/text_timeline_event_content05" />
+            <TextView android:id="@id/tv_end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_timeline_event_content09" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/relay_feed_menu_view" android:paddingLeft="16.0dip" android:paddingTop="15.5dip" android:paddingRight="9.5dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_arrow_down02" />
+</FrameLayout>

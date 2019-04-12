@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/v_menu_content_section_item_text_size" android:textColor="@color/v_menu_content_section_item_text_color" android:id="@id/section_header" android:background="@color/v_menu_content_section_item_background_color" android:paddingLeft="@dimen/v_menu_content_section_item_horizontal_padding" android:paddingTop="@dimen/v_menu_content_section_item_vertical_padding" android:paddingRight="@dimen/v_menu_content_section_item_horizontal_padding" android:paddingBottom="@dimen/v_menu_content_section_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/exp_ad_play_content_container" android:layout_width="fill_parent" android:layout_height="203.0dip" android:layout_alignParentTop="true">
+        <com.linecorp.multimedia.ui.LineVideoView android:id="@id/exp_ad_content_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/exp_ad_content_video_loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/expandable_ad_overlay" />
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/exp_ad_content_image_view" android:background="@color/expandable_ad_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <View android:id="@id/exp_ad_content_loading_view" android:background="@color/expandable_ad_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/exp_ad_overlay_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/more_banner_img_ad02" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="13.5sp" android:ellipsize="end" android:gravity="center" android:id="@id/exp_ad_content_actionbar_view" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/expandable_ad_actionbar_height" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@id/exp_ad_play_content_container" />
+</RelativeLayout>

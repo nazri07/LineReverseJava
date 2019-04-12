@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.media.picker.fragment.detail.MediaImageViewPager android:id="@id/media_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/camera_editor_image_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/image_editor_header_layout" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/camera_editor_image_thumbs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/camera_image_editor_thumb_bottom_margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@id/camera_editor_image_back" android:background="@drawable/selector_camera_editor_back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="6.0dip" android:layout_alignParentStart="true" />
+        <ImageButton android:id="@id/camera_editor_image_save" android:background="@drawable/selector_camera_editor_save_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="15.0dip" android:layout_toRightOf="@id/camera_editor_image_back" android:layout_alignParentBottom="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/camera_editor_image_back" />
+        <ImageButton android:id="@id/camera_editor_image_send" android:background="@drawable/selector_camera_editor_send_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="4.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.linecorp.line.media.picker.fragment.sticker.view.DraggableAnchorLayout android:id="@id/media_sticker_layer" android:background="#d91f1f1f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:splitMotionEvents="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_sticker_recycler_view" android:paddingLeft="20.0dip" android:paddingTop="46.0dip" android:paddingRight="20.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.linecorp.line.media.picker.fragment.sticker.view.DraggableAnchorLayout>
+</RelativeLayout>

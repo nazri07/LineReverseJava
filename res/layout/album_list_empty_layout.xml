@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="#ffd0d0d0" android:gravity="center_horizontal" android:id="@id/empty_title_text" android:paddingLeft="39.0dip" android:paddingRight="39.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/album_commonkey_desc_noalbumsyet" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd0d0d0" android:gravity="center_horizontal" android:id="@id/empty_description_text" android:paddingLeft="33.0dip" android:paddingRight="33.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:text="@string/album_commonkey_desc_albumpromo" android:lineSpacingExtra="3.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/action_button" android:paddingLeft="30.0dip" android:paddingTop="23.0dip" android:paddingRight="30.0dip" android:paddingBottom="23.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album_commonkey_button_createalbum" />
+    </LinearLayout>
+</FrameLayout>

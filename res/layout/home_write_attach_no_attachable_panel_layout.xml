@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/attach_layout" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/sticker_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/write_ic_smile_selector" android:contentDescription="@string/access_attach_bar_stickers" />
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/pop_post_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/write_ic_poppost03_selector" android:contentDescription="@string/access_timeline_poppost_set" />
+</LinearLayout>

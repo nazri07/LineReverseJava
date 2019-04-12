@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.5sp" android:textStyle="bold" android:textColor="@color/pay_ipass_signup_bold_text_color" android:id="@id/terms_and_conditions_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.5dip" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin" />
+        <View android:background="@color/pay_ipass_signup_bold_text_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="14.5dip" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin" />
+        <com.linecorp.linepay.legacy.customview.ScrollEndDetectableWebView android:id="@id/terms_and_conditions_webview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="11.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin" />
+        <View android:background="#ffe0e2e6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.5dip" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginStart="@dimen/pay_ipass_signup_side_margin" android:layout_marginEnd="@dimen/pay_ipass_signup_side_margin">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/pay_warning" android:layout_width="13.0dip" android:layout_height="13.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/pay_ipass_signup_extra_desc_text_color" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.5dip" android:text="@string/pay_ipass_tos_detailed_screen_warning" android:layout_marginStart="5.5dip" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginTop="18.5dip" android:text="@string/pay_signup_agreement_terms" layout="@layout/pay_ipass_signup_next_button" />
+    </LinearLayout>
+</LinearLayout>

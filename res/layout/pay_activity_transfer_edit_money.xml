@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="20.5dip" android:paddingBottom="29.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pay_icon_recent_transfer_friend_guide" />
+                <TextView android:textSize="12.5sp" android:textColor="#ff4e5362" android:id="@id/pay_tv_recent_transfer_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_transfer_title" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/transfer_profile_image" android:layout_width="62.0dip" android:layout_height="62.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="7.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/transfer_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.5dip" android:layout_below="@id/transfer_profile_image" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.linecorp.linepay.legacy.customview.MoneyInputView android:id="@id/transfer_money_input_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.5dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff7d7d7d" android:id="@id/pay_transfer_balance_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="9.0dip" />
+                    <com.linecorp.linepay.legacy.customview.MoneyTextView android:id="@id/pay_transfer_balance_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:textColor="#ffa8a8a8" android:id="@id/account_limit_text_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:lineSpacingExtra="3.0sp" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <com.linecorp.linepay.tw.biz.transfer.TransactionInfoView android:id="@id/transaction_info_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="19.5dip" android:layout_marginStart="7.5dip" android:layout_marginEnd="7.5dip" />
+            </LinearLayout>
+            <jp.naver.toybox.drawablefactory.DImageView android:layout_gravity="right" android:id="@id/bank_logo" android:visibility="gone" android:layout_width="@dimen/pay_bottom_bank_logo_width" android:layout_height="@dimen/pay_bottom_bank_logo_height" android:layout_marginRight="@dimen/pay_bottom_bank_logo_right_margin" android:layout_marginBottom="@dimen/pay_bottom_bank_logo_bottom_margin" />
+            <ImageView android:layout_gravity="end" android:id="@id/logo_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="13.5dip" />
+            <Button android:id="@id/transfer_next" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_next" android:layout_alignParentBottom="true" style="@style/pay_common_full_button_green" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom|center" android:id="@id/pay_layout_transfer_bottom_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pay_common_full_button_height">
+            <com.linecorp.linepay.legacy.activity.transfer.view.PayFlowBannerImageView android:id="@id/pay_banner_view_bottom_popup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <Button android:id="@id/pay_bt_banner_close" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/pay_gl_banner_close_button" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/pay_gl_banner_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.3375" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/icon_container" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center|left" android:id="@id/profile_icon" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+        <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center|left" android:id="@id/item_icon" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" app:srcTintColor="@color/selector_moremenu_top_button" />
+    </FrameLayout>
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6.0dip" android:src="@drawable/group_img_new" android:layout_alignTop="@id/icon_container" android:layout_alignRight="@id/icon_container" android:contentDescription="@string/access_new_item_badge" />
+</RelativeLayout>

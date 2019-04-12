@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/gift_recycler_item_0" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="71.19998dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/gift_image" android:tag="binding_1" android:layout_width="59.19998dip" android:layout_height="56.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/gift_comment" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_live_player_ic_comment" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/gift_motion" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_live_player_ic_motion" android:layout_alignBottom="@id/gift_image" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/img_live_player_ic_like" android:drawablePadding="2.0dip" />
+    <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="11.0sp" android:textColor="@color/white" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginBottom="4.5dip" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/keep_pull_to_refresh_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/keep_ptr_header_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_pull_to_refresh_header_progress_top_margin" android:layout_centerHorizontal="true" style="@android:style/Widget.ProgressBar.Small" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/keep_ptr_header_space_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_pull_to_refresh_header_textview_top_margin" android:layout_below="@id/keep_ptr_header_progressbar" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/keep_ptr_header_used_space_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_list_info01" />
+        <TextView android:id="@id/keep_ptr_header_total_space_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_list_info01" />
+    </LinearLayout>
+    <TextView android:id="@id/keep_ptr_header_last_sync_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/keep_refresh_updated" android:layout_below="@id/keep_ptr_header_space_layout" android:layout_centerHorizontal="true" style="@style/text_list_info02" />
+</RelativeLayout>

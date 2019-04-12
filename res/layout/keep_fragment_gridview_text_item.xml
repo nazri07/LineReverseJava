@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_grid_item_text_root_layout" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/com_deepblack" android:ellipsize="end" android:id="@id/keep_grid_item_text_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_grid_item_left_margin" android:layout_marginTop="@dimen/keep_grid_item_top_margin" android:layout_marginRight="@dimen/keep_grid_item_right_margin" android:maxLines="4" android:singleLine="false" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/keep_grid_item_left_margin" android:layout_marginEnd="@dimen/keep_grid_item_right_margin" />
+    <include layout="@layout/keep_fragment_grid_item_foreground" />
+    <include layout="@layout/keep_fragment_grid_item_text_icon_background_layout" />
+    <include layout="@layout/keep_fragment_gridview_sync_imageview" />
+    <include layout="@layout/keep_fragment_gridview_dimmed_layout" />
+    <include layout="@layout/keep_fragment_gridview_button_layout" />
+</RelativeLayout>

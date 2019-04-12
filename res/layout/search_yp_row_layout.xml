@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_bg" android:background="@drawable/row_user" android:paddingLeft="@dimen/search_row_leftright_margin" android:paddingRight="@dimen/search_row_leftright_margin" android:layout_width="fill_parent" android:layout_height="@dimen/search_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/search_yp_icon" android:layout_width="@dimen/search_row_icon_width" android:layout_height="@dimen/search_row_icon_width" android:layout_marginRight="@dimen/search_row_icon_right_margin" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/search_yp_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_list_category_name01" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:id="@id/search_yp_account_type" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_list_category_content02" />
+            <View android:id="@id/search_yp_divider" android:background="@drawable/setting_list_img_devider" android:layout_width="1.0dip" android:layout_height="10.5dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+            <TextView android:ellipsize="end" android:id="@id/search_yp_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_list_category_content02" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_yp_addition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_yp_addition_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff5478b9" android:ellipsize="end" android:id="@id/search_yp_addition_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/search_yp_call_layout" android:layout_width="29.0dip" android:layout_height="29.0dip">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_yp_call_back" android:background="@drawable/button_r14" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_yp_call_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/list_search_ic_freecall" />
+            <TextView android:textSize="6.5sp" android:textStyle="bold" android:textColor="#ffa1a9b8" android:id="@id/search_yp_call_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_yp_call_free" android:includeFontPadding="false" android:layout_below="@id/search_yp_call_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

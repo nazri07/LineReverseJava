@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/chathistory_announcement_main_viewstub" android:visibility="gone" android:layout="@layout/chathistory_announcement_fold_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/chathistory_annoucement_unhold_content_viewstub" android:visibility="gone" android:layout="@layout/chathistory_announcement_unfold_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="right" android:id="@id/chathistory_annoucement_megaphone_holder" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:id="@id/chathistory_annoucement_megaphone_background" android:background="@drawable/chathistory_announcement_chatroom_ic_notice_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/chathistory_annoucement_megaphone_button" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chathistory_announcement_chatroom_ic_notice" android:scaleType="fitCenter" android:contentDescription="@string/acccess_announcement_unfold" />
+    </FrameLayout>
+</FrameLayout>

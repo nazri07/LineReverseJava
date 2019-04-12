@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_container" android:layout_width="fill_parent" android:layout_height="@dimen/shop_setting_tab_height">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/shop_setting_tab_height" android:layout_weight="1.0" style="@style/shop_setting_tab" />
+        <View android:layout_gravity="center_vertical" android:id="@id/filter_button_divider" android:background="@color/list_divider_color" android:layout_width="0.5dip" android:layout_height="16.0dip" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <jp.naver.line.android.common.view.TintableImageView android:id="@id/filter_button" android:background="@android:color/transparent" android:layout_width="@dimen/shop_present_box_list_filter_button_size" android:layout_height="@dimen/shop_present_box_list_filter_button_size" android:layout_marginLeft="9.0dip" android:layout_marginTop="11.5dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="11.5dip" android:src="@drawable/shop_present_box_filter_button" android:contentDescription="@string/access_settings_sticker_gift_switch" />
+            <jp.naver.line.android.common.view.TintableImageView android:id="@id/shop_present_box_new_present_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_img_new" android:layout_alignTop="@id/filter_button" android:layout_alignRight="@id/filter_button" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/tab_layout_divider" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

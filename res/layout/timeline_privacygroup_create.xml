@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/privacygroup_create_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/new_list_name_setting_container" android:paddingLeft="20.0dip" android:paddingTop="60.0dip" android:paddingRight="20.0dip" android:paddingBottom="26.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/group_name_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="21.0sp" android:textColor="#ff333333" android:textColorHint="#ffc5c6ca" android:id="@id/group_name_input" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/timeline_write_privacy_newlist_placeholder_listname" android:singleLine="true" android:layout_toLeftOf="@id/group_name_input_cancel_button" android:layout_centerVertical="true" android:inputType="text" />
+            <ImageView android:id="@id/group_name_input_cancel_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@drawable/tm_write_search_x" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/group_name_input_bottom_line" android:background="#99dedede" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/group_name_input_layout" />
+        <TextView android:id="@id/groupform_name_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_below="@id/group_name_input_bottom_line" android:layout_alignParentRight="true" style="@style/text_write_listname" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/selectchat_friend_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffd6d6d6" android:layout_gravity="center_horizontal" android:id="@id/privacygroup_create_group_no_member" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.669983dip" android:text="@string/myhome_writing_privacy_no_friends_added" android:drawablePadding="5.3299866dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/create_privacy_group_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/create_privacy_group_bottom_line" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:gravity="center" android:id="@id/add_friend_button" android:background="@drawable/selector_button_07" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/myhome_writing_privacy_add_friends" android:layout_weight="1.0" style="@style/text_privacy_group_create_bottom_btn_add" />
+            <TextView android:gravity="center" android:id="@id/delete_group_button" android:background="@drawable/selector_button_07" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/myhome_writing_privacy_delete_list" android:layout_weight="1.0" style="@style/text_privacy_group_create_bottom_btn_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

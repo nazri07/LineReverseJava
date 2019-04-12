@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/chathistory_input_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/official_account_show_bottombar_icon" android:layout_width="@dimen/chathistory_input_button_height" android:layout_height="@dimen/chathistory_input_button_height" android:src="@drawable/chatroom_ic_menu" android:scaleType="center" android:contentDescription="@string/access_chat_input_keyboard" />
+    <View android:id="@id/official_account_show_bottombar_button_divider" android:background="@color/official_account_show_bottombar_button_divider" android:layout_width="@dimen/common_one_line" android:layout_height="@dimen/chathistory_input_button_height" />
+</LinearLayout>

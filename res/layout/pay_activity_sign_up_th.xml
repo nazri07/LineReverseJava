@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.linepay.legacy.customview.PayBaseScrollView android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/reg_foreigner_layout" android:paddingTop="11.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:paddingStart="17.5dip" android:paddingEnd="17.5dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff66728d" android:layout_gravity="center_vertical" android:id="@id/reg_foreigner_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pay_sign_up_not_thai_citizen_tap" android:includeFontPadding="false" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/reg_foreigner_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_thai_icon_arrow" android:layout_marginStart="6.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/pay_shape_white_rectangle_r2_top" android:paddingTop="28.5dip" android:paddingBottom="20.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="84.0dip" android:paddingStart="17.5dip" android:paddingEnd="17.5dip" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_my_info_thai_citizen_id" android:includeFontPadding="false" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dip">
+                    <com.linecorp.linepay.legacy.customview.DelimitedNumberEditText android:textSize="14.0sp" android:textColor="#ff797f8c" android:textColorHint="#ffcccccc" android:id="@id/sign_up_citizen_id" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/pay_my_info_thai_citizen_id_hint" android:includeFontPadding="false" android:layout_weight="1.0" android:inputType="textVisiblePassword" android:imeOptions="actionNext" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/customview_input_button_vertical_divider" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" />
+            <include android:id="@id/thai_input_button_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" layout="@layout/pay_layout_th_signup_update_separate_name" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="17.5dip" android:layout_marginEnd="17.5dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.5dip">
+                    <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/pay_icon_info" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="7.0dip" android:text="@string/pay_sign_up_local_guide" android:includeFontPadding="false" android:layout_marginStart="4.5dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.linecorp.linepay.th.biz.signup.PaySignUpMoreInfoView android:id="@id/pay_layout_sign_up_more_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="9.5dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/buttons_sub_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/pay_layout_signup_notice" android:paddingTop="23.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/pay_icon_info" android:layout_marginStart="17.5dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff7d7d7d" android:id="@id/signup_notice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:includeFontPadding="false" android:layout_marginStart="4.5dip" android:layout_marginEnd="17.5dip" />
+            </LinearLayout>
+            <View android:id="@id/empty_bottom" android:layout_width="fill_parent" android:layout_height="74.5dip" />
+        </LinearLayout>
+    </com.linecorp.linepay.legacy.customview.PayBaseScrollView>
+    <Button android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_join" android:layout_alignParentBottom="true" style="@style/pay_common_full_button_green" />
+</RelativeLayout>

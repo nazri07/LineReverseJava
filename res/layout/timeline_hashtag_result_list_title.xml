@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/title_container" android:paddingLeft="44.0dip" android:paddingRight="44.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ff222222" android:layout_gravity="center_vertical" android:id="@id/title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/title_scrolled" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/title_hashtag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff7a7a7a" android:id="@id/title_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_user_bg" android:background="@drawable/row_user" android:paddingLeft="@dimen/search_row_leftright_margin" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/search_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/search_row_icon_width" android:layout_height="@dimen/search_row_icon_width" android:layout_marginRight="@dimen/search_row_icon_right_margin">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_shop_product_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/search_shop_product_addition_icon" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/icon_anisticker_play_26" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/search_shop_product_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:singleLine="true" style="@style/text_list_category_title01" />
+        <TextView android:id="@id/search_shop_product_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:singleLine="true" style="@style/text_list_category_name01" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/search_shop_product_coin" android:layout_width="14.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/search_list_img_coin" />
+            <TextView android:id="@id/search_shop_product_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:singleLine="true" android:includeFontPadding="false" style="@style/text_search_coin" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

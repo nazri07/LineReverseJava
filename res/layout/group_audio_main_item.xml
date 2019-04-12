@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.voip.ui.groupcall.voice.view.VoipFadeAnimationImageView android:id="@id/groupcall_member_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/groupcall_layer_bg" android:background="@drawable/groupcall_grid_item_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/groupcall_member_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_above="@id/groupcall_member_layout" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:id="@id/groupcall_member_layout" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="10.000002%">
+        <ImageView android:id="@id/groupcall_member_video" android:layout_width="13.0dip" android:layout_height="8.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/groupcall_ic_video" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/groupcall_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hello" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#33000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="10.0" />
+    </LinearLayout>
+</androidx.percentlayout.widget.PercentRelativeLayout>

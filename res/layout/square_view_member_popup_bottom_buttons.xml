@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/square_member_popup_bottom_buttons_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/square_member_popup_chat_button_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/square_member_popup_chat_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_popup_ic_chat" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center" android:id="@id/square_member_popup_chat_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/talk" android:includeFontPadding="false" style="@style/profile_dialog_button_text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/square_member_popup_block_button_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/square_member_popup_block_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_popup_ic_block" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center" android:id="@id/square_member_popup_block_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/block" android:includeFontPadding="false" style="@style/profile_dialog_button_text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/square_member_popup_unblock_button_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/square_member_popup_unblock_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_popup_ic_unblock" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center" android:id="@id/square_member_popup_unblock_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/unblock" android:includeFontPadding="false" style="@style/profile_dialog_button_text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/square_member_popup_setting_button_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/square_member_popup_setting_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_popup_ic_setting" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center" android:id="@id/square_member_popup_setting_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/settings" android:includeFontPadding="false" style="@style/profile_dialog_button_text" />
+    </LinearLayout>
+</LinearLayout>

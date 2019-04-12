@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/popup_push_bg" android:paddingLeft="10.0dip" android:paddingTop="6.669983dip" android:paddingRight="15.0dip" android:paddingBottom="6.669983dip" android:layout_width="310.0dip" android:layout_height="wrap_content" android:minHeight="60.0dip">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffb7b9c7" android:gravity="center" android:id="@id/keep_toast_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

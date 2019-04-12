@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/chathistory_input_area_bg" android:layout_width="fill_parent" android:layout_height="220.66998dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/chathistory_voice_effect_width" android:layout_height="@dimen/chathistory_voice_effect_height" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/chathistory_voice_speaker_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chatroom_ic_voicemessage_speaker01" />
+            <ImageView android:id="@id/chathistory_voice_speaker_left_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <Button android:id="@id/chathistory_voice_recorder_start_btn" android:background="@drawable/btn_chathistory_voice_record" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/access_voice_record" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/chathistory_voice_effect_width" android:layout_height="@dimen/chathistory_voice_effect_height" android:layout_marginLeft="10.0dip">
+            <ImageView android:id="@id/chathistory_voice_speaker_right" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/chathistory_voice_speaker_right_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

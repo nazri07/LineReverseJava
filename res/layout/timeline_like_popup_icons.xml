@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/like_icons_root" android:layout_width="wrap_content" android:layout_height="78.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/like_1_btn" android:src="@drawable/timeline_img_like_normal01" android:contentDescription="@string/access_timeline_like_good" style="@style/timeline_like_reaction_icon" />
+    <ImageView android:id="@id/like_2_btn" android:src="@drawable/timeline_img_like_normal02" android:contentDescription="@string/access_timeline_like_hahaha" style="@style/timeline_like_reaction_icon" />
+    <ImageView android:id="@id/like_3_btn" android:src="@drawable/timeline_img_like_normal03" android:contentDescription="@string/access_timeline_like_best" style="@style/timeline_like_reaction_icon" />
+    <ImageView android:id="@id/like_4_btn" android:src="@drawable/timeline_img_like_normal04" android:contentDescription="@string/access_timeline_like_lucky" style="@style/timeline_like_reaction_icon" />
+    <ImageView android:id="@id/like_5_btn" android:src="@drawable/timeline_img_like_normal05" android:contentDescription="@string/access_timeline_like_shocked" style="@style/timeline_like_reaction_icon" />
+    <ImageView android:id="@id/like_6_btn" android:src="@drawable/timeline_img_like_normal06" android:contentDescription="@string/access_timeline_like_sad" style="@style/timeline_like_reaction_icon" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_tab_fragments_top_padding">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/friend_list_recycler_view" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+    <jp.naver.line.android.customview.promotion.PromotionLayerView android:id="@id/promotion_layer_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/loading_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:indeterminate="true" />
+    </RelativeLayout>
+</RelativeLayout>

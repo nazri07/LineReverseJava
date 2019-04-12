@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/row_user_bg" android:background="@drawable/row_user" android:paddingLeft="@dimen/search_row_leftright_margin" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_shortcut_layout" android:paddingRight="@dimen/search_row_leftright_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/search_shortcut_thumbnail" android:layout_width="@dimen/search_row_icon_width" android:layout_height="@dimen/search_row_icon_width" android:layout_marginRight="@dimen/search_row_icon_right_margin" />
+                <LinearLayout android:orientation="vertical" android:id="@id/search_shortcut_contents_containor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@id/search_shortcut_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@style/text_list_category_name01" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffabb2bd" android:ellipsize="end" android:id="@id/search_shortcut_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:includeFontPadding="false" />
+                </LinearLayout>
+            </LinearLayout>
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/search_shortcut_right_button" android:background="@drawable/button_r14" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="@dimen/search_row_leftright_margin" />
+        </LinearLayout>
+        <jp.naver.line.android.activity.search.view.ShortcutButtonContainor android:orientation="horizontal" android:id="@id/search_shortcut_buttons_containor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/search_shortcut_layout" />
+    </RelativeLayout>
+    <View android:id="@id/divider_common" android:background="@color/common_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <View android:id="@id/divider_bg" android:background="#ffeff1f4" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#b2000000" android:ellipsize="end" android:gravity="center" android:id="@id/video_groupcall_list_textview" android:background="@drawable/videocall_img_layer" android:paddingLeft="20.0dip" android:paddingRight="61.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/video_groupcall_list_thumbnail_container" android:visibility="visible" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/video_groupcall_list_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:scaleType="centerCrop" />
+        <View android:id="@id/video_groupcall_list_voice_user_gradient" android:background="@drawable/group_video_circle_gra_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/video_groupcall_item_video_not_support" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="15.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/videocall_img_video02" />
+        <View android:id="@id/video_groupcall_list_dimmed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+    </FrameLayout>
+</RelativeLayout>

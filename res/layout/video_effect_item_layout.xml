@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/effect_item_select_view" android:background="@drawable/effect_ic_frame" android:visibility="gone" android:layout_width="@dimen/effect_item_view_size" android:layout_height="@dimen/effect_item_view_size" />
+    <ImageView android:id="@id/effect_item_base_view" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/effect_ic_empty" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/effect_item_empty_view" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="31.0dip" android:src="@drawable/effect_ic_recently_empty" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/effect_item_new_badge" android:visibility="gone" android:layout_width="6.5dip" android:layout_height="6.5dip" android:layout_marginTop="9.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/call_img_new" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/effect_item_download" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/btn_effect_download" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/effect_item_lock" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/effect_ic_lock" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/effect_item_download_progress_bar" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/effect_circle_progress" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+</merge>

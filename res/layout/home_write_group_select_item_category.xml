@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/category" android:background="@color/white" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+        <TextView android:id="@id/name" android:paddingTop="7.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_weight="1.0" style="@style/text_list_category_title01" />
+        <TextView android:gravity="center_vertical" android:id="@id/setting" android:paddingLeft="16.0dip" android:paddingTop="7.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myhome_writing_privacy_managepage_edit_list" style="@style/text_privacy_content03" />
+    </LinearLayout>
+</LinearLayout>

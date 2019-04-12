@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.voip.ui.freecall.video.view.FreeCallVideoRenderView android:id="@id/faceplay_render_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:renderViewMode="my_view_only" />
+    <com.linecorp.andromeda.video.view.ATextureView android:id="@id/common_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

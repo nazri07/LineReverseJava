@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bridge.js test suite</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no, target-densitydpi=medium-dpi">
+    <style>
+    .log {
+      width: 100%;
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid black;
+    }
+    .log-item {
+      border: 1px solid #08a520;
+    }
+    .btn {
+      width:100%;
+      margin: 1px 0 1px 0;
+      border:0;
+      border-radius:2px;
+      background-color:#08a520;
+      font-weight:700;
+      color:#fff;
+      height:40px;
+      vertical-align:top;
+      box-sizing:border-box;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+    </style>
+    <script type="text/javascript"
+            src="https://scdn.line-apps.com/n/line_webview_bridge_sdk/js/bridge_1479726532.js"></script>
+</head>
+<body>
+<h1>Browser Status - search test.hml</h1>
+<div id="browserStatus" class="log"></div>
+<h1>Event Log Panel</h1>
+<div id="eventLog" class="log"></div>
+<h1>Callback Log Panel</h1>
+<div id="callbackLog" class="log"></div>
+<h1>Bridge.js Command</h1>
+<div class="command">
+    <button class="btn" onclick="runCommand('showOrHideSearchBar', {show: true})">
+        showOrHideSearchBar true
+    </button>
+    <button class="btn" onclick="runCommand('showOrHideSearchBar', {show: false})">
+        showOrHideSearchBar false
+    </button>
+</div>
+
+<script>
+  // bridge.js spec is 'https://wiki.linecorp.com/pages/viewpage.action?pageId=687524309'
+  var state = {
+    'tid': 'xxxxxxxxxxx',        // alias for 'mid'
+    'token': 'xxxxxx',
+    'region': 'xx',              // region of LINE Account.
+    'lang': 'xx',                // device language.
+    'appVersion': 'x.x.x',       // LINE version.
+    'advertisingId': 'xxxxxxx',  // advertising id (optional. in part of android device, it can't get.).
+    'uuid': 'xxxxxx',            // device UUID (optional. it may be needed on Android. instaed of advertisingId). https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device/
+    'tracking': true            // tracking enabled.
+  }
+  var callbackId = 1000
+  var elBrowserStatus = document.getElementById('browserStatus')
+  var elEventLog = document.getElementById('eventLog')
+  var elCallbackLog = document.getElementById('callbackLog')
+  function runCommand (command, params) {
+    window.LineNative.postMessage(command, '' + callbackId, params)
+    console.log(command, params)
+  }
+  function goToBETACWA (betaChannelId) {
+    location.href = 'lineb://ch/' + betaChannelId
+  }
+  function goToRCCWA (rcChannelId) {
+    location.href = 'line://ch/' + rcChannelId
+  }
+  // foo, bar, baz, quux, quuux, quuuux
+  var stateList = [
+    {
+      stateObj: { foo: 'bar' },
+      title: 'foo_bar',
+      url: 'foo_bar.html'
+    },
+    {
+      stateObj: { baz: 'quux' },
+      title: 'baz_quux',
+      url: 'baz_quux.html'
+    },
+    {
+      stateObj: { quuux: 'quuuux' },
+      title: 'quuux_quuuux',
+      url: 'quuux_quuuux.html'
+    }
+  ]
+  function updateLocation () {
+    var text = 'Location Href : ' + location.href + '\n'
+    text += 'History Length : ' + history.length
+    elBrowserStatus.innerText = text
+  }
+  updateLocation()
+  window.addEventListener('popstate', function () {
+    updateLocation()
+  })
+  function simulatePushState () {
+    var rand = stateList[Math.floor(Math.random() * stateList.length)]
+    history.pushState(rand.stateObj, rand.title, rand.url)
+    updateLocation()
+  }
+  function confirmPopup () {
+    var result = ''
+    if (window.confirm('최근 검색어 저장 기능을 사용 중지하시겠습니까?')) {
+      result = 'OK'
+    } else {
+      result = 'Cancel'
+    }
+    logCallback(result)
+  }
+  function alertPopup () {
+    window.alert('Do you want this popup?')
+  }
+  function makeLogItem (text) {
+    var item = document.createElement('div')
+    item.innerText = text
+    item.className = 'log-item'
+    return item
+  }
+  function logEvent (message) {
+    if (!message) {
+      return
+    }
+    message = typeof message === 'object' ? JSON.stringify(message) : message
+    elEventLog.appendChild(makeLogItem(message))
+    console.log(message)
+  }
+  function logCallback (message) {
+    if (!message) {
+      return
+    }
+    message = typeof message === 'object' ? JSON.stringify(message) : message
+    elCallbackLog.appendChild(makeLogItem(message))
+    console.log(message)
+  }
+  window.addEventListener('lineNativeMessage', function (event) {
+    var state = window.state
+    var type = event.detail.type
+    var data = event.detail.data
+    var eventCallbackId = event.detail.callbackId
+    var error = event.detail.error
+    var logEventMessage = ''
+    var logCallbackMessage = ''
+    console.log('lineNativeMessage', type, data)
+    if (error) {
+      logEvent('error:' + error.message)
+    } else {
+      switch (type) {
+        // event
+        case 'ready':
+        case 'refresh':
+          state.tid = data.tid
+          state.token = data.token
+          state.region = data.region
+          state.lang = data.lang
+          state.appVersion = data.appVersion
+          state.advertisingId = data.advertisingId
+          state.uuid = data.uuid
+          state.tracking = data.tracking
+          logEventMessage += 'type: ' + type + '\n' +
+                        'tid: ' + data.tid + '\n' +
+                        'token: ' + data.token + '\n' +
+                        'region: ' + data.region + '\n' +
+                        'lang: ' + data.lang + '\n' +
+                        'appVersion: ' + data.appVersion + '\n' +
+                        'advertisingId: ' + data.advertisingId + '\n' +
+                        'uuid: ' + data.uuid + '\n' +
+                        'tracking: ' + data.tracking + '\n' +
+                        'isUserReload: ' + data.isUserReload + '\n'
+          break
+        case 'foreground':
+          logEventMessage += 'type: ' + type + '\n'
+          break
+        case 'background':
+          logEventMessage += 'type: ' + type + '\n'
+          break
+        case 'onSubmit':
+        case 'onChange':
+        case 'onFocus':
+        case 'onBlur':
+        case 'onClick':
+          logEventMessage += 'type: ' + type + '\n' +
+                        'target: ' + data.target + '\n' +
+                        'value: ' + data.value + '\n'
+          break
+        // callback event by command
+        case 'getSessionInfo':
+          logCallbackMessage += 'type: ' + type + '\n' +
+            'callbackId: ' + eventCallbackId + '\n' +
+            'id: ' + data.id + '\n' +
+            'userId: ' + data.userId + '\n' +
+            'displayName: ' + data.displayName + '\n' +
+            'statusMessage: ' + data.statusMessage + '\n' +
+            'allowSearch: ' + data.allowSearch + '\n' +
+            'pictureUrl: ' + data.pictureUrl + '\n' +
+            'QRCodeImage: ' + data.QRCodeImage + '\n' +
+            'appVersion: ' + data.appVersion + '\n' +
+            'appPhase: ' + data.appPhase + '\n' +
+            'allowPushNoti: ' + data.allowPushNoti + '\n' +
+            'countryCode: ' + data.countryCode + '\n' +
+            'region: ' + data.region + '\n' +
+            'isVideoAutoPlayAllowed: ' + data.isVideoAutoPlayAllowed + '\n'
+          break
+        case 'showOrHideSearchBar':
+          logCallbackMessage += 'type: ' + type + '\n' +
+                        'callbackId: ' + eventCallbackId + '\n' +
+                        'result: ' + data.result + '\n'
+          break
+        default:
+          // other event.
+          break
+      }
+      logEvent(logEventMessage)
+      logCallback(logCallbackMessage)
+    }
+  }, false)
+  window.onerror = function () {
+    alert(JSON.stringify(arguments))
+    log(arguments)
+  }
+  if (location.search.indexOf('debug=true') !== -1) { // just test
+    var emitLineNativeMessage = function (type, data) {
+      window.dispatchEvent(new CustomEvent('lineNativeMessage', {
+        'detail': {
+          'type': type,
+          'data': data
+        }
+      }))
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      emitLineNativeMessage('ready', {
+        'tid': 'u01234567890123456789012345678901',       // alias for 'mid'.
+        'token': 'xxxxxx',          // channel access token.
+        'region': 'jp',              // region of LINE Account.
+        'lang': 'en',                // device language.
+        'appVersion': '8.0.1',       // LINE version.
+        'advertisingId': 'xxxxxxx',  // advertising id (optional. in part of android device, it can't get.).
+        'uuid': 'xxxxxx',            // device UUID (optional. it may be needed on Android. instaed of advertisingId). https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device/
+        'tracking': true             // tracking enabled.
+      })
+    })
+  }
+</script>
+</body>
+</html>

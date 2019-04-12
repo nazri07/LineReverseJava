@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/keep_selector_dialog_button" android:layout_width="fill_parent" android:layout_height="@dimen/keep_popup_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/keep_add_popup_imageview" android:layout_width="@dimen/keep_add_popup_icon_width" android:layout_height="@dimen/keep_add_popup_icon_width" android:layout_marginLeft="@dimen/keep_add_popup_icon_left_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_add_popup_icon_left_margin" android:layout_alignParentStart="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff404040" android:id="@id/keep_add_popup_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_add_popup_textview_left_margin" android:layout_toRightOf="@id/keep_add_popup_imageview" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_add_popup_textview_left_margin" android:layout_toEndOf="@id/keep_add_popup_imageview" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list_view" android:background="@color/pay_setting_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_weight="1.0" />
+    <Button android:id="@id/bottom_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" style="@style/pay_common_full_button_navy" />
+</LinearLayout>

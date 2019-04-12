@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/square_fragment_settings_home_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/square_settings_home_loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/settings_app_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/square_settings_home_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="125.0dip">
+                <FrameLayout android:tag="binding_1" android:layout_width="91.0dip" android:layout_height="91.0dip" android:layout_marginLeft="16.0dip" android:contentDescription="@string/square_access_changephoto">
+                    <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/square_settings_home_member_thumbnail_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:layout_gravity="bottom|center|right" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/profile_ic_photo" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/square_group_settings_myprofile_title" style="@style/text_setting_edit_title" />
+                        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/square_settings_home_member_name_view" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" style="@style/text_header_title02" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:src="@drawable/selector_timeline_icon_more" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_receive_chat_button" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:descText="@string/square_personaloption_chat_desc" custom:titleText="@string/square_group_settings_recieve_chat" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_member_list_invite_button" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_memberlist" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_manage_members_button" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managemember" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_manage_admin_button" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managemembers_manageadmin" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_manage_authority_button" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managemembers_manageauth" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_group_profile_button" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_group_profile" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_manage_group_button" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managegroup" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_report_group_button" android:tag="binding_11" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_report" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_leave_group_button" android:tag="binding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_leave" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_delete_group_button" android:tag="binding_13" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_managegroup_deletegroup" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/square_settings_home_group_policy_button" android:tag="binding_14" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:titleText="@string/square_group_settings_policy" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

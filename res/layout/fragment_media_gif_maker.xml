@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.naver.mei.sdk.view.MeiCanvasView android:id="@id/gif_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/big_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_button_layout" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="4.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <ImageView android:id="@id/save_button" android:paddingBottom="4.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/selector_gallery_ic_download" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/access_save" />
+            <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="center" android:id="@id/done_button" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/gallery_confirm_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/access_done" />
+            <ImageView android:id="@id/send_button" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/selector_gallery_ic_send_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/access_send" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/add_item_layout" android:background="#99ffffff" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="123.0dip">
+            <ImageView android:id="@id/add_item_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_img_add" android:layout_centerInParent="true" />
+            <TextView android:textSize="17.0dip" android:textStyle="normal" android:textColor="#ffb7bfc7" android:id="@id/add_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:layout_below="@id/add_item_button" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

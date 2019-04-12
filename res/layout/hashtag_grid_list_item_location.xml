@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hashtag_grid_item_content_layout" android:background="@color/timeline_hashtag_grid_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/hashtag_grid_item_location_info" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textColor="#ff222222" android:layout_gravity="center" android:id="@id/location_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/timeline_img_neta_location" android:drawablePadding="5.0dip" style="@style/text_hashtag_grid_item_location_title" />
+        <TextView android:id="@id/location_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/text_hashtag_grid_item_link_card_description" />
+    </LinearLayout>
+    <include layout="@layout/hashtag_grid_list_item_content" />
+</RelativeLayout>

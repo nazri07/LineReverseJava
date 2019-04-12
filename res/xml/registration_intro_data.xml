@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrationIntro xmlns:line="http://schemas.android.com/apk/res-auto">
+    <Page line:introContent="@drawable/registration_intro_img_01" line:introSubtitle="@string/registration_intro_subtitle_01" line:introTitle="@string/registration_intro_title_01" />
+    <Page line:introContent="@drawable/registration_intro_img_02" line:introSubtitle="@string/registration_intro_subtitle_02" line:introTitle="@string/registration_intro_title_02" />
+    <Page line:introContent="@drawable/registration_intro_img_03" line:introSubtitle="@string/registration_intro_subtitle_03" line:introTitle="@string/registration_intro_title_03" />
+    <Page line:introContent="@drawable/registration_intro_img_04" line:introSubtitle="@string/registration_intro_subtitle_04" line:introTitle="@string/registration_intro_title_04" />
+    <Page line:introContent="@drawable/registration_intro_img_05" line:introSubtitle="@string/registration_intro_subtitle_05" line:introTitle="@string/registration_intro_title_05" />
+</RegistrationIntro>

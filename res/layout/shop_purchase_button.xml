@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/shop_detail_button_height" style="@style/Button.Shop.Purchase"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/shop_detail_purchase_progress2" android:visibility="gone" android:layout_width="@dimen/shop_button_progress_size" android:layout_height="@dimen/shop_button_progress_size" android:indeterminateDrawable="@drawable/progress_circle_white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/shop_detail_purchase_button_text2" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stickershop_purchase_button" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/shop_detail_button_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

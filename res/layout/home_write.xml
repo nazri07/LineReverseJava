@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout android:orientation="vertical" android:id="@id/root" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.timeline.activity.write.writeform.view.WriteContentCoordinatorLayout android:id="@id/input_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/attach_panel_layout" android:layout_below="@id/write_header_view" />
+    <com.linecorp.line.timeline.activity.write.WriteHeaderView android:id="@id/write_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/attach_panel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/attach_component_layout" />
+    <com.linecorp.line.timeline.activity.write.attach.DraggableFrameLayout android:id="@id/attach_component_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:splitMotionEvents="true" />
+    <FrameLayout android:id="@id/popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/attach_panel_layout" android:layout_below="@id/write_header_view" />
+</androidx.percentlayout.widget.PercentRelativeLayout>

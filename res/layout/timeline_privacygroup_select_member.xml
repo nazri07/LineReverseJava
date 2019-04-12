@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/privacygroup_select_member_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/selectchat_tab_root" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/header">
+        <RelativeLayout android:id="@id/timeline_privacygroup_select_all_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/timeline_privacygroup_select_all_checkbox" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/selector_privacygroup_checkbox_all_select" android:layout_centerVertical="true" />
+            <TextView android:ellipsize="end" android:id="@id/timeline_privacygroup_select_all_text" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myhome_writing_privacy_home_privacy_select_all" android:layout_toRightOf="@id/timeline_privacygroup_select_all_checkbox" android:layout_centerVertical="true" style="@style/text_privacy_group_select_all" />
+        </RelativeLayout>
+        <View android:background="#99dedede" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/selectchat_tab_friend_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/selector_privacy_group_setting_tab_text" android:gravity="center_vertical" android:id="@id/selectchat_tab_friend" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/myhome_writing_privacy_choose_friends_list" android:singleLine="true" style="@style/text_privacy_group_tab_text" />
+            <View android:id="@id/selectchat_tab_friend_bottomline" android:background="#ff333333" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_alignLeft="@id/selectchat_tab_friend" android:layout_alignRight="@id/selectchat_tab_friend" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/selectchat_tab_talk_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/selectchat_tab_friend_area">
+            <TextView android:textColor="@color/selector_privacy_group_setting_tab_text" android:gravity="center_vertical" android:id="@id/selectchat_tab_talk" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/myhome_writing_privacy_choose_group_list" android:singleLine="true" style="@style/text_privacy_group_tab_text" />
+            <View android:id="@id/selectchat_tab_talk_bottomline" android:background="#ff333333" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_alignLeft="@id/selectchat_tab_talk" android:layout_alignRight="@id/selectchat_tab_talk" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/selectchat_tab_root">
+        <LinearLayout android:orientation="vertical" android:id="@id/privacygroup_select_member_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.viewpager.widget.ViewPager android:id="@id/selectchat_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:layout_gravity="bottom" android:id="@id/selectchat_send_thumbnaillist_divider" android:background="#ffe7e9ef" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </FrameLayout>
+            <com.linecorp.line.timeline.activity.privacygroup.HorizontalThumbListView android:id="@id/selectchat_send_thumbnaillist_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/privacygroup_select_member_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/settings_app_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/retry_view" android:layout="@layout/retryerrorview_nontheme_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

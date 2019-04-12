@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/content_layout" android:paddingLeft="20.0dip" android:paddingTop="@dimen/pay_setting_vertical_margin" android:paddingRight="31.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="130.0dip" android:layout_above="@id/pay_unregister_btn">
+        <TextView android:textSize="17.5sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/pay_unregister_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pay_setting_unregister_subtitle" android:includeFontPadding="false" />
+        <LinearLayout android:id="@id/pay_unregister_description_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.5dip">
+            <View android:id="@id/pay_unregister_description_1_dot" android:background="@drawable/pay_shape_circle_dot" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.5dip" />
+            <TextView android:textSize="13.5sp" android:textColor="#ff8c8c8c" android:id="@id/pay_unregister_description_1_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_setting_unregister_coupon_warning" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pay_unregister_description_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.5dip">
+            <View android:background="@drawable/pay_shape_circle_dot" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.5dip" />
+            <TextView android:textSize="13.5sp" android:textColor="#ff8c8c8c" android:id="@id/pay_unregister_description_2_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_setting_unregister_trade_alert" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pay_unregister_description_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.5dip">
+            <View android:background="@drawable/pay_shape_circle_dot" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.5dip" />
+            <TextView android:textSize="13.5sp" android:textColor="#ff8c8c8c" android:id="@id/pay_unregister_description_3_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_setting_unregister_lost_money" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pay_unregister_description_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.5dip">
+            <View android:background="@drawable/pay_shape_circle_dot" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.5dip" />
+            <TextView android:textSize="13.5sp" android:textColor="#ff8c8c8c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_getting_remaining_balance_for_delete_account" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pay_unregister_description_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.5dip">
+            <View android:background="@drawable/pay_shape_circle_dot" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.5dip" />
+            <TextView android:textSize="13.5sp" android:textColor="#ff8c8c8c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pay_unregister_description_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.5dip">
+            <View android:background="@drawable/pay_shape_circle_dot" android:layout_width="3.5dip" android:layout_height="3.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.5dip" />
+            <TextView android:textSize="13.5sp" android:textColor="#ff8c8c8c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_setting_unregister_line_card_warning" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/pay_unregister_btn" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_setting_unregister_button" android:layout_alignParentBottom="true" style="@style/pay_common_full_button_navy" />
+</RelativeLayout>

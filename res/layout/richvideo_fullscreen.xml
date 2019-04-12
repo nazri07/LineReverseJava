@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fullscreen_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextureView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/preview_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/rich_video_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_ic_play02" android:layout_centerInParent="true" />
+    <include layout="@layout/richvideo_videoplay_completed" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/media_controller_black_bg" />
+    <Button android:enabled="false" android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/mm_video_top_btn_text_color" android:gravity="center" android:id="@id/video_player_top_function_btn" android:background="@drawable/selector_button_r17" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:minHeight="30.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/commonFont" />
+    <RelativeLayout android:id="@id/rich_video_progess" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

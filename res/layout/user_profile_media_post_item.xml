@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.line.profile.user.post.mediapost.view.MediaPostItemLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/img_media" android:background="@drawable/grid_media_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/media_content_gif_type_mark" android:paddingLeft="5.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gif_img_small" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/play_button" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/gallery_ic_play" android:layout_alignParentBottom="true" />
+</com.linecorp.line.profile.user.post.mediapost.view.MediaPostItemLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/user_profile_root" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.line.profile.common.FlingDetectFrameLayout android:id="@id/fling_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.linecorp.line.profile.user.root.view.FitsSystemWindowsFrameLayout android:id="@id/profile_area" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/bottom_sheet_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="false" app:behavior_peekHeight="@dimen/user_profile_tab_height" app:layout_behavior="com.linecorp.line.profile.user.root.view.UserProfileBottomSheetBehavior">
+                <View android:id="@id/home_header_blank_space" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+                <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/user_profile_tab_height" android:layout_below="@id/home_header_blank_space" app:tabBackground="@color/white" app:tabGravity="fill" app:tabIndicatorHeight="0.0px" app:tabMaxWidth="0.0dip" app:tabMode="fixed" app:tabTextAppearance="@style/user_profile_tab_text" />
+                <LinearLayout android:orientation="vertical" android:id="@id/home_header_view_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.widget.Space android:id="@id/home_header_view_top_space" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/user_profile_header_height" android:layout_alignParentTop="true">
+                        <FrameLayout android:id="@id/user_profile_header_media_container" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginBottom="1.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                            <jp.naver.line.android.customview.VideoProfileView android:id="@id/user_profile_header_video_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/access_profile_image" />
+                            <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/user_profile_header_image_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/access_profile_image" />
+                        </FrameLayout>
+                        <ImageView android:id="@id/home_header_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_profile_header_ic_more_02" android:layout_alignParentRight="true" android:contentDescription="@string/access_open_menu" />
+                        <ImageView android:id="@id/home_header_chat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_profile_header_ic_chat" android:layout_toLeftOf="@id/home_header_more" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/access_start_chat" />
+                        <ImageView android:id="@id/home_header_add_friend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_profile_header_ic_addfriends" android:layout_toLeftOf="@id/home_header_chat" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/access_addfriends" />
+                        <ImageView android:id="@id/home_header_add_keep" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_profile_header_ic_keep" android:layout_toLeftOf="@id/home_header_add_friend" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/access_keep" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tab_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tabs">
+                    <View android:id="@id/tab_bottom_separator" android:background="@color/user_profile_area_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <include android:id="@id/upload_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_post_upload_item" />
+                </LinearLayout>
+                <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tab_bottom_layout" />
+                <LinearLayout android:id="@id/user_profile_tab_new_post" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tabs" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/selector_timeline_img_toast_bg" android:paddingLeft="21.5dip" android:paddingRight="21.5dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="17.5dip">
+                        <androidx.cardview.widget.CardView android:id="@id/new_post_recent_media_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" app:cardBackgroundColor="#ffd8d8d8" app:cardCornerRadius="3.0dip" app:cardElevation="0.0dip">
+                            <jp.naver.toybox.drawablefactory.DImageView android:id="@id/new_post_recent_media_image" android:background="#ff8699d2" android:layout_width="26.0dip" android:layout_height="26.0dip" android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/new_post_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_profile_btn_newpost" android:includeFontPadding="false" android:lineSpacingExtra="0.0sp" android:fontFamily="sans-serif" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.linecorp.line.timeline.floatingmenu.FloatingMenuButton android:layout_gravity="bottom|center|right" android:id="@id/floating_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/floating_menu_right_margin" android:layout_marginBottom="@dimen/floating_menu_bottom_margin" android:contentDescription="@string/access_timeline_writing" app:icon="@drawable/floating_ic_plus" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.linecorp.line.profile.common.FlingDetectFrameLayout>
+    <View android:id="@id/user_profile_cover_status_background" android:background="@color/black40" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <FrameLayout android:id="@id/user_profile_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/extra_info_view_stub" android:layout="@layout/user_profile_extra_info_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

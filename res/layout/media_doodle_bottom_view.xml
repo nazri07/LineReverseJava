@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/color_select_scroll_view" android:paddingLeft="29.0dip" android:paddingRight="13.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:fillViewport="true" android:layout_alignLeft="@id/neon_icon_view" android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:overScrollMode="never" android:paddingStart="29.0dip" android:paddingEnd="13.0dip" android:layout_alignStart="@id/neon_icon_view">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.linecorp.line.media.picker.fragment.doodle.ColorSelectView android:id="@id/color_select_view" android:paddingTop="16.5dip" android:paddingBottom="18.0dip" android:layout_width="709.0dip" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.linecorp.line.media.picker.fragment.doodle.NeonIconView android:id="@id/neon_icon_view" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="3.0dip" android:layout_marginBottom="14.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="3.0dip" android:layout_alignParentStart="true" />
+    <com.linecorp.line.media.picker.fragment.doodle.NeonModeSelectView android:id="@id/neon_mode_select_view" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="94.0dip" android:layout_marginBottom="11.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

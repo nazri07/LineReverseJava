@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00000" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00001" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00002" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00003" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00004" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00005" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00006" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00007" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00008" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00009" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00010" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00011" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00012" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00013" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00014" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00015" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00016" />
+    <item android:duration="90" android:drawable="@drawable/live_img_loading_20fps_00017" />
+</animation-list>

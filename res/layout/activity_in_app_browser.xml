@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.activity.iab.IabContainer android:id="@id/iab_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/iab_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <jp.naver.line.android.activity.iab.ScrollAwareWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/iab_header_height" />
+        <include layout="@layout/iab_header" />
+        <ProgressBar android:layout_gravity="center|top" android:id="@id/iab_header_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/iab_header_height" style="@style/IabProgressBar" />
+        <include layout="@layout/iab_footer" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/iab_fullscreen" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/iab_location_prompt" />
+</jp.naver.line.android.activity.iab.IabContainer>

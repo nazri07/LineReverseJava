@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/coin_history_root" android:background="#fffbfbfb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:id="@id/coin_history_main" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/coin_header_my_coin" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/coin_history_tab" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <RadioButton android:textSize="13.0sp" android:textColor="@drawable/selector_coin_history_tab_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/coin_history_tab_charge" android:background="@drawable/selector_coin_history_tab_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="@string/coin_history_tab_charge" android:layout_weight="1.0" />
+                <RadioButton android:textSize="13.0sp" android:textColor="@drawable/selector_coin_history_tab_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/coin_history_tab_usage" android:background="@drawable/selector_coin_history_tab_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/coin_history_tab_usage" android:layout_weight="1.0" />
+            </RadioGroup>
+            <FrameLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:id="@id/coin_history_loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" />
+                <ListView android:id="@id/coin_history_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffffffff" android:divider="#ffefefef" android:dividerHeight="0.6700001dip" />
+                <ViewStub android:id="@id/coin_history_not_yet_charged" android:layout="@layout/coin_not_yet_charged" android:inflatedId="@id/coin_history_not_yet_charged" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/coin_history_not_yet_used" android:layout="@layout/coin_not_yet_used" android:inflatedId="@id/coin_history_not_yet_used" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/coin_shop_maintenance_and_error_view" />
+    </FrameLayout>
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_button_layout" android:background="@drawable/selector_common_header_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/selector_header_button_text" android:gravity="center" android:layout_gravity="center" android:id="@id/header_button_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" style="@style/CommonTitleBarText" />
+    <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="center" android:id="@id/header_button_img" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CommonTitleBarImage" />
+    <LinearLayout android:layout_gravity="center|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/header_new_dot_top_padding">
+        <Space android:layout_width="@dimen/header_new_dot_anchor_width" android:layout_height="1.0dip" />
+        <ImageView android:id="@id/header_new_badge_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_img_new02" android:contentDescription="@null" />
+    </LinearLayout>
+    <jp.naver.line.android.common.view.StrokeTextView android:layout_gravity="center|right|top" android:id="@id/header_count_badge_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/header_noti_top_padding" android:layout_marginRight="@dimen/header_noti_right_padding" style="@style/v2_common_badge_num_red" />
+</FrameLayout>

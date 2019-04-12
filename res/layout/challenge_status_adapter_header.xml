@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/challenge_status_adapter_header_0" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/header" android:paddingLeft="20.0dip" android:paddingTop="@dimen/dialog_top_padding" android:paddingRight="16.0dip" android:paddingBottom="@dimen/dialog_gauge_area_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff8d8d8d" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supportgauge_popup_title" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/grey07" android:id="@id/title" android:tag="binding_1" android:paddingTop="7.0dip" android:paddingBottom="@dimen/dialog_gauge_area_top_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/sub_title" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gauge_image_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_below="@id/title">
+            <com.linecorp.linelive.player.component.ui.common.badge.ChallengeGaugeView android:id="@id/gauge_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:style="flatLarge" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:tag="binding_3" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gauge_text_group" android:layout_width="wrap_content" android:layout_height="76.0dip" android:layout_toRightOf="@id/gauge_image_group" android:layout_below="@id/title">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                <TextView android:id="@id/text_point_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supportgauge_point_title" style="@style/text_gauge_popup_title" />
+                <TextView android:id="@id/text_point_count" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/text_gauge_popup_count" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                <TextView android:id="@id/text_goal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supportgauge_goal_point_title" style="@style/text_gauge_popup_title" />
+                <TextView android:id="@id/text_goal_count" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/text_gauge_popup_count" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/text_user_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/supportgauge_support_user_count_title" style="@style/text_gauge_popup_title" />
+                <TextView android:id="@id/text_user_count" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/text_gauge_popup_count" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_below="@id/header" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#b3ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sticker_preview_frame" android:background="@drawable/sticker_img_bg" android:layout_width="139.32999dip" android:layout_height="121.32999dip">
+        <com.linecorp.widget.stickersticoninput.sticker.StickerView android:id="@id/sticker_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.659973dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/sticker_preview_sound_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.5dip" android:src="@drawable/sticker_ic_sound06" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/popup_sticker_preview_frame" android:background="#e5ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linecorp.widget.stickersticoninput.sticker.PopupStickerView android:id="@id/popup_sticker_preview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/popup_sticker_preview_sound_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:src="@drawable/sticker_ic_sound04" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/popup_sticker_preview_close_btn" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sticker_ic_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/sticker_preview_retry_btn" android:background="@drawable/v2_selector_button_bottom_grey" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="123.32999dip" android:layout_height="34.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sticker_retry" />
+            <TextView android:textColor="@color/selector_gray_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.669983dip" android:text="@string/retry" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

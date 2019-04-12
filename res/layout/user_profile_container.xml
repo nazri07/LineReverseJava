@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/user_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/user_profile_info" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/user_profile_button_area" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/user_profile_main_button_height" />
+    <View android:layout_gravity="bottom" android:id="@id/user_profile_button_area_separator" android:background="@color/user_profile_area_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

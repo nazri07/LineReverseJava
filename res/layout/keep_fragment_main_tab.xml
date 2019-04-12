@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.linekeep.ui.KeepPtrFrameLayout android:id="@id/keep_rotate_header_recycler_view_frame" android:background="@color/top_whitegrey" android:layout_width="fill_parent" android:layout_height="fill_parent" app:ptr_duration_to_close="200" app:ptr_duration_to_close_header="@integer/keep_ptr_duration_to_close_header" app:ptr_keep_header_when_refresh="true" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.0" app:ptr_resistance="@integer/keep_ptr_resistance" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/keep_recycler_view" android:background="@color/com_white" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.linecorp.linekeep.ui.KeepPtrFrameLayout>
+    <RelativeLayout android:id="@id/keep_gridview_upper_header" android:background="@color/com_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_header_item_height" android:layout_alignParentTop="true" android:animateLayoutChanges="true" android:alpha="0.0">
+        <TextView android:id="@id/keep_gridview_upper_header_text_view" android:paddingLeft="@dimen/keep_list_item_left_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/text_list_date" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/keep_zero_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/keep_zero_page_contents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/keep_zero_page_imageview" android:background="@drawable/ke_zero_img_none01" android:layout_width="@dimen/keep_zero_page_image_width" android:layout_height="@dimen/keep_zero_page_image_height" android:layout_marginBottom="@dimen/keep_zero_page_image_bottom_margin" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center" android:id="@id/keep_zero_page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/keep_zero_page_imageview" android:layout_centerHorizontal="true" style="@style/text_zeropage_title" />
+            <TextView android:gravity="center" android:id="@id/keep_zero_page_desciption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_zero_page_description_top_margin" android:layout_below="@id/keep_zero_page_title" android:layout_centerHorizontal="true" style="@style/text_end_info03" />
+            <Button android:textColor="@drawable/keep_selector_select_button_text" android:id="@id/keep_zero_page_button" android:background="@drawable/keep_selector_button_r01" android:layout_width="@dimen/keep_zero_page_button_width" android:layout_height="@dimen/keep_zero_page_button_height" android:layout_marginTop="@dimen/keep_zero_page_button_top_margin" android:text="@string/keep_list_zeropage_upload" android:layout_below="@id/keep_zero_page_desciption" android:layout_centerHorizontal="true" style="@style/text_zeropage_btn" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:id="@id/keep_zero_page_link_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keep_zero_page_link_bottom_margin" android:layout_below="@id/keep_zero_page_contents" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:id="@id/keep_zero_page_link" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_zeropage_link" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

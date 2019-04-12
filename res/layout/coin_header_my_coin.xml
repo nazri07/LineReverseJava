@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="82.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_shop_my_coin" style="@style/text_setting_coin_title" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/setting_coin_img_coin01" android:layout_marginStart="10.0dip" android:layout_marginEnd="7.0dip" />
+        <TextView android:gravity="start" android:id="@id/owned_coin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_setting_coin_num" />
+    </LinearLayout>
+    <View android:background="@color/coin_divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/coin_desc_area" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coin_header_contents_margin_horizontal" android:layout_marginTop="13.0dip" android:layout_marginRight="@dimen/coin_header_contents_margin_horizontal">
+        <include layout="@layout/coin_head_itemization_bullet_point" />
+        <TextView android:id="@id/coin_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_history_my_coin_bonus" android:includeFontPadding="false" style="@style/text_setting_coin_info01" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/point_desc_area" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coin_header_contents_margin_horizontal" android:layout_marginTop="13.0dip" android:layout_marginRight="@dimen/coin_header_contents_margin_horizontal">
+        <include layout="@layout/coin_head_itemization_bullet_point" />
+        <TextView android:id="@id/point_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_history_my_coin_bonus_from_point" android:includeFontPadding="false" style="@style/text_setting_coin_info01" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/coin_header_contents_margin_horizontal" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/coin_header_contents_margin_horizontal" android:layout_marginBottom="22.0dip">
+        <include layout="@layout/coin_head_itemization_bullet_point" />
+        <TextView android:id="@id/coin_purchase_notice_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coin_shop_notice_2" android:includeFontPadding="false" android:lineSpacingExtra="1.5dip" style="@style/text_setting_coin_info01" />
+    </LinearLayout>
+    <View android:background="@color/coin_divider_line" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+</merge>

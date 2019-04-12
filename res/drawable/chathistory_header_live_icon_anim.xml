@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00000" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00001" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00002" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00003" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00004" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00005" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00006" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00007" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00008" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00009" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00010" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00011" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00012" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00013" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00014" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00015" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00016" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00017" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00018" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00019" />
+    <item android:duration="71" android:drawable="@drawable/header_ic_live_00020" />
+</animation-list>

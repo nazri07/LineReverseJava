@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gnb_menu_item_layout" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/main_gnb_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gnb_menu_item_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:id="@id/gnb_menu_item_badge_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/gnb_menu_item_badge_num" android:background="@drawable/tab_num_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/gnb_menu_item_new_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gnb_ic_new" android:contentDescription="@null" />
+    </LinearLayout>
+</RelativeLayout>

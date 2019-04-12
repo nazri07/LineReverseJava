@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/friendlist_row_div_bottom" android:background="@color/common_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" />
+    <LinearLayout android:gravity="bottom" android:id="@id/search_location_onoff_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textSize="12.5sp" android:textColor="#ffa1a5ae" android:id="@id/search_location_onoff_title" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginBottom="7.0dip" android:text="@string/search_location_search" android:includeFontPadding="false" />
+        <ImageView android:id="@id/search_location_onoff_checkbox" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="12.5dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="17.0dip" android:src="@drawable/selector_checkbox_with_selected_status" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.line.media.editor.DecorationView android:id="@id/media_detail_decoration_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/access_picker_photo" />
+    <com.linecorp.line.media.picker.fragment.sticker.view.CustomToastView android:id="@id/toast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="410.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.linecorp.line.media.picker.fragment.detail.CircleGuideView android:id="@id/media_detail_circle_guide_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:circleBackgroundColor="#ff000000" custom:rectangleBackgroundColor="#99000000" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/media_detail_image_error_viewgroup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_img_error03" />
+        <TextView android:gravity="center" android:id="@id/media_detail_image_error_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/corruptedfile" style="@style/text_zeropage_subtitle04" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/media_detail_image_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    <ImageView android:id="@id/media_detail_media_type_icon" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_vr" android:layout_centerInParent="true" />
+    <com.linecorp.line.media.editor.DecorationTrashView android:id="@id/media_decoration_trash_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

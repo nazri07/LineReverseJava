@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/image_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/gallery_title" android:background="@drawable/img_topbar_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="3.3299866dip" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true">
+            <TextView android:textSize="14.669983sp" android:textStyle="bold" android:textColor="#ffffffff" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="10.669983dip" android:text="@string/gallery_all_photos_view" android:shadowColor="#ff232937" android:shadowDy="0.67" android:shadowRadius="1.0" android:onClick="onClickToFolder" />
+            <TextView android:textSize="14.669983sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/folder_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" android:shadowColor="#ff232937" android:shadowDy="0.67" android:shadowRadius="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/cancel_button" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="12.5dip" android:layout_marginRight="15.0dip" android:src="@drawable/header_cancel" android:scaleType="centerInside" android:layout_alignParentRight="true" android:onClick="onClickCancel" />
+    </RelativeLayout>
+    <View android:background="@drawable/divide_title_shadow" android:layout_width="fill_parent" android:layout_height="1.3299866dip" android:layout_below="@id/gallery_title" />
+    <ListView android:id="@id/listView" android:background="#ffe8e8e8" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-0.6600001dip" android:listSelector="#00000000" android:scrollingCache="true" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="1.5dip" android:layout_below="@id/gallery_title" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/info_bar_bottom_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/gallery_bottom_action_bar" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/empty_view" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gallery_title">
+        <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_no_photos" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/faceplay_season_result_trophy_area" android:layout_width="95.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/faceplay_season_result_trophy_img" android:layout_width="85.0dip" android:layout_height="85.0dip" android:scaleType="centerInside" />
+        <TextView android:textSize="13.0sp" android:textColor="#ccffffff" android:gravity="center_horizontal" android:id="@id/faceplay_season_result_trophy_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" />
+    </LinearLayout>
+</FrameLayout>

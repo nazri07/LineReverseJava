@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/attach_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/photoviewer_bg_dim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/overlay_comment_like" />
+    <RelativeLayout android:id="@id/contents_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <ImageView android:background="@drawable/timeline_viewer_dim_bg_bottom03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.linecorp.line.timeline.activity.mediaviewer.view.PhotoViewerBodyContainerView android:id="@id/photoviewer_body_container" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="66.0dip" android:layout_above="@id/bottom_contents_layout">
+            <com.linecorp.line.timeline.activity.mediaviewer.view.PostBodyScrollView android:id="@id/photoviewer_scrollview" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never" android:requiresFadingEdge="vertical">
+                <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/photoviewer_emptyview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/photoviewer_body_area" android:paddingLeft="16.0dip" android:paddingTop="65.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_toRightOf="@id/user_image_layout">
+                            <TextView android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:maxLines="1" style="@style/text_timeline_media_viewer_user" />
+                            <TextView android:ellipsize="end" android:id="@id/register_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="5.0dip" android:maxLines="1" style="@style/text_timeline_viewer_time02" />
+                        </LinearLayout>
+                        <com.linecorp.line.timeline.view.ClickableStyleSpanTextView android:id="@id/caption_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/user_image_layout" android:lineSpacingExtra="2.0sp" android:requiresFadingEdge="vertical" style="@style/text_timeline_viewer02" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/user_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                            <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/user_image" android:layout_width="31.0dip" android:layout_height="31.0dip" />
+                            <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.linecorp.line.timeline.activity.mediaviewer.view.PostBodyScrollView>
+        </com.linecorp.line.timeline.activity.mediaviewer.view.PhotoViewerBodyContainerView>
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_contents_layout" android:background="@android:color/transparent" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/timeline_relay_bottom_reaction_layout" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <ImageView android:id="@id/post_reaction_like_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_viewer_ic_like_off" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/post_reaction_close_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_viewer_ic_like_cancel" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/post_reaction_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_viewer_reply" android:layout_toRightOf="@id/post_reaction_like_icon" android:contentDescription="@string/access_timeline_comments" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/reaction_summary_area" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                <TextView android:id="@id/post_like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/timeline_reaction_like" style="@style/text_timeline_viewer03" />
+                <TextView android:id="@id/post_comment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeline_reaction_comment" android:layout_toRightOf="@id/post_like_text" style="@style/text_timeline_viewer03" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_main_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.customview.HeaderSearchBoxView android:id="@id/search_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_autocomplete_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_box">
+        <jp.naver.line.android.customview.AutoCompleteView android:id="@id/search_autocomplete" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_box" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/search_result_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_autocomplete_container" android:layout_alignParentBottom="true">
+        <include layout="@layout/search_main_tab_and_viewpager" />
+    </RelativeLayout>
+    <ListView android:id="@id/search_main_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_autocomplete_container" />
+    <View android:id="@id/search_result_contents_front_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_autocomplete_container" android:layout_alignParentBottom="true" />
+</RelativeLayout>

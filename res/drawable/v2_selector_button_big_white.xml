@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/btn_regi_01" />
+    <item android:state_pressed="true" android:drawable="@drawable/v2_btn_big_04_pressed" />
+    <item android:drawable="@drawable/v2_btn_big_04_normal" />
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/keep_detail_video_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <Button android:id="@id/keep_detail_video_play_button" android:background="@drawable/selector_common_ic_play_01" android:layout_width="@dimen/keep_detail_video_play_button_width" android:layout_height="@dimen/keep_detail_video_play_button_width" android:layout_centerInParent="true" />
+        <include layout="@layout/keep_fragment_detail_expired" />
+        <include layout="@layout/keep_fragment_detail_retry" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/keep_detail_bottom_bar_height">
+        <include layout="@layout/keep_fragment_detail_media_tag_layout" />
+    </RelativeLayout>
+</RelativeLayout>

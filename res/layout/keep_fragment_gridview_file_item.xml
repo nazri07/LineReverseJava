@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_grid_item_thumbnail_root_layout" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/keep_grid_item_bottom_icon_and_text_layout">
+        <RelativeLayout android:id="@id/keep_grid_item_imageview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_centerInParent="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin">
+            <ImageView android:id="@id/keep_file_icon_imageview" android:background="@color/transparent" android:layout_width="@dimen/keep_grid_item_file_icon_width" android:layout_height="@dimen/keep_grid_item_file_icon_width" android:src="@drawable/ke_thumb_icon_none" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+            <com.linecorp.linekeep.widget.EllipsizingTextView android:ellipsize="middle" android:gravity="center_horizontal" android:id="@id/keep_filename_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxLines="2" android:minLines="2" android:singleLine="false" android:layout_below="@id/keep_file_icon_imageview" style="@style/text_grid_title01" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_grid_item_foreground" />
+    <include layout="@layout/keep_fragment_gridview_dimmed_layout" />
+    <include layout="@layout/keep_fragment_gridview_button_layout" />
+    <RelativeLayout android:id="@id/keep_grid_item_bottom_icon_and_text_layout" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_alignParentBottom="true">
+        <include layout="@layout/keep_fragment_gridview_sync_imageview" />
+        <include layout="@layout/keep_fragment_grid_item_expiry_text_layout" />
+    </RelativeLayout>
+</RelativeLayout>

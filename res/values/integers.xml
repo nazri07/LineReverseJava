@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="chathistory_input_text_max_lines">4</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <item type="integer" name="deafult_animation_duration">@android:integer/config_mediumAnimTime</item>
+    <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="design_tab_indicator_anim_duration_ms">300</integer>
+    <integer name="fragment_transition_duration">150</integer>
+    <item type="integer" name="gms_version">@integer/google_play_services_version</item>
+    <integer name="google_play_services_version">12451000</integer>
+    <integer name="hide_password_duration">320</integer>
+    <integer name="keep_image_selection_limit">50</integer>
+    <integer name="keep_max_edittext_character_num">10001</integer>
+    <integer name="keep_max_search_keyword_character_num">1001</integer>
+    <integer name="keep_max_tag_character_length">36</integer>
+    <integer name="keep_max_tag_num_limit">10</integer>
+    <integer name="keep_ptr_duration_to_close_header">1000</integer>
+    <integer name="keep_ptr_resistance">2</integer>
+    <integer name="mtrl_btn_anim_delay_ms">100</integer>
+    <integer name="mtrl_btn_anim_duration_ms">100</integer>
+    <integer name="mtrl_chip_anim_duration">100</integer>
+    <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
+    <integer name="pay_name_max_length">30</integer>
+    <item type="integer" name="pay_splitbill_requestcode_size_expanded_border_percent">0.8</item>
+    <item type="integer" name="pay_splitbill_requestcode_size_expanded_percent">0.6</item>
+    <item type="integer" name="pay_splitbill_requestcode_size_percent">0.44</item>
+    <integer name="pay_zip_max_length">15</integer>
+    <integer name="scale_effect_delay">150</integer>
+    <integer name="scale_effect_duration">50</integer>
+    <integer name="show_password_duration">200</integer>
+    <integer name="square_home_desc_joined_max_lines">1</integer>
+    <integer name="square_home_desc_not_joined_max_lines">2</integer>
+    <integer name="square_max_chat_name">25</integer>
+    <integer name="square_max_group_description">200</integer>
+    <integer name="square_max_group_name">25</integer>
+    <integer name="square_max_member_join_message">20</integer>
+    <integer name="square_max_member_name">20</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

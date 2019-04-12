@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/square_activity_create_square_group_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linecorp.linekeep.opensrc.com.antonyt.infiniteviewpager.InfiniteViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/blur" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:background="#33000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/group_img_gra_top" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+        <View android:background="@drawable/group_img_gra_bottom" android:layout_width="fill_parent" android:layout_height="360.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/select_theme_item_image_layout" android:layout_width="@dimen/slide_show_select_theme_item_image" android:layout_height="@dimen/slide_show_select_theme_item_image" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/select_theme_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/select_theme_item_check_image" android:background="@drawable/slide_show_bottom_theme_check_bg_drawable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/slide_ic_check" android:scaleType="center" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/select_theme_download_btn_image" android:background="@drawable/slide_img_badge_bg" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/selector_slideshow_theme_start_download_button" android:scaleType="center" />
+        <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/progress_download_layout" android:background="@color/transparent" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip">
+            <View android:background="@drawable/slide_img_badge_bg" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <ProgressBar android:id="@id/progress_download" android:layout_width="25.0dip" android:layout_height="25.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/effect_slideshow_theme_circle_progress_white" style="?android:progressBarStyleHorizontal" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:id="@id/select_theme_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:includeFontPadding="false" android:layout_below="@id/select_theme_item_image_layout" android:layout_centerHorizontal="true" style="@style/text_select_theme_item" />
+</RelativeLayout>

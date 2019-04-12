@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/sticon_selection_view_progress" android:layout_width="@dimen/sticker_sticon_input_downloading_spinner_size" android:layout_height="@dimen/sticker_sticon_input_downloading_spinner_size" android:indeterminateDrawable="@drawable/progress_circle_blue" style="@style/Widget.AppCompat.ProgressBar" />
+    <Space android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloading" style="@style/sticker_sticon_input_downloading_text" />
+</LinearLayout>

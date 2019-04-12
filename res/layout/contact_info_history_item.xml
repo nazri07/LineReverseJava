@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_bg_color" android:paddingLeft="@dimen/contact_info_content_horizontal_padding" android:paddingRight="@dimen/contact_info_content_horizontal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/contact_info_history_list_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/contactinfo_history_duration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_popup_btn" />
+    <ImageView android:id="@id/contactinfo_history_type_icon" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="6.0dip" android:layout_centerVertical="true" />
+    <TextView android:id="@id/contactinfo_history_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/contactinfo_history_type_icon" android:layout_centerVertical="true" style="@style/text_popup_btn" />
+    <TextView android:id="@id/contactinfo_history_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/contactinfo_history_duration_text" android:layout_toRightOf="@id/contactinfo_history_time_text" android:layout_centerVertical="true" style="@style/text_call_info_content02" />
+</RelativeLayout>

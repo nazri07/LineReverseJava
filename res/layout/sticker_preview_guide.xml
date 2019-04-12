@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/sticker_sticon_input_background" android:paddingLeft="@dimen/sticker_sticon_input_message_horizontal_padding" android:paddingRight="@dimen/sticker_sticon_input_message_horizontal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chathistory_eskdialog_stickerpreview_title" style="@style/sticker_sticon_input_message_title" />
+            <Space android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chathistory_eskdialog_stickerpreview_detail" style="@style/sticker_sticon_input_message_content" />
+            <Space android:layout_width="fill_parent" android:layout_height="6.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/sticker_previewguide_settings_button" android:background="@drawable/selector_button_r02" android:layout_width="@dimen/sticker_sticon_input_message_button_width" android:layout_height="@dimen/sticker_sticon_input_message_button_height" android:text="@string/settings" style="@style/sticker_sticon_input_secondary_button_text" />
+                <Space android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <Button android:textColor="@color/selector_green_btn_text" android:id="@id/sticker_previewguide_confirm_button" android:background="@drawable/selector_button_r01" android:layout_width="@dimen/sticker_sticon_input_message_button_width" android:layout_height="@dimen/sticker_sticon_input_message_button_height" android:text="@string/ok" style="@style/sticker_sticon_input_secondary_button_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

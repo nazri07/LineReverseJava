@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/filter_item_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/filter_image_thumb" app:layout_constraintBottom_toTopOf="@id/filter_text_name" style="@style/filter_item_thumbnail" />
+    <ImageView android:id="@id/filter_image_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_filter_img_selected" app:layout_constraintBottom_toBottomOf="@id/filter_image_thumb" app:layout_constraintEnd_toEndOf="@id/filter_image_thumb" app:layout_constraintLeft_toLeftOf="@id/filter_image_thumb" app:layout_constraintRight_toRightOf="@id/filter_image_thumb" app:layout_constraintStart_toStartOf="@id/filter_image_thumb" app:layout_constraintTop_toTopOf="@id/filter_image_thumb" />
+    <ImageView android:id="@id/new_icon_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_ic_dot02" app:layout_constraintEnd_toEndOf="@id/filter_image_thumb" app:layout_constraintRight_toRightOf="@id/filter_image_thumb" app:layout_constraintTop_toTopOf="@id/filter_image_thumb" />
+    <TextView android:id="@id/filter_text_name" app:layout_constraintTop_toBottomOf="@id/filter_image_thumb" style="@style/filter_item_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

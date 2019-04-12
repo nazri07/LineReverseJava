@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:tag="layout/challenge_gauge_badge_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.linecorp.linelive.player.component.ui.common.badge.ChallengeGaugeView android:id="@id/gauge_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:animatesOnCompletion="true" app:style="sphere" />
+    <TextView android:textSize="8.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/badge_text" android:tag="binding_1" android:background="@drawable/img_live_event_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

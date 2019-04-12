@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_common_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" style="@style/text_more_category_subtitle05" />
+    <ImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="@dimen/moretab_new_badge_size_small" android:layout_height="@dimen/moretab_new_badge_size_small" android:layout_marginLeft="3.0dip" android:src="@drawable/more_img_new" android:layout_toRightOf="@id/item_name" android:layout_centerVertical="true" android:contentDescription="@string/access_new_item_badge" />
+</RelativeLayout>

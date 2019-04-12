@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/grouphome_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/note_swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/note_recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.linecorp.line.timeline.floatingmenu.FloatingMenuButton android:id="@id/note_floating_button" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_marginRight="@dimen/floating_menu_right_margin" android:layout_marginBottom="@dimen/floating_menu_bottom_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:icon="@drawable/floating_ic_plus" />
+    <com.linecorp.line.timeline.group.note.component.NoteExtraInfoView android:id="@id/note_extra_info_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/note_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

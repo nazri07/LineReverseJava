@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/gallery_ic_original_disable" />
+    <item android:state_selected="true" android:drawable="@drawable/gallery_ic_original_on" />
+    <item android:state_selected="false" android:drawable="@drawable/gallery_ic_original_off" />
+    <item android:drawable="@drawable/gallery_ic_original_off" />
+</selector>

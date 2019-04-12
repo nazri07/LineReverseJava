@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/frienddetaildialog_music_album_layout" android:layout_width="@dimen/profile_dialog_music_album_size" android:layout_height="@dimen/profile_dialog_music_album_size" android:foreground="@drawable/profile_popup_img_frame02">
+        <jp.naver.toybox.drawablefactory.DImageView android:layout_gravity="center" android:id="@id/frienddetaildialog_music_thumbnail" android:layout_width="@dimen/profile_dialog_music_album_size" android:layout_height="@dimen/profile_dialog_music_album_size" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/frienddetaildialog_music_state" android:layout_width="@dimen/profile_dialog_music_album_size" android:layout_height="@dimen/profile_dialog_music_album_size" android:src="@drawable/profile_popup_ic_play" android:scaleType="center" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/frienddetaildialog_music_progress" android:visibility="gone" android:layout_width="14.5dip" android:layout_height="14.5dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/frienddetaildialog_music_text_area" android:layout_width="98.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/frienddetaildialog_music_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_popup_img_linemusic01" />
+            <ImageView android:id="@id/frienddetaildialog_music_equalizer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/profile_music_white_equalizer" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ccffffff" android:id="@id/frienddetaildialog_music_songs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</merge>

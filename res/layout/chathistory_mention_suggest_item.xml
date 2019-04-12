@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/chathistory_mention_suggest_item" android:background="@drawable/chathistory_mention_suggest_bg" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_mention_suggest_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <jp.naver.line.android.customview.thumbnail.ThumbImageView android:layout_gravity="center|left|top" android:id="@id/chathistory_mention_suggest_item_icon" android:layout_width="@dimen/chathistory_mention_suggest_item_icon_size" android:layout_height="@dimen/chathistory_mention_suggest_item_icon_size" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/chathistory_mention_suggest_item_badge" android:visibility="gone" android:layout_width="@dimen/chathistory_mention_suggest_item_icon_badge_size" android:layout_height="@dimen/chathistory_mention_suggest_item_icon_badge_size" android:layout_marginLeft="@dimen/chathistory_mention_suggest_item_icon_badge_margin" android:layout_marginTop="@dimen/chathistory_mention_suggest_item_icon_badge_margin" />
+    </FrameLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/chathistory_mention_suggest_text" android:layout_gravity="center_vertical" android:id="@id/chathistory_mention_suggest_item_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="38.0dip" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

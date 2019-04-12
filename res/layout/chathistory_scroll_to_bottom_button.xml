@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.common.view.TintableDImageView android:id="@id/chathistory_scroll_to_bottom_button" android:background="@drawable/search_ic_recent_bg" android:layout_width="@dimen/chathistory_scroll_to_bottom_button_size" android:layout_height="@dimen/chathistory_scroll_to_bottom_button_size" android:src="@drawable/chatroom_scroll_to_bottom_button_icon" android:contentDescription="@string/access_scroll_down"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

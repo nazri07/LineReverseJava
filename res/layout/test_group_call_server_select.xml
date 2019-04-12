@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:gravity="center_horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="GROUP CALL SERVERS" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CSCF" />
+            <Spinner android:id="@id/group_call_cscf_zone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+            <Spinner android:id="@id/group_call_cscf_server" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MIX" />
+            <Spinner android:id="@id/group_call_mix_zone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+            <Spinner android:id="@id/group_call_mix_server" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <Button android:id="@id/group_call_server_select_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Save" android:layout_weight="0.1" />
+    </LinearLayout>
+</ScrollView>

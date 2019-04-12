@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="53.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+        <View android:id="@id/faceplay_summary_solo_ranking_item_background" android:background="@drawable/faceplay_game_background" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/faceplay_summary_solo_ranking_item_profile" android:layout_width="35.69998dip" android:layout_height="35.69998dip" />
+    </FrameLayout>
+    <TextView android:id="@id/faceplay_summary_solo_ranking_item_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/faceplay_summary_ranking_item_name" />
+    <TextView android:id="@id/faceplay_summary_solo_ranking_item_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:minWidth="62.5dip" style="@style/faceplay_summary_ranking_item_score" />
+    <TextView android:id="@id/faceplay_summary_solo_ranking_item_rank" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" style="@style/faceplay_summary_ranking_item_rank" />
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/timeline_disclosure_range_setting_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/privacy_tab_layout" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/header">
+        <View android:background="#99dedede" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/privacy_tab_public_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/selector_privacy_group_setting_tab_text" android:gravity="center_vertical" android:id="@id/privacy_tab_public" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/timeline_sharesettings_tabtitle_included" android:singleLine="true" style="@style/text_privacy_group_tab_text" />
+            <View android:id="@id/privacy_tab_public_bottom_line" android:background="#ff333333" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_alignLeft="@id/privacy_tab_public" android:layout_alignRight="@id/privacy_tab_public" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/privacy_tab_private_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/privacy_tab_public_area">
+            <TextView android:textColor="@color/selector_privacy_group_setting_tab_text" android:gravity="center_vertical" android:id="@id/privacy_tab_private" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/timeline_sharesettings_tabtitle_excluded" android:singleLine="true" style="@style/text_privacy_group_tab_text" />
+            <View android:id="@id/privacy_tab_private_bottom_line" android:background="#ff333333" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_alignLeft="@id/privacy_tab_private" android:layout_alignRight="@id/privacy_tab_private" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/privacy_tab_layout">
+        <androidx.viewpager.widget.ViewPager android:id="@id/timeline_settings_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/retry_view" android:layout="@layout/retryerrorview_nontheme_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/settings_app_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

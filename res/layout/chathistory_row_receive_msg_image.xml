@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.view.RoundedFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chathistory_message_image_receive_padding_left" android:layout_marginBottom="@dimen/chathistory_message_image_padding_bottom" android:layout_marginStart="@dimen/chathistory_message_image_receive_padding_left"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <jp.naver.toybox.drawablefactory.DImageView android:id="@id/chathistory_row_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/access_attached_image" />
+            <ImageView android:id="@id/chathistory_row_animation_gif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+            <ImageView android:layout_gravity="center" android:id="@id/chathistory_row_image_play_button" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_ic_play03" android:contentDescription="@string/access_play" />
+            <ViewStub android:layout_gravity="start|bottom|center" android:id="@id/chathistory_row_image_gif_mark" android:layout="@layout/gif_image_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/chathistory_row_image_vr_image_icon" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_vr_03" android:contentDescription="@null" />
+            <ImageView android:layout_gravity="center" android:id="@id/chathistory_row_error" android:visibility="gone" android:layout_width="@dimen/chathistory_message_image_default_width" android:layout_height="@dimen/chathistory_message_image_default_height" android:src="@drawable/chat_error" android:scaleType="center" android:contentDescription="@string/access_attached_image" />
+            <ViewStub android:layout_gravity="center" android:id="@id/chathistory_row_upload_cancel_button_stub" android:layout="@layout/chathistory_row_send_upload_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ViewStub android:id="@id/chathistory_message_source" android:layout="@layout/chathistory_row_receive_msg_message_source_with_balloon" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_message_source_height" />
+    </LinearLayout>
+</com.linecorp.view.RoundedFrameLayout>

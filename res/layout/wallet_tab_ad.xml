@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notice" android:background="@drawable/selector_common_btn_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="95.0dip">
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_weight="1.0">
+                <TextView android:ellipsize="end" android:id="@id/notice_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_notice" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/more_banner_img_new" android:drawablePadding="5.0dip" style="@style/text_more_category_title04" />
+                <TextView android:ellipsize="end" android:id="@id/notice_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxLines="2" android:scrollHorizontally="true" android:includeFontPadding="false" style="@style/text_more_category_subtitle04" />
+            </LinearLayout>
+            <ImageView android:id="@id/notice_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="22.0dip" android:src="@drawable/more_banner_img_notice" />
+        </LinearLayout>
+        <com.linecorp.advertise.delivery.client.view.image.manager.RecyclableLineImageAdView android:id="@id/ad_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.linecorp.advertise.delivery.client.view.expandable.RecyclableExpandableLineAdView android:id="@id/ad_expandable_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

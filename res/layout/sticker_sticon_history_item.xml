@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sticker_mypackage_item_imgbtn" android:duplicateParentState="true" android:layout_width="@dimen/sticker_stickon_button_width" android:layout_height="@dimen/sticker_stickon_button_height" android:src="@drawable/sticker_sticon_history_icon" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@string/access_sticker_mypackage_item_history" />
+    <include layout="@layout/sticker_sticon_package_item_select_view" />
+</RelativeLayout>

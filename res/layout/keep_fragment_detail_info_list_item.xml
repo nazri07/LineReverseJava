@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="@dimen/keep_detail_info_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/keep_detail_info_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_detail_info_list_item_left_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_detail_info_list_item_left_margin" android:layout_alignParentStart="true" style="@style/text_list_title01" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/keep_detail_info_title_textview" android:layout_toEndOf="@id/keep_detail_info_title_textview">
+        <TextView android:ellipsize="end" android:gravity="end|center" android:id="@id/keep_detail_info_content_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/keep_detail_info_list_item_right_margin" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/keep_detail_info_list_item_right_margin" android:layout_alignParentEnd="true" style="@style/text_end_info01" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

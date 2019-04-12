@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/friendbuddylist_root" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <jp.naver.line.android.customview.SearchBoxView android:id="@id/search_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:hintText="@string/friend_search_hint" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_official_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/friendlist_no_result" />
+        <include layout="@layout/zero_view_oa" />
+    </RelativeLayout>
+</LinearLayout>

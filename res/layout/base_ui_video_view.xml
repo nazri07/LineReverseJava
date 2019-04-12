@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.multimedia.ui.LineVideoView android:id="@id/line_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/thumbnail_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ViewStub android:id="@id/replay_and_action_button_stub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/resume_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_play_02" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/equalizer_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="11.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerInParent="true" />
+</merge>

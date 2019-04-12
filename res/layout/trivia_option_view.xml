@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.linelive.player.component.widget.CheckableRelativeLayout android:tag="layout/trivia_option_view_0" android:background="@drawable/trivia_option_background" android:paddingLeft="20.0dip" android:paddingRight="15.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_text_grey03" android:id="@id/option_text_view" android:tag="binding_1" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignRight="@id/option_selected_check_box" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_alignEnd="@id/option_selected_check_box" />
+    <CheckBox android:id="@id/option_selected_check_box" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/live_radio03" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.linecorp.linelive.player.component.widget.CheckableRelativeLayout>

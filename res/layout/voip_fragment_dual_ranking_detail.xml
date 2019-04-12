@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.voip.faceplay.mode.ranking.dual.DualRankingDetailView android:id="@id/dual_ranking_detail_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/faceplay_summary_header_left" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="2.5dip" android:layout_marginTop="10.0dip" android:src="@drawable/faceplay_ic_back" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/faceplay_summary_header_right" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="2.5dip" android:src="@drawable/faceplay_ic_x" />
+</FrameLayout>

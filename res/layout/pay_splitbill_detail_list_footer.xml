@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/pay_splitbill_detail_list_footer_0" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/cancel_splitbill_text_view" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:layout_constraintBaseline_toBaselineOf="@id/update_splitbill_text_view" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/update_splitbill_text_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:layout_marginBottom="27.0dip" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

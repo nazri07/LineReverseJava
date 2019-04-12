@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="50.0dip" android:paddingRight="30.0dip" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="19.0sp" android:textColor="@color/zeropage_title_text_color" android:gravity="center" android:id="@id/welcome_common_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="@string/call_welcome_title_free_call" android:includeFontPadding="false" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/zeropage_subtitle_01_text_color" android:gravity="center" android:id="@id/welcome_common_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_welcome_description_free_call" android:includeFontPadding="false" />
+    <TextView android:id="@id/welcome_callhistory_contact_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/call_welcome_find_contact" style="@style/text_zeropage_link" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/welcome_callhistory_contact_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67.0dip" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_root_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/comment_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linecorp.line.timeline.activity.write.group.GroupSelectLayout android:id="@id/comment_scrolling_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/postend_messagge_input_container">
+            <LinearLayout android:orientation="vertical" android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/comment_header_arrow_image_view" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_img_arrow04" />
+                <LinearLayout android:orientation="vertical" android:id="@id/comment_header_container" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/comment_listview" android:background="@color/white" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="0.0dip" android:minHeight="@dimen/comment_layer_min_height" android:layout_weight="1.0" android:overScrollMode="never" />
+            </LinearLayout>
+        </com.linecorp.line.timeline.activity.write.group.GroupSelectLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/postend_messagge_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include android:id="@id/chathistory_message" android:paddingLeft="4.0dip" android:paddingTop="5.669983dip" android:paddingRight="4.0dip" android:paddingBottom="5.669983dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.669983dip" layout="@layout/timeline_comment_input_area" />
+            <ViewStub android:id="@id/postend_sticker_sticon_input" android:visibility="gone" android:layout="@layout/sticker_sticon_input" android:layout_width="fill_parent" android:layout_height="@dimen/message_input_menu_height_portrait" />
+            <View android:id="@id/comment_keyboard_fake_area" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/message_input_menu_height_portrait" />
+        </LinearLayout>
+        <com.linecorp.line.timeline.activity.postcommon.PostEndAttachImageForCommentView android:id="@id/inputlayer_photo_attachment_layer" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/comment_photo_attachment_layer_height" android:layout_above="@id/postend_messagge_input_container" />
+        <FrameLayout android:id="@id/chathistory_auto_suggestion_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/postend_messagge_input_container" />
+        <View android:id="@id/inputlayer_blocker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/postend_messagge_input_container" android:layout_alignParentBottom="true" />
+        <com.linecorp.line.timeline.activity.postend.PostEndExtraInfoView android:id="@id/postend_extra_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/home_writing_suggestion_layer" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/postend_messagge_input_container">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/home_write_hash_tag_suggestion" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/postend_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/postend_messagge_input_container" />
+    </RelativeLayout>
+</RelativeLayout>

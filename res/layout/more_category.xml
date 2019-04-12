@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_category_root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/more_menu_category_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_below="@id/header" />
+    <TextView android:gravity="center" android:id="@id/empty_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/more_tab_apps_nocontents" android:layout_below="@id/header" android:layout_alignParentBottom="true" style="@style/text_zeropage_subtitle" />
+</RelativeLayout>

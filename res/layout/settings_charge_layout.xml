@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_my_credit_headline" android:includeFontPadding="false" style="@style/setting_title_text_layout" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <TextView android:id="@id/setting_credit_charge_credit" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/setting_list_item_title_font" />
+        </LinearLayout>
+        <View style="@style/setting_division_line" />
+        <TextView android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_purchase_credit_headline" android:includeFontPadding="false" style="@style/setting_title_text_layout" />
+        <LinearLayout android:orientation="vertical" android:id="@id/setting_credit_charge_products_layout" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="55.0dip">
+                <TextView android:id="@id/setting_credit_charge_menu_credit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" style="@style/setting_list_item_title_font" />
+                <TextView android:textColor="#ff07bf3f" android:id="@id/setting_credit_charge_menu_price_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/setting_list_item_title_font" />
+            </LinearLayout>
+            <Button android:textStyle="bold" android:textColor="@color/linecall_setting_button_text_selector" android:id="@id/setting_credit_charge_buy_by_credit_button" android:background="@drawable/btn_r01_selector" android:layout_width="fill_parent" android:text="@string/call_setting_credit_charge_button_buy" style="@style/setting_credit_charge_button" />
+        </LinearLayout>
+        <Button android:textStyle="bold" android:textColor="@color/linecall_setting_button_text_selector" android:id="@id/setting_credit_charge_buy_monthly_plan_button" android:background="@drawable/btn_r05_selector" android:layout_width="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="7.0dip" android:text="@string/call_setting_credit_charge_buy_monthly_plan_button" style="@style/setting_credit_charge_button" />
+        <View style="@style/setting_division_line" />
+        <LinearLayout android:orientation="vertical" android:id="@id/setting_credit_use_line_coin_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_charge_title_call_line_coin" android:includeFontPadding="false" style="@style/setting_title_text_layout" />
+            <RelativeLayout android:id="@id/setting_credit_charge_call_by_coin_layout" android:background="@drawable/btn_setting_menu_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/setting_credit_charge_call_by_coin_image" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_setting_credit_charge_call_line_coin_checkbox" style="@style/setting_list_item_title_font" />
+                    <TextView android:id="@id/setting_credit_charge_call_by_coin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_credit_charge_call_by_coin_desc" android:includeFontPadding="false" style="@style/setting_credit_charge_bottom_notice_text" />
+                </LinearLayout>
+                <ImageView android:id="@id/setting_credit_charge_call_by_coin_image" android:background="@drawable/check_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_width="wrap_content" android:layout_height="12.0dip" />
+        <LinearLayout android:id="@id/setting_credit_charge_bottom_first_notice_layout" android:visibility="gone" style="@style/setting_credit_charge_bottom_notice_layout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_interpunct" style="@style/setting_credit_charge_bottom_notice_text" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_charge_notice0" style="@style/setting_credit_charge_bottom_notice_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/setting_credit_charge_bottom_free_notice_layout" android:visibility="gone" style="@style/setting_credit_charge_bottom_notice_layout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_interpunct" style="@style/setting_credit_charge_bottom_notice_text" />
+            <TextView android:textColor="#ff6e747d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_purchase_description_adfree" style="@style/setting_credit_charge_bottom_notice_text" />
+        </LinearLayout>
+        <LinearLayout style="@style/setting_credit_charge_bottom_notice_layout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_interpunct" style="@style/setting_credit_charge_bottom_notice_text" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_charge_notice" style="@style/setting_credit_charge_bottom_notice_text" />
+        </LinearLayout>
+        <LinearLayout style="@style/setting_credit_charge_bottom_notice_layout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_interpunct" style="@style/setting_credit_charge_bottom_notice_text" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_charge_notice2" style="@style/setting_credit_charge_bottom_notice_text" />
+        </LinearLayout>
+        <LinearLayout style="@style/setting_credit_charge_bottom_notice_layout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_interpunct" style="@style/setting_credit_charge_bottom_notice_text" />
+            <TextView android:textColor="#ff6e747d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_setting_credit_charge_notice3" style="@style/setting_credit_charge_bottom_notice_text" />
+        </LinearLayout>
+        <LinearLayout style="@style/setting_credit_charge_bottom_notice_layout">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_interpunct" style="@style/setting_credit_charge_bottom_notice_text" />
+            <TextView android:textColor="#ff6e747d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_purchase_description_limitOfcoin" style="@style/setting_credit_charge_bottom_notice_text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

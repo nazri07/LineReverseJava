@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="134" android:drawable="@drawable/speak_gray_15fps_01" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_02" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_03" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_04" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_05" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_06" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_07" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_08" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_09" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_10" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_11" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_12" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_13" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_14" />
+    <item android:duration="67" android:drawable="@drawable/speak_gray_15fps_15" />
+</animation-list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/chathistory_contact_list" android:layout="@layout/chathistory_header_contact_avatar_list" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_contactlist_height" />
+    <ViewStub android:id="@id/chathistory_bgm_header" android:layout="@layout/chathistory_header_bgm_view" android:layout_width="fill_parent" android:layout_height="54.0dip" />
+    <ViewStub android:id="@id/chathistory_header_e2ee_description" android:layout="@layout/chathistory_header_e2ee_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/chathistory_header_square_chat_info" android:layout="@layout/chathistory_header_square_chat_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

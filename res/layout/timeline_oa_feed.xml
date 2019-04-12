@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/oa_feed_header">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/oa_feed_channel_view" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_oa_feed_channel_view_height" android:layout_below="@id/oa_feed_header">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/oa_feed_channel_recycler_view" android:background="#f6ffffff" android:paddingLeft="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <jp.naver.line.android.common.view.header.Header android:id="@id/oa_feed_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/oa_feed_scroll_to_next_item_button" android:background="@drawable/oa_feed_read_more_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:src="@drawable/timeline_oa_img_arrow_02" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ViewStub android:id="@id/empty" android:layout="@layout/home_empty_post_view_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/oa_feed_header" />
+    <ViewStub android:id="@id/error" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/oa_feed_header" />
+    <FrameLayout android:id="@id/oa_feed_popup_sticker_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

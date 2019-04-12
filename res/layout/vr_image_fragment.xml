@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.opengl.ui.VrImageView android:id="@id/vr_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:useSurfaceView="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <jp.naver.gallery.android.fragment.VrDirectionIndicatorView android:id="@id/vr_direction_reset_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/vr_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

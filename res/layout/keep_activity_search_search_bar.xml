@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/keep_activity_search_back" android:background="@drawable/keep_selector_actionbar_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ke_header_icon_back" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="33.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/keep_activity_search_back" android:layout_alignParentBottom="true" android:layout_marginStart="33.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/keep_activity_search_back">
+        <EditText android:enabled="false" android:textSize="16.0sp" android:textColor="@color/com_white" android:textColorHint="@color/search_grey02" android:id="@id/keep_activity_search_input_edittext" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:minLines="1" android:maxLength="@integer/keep_max_search_keyword_character_num" android:layout_toLeftOf="@id/keep_activity_search_cancel_button" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch|flagNoExtractUi" android:textCursorDrawable="@drawable/keep_search_custom_cursor" android:layout_toStartOf="@id/keep_activity_search_cancel_button">
+            <requestFocus />
+        </EditText>
+        <ImageView android:id="@id/keep_activity_search_cancel_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="3.5dip" android:src="@drawable/ke_header_icon_search_x" android:layout_above="@id/keep_activity_search_bottom_line" android:layout_alignParentRight="true" android:layout_marginStart="6.0dip" android:layout_alignParentEnd="true" />
+        <View android:id="@id/keep_activity_search_bottom_line" android:background="@color/com_green02" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.5dip" android:layout_below="@id/keep_activity_search_input_edittext" />
+    </RelativeLayout>
+</RelativeLayout>

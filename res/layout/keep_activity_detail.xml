@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/detail_layout" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/keep_detail_loading_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_waiting" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/keep_detail_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linecorp.linekeep.ui.detail.KeepDetailViewPager android:id="@id/keep_detail_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/keep_detail_header" android:background="@color/top_darknavy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@id/keep_detail_header_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/keep_detail_header_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_header_left_margin" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_header_left_margin" android:layout_alignParentStart="true" style="@style/text_top_title" />
+                <ImageView android:id="@id/keep_detail_header_info_button" android:background="@drawable/keep_selector_actionbar_background" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ke_header_icon_info01" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/keep_detail_header_more_button" android:background="@drawable/keep_selector_background_tab" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ke_header_icon_more" android:layout_toRightOf="@id/keep_detail_header_info_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/keep_detail_bottom_bar" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@id/keep_detail_bottom_bar_divider" android:background="@color/div_lightgrey" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_item_divider_height" />
+            <ImageButton android:id="@id/keep_detail_left_bottom_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="35.0dip" android:layout_below="@id/keep_detail_bottom_bar_divider" android:layout_marginStart="35.0dip" />
+            <ImageButton android:id="@id/keep_detail_middle_bottom_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_below="@id/keep_detail_bottom_bar_divider" android:layout_centerHorizontal="true" />
+            <ImageButton android:id="@id/detail_detail_right_bottom_button" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="35.0dip" android:layout_below="@id/keep_detail_bottom_bar_divider" android:layout_alignParentRight="true" android:layout_marginEnd="35.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:paddingBottom="@dimen/keep_detail_bottom_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/keep_activity_detail_share_link_tooltop" />
+    </RelativeLayout>
+</RelativeLayout>

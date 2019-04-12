@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_main_render_viewgroup" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.naver.line.android.customview.FitAndCenterCropImageView android:id="@id/video_main_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/video_main_render_dimmed" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.percentlayout.widget.PercentFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/video_ic_pause_by_longtab" android:visibility="gone" android:layout_height="wrap_content" app:layout_widthPercent="60.000004%">
+            <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="43.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/videocall_img_longtab" />
+            <TextView android:textSize="11.0sp" android:textColor="#80ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/groupcall_video_guide_steaming_on" android:includeFontPadding="false" />
+        </LinearLayout>
+    </androidx.percentlayout.widget.PercentFrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/video_ic_pause_by_peer" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="29.0dip" android:src="@drawable/videocall_img_video" />
+    <FrameLayout android:id="@id/video_ic_waiting_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/video_ic_waiting_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/animation_group_video_loading" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/video_drag_on_layout" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.percentlayout.widget.PercentFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#b2ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/video_main_item_name" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" app:layout_widthPercent="60.000004%" />
+    </androidx.percentlayout.widget.PercentFrameLayout>
+</merge>

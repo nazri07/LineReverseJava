@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/keep_edittext_divider" android:background="@color/div_lightgrey" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_item_divider_height" />
+    <include layout="@layout/keep_fragment_detail_tag_layout" />
+    <RelativeLayout android:id="@id/keep_edittext_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin">
+        <TextView android:id="@id/keep_activity_date_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_detail_date_top_margin" style="@style/text_end_date" />
+        <EditText android:scrollbarStyle="outsideInset" android:gravity="top" android:id="@id/keep_activity_full_edittext" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/keep_detail_content_top_margin" android:maxLength="@integer/keep_max_edittext_character_num" android:layout_below="@id/keep_activity_date_textview" android:inputType="textMultiLine" android:imeOptions="flagNoExtractUi" style="@style/text_end_content01">
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+</RelativeLayout>

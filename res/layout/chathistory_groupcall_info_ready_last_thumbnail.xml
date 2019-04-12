@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/chathistory_groupcall_layer_thumbnail_size" android:layout_height="@dimen/chathistory_groupcall_layer_thumbnail_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/chathistory_groupcall_info_ready_last_thumbnail" android:layout_width="@dimen/chathistory_groupcall_layer_thumbnail_size" android:layout_height="@dimen/chathistory_groupcall_layer_thumbnail_size" />
+    <ImageView android:layout_width="@dimen/chathistory_groupcall_layer_thumbnail_size" android:layout_height="@dimen/chathistory_groupcall_layer_thumbnail_size" android:src="@drawable/chatroom_call_img_more" android:scaleType="center" />
+</FrameLayout>

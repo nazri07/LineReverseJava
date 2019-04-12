@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/undo_button" android:background="@drawable/selector_camera_doodle_undo_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/done_button" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/camera_image_header_height" android:text="@string/done" android:shadowColor="#4c000000" android:shadowRadius="4.0" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_list_item_root_layout" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keep_fragment_list_item_foreground" />
+    <RelativeLayout android:id="@id/keep_list_item_imageview_layout" android:layout_width="@dimen/keep_list_item_image_width" android:layout_height="@dimen/keep_list_item_image_width" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_list_item_left_margin">
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/keep_list_item_imageview" android:background="@color/transparent" android:layout_width="@dimen/keep_list_item_image_width" android:layout_height="@dimen/keep_list_item_image_width" android:src="@drawable/ke_thumb_icon_none" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <RelativeLayout android:gravity="bottom|center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keep_list_item_gif_layout_left_margin" android:layout_marginBottom="@dimen/keep_list_item_gif_layout_bottom_margin" android:layout_marginStart="@dimen/keep_list_item_gif_layout_left_margin">
+            <include layout="@layout/keep_fragment_list_gif_layout" />
+        </RelativeLayout>
+        <include layout="@layout/keep_fragment_list_video_play_layout" />
+        <include layout="@layout/keep_fragment_listview_dimmed_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/keep_list_item_textview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_text_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_toLeftOf="@id/keep_item_button_layout" android:layout_toRightOf="@id/keep_list_item_imageview_layout" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="@dimen/keep_list_item_text_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin" android:layout_toStartOf="@id/keep_item_button_layout" android:layout_toEndOf="@id/keep_list_item_imageview_layout">
+        <TextView android:ellipsize="middle" android:id="@id/keep_list_item_filename_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/text_list_title01" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_list_item_date_top_margin" android:layout_below="@id/keep_list_item_filename_textview" layout="@layout/keep_fragment_listview_date" />
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_text_left_margin" android:layout_marginRight="@dimen/keep_list_item_delete_button_right_margin" android:layout_marginBottom="@dimen/keep_list_item_progress_bottom_margin" android:layout_toLeftOf="@id/keep_item_button_layout" android:layout_toRightOf="@id/keep_list_item_imageview_layout" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="@dimen/keep_list_item_text_left_margin" android:layout_marginEnd="@dimen/keep_list_item_delete_button_right_margin" android:layout_toStartOf="@id/keep_item_button_layout" android:layout_toEndOf="@id/keep_list_item_imageview_layout" layout="@layout/keep_fragment_listview_progress" />
+    <include layout="@layout/keep_fragment_listview_button_layout" />
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

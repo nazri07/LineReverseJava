@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/selector_common_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/item_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="@dimen/moretab_new_badge_size_small" android:layout_height="@dimen/moretab_new_badge_size_small" android:layout_marginTop="5.5dip" android:layout_marginRight="0.5dip" android:src="@drawable/more_img_new" android:layout_alignTop="@id/item_icon" android:layout_alignRight="@id/item_icon" android:contentDescription="@string/access_new_item_badge" />
+    </RelativeLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:includeFontPadding="false" style="@style/text_more_category_title05" />
+</LinearLayout>

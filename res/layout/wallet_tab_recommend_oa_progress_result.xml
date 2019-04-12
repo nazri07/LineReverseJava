@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/wallet_oa_recommend_progress" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Inverse" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/wallet_oa_recommend_result_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/wallet_oa_recommend_result_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_img_error_02" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#802b3751" android:gravity="center_horizontal" android:id="@id/wallet_oa_recommend_result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/wallet_recommend_no_items" android:lineSpacingExtra="7.0sp" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</RelativeLayout>

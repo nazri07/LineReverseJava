@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_list_item_text_root_layout" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="@dimen/keep_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keep_fragment_list_item_foreground" />
+    <RelativeLayout android:id="@id/keep_list_item_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_toLeftOf="@id/keep_item_button_layout" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin">
+        <TextView android:ellipsize="end" android:id="@id/keep_list_item_text_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="@style/text_list_title01" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_list_item_date_top_margin" android:layout_below="@id/keep_list_item_text_textview" layout="@layout/keep_fragment_listview_date" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_list_item_progress_top_margin" android:layout_below="@id/keep_list_item_text_textview" layout="@layout/keep_fragment_listview_progress" />
+    </RelativeLayout>
+    <include layout="@layout/keep_fragment_listview_dimmed_layout" />
+    <include layout="@layout/keep_fragment_listview_button_layout" />
+    <include layout="@layout/keep_fragment_listview_divider" />
+</RelativeLayout>

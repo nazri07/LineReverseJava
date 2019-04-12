@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_delete_paid_item_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:drawablePadding="8.0dip" android:layout_weight="1.0" style="@style/text_setting_category_list01" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_delete_paid_item_result_container" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:id="@id/account_delete_paid_item_result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_setting_auth_title" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_img_arrow" android:contentDescription="@null" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text_setting_auth_title02" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/account_delete_paid_item_result_loding" android:paddingRight="@dimen/setting_account_delete_item_padding_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/loading" style="@style/text_setting_category_list_info" />
+    <TextView android:gravity="center" android:id="@id/account_delete_paid_item_result_error" android:paddingRight="@dimen/setting_account_delete_item_padding_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/settings_del_account_failed_loading" android:drawableLeft="@drawable/setting_ic_error" android:drawablePadding="7.0dip" style="@style/text_setting_category_list_info" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="12.0dip" android:paddingBottom="24.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginEnd="11.0dip">
+        <RadioButton android:id="@id/pay_rb_coupon_dialog_item_forSingleSelection" android:background="@drawable/pay_selector_single_coupon_selection_radio_button" android:visibility="gone" android:clickable="false" android:layout_width="20.0dip" android:layout_height="20.0dip" android:button="@null" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/pay_cb_coupon_dialog_item_forMultipleSelection" android:background="@drawable/pay_selector_multiple_coupon_selection_checkbox" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/pay_tv_coupon_dialog_item_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:gravity="center_vertical" android:id="@id/pay_tv_coupon_dialog_item_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:lineSpacingExtra="2.0sp" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#cc8c8d8f" android:gravity="center_vertical" android:id="@id/pay_tv_coupon_dialog_item_validityDate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

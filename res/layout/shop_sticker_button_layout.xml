@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/left_button_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="5.3299866dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/right_button_layout" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ViewStub android:id="@id/present_button_view_stub" android:layout="@layout/shop_present_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/right_button_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/left_button_layout" app:layout_constraintTop_toTopOf="parent">
+        <ViewStub android:id="@id/download_button_view_stub" android:layout="@layout/shop_download_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/purchase_button_view_stub" android:layout="@layout/shop_purchase_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/upgrade_line_button_view_stub" android:layout="@layout/shop_upgrade_line_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="@dimen/keep_edit_tag_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keep_fragment_list_item_foreground" />
+    <TextView android:ellipsize="end" android:id="@id/keep_activity_edit_tag_list_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:maxLines="1" android:minLines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin" style="@style/text_list_title08" />
+</RelativeLayout>

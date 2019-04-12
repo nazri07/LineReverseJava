@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/pay_full_green_button_text" android:gravity="center" android:layout_gravity="center" android:id="@id/text_view" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" />
+</merge>

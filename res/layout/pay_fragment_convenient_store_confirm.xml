@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/pay_shape_white_rectangle_r2" android:paddingLeft="19.5dip" android:paddingRight="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_marginTop="7.5dip" android:layout_marginRight="7.5dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/pay_convenience_of_payment_description" />
+        <View android:background="@drawable/pay_shape_charge_stroke_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" android:layerType="software" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.5dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_convenient_store_charge_trade_number_title" android:drawableLeft="@drawable/pay_img_dot_grey" android:drawablePadding="8.5dip" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff404040" android:id="@id/convenient_store_trade_number_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_convenient_store_charge_confirm_number_title" android:drawableLeft="@drawable/pay_img_dot_grey" android:drawablePadding="8.5dip" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff404040" android:id="@id/convenient_store_confirm_number_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_charge_expire_date_title" android:drawableLeft="@drawable/pay_img_dot_grey" android:drawablePadding="8.5dip" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff1f6be7" android:id="@id/convenient_store_expire_date_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_support_convenient_store_list" android:drawableLeft="@drawable/pay_img_dot_grey" android:drawablePadding="8.5dip" />
+            </LinearLayout>
+            <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_icon_conv_familymart" />
+            </HorizontalScrollView>
+            <View android:background="@drawable/pay_shape_charge_stroke_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="27.0dip" android:layerType="software" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginRight="0.5dip" android:layout_marginBottom="10.0dip" android:minHeight="65.0dip">
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_amount" />
+                <com.linecorp.linepay.legacy.customview.MoneyTextView android:gravity="right" android:id="@id/convenient_store_charge_amount_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/guide_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pay_icon_info2" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:id="@id/convenient_store_charge_guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="2.0dip">
+        <ImageView android:id="@id/icon_charge_methods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/pay_icon_info2" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:id="@id/convenient_store_charge_usage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_charge_methods_description_with_underline" />
+    </LinearLayout>
+</LinearLayout>

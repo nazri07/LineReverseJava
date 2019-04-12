@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_live_effect_selector" />
+    <item android:drawable="@drawable/call_img_dot03" android:left="41.0dip" android:top="7.0dip" android:right="3.0dip" android:bottom="37.0dip" />
+</layer-list>

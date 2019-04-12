@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/registration_description" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_dialog_suggest_account_setting_desc1_email" style="@style/Text.Registration.Simple.Info.02" />
+    <TextView android:id="@id/main_dialog_suggest_account_setting_desc2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_dialog_suggest_account_setting_desc2_email" style="@style/Text.Registration.Simple.Info.02" />
+    <TextView android:id="@id/main_dialog_suggest_account_setting_warning_naver_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/email_registration_warning_naver_id" style="@style/Text.Registration.Simple.Info.02" />
+</LinearLayout>

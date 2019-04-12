@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/keypad_mode_popup_list" android:background="@drawable/popup_system_bg" android:layout_width="285.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/free_mode_layout" android:focusable="true" android:clickable="true" android:layout_width="285.0dip" android:layout_height="106.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/free_mode" android:layout_width="63.5dip" android:layout_height="14.0dip" android:src="@drawable/call_img_lineout02" />
+            <ImageView android:id="@id/line_out_mode_free_icon" android:layout_width="30.5dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/call_img_free02" android:layout_toRightOf="@id/free_mode" android:layout_alignBottom="@id/free_mode" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff747b87" android:id="@id/free_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:text="@string/call_mode_paidTofree" android:includeFontPadding="false" android:layout_below="@id/free_mode" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/free_mode_checkbox" android:duplicateParentState="true" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/keypad_mode_popup_checkbox_selector" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/credit_mode_layout" android:focusable="true" android:clickable="true" android:layout_width="285.0dip" android:layout_height="106.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/line_out_mode" android:layout_width="63.5dip" android:layout_height="14.0dip" android:src="@drawable/call_img_lineout02" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff747b87" android:id="@id/line_out_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:text="@string/call_mode_freeTopaid" android:includeFontPadding="false" android:layout_below="@id/line_out_mode" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/line_out_mode_checkbox" android:duplicateParentState="true" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/keypad_mode_popup_checkbox_selector" />
+    </LinearLayout>
+</LinearLayout>

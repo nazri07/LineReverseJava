@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:paddingTop="10.0dip" android:paddingBottom="148.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/faceplay_summary_ranking_user_profile" android:layout_width="105.0dip" android:layout_height="105.0dip" />
+    <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/faceplay_summary_ranking_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="50.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/faceplay_summary_ranking_user_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="82.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/faceplay_ic_skin" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff70b9f6" android:id="@id/faceplay_summary_ranking_skin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.5dip" android:layout_marginRight="4.5dip" android:src="@drawable/faceplay_ic_trophy" />
+        <TextView android:textSize="13.0sp" android:textColor="#fff1d461" android:id="@id/faceplay_summary_ranking_trophy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.5dip" android:layout_marginRight="5.0dip" android:src="@drawable/faceplay_ic_score" />
+        <TextView android:textSize="13.0sp" android:textColor="#ccffffff" android:id="@id/faceplay_summary_ranking_record_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/faceplay_summary_ranking_solo_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_single_rank" android:layout_weight="1.0" style="@style/faceplay_summary_ranking_subtitle_text" />
+        <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginLeft="19.0dip" android:src="@drawable/faceplay_ic_arrow_02" />
+    </LinearLayout>
+    <com.linecorp.voip.faceplay.mode.ranking.summary.view.SummarySoloRankingView android:id="@id/faceplay_summary_solo_ranking_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/faceplay_summary_ranking_dual_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_multi_rank" android:layout_weight="1.0" style="@style/faceplay_summary_ranking_subtitle_text" />
+        <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginLeft="19.0dip" android:src="@drawable/faceplay_ic_arrow_02" />
+    </LinearLayout>
+    <com.linecorp.voip.faceplay.mode.ranking.summary.view.SummaryDualRankingView android:id="@id/faceplay_summary_dual_ranking_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/faceplay_summary_ranking_album_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_screenshot" android:layout_weight="1.0" style="@style/faceplay_summary_ranking_subtitle_text" />
+        <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:src="@drawable/faceplay_ic_arrow_02" />
+    </LinearLayout>
+    <com.linecorp.voip.faceplay.mode.common.end.SummaryAlbumView android:id="@id/faceplay_summary_album" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/faceplay_summary_ranking_reward_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.5dip">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/faceplay_mypage_collection" android:layout_weight="1.0" style="@style/faceplay_summary_ranking_subtitle_text" />
+        <ImageView android:layout_width="8.0dip" android:layout_height="13.0dip" android:src="@drawable/faceplay_ic_arrow_02" />
+    </LinearLayout>
+    <com.linecorp.voip.faceplay.mode.ranking.summary.view.SummaryRewardTrophyView android:id="@id/faceplay_summary_ranking_reward_trophy_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="38.5dip" />
+    <com.linecorp.voip.faceplay.mode.ranking.summary.view.SummaryRewardSkinView android:id="@id/faceplay_summary_ranking_reward_skin_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

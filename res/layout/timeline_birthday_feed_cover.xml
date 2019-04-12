@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/iv_birthday_cover" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.line.timeline.activity.birthday.feed.BirthdayPostFeedCoverVideoView android:id="@id/video_birthday_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/birthday_cover_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/birthday_cover_user_profile_layout" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_centerHorizontal="true">
+            <jp.naver.line.android.customview.VideoProfileView android:id="@id/vp_birthday_cover_user_profile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <jp.naver.toybox.drawablefactory.DImageView android:id="@id/iv_birthday_cover_user_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginRight="80.0dip" android:layout_below="@id/birthday_cover_user_profile_layout" android:layout_centerHorizontal="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_birthday_cover_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:lines="1" android:layout_centerHorizontal="true" style="@style/commonFont" />
+            <TextView android:textSize="10.0sp" android:textColor="#66ffffff" android:id="@id/tv_birthday_cover_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:lines="1" android:layout_below="@id/tv_birthday_cover_user_name" android:layout_centerHorizontal="true" style="@style/commonFont" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_birthday_cover_congratulation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_birthday_cover_date" android:layout_centerHorizontal="true" style="@style/commonFont" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/relay_feed_menu_view" android:paddingLeft="16.0dip" android:paddingTop="15.5dip" android:paddingRight="9.5dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_arrow_down02" />
+</FrameLayout>

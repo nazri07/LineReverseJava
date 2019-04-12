@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="19.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="18.5dip" android:layout_marginLeft="15.0dip" android:text="@string/timeline_mememaker_subtitle_popularmemes" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btn_refresh" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/meme_ic_reload_normal" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/popular_grid" android:paddingBottom="30.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="13.0dip" />
+</LinearLayout>

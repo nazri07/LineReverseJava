@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_birthday_view_root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/selector_timeline_write_header_post_text" android:id="@id/btn_post" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="6.0dip" android:text="@string/myhome_post_save" android:layout_alignParentRight="true" style="@style/commonFont" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:maxLines="2" android:layout_toLeftOf="@id/btn_post" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/thumbnail_view" android:layout_below="@id/header_view">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/content_parent_view" android:layout_width="300.0dip" android:layout_height="300.0dip">
+                <FrameLayout android:layout_gravity="center|top" android:id="@id/video_view" android:layout_width="130.0dip" android:layout_height="130.0dip" />
+                <FrameLayout android:layout_gravity="center|top" android:id="@id/photo_view" android:layout_width="250.0dip" android:layout_height="250.0dip" />
+                <FrameLayout android:layout_gravity="center|top" android:id="@id/template_view" android:background="@android:color/transparent" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <HorizontalScrollView android:gravity="center_horizontal" android:id="@id/category_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/category_container" android:layout_width="fill_parent" android:layout_height="75.0dip" />
+    </HorizontalScrollView>
+    <FrameLayout android:id="@id/thumbnail_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_above="@id/category_scroll_view" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-42.669983dip" android:layout_below="@id/header">
+        <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/extra_info_view" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

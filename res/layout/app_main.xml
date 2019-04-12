@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_main_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/noticenter_stub" android:background="@android:color/transparent" android:visibility="gone" android:layout="@layout/noti_center" android:inflatedId="@id/panel_import" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.naver.line.android.customview.MainActivityViewPager android:id="@id/viewpager" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <jp.naver.line.android.common.view.ScrollIndicaterTabContainer android:gravity="center" android:orientation="horizontal" android:id="@id/main_tab_container" android:background="@drawable/gnb_bg_normal" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/main_gnb_height" />
+        <RelativeLayout android:id="@id/main_header_gnb_extra_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_topbar_shadow" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" />
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/timeline_newpost_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_below="@id/main_topbar_shadow" />
+        </RelativeLayout>
+    </LinearLayout>
+    <jp.naver.line.android.common.view.listview.PopupListView android:id="@id/main_popup_list" android:visibility="gone" android:layout_width="@dimen/option_menu_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/option_menu_top_margin_top" android:layout_marginRight="@dimen/header_more_popup_right_margin" android:layout_alignParentRight="true" applyTheme="true" />
+    <include android:id="@id/beacon_layer" android:layout_width="fill_parent" android:layout_height="@dimen/beacon_layer_height" android:layout_alignParentBottom="true" layout="@layout/view_beacon_layer" />
+    <ViewStub android:id="@id/instant_news" android:layout="@layout/view_instant_news" android:layout_width="fill_parent" android:layout_height="@dimen/instant_news_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

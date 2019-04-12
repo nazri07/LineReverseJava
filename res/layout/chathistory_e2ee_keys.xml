@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chathistory_e2ee_keys_root" android:background="@color/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:fillViewport="true" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:id="@id/chathistory_privatechat_key_fingerprint_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="#fff9f9f9" android:paddingLeft="16.0dip" android:paddingTop="17.0dip" android:paddingRight="16.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hidden_chat_settigns_publickey_guide" android:lineSpacingExtra="2.5dip" style="@style/text_zeropage_subtitle" />
+                <TextView android:id="@id/chathistory_e2ee_fingerprint_key_description_link" android:paddingTop="2.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hidden_chat_settigns_publickey_guide_help" style="@style/text_zeropage_subtitle" />
+            </LinearLayout>
+            <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/chathistory_e2ee_description" android:paddingLeft="16.5dip" android:paddingTop="12.0dip" android:paddingRight="16.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff608bc5" android:id="@id/chathistory_e2ee_description_link" android:paddingLeft="16.5dip" android:paddingTop="1.5dip" android:paddingRight="16.5dip" android:paddingBottom="13.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chathistory_e2ee_status_helplink" />
+            <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="15.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" />
+</RelativeLayout>

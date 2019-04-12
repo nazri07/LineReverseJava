@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.voip.ui.freecall.video.view.FreeCallMyRenderView android:id="@id/my_render_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/watermark" android:background="@drawable/call_img_watermark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="7.0dip" />
+    <com.linecorp.voip.ui.freecall.video.view.FreeCallFriendRenderView android:id="@id/friend_render_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/gradient_background_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_gravity="top" android:id="@id/videocall_control_background_top" android:background="@drawable/videocall_gra_top" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+        <View android:layout_gravity="bottom" android:id="@id/videocall_control_background_bottom" android:background="@drawable/videocall_gra_bottom04" android:layout_width="fill_parent" android:layout_height="115.0dip" />
+    </FrameLayout>
+</merge>

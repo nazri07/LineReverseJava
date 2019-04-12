@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/animation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/animation_circle" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+    <com.linecorp.line.timeline.view.SwipeDetectableRelativeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/recycler_view">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/add" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="6.0dip" android:text="@string/timeline_relay_add" android:layout_alignParentRight="true" style="@style/commonFont" />
+        <EditText android:textSize="34.0sp" android:textColor="#ffffffff" android:textColorHint="#80ffffff" android:gravity="center_vertical" android:id="@id/input" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:hint="@string/timeline_relay_join_textcard_guide" android:maxLines="4" android:layout_below="@id/add" android:layout_centerHorizontal="true" />
+    </com.linecorp.line.timeline.view.SwipeDetectableRelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="59.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:overScrollMode="never" />
+</RelativeLayout>

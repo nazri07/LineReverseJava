@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_no_map" android:background="@drawable/timeline_oa_img_location_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip">
+        <ImageView android:background="@drawable/timeline_oa_img_location_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.5dip" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/post_location_text_no_map" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_timeline_carousel_item_location_title" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/post_address_text_no_map" android:paddingLeft="4.5dip" android:paddingTop="4.0dip" android:paddingRight="4.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:includeFontPadding="false" style="@style/text_timeline_carousel_item_location_address" />
+    </LinearLayout>
+</FrameLayout>

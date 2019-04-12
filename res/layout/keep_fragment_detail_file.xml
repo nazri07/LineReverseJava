@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:paddingTop="@dimen/keep_actionbar_height" android:paddingBottom="@dimen/keep_detail_bottom_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/keep_detail_file_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/keep_list_item_left_margin" android:layout_marginRight="@dimen/keep_list_item_right_margin" android:layout_marginStart="@dimen/keep_list_item_left_margin" android:layout_marginEnd="@dimen/keep_list_item_right_margin">
+                <TextView android:id="@id/keep_detail_fileitem_date_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_detail_date_top_margin" style="@style/text_end_date" />
+                <RelativeLayout android:id="@id/keep_detail_file_info_layout" android:background="@drawable/ke_end_img_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_detail_file_content_top_margin" android:minHeight="@dimen/keep_detail_file_content_height" android:layout_below="@id/keep_detail_fileitem_date_textview">
+                    <ImageView android:id="@id/keep_detail_fileitem_icon_imageView" android:layout_width="@dimen/keep_detail_file_icon_width" android:layout_height="@dimen/keep_detail_file_icon_width" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                    <TextView android:id="@id/keep_detail_fileitem_filename_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="17.5dip" android:layout_marginBottom="12.0dip" android:layout_toRightOf="@id/keep_detail_fileitem_icon_imageView" android:layout_centerVertical="true" android:layout_marginEnd="17.5dip" android:layout_toEndOf="@id/keep_detail_fileitem_icon_imageView" style="@style/text_list_title01" />
+                </RelativeLayout>
+                <TextView android:id="@id/keep_detail_fileitem_expirydate_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keep_detail_expirydate_top_margin" android:layout_below="@id/keep_detail_file_info_layout" style="@style/text_end_date" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/keep_detail_file_layout">
+                <include layout="@layout/keep_fragment_detail_tag_layout" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

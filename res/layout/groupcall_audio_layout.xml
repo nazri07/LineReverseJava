@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/conference_room_top" android:background="@color/groupcall_header_background_normal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <com.linecorp.voip.ui.TruncatableTextView android:textSize="18.0sp" android:textColor="#ff1f1f1f" android:ellipsize="end" android:layout_gravity="center" android:id="@id/conference_title" android:paddingLeft="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <ImageView android:id="@id/invite_button" android:background="@drawable/groupcall_header_background_selector" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/groupcall_invitation_button_selector" android:contentDescription="@string/access_groupcall_invite" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/confernece_relative" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.linecorp.voip.ui.groupcall.voice.view.MutableColumnGridView android:scrollbarThumbVertical="@drawable/groupcall_img_scrollbar" android:gravity="center" android:id="@id/conferece_room_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#ff000000" android:horizontalSpacing="0.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/groupcall_bottom_area" android:background="@color/groupcall_header_background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff020202" android:gravity="center" android:layout_gravity="center" android:id="@id/conference_time" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:singleLine="true" android:includeFontPadding="false" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="18.5dip">
+                <ImageView android:gravity="center" android:id="@id/conference_status_icon" android:visibility="visible" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/freecall_img_noti" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff888888" android:gravity="center" android:id="@id/conference_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+            <View android:id="@id/groupcall_bottom_space" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/conference_room_bottom_online" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.5dip">
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/image_switch_video" android:layout_width="@dimen/cc_room_button_size" android:layout_height="@dimen/cc_room_button_size" android:src="@drawable/voip_icon_group_voice_video" android:scaleType="fitXY" />
+                <View android:id="@id/image_switch_video_gap" android:layout_width="16.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/image_mute" android:layout_width="@dimen/cc_room_button_size" android:layout_height="@dimen/cc_room_button_size" android:src="@drawable/voip_icon_group_voice_mute" android:scaleType="fitXY" />
+                <View android:layout_width="16.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/image_speaker" android:layout_width="@dimen/cc_room_button_size" android:layout_height="@dimen/cc_room_button_size" android:src="@drawable/voip_icon_group_voice_speaker" android:scaleType="fitXY" />
+                <View android:layout_width="16.0dip" android:layout_height="0.0dip" />
+                <ImageView android:id="@id/btn_end" android:layout_width="@dimen/cc_room_button_size" android:layout_height="@dimen/cc_room_button_size" android:src="@drawable/btn_groupcall_reject_selector" android:scaleType="fitXY" android:contentDescription="@string/access_call_off" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/conference_blink" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/like_close_icon" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/timeline_ic_like_x" android:scaleType="center" />
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/like_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="9.0dip" android:src="@drawable/selector_timeline_ic_like" android:scaleType="center" />
+    <TextView android:textSize="12.0sp" android:textColor="#ccffffff" android:gravity="center_vertical" android:id="@id/like_text" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="1.0dip" android:maxLines="1" android:scrollHorizontally="true" android:layout_toRightOf="@id/like_icon" android:layout_alignTop="@id/like_icon" android:layout_alignBottom="@id/like_icon" style="@style/commonFont" />
+</merge>

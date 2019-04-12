@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.todddavies.components.progressbar.ProgressWheel android:id="@id/chathistory_row_upload_progress_bar" android:focusable="false" android:layout_width="@dimen/chathistory_thumbnail_loading_button_progressbar_size" android:layout_height="@dimen/chathistory_thumbnail_loading_button_progressbar_size" app:pwBarColor="@color/loading_progress_bar" app:pwBarShadowColor="@color/loading_progress_bar_shadow" app:pwBarShadowWidth="@dimen/chathistory_thumbnail_loading_button_progressbar_shadow_weight" app:pwBarWidth="@dimen/chathistory_thumbnail_loading_button_progressbar_weight" app:pwRimColor="@color/loading_progress_rim" app:pwRimWidth="0.0dip" app:pwText="" />
+    <ImageView android:layout_gravity="center" android:id="@id/progress_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_common_ic_cancel_03" android:contentDescription="@string/media_loading_type" />
+</FrameLayout>

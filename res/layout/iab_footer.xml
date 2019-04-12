@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.activity.iab.IabFooter android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/iab_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/bottom_gra" android:layout_width="fill_parent" android:layout_height="2.5dip" />
+    <FrameLayout android:id="@id/iab_footer_button1" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/iab_footer_height">
+        <TextView android:textColor="@color/selector_iab_footer_text" android:gravity="center" android:layout_gravity="center" android:id="@id/iab_footer_button1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" style="@style/text_iab_content01" />
+    </FrameLayout>
+</jp.naver.line.android.activity.iab.IabFooter>

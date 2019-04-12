@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/groupform_root" android:background="#fff6f7f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="125.66998dip">
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/groupform_thumbnail_layout" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="15.0dip">
+                    <ImageView android:id="@id/groupform_thumbnail_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                    <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/selector_profile_ic_photo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <EditText android:textSize="18.5sp" android:textColor="#ff111111" android:textColorHint="#ffcbced5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/groupform_name" android:background="@android:color/transparent" android:padding="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="18.5dip" android:hint="@string/myhome_group_name" android:layout_weight="1.0" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.5dip">
+                    <ImageView android:layout_gravity="end|center" android:id="@id/groupform_namecancel" android:layout_width="20.5dip" android:layout_height="20.5dip" android:src="@drawable/selector_group_img_x" />
+                    <TextView android:textSize="13.5sp" android:textColor="#ffb8bdc7" android:layout_gravity="end|bottom|center" android:id="@id/groupform_name_length" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.5dip" android:singleLine="true" />
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" />
+        </FrameLayout>
+        <View android:background="@drawable/group_img_gra" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textSize="12.5sp" android:textColor="#ff555c66" android:gravity="center_vertical" android:id="@id/member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="9.0dip" />
+        <ListView android:id="@id/groupform_member_list" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

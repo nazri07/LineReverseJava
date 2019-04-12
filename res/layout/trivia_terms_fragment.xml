@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/trivia_terms_fragment_0" android:background="@color/black30" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <View android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog" android:background="@drawable/trivia_dialog_background02" android:paddingLeft="6.0dip" android:paddingTop="28.0dip" android:paddingRight="6.0dip" android:paddingBottom="25.0dip" android:layout_width="305.0dip" android:layout_height="455.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trivia_terms_title" />
+        <WebView android:textSize="10.0dip" android:textColor="@color/grey02" android:id="@id/terms_web_view" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_weight="1.0" />
+        <View android:background="@color/black05" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="16.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/trivia_terms_caution" />
+        <WebView android:textSize="10.0dip" android:textColor="@color/grey02" android:id="@id/caution_web_view" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="19.0dip">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trivia_terms_agree_to_terms" android:layout_toLeftOf="@id/terms_agree_checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/terms_agree_checkbox" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/live_radio02" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button android:id="@id/join_button" android:tag="binding_2" android:background="@drawable/live_btn_trivia_join" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/trivia_terms_enter" style="@style/btn_login_line02" />
+    </LinearLayout>
+</RelativeLayout>

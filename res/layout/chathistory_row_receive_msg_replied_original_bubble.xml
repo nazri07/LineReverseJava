@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.view.RoundedFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="@dimen/chathistory_row_bubble_corner_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bubble_root" android:background="@drawable/selector_chathistory_message_balloon_receive_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/outline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_width="@dimen/chathistory_row_replied_original_bubble_width" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="12.0dip" layout="@layout/chathistory_row_msg_replied_original_content" />
+            <TextView android:gravity="center_vertical" android:id="@id/unavailable_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/chathistory_reply_no_original_message" style="@style/chahistory_reply_original_message_unavailable_message" />
+        </FrameLayout>
+    </FrameLayout>
+</com.linecorp.view.RoundedFrameLayout>

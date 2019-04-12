@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/chathistory_thumbnail_round" />
+    <solid android:color="@color/chathistory_message_balloon_send_bg_normal" />
+</shape>

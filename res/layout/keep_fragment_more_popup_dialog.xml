@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/popup_system_bg" android:padding="2.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ListView android:id="@id/keep_more_popup_listview" android:background="@color/com_white" android:paddingTop="@dimen/keep_popup_list_top_padding" android:paddingBottom="@dimen/keep_popup_list_top_padding" android:layout_width="@dimen/keep_more_popup_list_width" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    </RelativeLayout>
+</LinearLayout>

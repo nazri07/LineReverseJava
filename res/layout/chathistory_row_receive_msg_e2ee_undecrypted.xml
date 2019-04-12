@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chathistory_row_message" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/chathistory_row_e2ee_undecrypted_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/chatroom_ic_e2ee_receive_lock" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff545b71" android:gravity="center_vertical" android:id="@id/chathistory_row_e2ee_undecrypted_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/settings_chatroom_e2ee" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff7f8495" android:id="@id/chathistory_row_e2ee_undecrypted_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:text="@string/e2ee_message_undecryptable_received" />
+</LinearLayout>

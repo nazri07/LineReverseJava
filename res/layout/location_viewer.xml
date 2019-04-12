@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/option_menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/location_viewer_location_info_layout" android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/location_viewer_category_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/location_ic_cafe" />
+        <LinearLayout android:orientation="vertical" android:id="@id/location_name_address_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="62.5dip" android:layout_weight="1.0" android:layout_toLeftOf="@id/location_viewer_menu" android:layout_toRightOf="@id/location_viewer_category_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/location_viewer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:maxLines="6" android:singleLine="false" android:includeFontPadding="false" android:lineSpacingExtra="1.0sp" android:layout_marginStart="12.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8d8d8d" android:ellipsize="end" android:id="@id/location_viewer_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="3.5dip" android:maxLines="6" android:singleLine="false" android:includeFontPadding="false" android:lineSpacingExtra="3.0sp" android:layout_marginStart="12.0dip" />
+            <View android:layout_width="1.0dip" android:layout_height="14.5dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/location_viewer_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_ic_more" android:layout_alignParentRight="true" android:layout_centerVertical="false" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/location_viewer_location_info_layout" android:layout_below="@id/header" map:uiMapToolbar="false" map:uiZoomControls="true" xmlns:map="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

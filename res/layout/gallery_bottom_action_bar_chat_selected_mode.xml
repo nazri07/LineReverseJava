@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottom_layout_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_save_album" android:background="@drawable/selector_btn_02" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/chat_gallery_selector_save_button_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_save_to_album" android:singleLine="true" style="@style/v2_common_button_bottom" />
+        <TextView android:textColor="@color/chat_gallery_selector_save_button_text" android:id="@id/album_count" android:paddingBottom="1.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" style="@style/v2_common_button_bottom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_save_device" android:background="@drawable/selector_btn_01" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/chat_gallery_selector_save_button_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_save_to_device" android:singleLine="true" style="@style/v2_common_button_bottom" />
+        <TextView android:textColor="@color/chat_gallery_selector_save_button_text" android:id="@id/device_count" android:paddingBottom="1.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" style="@style/v2_common_button_bottom" />
+    </LinearLayout>
+</LinearLayout>

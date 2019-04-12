@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/registration_add_friends_detail_bullet_textview_0" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:id="@id/label" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.linelive.player.component.widget.FitsSystemWindowsFrameLayout android:tag="layout/line_live_activity_0" android:background="@color/black_grey7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/dimmed_view" android:background="@color/black20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/loading_container" android:background="@color/base_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/loading_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <View android:background="@color/black_grey7" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="59.0dip">
+            <ImageView android:id="@id/profile_image" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+            <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:singleLine="true" />
+            <com.linecorp.linelive.player.component.widget.TextViewCompat android:textSize="15.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+</com.linecorp.linelive.player.component.widget.FitsSystemWindowsFrameLayout>

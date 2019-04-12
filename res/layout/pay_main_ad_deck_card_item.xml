@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pay_ad_deck_card_layout" android:background="@drawable/pay_shape_main_ad_deck_rectangle_r5" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/pay_main_ad_deck" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:id="@id/pay_ad_deck_reload" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/pay_ad_deck_reload_img" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/pay_card_reload" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pay_ad_deck_reload_progress_bar" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" style="@android:style/Widget.ProgressBar.Inverse" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

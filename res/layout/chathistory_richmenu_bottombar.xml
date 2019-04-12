@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/official_account_bottombar_divider" android:background="@color/richmenu_bottombar_divider" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_input_area_height">
+        <ImageButton android:id="@id/official_account_bottombar_keyboard_button" android:background="@color/richmenu_bottombar_button" android:layout_width="@dimen/chathistory_input_area_height" android:layout_height="fill_parent" android:src="@drawable/chatroom_ic_official_account_keyboard" android:contentDescription="@string/access_chat_input_keyboard" />
+        <View android:id="@id/official_account_bottombar_keyboard_button_divider" android:background="@color/richmenu_bottombar_divider" android:layout_width="@dimen/common_one_line" android:layout_height="fill_parent" />
+        <include android:id="@id/official_account_bottombar_promotion_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/chathistory_richmenu_bottombar_button" />
+        <View android:id="@id/official_account_bottombar_button_divider" android:background="@color/richmenu_bottombar_divider" android:layout_width="@dimen/common_one_line" android:layout_height="fill_parent" />
+        <include android:id="@id/official_account_bottombar_widget_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/chathistory_richmenu_bottombar_button" />
+        <include android:id="@id/official_account_bottombar_weblink_menu_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/chathistory_richmenu_bottombar_button" />
+    </LinearLayout>
+</LinearLayout>

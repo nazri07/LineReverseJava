@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/row_user" android:paddingLeft="@dimen/chatlist_image_left_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/chatlist_row_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/thumbnail_container" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginRight="@dimen/chatlist_image_right_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <jp.naver.line.android.customview.thumbnail.ThumbImageView android:layout_gravity="center" android:id="@id/thumbnail" android:layout_width="@dimen/v2_thumbnail_size_chatlist" android:layout_height="@dimen/v2_thumbnail_size_chatlist" />
+        <com.linecorp.view.RoundedFrameLayout android:layout_width="@dimen/v2_thumbnail_size_chatlist" android:layout_height="@dimen/v2_thumbnail_size_chatlist" app:cornerRadius="@dimen/v2_thumbnail_size_chatlist">
+            <com.linecorp.view.QuadrantImageLayout android:id="@id/quadrant_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.linecorp.view.RoundedFrameLayout>
+        <jp.naver.line.android.activity.chatlist.view.ThumbnailBadgeViewGroup android:layout_gravity="end|bottom|center" android:id="@id/thumbnail_badge_container" android:padding="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColor="@color/friend_list_row_bg_normal">
+            <ImageView android:layout_gravity="center" android:id="@id/thumbnail_badge" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+        </jp.naver.line.android.activity.chatlist.view.ThumbnailBadgeViewGroup>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/thumbnail_container" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/date" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_gravity="center_vertical" android:id="@id/member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" style="@style/FriendListGroupCountText" />
+                <ImageView android:id="@id/notification_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.669983dip" android:layout_marginTop="0.6700001dip" android:layout_marginBottom="0.33000004dip" android:src="@drawable/list_category_img_alarmoff" />
+                <ImageView android:id="@id/calling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="0.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffabb2bd" android:gravity="center|right|top" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/check_box_container" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/check_box_container" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16.0dip" android:minHeight="63.0dip" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true">
+            <ImageView android:id="@id/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/list_checkbox_img_normal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="17.669983dip" android:minWidth="25.0dip" android:layout_toLeftOf="@id/check_box_container">
+            <ImageView android:id="@id/new_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.669983dip" android:src="@drawable/group_img_thumb_new" android:contentDescription="@string/access_newchatroom" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/unread_message_count" android:background="@drawable/list_category_img_num_bg" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.5dip" />
+            <ImageView android:id="@id/failed_message_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.5dip" android:src="@drawable/list_category_ic_noti" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffabb2bd" android:gravity="center|right|top" android:id="@id/sort_scope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.5dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffabb2bd" android:ellipsize="end" android:id="@id/last_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:maxLines="2" android:layout_toLeftOf="@id/date" android:layout_below="@id/title" android:layout_alignWithParentIfMissing="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toLeftOf="@id/date" android:layout_below="@id/last_message" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ff7192be" android:id="@id/alerted_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/chatlist_mention_alert" android:maxLines="1" android:drawablePadding="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider_common" android:background="@color/common_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginLeft="70.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

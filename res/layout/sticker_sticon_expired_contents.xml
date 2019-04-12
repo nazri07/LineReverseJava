@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff575b66" android:gravity="center" android:id="@id/sticker_sticon_expired_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/chathistory_eskdialog_sticker_expired" android:shadowColor="#fff8f8f9" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sticker_sticon_expired_buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.329987dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/sticker_sticon_expired_delete_btn" android:background="@drawable/eskdialog_sticker_gray_btn" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.669983dip" android:minWidth="105.32999dip" android:text="@string/chathistory_eskdialog_sticker_expired_delete" android:shadowColor="#ff34ac00" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+</LinearLayout>

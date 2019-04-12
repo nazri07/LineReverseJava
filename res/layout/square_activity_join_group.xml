@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/square_activity_join_group_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/popup_system_bg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="305.0dip" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/thumbnail_layout" android:layout_width="95.0dip" android:layout_height="95.0dip" android:layout_marginTop="35.0dip" android:contentDescription="@string/square_access_profile_image">
+                <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/thumbnail" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_group_ic_camera02" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <com.linecorp.square.common.ui.customview.CustomActionWithMultiLineEditText android:id="@id/name" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/square_join_popup_name_left_margin" android:layout_weight="1.0" android:imeOptions="actionNext" style="@style/text_popup_profile_title" />
+                <View android:id="@id/name_pencil_icon" android:background="@drawable/profile_popup_ic_write" android:layout_width="12.5dip" android:layout_height="12.5dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:contentDescription="@string/square_access_profile_nickname" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="8.0dip" style="@style/text_popup_profile_id" />
+            <com.linecorp.square.common.ui.customview.CustomActionWithMultiLineEditText android:id="@id/join_message" android:background="@drawable/group_img_input05" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/square_personaloption_greetingmessage" android:imeOptions="actionDone" style="@style/text_group_info06" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/selector_btn_text" android:gravity="center" android:id="@id/done" android:background="@drawable/selector_button_r02" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-1.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="-1.0dip" android:layout_marginBottom="15.0dip" android:minHeight="44.0dip" android:text="@string/btn_done" android:includeFontPadding="false" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

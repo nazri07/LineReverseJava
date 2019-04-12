@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    <com.linecorp.line.media.editor.DecorationView android:id="@id/decoration_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/access_picker_photo" />
+    <include layout="@layout/top_and_bottom_dimmed_layout" />
+    <com.linecorp.line.media.picker.fragment.doodle.MediaDoodleHeaderView android:id="@id/doodle_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.linecorp.line.media.picker.fragment.doodle.MediaDoodleBottomView android:id="@id/doodle_bottom_view" android:paddingLeft="@dimen/doodle_bottom_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/doodle_header_view" android:layout_alignParentBottom="true" />
+    <include layout="@layout/doodle_brush_seekbar" />
+</RelativeLayout>

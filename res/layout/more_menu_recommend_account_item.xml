@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="71.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.5dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/item_icon" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/display_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" android:scrollHorizontally="true" android:includeFontPadding="false" style="@style/text_more_category_subtitle05" />
+    <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/status_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLines="2" android:scrollHorizontally="true" android:includeFontPadding="false" style="@style/text_more_category_subtitle06" />
+</LinearLayout>

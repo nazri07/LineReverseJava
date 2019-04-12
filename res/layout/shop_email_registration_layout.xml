@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stickershop_download_account_email_desc" style="@style/shop_email_registration_description" />
+    <TextView android:id="@id/email_register_button" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.669983dip" android:text="@string/registration_register_email_btn" style="@style/shop_email_register_button" />
+</LinearLayout>

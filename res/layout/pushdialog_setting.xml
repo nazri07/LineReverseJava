@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/pushpopup_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pushdialog_setting_title_area" android:background="@drawable/popup_noti_bg_top" android:paddingTop="5.3299866dip" android:paddingBottom="7.3299866dip" android:layout_width="fill_parent" android:layout_height="@dimen/pushpopup_header_height">
+        <include layout="@layout/header_sidespace" />
+        <ImageView android:id="@id/pushdialog_setting_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_noti_ic_setting" />
+        <TextView android:textStyle="bold" android:id="@id/pushdialog_setting_top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/settings_notifications" style="@style/pushdialog_title_text" />
+        <include layout="@layout/header_sidespace" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pushdialog_setting_detail_area" android:background="@drawable/popup_noti_bg_bottom" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

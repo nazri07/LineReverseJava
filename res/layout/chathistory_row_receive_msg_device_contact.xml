@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chathistory_row_message" android:layout_width="@dimen/chathistory_contact_message_width" android:layout_height="@dimen/chathistory_contact_message_height" android:minWidth="@dimen/chathistory_contact_message_width" android:minHeight="@dimen/chathistory_contact_message_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chathistory_row_device_contact_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="6.669983dip" android:src="@drawable/chatroom_ic_contact02" />
+    <jp.naver.line.android.common.view.EllipsizingTextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/chathistory_recv_text" android:id="@id/chathistory_row_contact_message" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+    <ImageView android:id="@id/chathistory_row_arrow_big" android:layout_width="@dimen/chathistory_contact_message_arrow_width" android:layout_height="@dimen/chathistory_contact_message_arrow_height" android:src="@drawable/com_img_arrow03" />
+</LinearLayout>

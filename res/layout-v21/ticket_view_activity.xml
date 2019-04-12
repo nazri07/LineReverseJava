@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.ticket.ui.view.TicketHeaderView android:id="@id/ticket_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/ticket_view_progress_bar" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerInParent="true" />
+    <com.linecorp.line.ticket.ui.view.TicketView android:id="@id/ticket_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/ticket_header" />
+    <RelativeLayout android:id="@id/go_confirm_staff" android:background="@drawable/ticket_confirm_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/ticket_confirm_text" android:paddingBottom="2.3299866dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_button_confirm" android:lineSpacingExtra="-1.0sp" android:letterSpacing="-0.04" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_disable_desc" android:background="#ffc6c5c5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="31.0dip" android:text="@string/ticket_desc_confirm_disabled" android:layout_above="@id/go_confirm_staff" android:lineSpacingExtra="15.0sp" />
+</RelativeLayout>

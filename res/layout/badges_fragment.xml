@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/badges_fragment_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="76.0dip" android:layout_height="76.0dip" />
+    <com.linecorp.linelive.player.component.widget.viewpager.LoopViewPagerIndicator android:orientation="horizontal" android:id="@id/indicator" android:paddingTop="2.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_tooltip_img_arrow" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:background="@drawable/timeline_tooltip_img_bg" android:paddingLeft="15.0dip" android:paddingTop="13.0dip" android:paddingRight="15.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="-1.0dip" android:layout_marginRight="30.0dip" android:text="@string/timeline_relay_create_setting_tooltip" android:includeFontPadding="false" android:layout_below="@id/arrow" android:layout_centerHorizontal="true" />
+</RelativeLayout>

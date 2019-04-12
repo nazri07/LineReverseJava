@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_01" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_02" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_03" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_04" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_05" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_06" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_07" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_08" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_09" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_10" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_11" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_12" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_13" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_14" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_15" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_16" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_17" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_18" />
+    <item android:duration="71" android:drawable="@drawable/call_icon_on_fullsize_14fps_white_19" />
+</animation-list>

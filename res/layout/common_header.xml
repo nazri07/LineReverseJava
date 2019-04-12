@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/header_root" android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="@dimen/header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/header_up_button_bg" android:background="@drawable/selector_common_header_button" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="fill_parent">
+        <jp.naver.line.android.common.view.TintableDImageView android:id="@id/header_up_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header_ic_back" />
+    </LinearLayout>
+    <Space android:id="@id/header_left_padding" android:layout_width="@dimen/header_left_padding" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_view_group" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/header_title_left_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_title_left_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <jp.naver.line.android.common.view.header.SingleLineDoubleTextVIew android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/text_header_title" />
+            <TextView android:id="@id/header_title_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.0" style="@style/text_header_title" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+                <FrameLayout android:id="@id/header_bgm_icon_container" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginStart="7.0dip">
+                    <ImageView android:id="@id/header_music_note_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/header_ic_music" android:contentDescription="@string/access_chatroom_bgm_icon" />
+                    <ImageView android:id="@id/header_equalizer_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/access_chatroom_bgm_icon" />
+                </FrameLayout>
+                <ImageView android:id="@id/header_more_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/header_ic_down" />
+                <ImageView android:id="@id/header_mute_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:src="@drawable/header_ic_alarmoff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <jp.naver.line.android.common.view.header.HeaderButton android:id="@id/left_header_button" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <jp.naver.line.android.common.view.header.HeaderButton android:id="@id/middle_header_button" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <jp.naver.line.android.common.view.header.HeaderButton android:id="@id/right_header_button" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

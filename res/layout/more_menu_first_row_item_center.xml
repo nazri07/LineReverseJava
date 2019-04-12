@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/profile_icon" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/line_point_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/line_point_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_img_point" />
+            <TextView android:ellipsize="none" android:id="@id/line_point_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:singleLine="true" android:includeFontPadding="false" style="@style/text_more_category_subtitle01" />
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/line_point_overflow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_ic_plus" />
+            <jp.naver.line.android.common.view.TintableDImageView android:layout_gravity="top" android:id="@id/line_point_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/more_img_new02" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/line_point_label" android:background="@drawable/more_img_label_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@style/text_more_category_subtitle02" />
+    </LinearLayout>
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/item_icon" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_centerInParent="true" app:srcTintColor="@color/selector_moremenu_top_button" />
+    <jp.naver.line.android.common.view.TintableDImageView android:id="@id/new_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6.0dip" android:src="@drawable/group_img_new" android:layout_alignTop="@id/item_icon" android:layout_alignRight="@id/item_icon" android:contentDescription="@string/access_new_item_badge" />
+</RelativeLayout>

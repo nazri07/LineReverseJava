@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/thumbnail_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.linecorp.line.timeline.view.post.contentsdigest.PostContentsDigestVideoView android:id="@id/video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:background="@drawable/timeline_img_gra_top03" android:layout_width="fill_parent" android:layout_height="97.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_padding_horizontal" android:layout_marginTop="11.0dip" android:layout_marginRight="16.0dip">
+            <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/profile_image" android:layout_width="23.0dip" android:layout_height="23.0dip" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:shadowColor="#14000000" android:shadowDx="1.0" android:shadowDy="1.0" style="@style/commonFont" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="103.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_padding_horizontal" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" style="@style/commonFont" />
+        <TextView android:textSize="12.0sp" android:textColor="#9affffff" android:ellipsize="end" android:id="@id/domain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/post_padding_horizontal" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:singleLine="true" android:layout_below="@id/title" style="@style/commonFont" />
+        <com.linecorp.line.timeline.view.post.contentsdigest.PostContentsDigestLikeView android:id="@id/like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/add_friend_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="@dimen/post_padding_horizontal" android:layout_marginBottom="14.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+            <TextView android:id="@id/add_friend_button_text" android:background="@drawable/selector_button_r28" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="83.0dip" android:minHeight="30.0dip" android:text="@string/myhome_add_friend_button" style="@style/button_ad_post_action_btn" />
+            <View android:background="@drawable/selector_timeline_img_plus" android:duplicateParentState="true" android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_alignTop="@id/add_friend_button_text" android:layout_alignRight="@id/add_friend_button_text" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

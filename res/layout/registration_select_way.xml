@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:line="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/registration_intro_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.naver.line.android.customview.PageIndicatorView android:id="@id/registration_intro_page_indicator" android:layout_width="fill_parent" android:layout_height="9.0dip" android:layout_marginBottom="23.0dip" android:layout_above="@id/registration_intro_button_divider" line:activePageIndicator="@drawable/registration_intro_img_paging_on" line:inactivePageIndicator="@drawable/registration_intro_img_paging_off" line:indicatorHeight="8.0dip" line:indicatorHorizontalGap="10.0dip" line:indicatorWidth="8.0dip" />
+    <View android:id="@id/registration_intro_button_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/registration_intro_button_container" style="@style/Line.Registration.Intro.Btn" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/registration_intro_button_container" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/registration_btn_login_account" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="@string/registration_beginning_import_account" android:layout_weight="1.0" android:onClick="onClick" style="@style/Button.Registration.Intro.01" />
+        <View android:layout_width="1.0dip" android:layout_height="fill_parent" style="@style/Line.Registration.Intro.Btn" />
+        <Button android:id="@id/registration_btn_create_account" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="@string/registration_beginning_create_account" android:layout_weight="1.0" android:onClick="onClick" style="@style/Button.Registration.Intro.02" />
+    </LinearLayout>
+</RelativeLayout>

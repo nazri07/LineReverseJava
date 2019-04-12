@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <RelativeLayout android:id="@id/post_reaction_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="14.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/carousel_reaction_close_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_like_cancel" android:layout_alignParentLeft="true" />
+            <LinearLayout android:id="@id/post_reaction_icon_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/carousel_reaction_like_icon" android:background="@drawable/selector_timeline_like_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_like" />
+                <jp.naver.line.android.common.view.TintableDImageView android:id="@id/carousel_reaction_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timeline_ic_share" android:contentDescription="@string/access_timeline_share" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:id="@id/carousel_like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/text_timeline_carousel_item_reaction" />
+                <TextView android:id="@id/carousel_share_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:maxLines="1" style="@style/text_timeline_carousel_item_reaction" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

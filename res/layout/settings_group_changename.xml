@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="#ff8b939d" android:layout_gravity="right" android:id="@id/groupform_name_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" />
+        <EditText android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff111111" android:id="@id/groupform_name" android:background="@drawable/edit_text" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+        <Button android:textSize="14.0sp" android:textColor="@color/selector_settingsgrouphome_btncolor" android:layout_gravity="center_horizontal" android:id="@id/groupform_save" android:background="@drawable/selector_settingsgrouphome_savebtn" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.5dip" android:minWidth="110.0dip" android:minHeight="35.0dip" android:text="@string/btn_save" />
+    </LinearLayout>
+</LinearLayout>

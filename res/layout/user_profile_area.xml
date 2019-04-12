@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linecorp.line.profile.user.root.view.FitsSystemWindowsFrameLayout android:background="@color/user_profile_default_cover_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/user_profile_cover_image" android:background="@drawable/profile_popup_img_user_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <include layout="@layout/user_profile_container" />
+    <include layout="@layout/user_profile_music" />
+    <ViewStub android:id="@id/user_profile_cover_change_stub" android:layout="@layout/user_profile_cover_change_tooltip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/user_profile_music_guide" android:layout="@layout/user_profile_music_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.linecorp.line.profile.user.root.view.FitsSystemWindowsFrameLayout>

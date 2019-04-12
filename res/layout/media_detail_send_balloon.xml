@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/send_balloon_image" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_camera_editor_send_button" />
+    <LinearLayout android:gravity="center" android:layout_width="27.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:layout_alignTop="@id/send_balloon_image" android:layout_marginEnd="6.5dip" android:layout_alignEnd="@id/send_balloon_image">
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/media_editor_selected_count" android:background="@drawable/camera_img_num_bg" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="22.0dip" android:minHeight="22.0dip" />
+    </LinearLayout>
+</RelativeLayout>

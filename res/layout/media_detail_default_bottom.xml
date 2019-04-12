@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/default_container" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/media_editor_save" android:background="@drawable/selector_camera_editor_save_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_marginStart="@dimen/detail_save_left_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+    <RelativeLayout android:id="@id/media_editor_send_group" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent">
+        <ViewStub android:id="@id/send_balloon" android:layout="@layout/media_detail_send_balloon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+        <ViewStub android:id="@id/send_count_label" android:layout="@layout/media_detail_send_count_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.5dip" android:layout_marginEnd="16.0dip" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

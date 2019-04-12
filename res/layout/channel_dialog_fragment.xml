@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/channel_dialog_fragment_0" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/channel_image" android:layout_marginTop="@dimen/dialog_img_margin" style="@style/channel_profile_img" />
+        <com.linecorp.linelive.player.component.widget.TextViewCompat android:id="@id/channel_name" style="@style/channel_profile" />
+        <com.linecorp.linelive.player.component.widget.TextViewCompat android:id="@id/message" android:layout_marginTop="10.0dip" style="@style/dialog_text" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/infeed_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/infeed_text_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/infeed_item_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff3f465c" android:ellipsize="end" android:id="@id/infeed_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/infeed_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <jp.naver.toybox.drawablefactory.DImageView android:id="@id/infeed_item_icon" android:layout_width="105.0dip" android:layout_height="55.0dip" android:layout_marginLeft="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

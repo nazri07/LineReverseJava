@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/slot_list_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/shop_sticker_no_result_screen" />
+    <include layout="@layout/shop_loading_spinner" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/keep_activity_settings_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/keep_activity_settings_contentview" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/keep_activity_settings_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/keep_activity_settings_delete_button">
+            <LinearLayout android:orientation="vertical" style="@style/layout_setting_contents_item">
+                <TextView android:id="@id/keep_activity_settings_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" style="@style/text_setting_info01" />
+                <TextView android:id="@id/keep_activity_settings_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_end_info03" />
+            </LinearLayout>
+            <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <TextView android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="33.5dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/keep_setting_usage_contents" style="@style/text_setting_title" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/keep_activity_settings_content_usage_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+        <TextView android:gravity="center" android:orientation="horizontal" android:id="@id/keep_activity_settings_delete_button" android:background="@drawable/keep_selector_button_r08" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/keep_setting_delete_all" android:layout_alignParentBottom="true" style="@style/text_setting_btn01" />
+    </RelativeLayout>
+</RelativeLayout>

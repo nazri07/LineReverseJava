@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/passcode_bg" android:background="@color/bg_passlock_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/passcode_top_desc" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="21.5">
+        <TextView android:textSize="33.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/passcode_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_passcode_input" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff8d919e" android:ellipsize="end" android:gravity="center" android:id="@id/passcode_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/settings_passcode_input_desc" android:maxLines="2" android:lineSpacingExtra="2.6399841dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:id="@id/passcode_pass" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="20.0">
+        <ImageView android:id="@id/passcode_input1" android:background="@drawable/passcode_img_code_off" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/passcode_input2" android:background="@drawable/passcode_img_code_off" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/passcode_input3" android:background="@drawable/passcode_img_code_off" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/passcode_input4" android:background="@drawable/passcode_img_code_off" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="4.0dip" android:baselineAligned="false" android:layout_weight="13.5">
+        <RelativeLayout android:id="@id/passcode_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn1_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/passcode_btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn2_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_2" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/passcode_btn3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn3_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_3" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="13.0">
+        <RelativeLayout android:id="@id/passcode_btn4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn4_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_4" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/passcode_btn5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn5_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_5" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/passcode_btn6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn6_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_6" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="13.0">
+        <RelativeLayout android:id="@id/passcode_btn7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn7_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_7" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/passcode_btn8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn8_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_8" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/passcode_btn9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn9_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_9" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|top" android:paddingTop="2.5dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="18.0">
+        <Button android:textSize="15.0sp" android:textColor="@color/selector_passcode_cancel_text" android:gravity="center" android:id="@id/passcode_btn_cancel" android:background="@android:color/transparent" android:layout_width="77.0dip" android:layout_height="71.0dip" android:layout_marginRight="36.5dip" android:text="@string/cancel" />
+        <RelativeLayout android:id="@id/passcode_btn0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.5dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn0_bg" android:background="@drawable/btn_passlock_num_bg" android:layout_width="71.0dip" android:layout_height="71.0dip" />
+            <ImageView android:id="@id/passcode_btn_icon0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/passcode_img_num_0" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/passcode_btn_del" android:layout_width="71.0dip" android:layout_height="71.0dip">
+            <jp.naver.line.android.common.view.TintableDImageView android:id="@id/passcode_btn_icon_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:src="@drawable/btn_passlock_num_del" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

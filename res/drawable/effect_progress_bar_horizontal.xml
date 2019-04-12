@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:bottomLeftRadius="@dimen/effect_download_common_radius" android:bottomRightRadius="@dimen/effect_download_common_radius" />
+            <solid android:color="#ff07bf3f" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:bottomLeftRadius="@dimen/effect_download_common_radius" android:bottomRightRadius="@dimen/effect_download_common_radius" />
+                <solid android:color="#ff06ac39" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

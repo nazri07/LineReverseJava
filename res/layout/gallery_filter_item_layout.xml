@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="87.32999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/filter_item_layout" android:layout_width="wrap_content" android:layout_height="87.32999dip">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/thumb_filter_image" android:layout_width="45.329987dip" android:layout_height="60.0dip" android:scaleType="fitCenter" />
+            <ImageView android:layout_gravity="center" android:id="@id/thumb_filter_bg" android:layout_width="52.0dip" android:layout_height="66.66998dip" android:src="@drawable/selector_gallery_photoview_filter_bg" android:scaleType="fitXY" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/image_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+        </FrameLayout>
+        <jp.naver.gallery.android.view.AutoFitTextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@drawable/selector_gallery_filter_title" android:gravity="center" android:id="@id/title_text" android:layout_width="fill_parent" android:layout_height="15.0dip" android:text="Original" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDy="1.33" android:shadowRadius="1.0" />
+    </LinearLayout>
+</FrameLayout>

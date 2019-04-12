@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/preview_retry_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shop_img_error" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.5dip" android:text="@string/sticker_shop_customsticer_error_apply_desc" android:layout_marginStart="79.0dip" android:layout_marginEnd="79.5dip" style="@style/shop_custom_sticker_preview_error_message" />
+    <TextView android:id="@id/retry_button" android:layout_width="137.0dip" android:layout_height="44.0dip" android:layout_marginTop="17.5dip" android:text="@string/confirm_loading_retry" style="@style/shop_retry_button" />
+</LinearLayout>

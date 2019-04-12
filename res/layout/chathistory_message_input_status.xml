@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/message_input_status_container" android:background="@drawable/chatroom_input_bg" android:layout_width="fill_parent" android:layout_height="@dimen/chathistory_input_area_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:id="@id/message_input_status_top_divider" android:background="@color/chathistory_input_area_top_divider" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+    <TextView android:gravity="center_vertical" android:id="@id/message_input_status_text" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/message_input_status_text" />
+</FrameLayout>

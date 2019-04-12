@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/registration_desc_text" android:paddingLeft="@dimen/reg_margin_side_wide" android:paddingRight="@dimen/reg_margin_side_wide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reg_margin_vertical" android:text="@string/versionupnotice_notice" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/reg_margin_side" android:paddingRight="@dimen/reg_margin_side" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/versionupnotice_help" android:paddingLeft="@dimen/reg_margin_side_wide" android:paddingRight="@dimen/reg_margin_side_wide" android:layout_width="wrap_content" android:layout_height="@dimen/v2_common_button_big_height" android:layout_marginTop="19.0dip" android:text="@string/versionupnotice_help" style="@style/v2_common_button_big_green" />
+    </LinearLayout>
+</LinearLayout>

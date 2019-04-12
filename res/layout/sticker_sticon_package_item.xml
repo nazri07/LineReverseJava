@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sticker_sticon_icon" android:duplicateParentState="true" android:layout_width="@dimen/sticker_stickon_button_width" android:layout_height="@dimen/sticker_stickon_button_height" android:scaleType="center" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/sticker_type_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/sticker_sticon_new_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/chatroom_ic_sticons_new" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/sticker_sticon_progress_bar_background" android:background="@color/sticker_sticon_package_downloading_progressbar_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sticker_sticon_input_package_downloading_progressbar_height" android:layout_alignParentBottom="true" />
+    <View android:id="@id/sticker_sticon_progress_bar" android:background="@color/sticker_sticon_package_downloading_progressbar" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/sticker_sticon_input_package_downloading_progressbar_height" android:layout_alignParentBottom="true" />
+    <include layout="@layout/sticker_sticon_package_item_select_view" />
+</RelativeLayout>

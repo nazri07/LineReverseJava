@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/view_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/timeline_privacygroup_settings_common_searchbar" />
+    <ListView android:id="@id/selectchat_group_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/selectchat_group_noresults_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/timeline_privacy_group_setting_zero_page_text_color" android:id="@id/welcome_common_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/localcontacts_search_no_result" />
+        <TextView android:gravity="center" android:id="@id/welcome_common_button" android:background="@drawable/selector_button_r01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="10.0dip" android:minWidth="164.0dip" android:minHeight="44.0dip" android:text="@string/myhome_settings_privacy" style="@style/ZeroPageCommonButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

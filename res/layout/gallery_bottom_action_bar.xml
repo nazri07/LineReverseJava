@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/gallery_bottom_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/btn_edit" android:background="@drawable/selector_gallery_edit_btn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:onClick="onClickEdit" android:contentDescription="@string/access_photo_design" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/btn_edit">
+        <LinearLayout android:gravity="center" android:id="@id/btn_rotate" android:background="@drawable/selector_gallery_rotate_btn" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:onClick="onClickRotate" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/btn_board_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:background="@drawable/selector_gallery_camera_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:onClick="onClickCamera" />
+            <LinearLayout android:gravity="center" android:id="@id/btn_apps" android:background="@drawable/selector_gallery_apps_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:onClick="onClickApps" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="3.3299866dip" android:layout_marginRight="3.3299866dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true">
+            <LinearLayout android:id="@id/btn_album_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:onClick="onClickAlbum">
+                <LinearLayout android:gravity="center" android:background="@drawable/selector_btn_02" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="96.0dip">
+                    <TextView android:textSize="14.669983dip" android:textColor="@drawable/selector_gallery_send_btn_text_color" android:id="@id/btn_album_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_storage" />
+                    <TextView android:textSize="14.669983dip" android:textColor="#ffffffff" android:id="@id/btn_album_left_parenthesis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (" />
+                    <TextView android:textSize="14.669983dip" android:textColor="@drawable/selector_gallery_send_btn_text_color" android:id="@id/btn_album_cnt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="14.669983dip" android:textColor="#ffffffff" android:id="@id/btn_album_right_parenthesis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/btn_action_main_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:onClick="onClickAttach">
+                <LinearLayout android:gravity="center" android:id="@id/btn_action_layout" android:background="@drawable/selector_btn_01" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="96.0dip">
+                    <TextView android:textSize="14.669983dip" android:textColor="@drawable/selector_gallery_send_btn_text_color" android:id="@id/btn_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_done" android:shadowColor="#ff288904" android:shadowDy="0.67" android:shadowRadius="1.0" />
+                    <TextView android:textSize="14.669983dip" android:textColor="#ffffffff" android:id="@id/btn_left_parenthesis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (" android:shadowColor="#ff288904" android:shadowDy="0.67" android:shadowRadius="1.0" />
+                    <TextView android:textSize="14.669983dip" android:textColor="#ffffffff" android:gravity="bottom" android:id="@id/btn_cnt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff288904" android:shadowDy="0.67" android:shadowRadius="1.0" />
+                    <TextView android:textSize="14.669983dip" android:textColor="#ffffffff" android:id="@id/btn_right_parenthesis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" android:shadowColor="#ff288904" android:shadowDy="0.67" android:shadowRadius="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

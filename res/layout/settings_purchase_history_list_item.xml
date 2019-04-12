@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setting_background" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/purchase_product_name_layout" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:id="@id/purchase_product_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/setting_list_item_title_font" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff07bf3f" android:gravity="center_vertical" android:id="@id/purchase_amounts_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/purchase_product_date_text" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" style="@style/setting_list_item_check_info_font" />
+    <View android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/setting_division_line" />
+</LinearLayout>

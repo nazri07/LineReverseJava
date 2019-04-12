@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="auto" package="jp.naver.line.android" platformBuildVersionCode="19090405" platformBuildVersionName="9.4.5">
+    <supports-screens android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <permission android:name="jp.naver.android.npush.permission.PUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="jp.naver.android.npush.permission.PUSH_MESSAGE"/>
+    <permission android:name="jp.naver.line.android.permission.LINE_ACCESS" android:protectionLevel="signature"/>
+    <uses-permission android:name="jp.naver.line.android.permission.LINE_ACCESS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-permission-sdk-23 android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.kddi.market.permission.USE_ALML"/>
+    <permission android:name="com.linecorp.linemusic.android.permission.PLAYBACK" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.linecorp.linemusic.android.permission.PLAYBACK"/>
+    <permission android:name="com.linecorp.linekeep.android.permission.SYNC_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.linecorp.linekeep.android.permission.SYNC_MESSAGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTING"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.bluetooth.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="jp.naver.line.android.LineApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="true" android:supportsRtl="false" android:theme="@style/LineThemeAppCompat.NoTitleBar.DarkBackground">
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:name="jp.naver.line.android.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.schemeservice.LineSchemeServiceActivity" android:theme="@style/LineThemeAppCompat.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="line"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="line.naver.jp" android:scheme="http"/>
+                <data android:host="line.me" android:scheme="http"/>
+                <data android:host="line.naver.jp" android:scheme="https"/>
+                <data android:host="line.me" android:scheme="https"/>
+                <data android:pathPrefix="/R/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="line.me" android:scheme="http"/>
+                <data android:host="line.me" android:scheme="https"/>
+                <data android:pathPrefix="/S/sticker/"/>
+                <data android:pathPrefix="/S/shop/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="line.naver.jp" android:scheme="http"/>
+                <data android:host="line.naver.jp" android:scheme="https"/>
+                <data android:pathPrefix="/msg/text/"/>
+                <data android:pathPrefix="/au/q/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="line.naver.jp" android:scheme="http"/>
+                <data android:host="line.naver.jp" android:scheme="https"/>
+                <data android:host="line.me" android:scheme="https"/>
+                <data android:pathPrefix="/ti/p/"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:label="@string/auto_login_activity_title" android:name="jp.naver.line.android.IdentityRequiredSchemeServiceActivity" android:targetActivity="jp.naver.line.android.activity.schemeservice.LineSchemeServiceActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="access.line.me" android:pathPrefix="/oauth2/v2.1/login" android:scheme="https"/>
+                <data android:host="access.line.me" android:pathPrefix="/dialog/oauth/weblogin" android:scheme="https"/>
+                <data android:host="channel.line.naver.jp" android:pathPrefix="/dialog/oauth/weblogin" android:scheme="https"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.urlscheme.service.oauth.OAuthWebLoginServiceActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:exported="false" android:label="@string/line_call_app_name" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.schemeservice.LineCallSchemeServiceActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="jp.naver.line.android.activity.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar.NoBackground.NoContentOverlay" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.SuggestAccountSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="jp.naver.line.android.activity.choosemember.ChooseMemberActivity" android:permission="jp.naver.line.android.permission.LINE_ACCESS" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="jp.naver.line.android.intent.action.CHOOSE_FRIEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.choosemember.EditMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.imageviewer.ImageViewerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.registration.ui.RegistrationActivity" android:screenOrientation="portrait" android:theme="@style/Line.Registration.ActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="jp.naver.line.android.activity.registration.LauncherActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.ConfirmChangePhoneNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.SelectRegsiteringWayActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.TermsOfServiceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.InputIdentifierActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.InputAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.ConfirmNotYetRegisteredActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.SettingUsageContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.InputPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.InputPinActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.InputMigrationCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.SkipPinActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.InputProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.ConfirmNewLineActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.RegisteringDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.SynchronizeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.registration.RegistrationSnsExceptionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.registration.ConfirmUpgradeTosActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.registration.FindPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.registration.CheckUserAgeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.registration.AuthAgeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.registration.au.CheckAuUserTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.common.android.billing.au.activity.ActivateWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.common.android.billing.au.activity.PurchaseWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.oalist.view.OAListActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.addfriend.AddFriendByUserIdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.group.GroupMembersActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.group.GroupAcceptActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.group.GroupEditMemberActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.group.GroupInviteMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.group.GroupFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.setting.SettingsGroupChangeNameActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="jp.naver.line.android.activity.registration.StartPhoneVerificationActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chatlist.ChatListEditActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chatlist.ChatHistorySearchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.sharecontact.list.ChooseDeviceContactActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.sharecontact.detail.DeviceContactDetailViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.chathistory.ChatHistoryActivityLaunchActivity" android:theme="@android:style/Theme.NoDisplay" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.ChatHistoryActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar.NoBackground" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.ChatMemberListActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.message.viewall.TextMessageDetailActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.call.groupcall.GroupCallMemberListActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.location.LocationViewerActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.location.SelectLocationActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.chathistory.ChatSettingsActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.chathistory.e2ee.E2EEChatFingerPrintActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.chathistory.report.view.ReportActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.ui.activity.MyStickerSticonListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.ui.activity.EditMyStickerSticonListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.ui.activity.StickerSticonPurchaseHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.ui.activity.StickerSticonPresentBoxActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.sticker.ShopStickerDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.sticker.ui.activity.StickerPresentConfirmActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.sticker.ui.activity.EditCustomStickerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.sticker.ShopStickerDownloadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.sticker.ShopAuthorsStickerListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.ShopEventSerialNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.searchinchat.SpecificChatMemberMessageSearchResultListActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.theme.ShopThemeMyListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.theme.ShopThemeDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.theme.ui.activity.ThemePresentConfirmActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.theme.ShopThemeDownloadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.ShopPurchaseHistoryAcitivty" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shop.ShopPresentBoxActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.shop.theme.ShopThemeImageViewerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.sticon.ui.activity.SticonDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.sticon.ui.activity.SticonDownloadActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.shop.ui.activity.MySubscriptionSlotListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.addfriend.AddFriendActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.shake.ShakeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.localcontactlist.LocalContactInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.nearby.NearbyListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.nearby.NearbyUserProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:name="jp.naver.line.android.activity.setting.SettingsBaseFragmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="jp.naver.line.android.activity.setting.SettingsProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.setting.videoprofile.trim.VideoProfileCropActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="jp.naver.line.android.activity.setting.SettingsProfileStatusMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsSkinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsGroupProfileImageActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsSkinSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsCarrierActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsAutoSuggestActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsAutoSuggestLanguageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.IdentityCredentialSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.RegisterIdentityCredentialLauncherActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.RegisterEmailAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.DeviceListWebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.multidevice.DesktopLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.InputConfirmPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.ConfirmEmailAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.MigrationCodeSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.multidevice.RefreshTokenActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.liff.LiffLauncherActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.liff.LiffActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.liff.LiffSuspendableActivity" android:taskAffinity="jp.naver.line.android.liff" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.exception.VersionUpNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.exception.NotAvailableUserActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.exception.NotAuthorizedDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.exception.DatabaseUpgradeFailedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.exception.AuthenticationFailedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="jp.naver.line.android.common.passlock.InputPassActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.common.passlock.InputPassActivityForNewTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.common.passlock.RegistPassActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.gallery.android.activity.ChatGalleryActivity" android:theme="@style/LineTheme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.gallery.android.activity.ChatMediaContentActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.gallery.android.activity.ChatMediaListActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.gallery.android.activity.VrImageActivity" android:theme="@style/LineThemeAppCompat.TransparentSystemBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.gallery.android.activity.ChatMediaInfoActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar.NoBackground.NoContentOverlay"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.gallery.android.activity.PhotoInfoActivity" android:theme="@style/Theme.NoTitleBarNoOverlayTransparent"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.album.ui.AlbumActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.qrcode.QRCodeCaptureActivity2"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.qrcode.MyQRCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.qrcode.AddFriendByQRCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.qrcode.QRCodeLoggedInActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.pushdialog.PushDialogActivity" android:taskAffinity="jp.naver.line.android.push" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.pushdialog.PushDialogSleepActivity" android:taskAffinity="jp.naver.line.android.push" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.profiledialog.ProfileDirectActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.profiledialog.PermissionApprovalFromProfileActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="jp.naver.line.android.activity.helper.WifiNetworkCheckerActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.selectchat.SelectChatActivityLaunchActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="*/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="jp.naver.line.android.service.share.DirectShareChatChooserTargetService"/>
+        </activity>
+        <activity-alias android:exported="true" android:label="@string/app_name" android:name="jp.naver.line.android.app.CreateShortcuts" android:targetActivity="jp.naver.line.android.activity.selectchat.SelectChatActivityLaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.selectchat.SelectChatInnerActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.shortcut.ShortcutLauncherActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar.Transparent"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.videoaudio.VideoPlayer" android:theme="@style/LineTheme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="jp.naver.line.android.activity.chathistory.youtube.YoutubePlayerActivity" android:screenOrientation="sensor" android:theme="@style/YoutubePlayerTheme"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.util.AudioRecorder" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.imageviewer.PostImageViewerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.write.MediaUploadStatusViewerActivity" android:theme="@style/Dialog.NotCloseOnTouchOutside"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.moremenu.MoreCategoryListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.advertise.delivery.client.view.video.player.VideoPlayerActivity" android:theme="@style/AdTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.line.ad.video.AdVideoActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.line.ad.core.renderer.video.AdFullscreenActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.channel.LineChannelBrowserActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.channel.permission.ChannelPermissionApprovalActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.channel.profile.ChangeLineProfileActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="true" android:name="jp.naver.line.android.activity.channel.app2app.AppAuthActivity" android:theme="@style/LineThemeAppCompat.Translucent">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="jp.naver.line.android.intent.action.APPAUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.channel.token.ChannelTokenLoadingActivity" android:relinquishTaskIdentity="true" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.channel.securitycenter.ChannelSecurityCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.channel.video.LCSVideoPlayerActivity"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.channel.billing.SubscribeCwaProductActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.group.note.AlbumNoteActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.timeline.SettingsTimelineActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.timeline.SettingsTimelinePrivacyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.timeline.SettingsTimelineHiddenListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.linecorp.line.timeline.activity.privacygroup.PrivacyGroupSettingsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.privacygroup.SelectPrivacyGroupMemberActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.privacygroup.CreatePrivacyGroupActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|screenLayout|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.privacygroup.SharedPrivacyGroupListActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.linecorp.line.timeline.activity.LineSchemeActivity" android:theme="@style/TransparentActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.postend.PostEndActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.linecorp.line.timeline.activity.mergepostend.MergePostEndActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.linecorp.line.timeline.activity.sharedlist.PostSharedListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.likeend.LikeEndActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.mediaviewer.MediaViewerActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.myhome.MyHomeActivity" android:theme="@style/LineThemeAppCompat.TransparentSystemBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.profile.user.root.view.UserProfileActivity" android:theme="@style/ContactInfoTransparentSystemBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.profile.picker.UserProfileImagePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.profile.user.post.mediaviewer.UserProfileMediaViewerActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.profile.group.profile.view.GroupProfileActivity" android:theme="@style/ContactInfoTransparentSystemBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.line.profile.viewer.CoverImageViewerActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.linecorp.line.timeline.api.debug.TestApiErrorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.line.android.activity.grouphome.OneToOneHomeGuideActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.write.PostWriteActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.relay.write.RelayWriteActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.birthday.write.BirthdayWriteActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.write.PostEditActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.relay.end.RelayPostEndActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.write.PostShareActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.write.group.GroupSelectActivity" android:theme="@style/LineThemeAppCompat.Translucent.StatusBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.linecorp.line.timeline.activity.AlertActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.MMVideoActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.hashtag.HashTagPostListActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.hashtag.grid.HashTagGridListActivity" android:theme="@style/HashTagResultSystemBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.hashtag.list.PostListByHashTagActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.comment.CommentEndActivity" android:theme="@style/LineThemeAppCompat.Translucent.StatusBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.relay.viewer.RelayViewerActivity" android:theme="@style/LineThemeAppCompat.TransparentSystemBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.relay.user.RelayUserActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.feedsgroup.FeedsGroupActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.feedsgroup.OAChannelSettingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.myactivity.detail.MyActivityDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.myactivity.join.MyActivityJoinableActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.activity.mememaker.MemeMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.timeline.neta.detail.NetaDetailActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.coin.CoinHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="jp.naver.line.android.activity.coin.CoinPurchaseActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="jp.naver.line.android.activity.coin.ItemPurchaseActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="applovin.sdk.key" android:value="@string/applovin_sdk_key_real"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.popupnotice.PopupNoticeActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="jp.naver.line.android.activity.setting.SettingsNotice2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:name="com.linecorp.linekeep.uploadservice.KeepNetworkService" android:permission="com.linecorp.linekeep.android.permission.SYNC_MESSAGE"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:icon="@drawable/ke_save_icon" android:label="@string/line_keep_label" android:name="com.linecorp.linekeep.ui.KeepSaveActivity" android:noHistory="true" android:theme="@style/LineThemeAppCompat.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.main.KeepMainActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.search.KeepSearchActivity" android:theme="@style/BoxCustomTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.detail.KeepDetailActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:name="com.linecorp.linekeep.ui.settings.KeepSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.linecorp.linekeep.ui.settings.KeepUsageSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.linecorp.linekeep.ui.edit.KeepEditTextActivity" android:theme="@style/KeepEditTextActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.share.KeepShareActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:name="com.linecorp.linekeep.ui.detail.KeepVideoPlayerActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.tag.edit.KeepEditTagActivity" android:theme="@style/KeepEditTextActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.tag.more.KeepMoreTagActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.tag.detail.KeepTagDetailActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.linecorp.linekeep.ui.sharelink.KeepShareLinkActivity" android:theme="@style/BoxCustomTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="jp.naver.line.android.activity.linepay.LinePayLaunchActivity" android:permission="jp.naver.line.android.permission.LINE_ACCESS" android:theme="@style/LineThemeAppCompat.NoTitleBar.NoBackground">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="jp.naver.line.android.intent.action.PAY_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.callhistory.CallHistoryStandaloneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.callhistory.contacts.CallContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.callhistory.contactinfo.ContactInfoActivity" android:screenOrientation="portrait" android:theme="@style/ContactInfoTransparentSystemBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.e2ee.E2EEKeyExchangeConfirmActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="jp.naver.line.android.activity.chathistory.videoaudio.RMVideoPlayer" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.linecorp.linepay.legacy.activity.PaySchemeServiceActivity" android:permission="jp.naver.line.android.permission.LINE_ACCESS" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.PaySchemeActivityResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.LaunchActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.PayChannelBrowserActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.registration.SignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.th.biz.signup.identification.PayIdentificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.th.biz.signup.identification.PayFaceIdActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.common.PayResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.registration.SignUpTHForeignerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.th.biz.signup.PaySignUpMoreInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.registration.UpdatedTermsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.registration.InputMigrationInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.registration.LineCardRegistrationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.TermsAndConditionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.identification.IdentificationMethodBankAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.identification.UploadDocumentsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.InputCustomDataActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.ImageViewer" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.BankAccountListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.DebitCardAccountListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.DebitCardGuideWebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.BankDepositActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.BankWithdrawalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.BankListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.bank.BranchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.main.LinePayMainActivity" android:screenOrientation="portrait" android:theme="@style/PayTheme.Translucent.Supported"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.main.RecentHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.credit.RegisterCreditCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.credit.CreditCardTermsAndConditionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.credit.ManageCreditCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.credit.EditCreditCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.NonSubscriberPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.payment.online.PaymentCompletionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.payment.coupon.ui.PayCouponActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.payment.coupon.ui.PayCouponNonSubscriberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.code.OneTimeKeyListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.code.OneTimeChargeKeyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.code.MyCodeReaderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.code.UndefinedCodeReaderActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.code.CodeManualInputActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.legacy.activity.payment.code.MyCodeSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.PayTransferChooseMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.PayChooseMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.TransferEditMoneyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.TransferActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.TransferRequestEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.TransferDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.transfer.memberlist.TransferMemberListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.PaySettingMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.MyInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.PaySettingTermsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.PaySettingPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.charge.ConvenienceStoreChargeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.charge.ATMChargeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.charge.ChargeTermsAndConditionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.PassLockSkipWebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.CreatePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.ChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.ResetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.LockPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.AuthPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.AuthAndSavePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.BindDevicePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.InputPasswordAuthNoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.AdditionalAuthActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.OTPActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.password.LogInActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.SettingHistoryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.DatePickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.PaySettingBalanceNotiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.SettlementDetailFragmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.PaySettingUnregisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.setting.PaySettingAboutLicenseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.common.PayAppInvalidActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.linecorp.linepay.legacy.activity.payment.code.PayNfcReceiverActivity" android:noHistory="true" android:theme="@style/LineThemeAppCompat.Translucent">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/linepay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.legacy.activity.payment.code.PayNfcReaderActivity" android:noHistory="true" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.steps.PayIPassStepsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.intro.PayIPassIntroActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.complete.PayIPassCompleteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.migration.PayIPassLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.smsverification.PayIPassSmsVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.steps.tos.PayIPassTosDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.steps.PayIPassSelectListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.passcode.PayIPassAuthPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.passcode.PayIPassAuthAndSavePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.passcode.PayIPassLockPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.passcode.PayIPassChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.passcode.PayIPassCreatePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.main.PayIPassMainActivity" android:screenOrientation="portrait" android:theme="@style/PayTheme.Translucent.Supported" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.bank.PayIPassBankAccountListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.bank.PayIPassBankDepositActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferEditMoneyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferRequestEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferChooseMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.invite.PayIPassInviteChooseMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.invite.PayIPassInviteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.invite.PayIPassInviteDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassMyTransferCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.bank.PayIPassBankWithdrawalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.setting.PayIPassSettingMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.setting.PayIPassSettingTermsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.payment.PayIPassPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.payment.PayIPassOneTimeKeyListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.payment.PayIPassMyCodeSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.setting.PayIPassSettingPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.tw.biz.setting.PayIPassSettingUnregisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.signup.migration.nidnumberverification.PayIPassUserVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linepay.tw.biz.payment.PayIPassUndefinedCodeReaderActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferCodeReaderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.transfer.PayIPassTransferCodeManualInputActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.PayIPassAccountFreezeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.signup.camera.PayCardScanCameraActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.passcode.PayIPassResumeByPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.tw.biz.setting.PayIPassTermsAndConditionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.linecorp.linepay.biz.googlepay.verification.PayGooglePayLauncherActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="jp.naver.line.android.linepay.intent.action.APP_TO_APP_AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.googlepay.registration.PayGooglePayCardRegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.googlepay.verification.PayGooglePayInAppVerificationConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.googlepay.verification.PayGooglePayInAppVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.googlepay.registration.PayMockUpCardInfoInputActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.virtualcard.PayVirtualCardIssueActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.virtualcard.PayLineCardDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.linepay.biz.virtualcard.PayLineCardDeleteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillCreateSplitbillActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillRequestCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillFriendListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillAcceptSplitbillActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillDetailDefaultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillDetailUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.linepay.biz.splitbill.PaySplitbillRequestUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="io.card.payment.CardIOActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="io.card.payment.DataEntryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.search.SearchMainActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.bridgejs.PortalSearchActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.ugc.UgcMediaUploadActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="jp.naver.line.android.beacon.actionchain.urlscheme.beaconterms.BeaconTermsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="jp.naver.line.android.beacon.actionchain.LineUrlSchemeServiceLaunchActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.beacon.actionchain.urlscheme.addfriend.BeaconPlatformAddFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.browser.OpenUriActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <receiver android:exported="false" android:name="com.linecorp.browser.CustomTabsActionReceiver"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="jp.naver.line.android.activity.iab.InAppBrowserActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar.NoBackground"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="jp.naver.line.android.customtabs.CustomTabDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="jp.naver.line.android.customtabs.CustomTabDialogCallbackActivity" android:theme="@style/LineThemeAppCompat.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="customtabs" android:pathPrefix="/" android:scheme="linecallback"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="jp.naver.line.android.policyagreement.phonenumberpush.PhoneNumberPushAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="jp.naver.line.android.policyagreement.privacypolicy.PrivacyPolicyAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.friendrequest.FriendRequestsListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.square.chat.ui.view.home.SquareHomeActivity" android:screenOrientation="portrait" android:theme="@style/ContactInfoTransparentSystemBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.chat.ui.view.SquareChooseMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.chat.ui.view.member.SquareMemberListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.chat.ui.view.CreateSquareChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.chat.ui.view.share.ShareSquareChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.create.view.CreateGroupFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.join.view.JoinGroupActivity" android:theme="@style/TransparentDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.joinrequest.view.SquareGroupListWithJoinRequestActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.common.view.CommonInputActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.common.view.CommonMultiSelectableListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.common.view.CommonSingleSelectableListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.settings.view.SquareSettingsBaseFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.main.view.SquareMainActivity" android:screenOrientation="portrait" android:theme="@style/HeaderHeightActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.invite.view.InviteGroupActivity" android:theme="@style/SquareGroupInviteLayer"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.create.view.SquarePolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.linecorp.square.group.ui.announcement.view.SquarePostAnnouncementListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.setting.videoprofile.trim.VideoProfileTrimmerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.activity.setting.videoprofile.trim.VideoProfileSelectThumbnailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.common.PermissionRequestActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="jp.naver.line.android.service.share.DirectShareToChatActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <service android:label="@string/app_name" android:name="jp.naver.line.android.service.share.DirectShareChatChooserTargetService" android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.linethings.devicemanagement.ThingsDeviceManagementActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.linethings.ThingsPolicyAgreementActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.line.ticket.ui.activity.TicketViewActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.line.ticket.ui.activity.TicketConfirmActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.line.ticket.ui.activity.AdmittedTicketActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.line.ticket.ui.activity.TicketInformationActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.linecorp.releasedev.settings.ReleaseDevSettingsActivity" android:screenOrientation="portrait" android:theme="@style/LineThemeAppCompat.SettingsTheme" android:title="@string/release_dev_settings_title"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="true" android:name="com.linecorp.line.clova.ClovaAppAuthActivity" android:theme="@style/LineThemeAppCompat.NoTitleBar.Transparent" android:title="@string/clova_line_2fa_trans_aggrement_title">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="jp.naver.line.android.intent.action.REQUEST_CLOVA_AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:label="@string/line_service_lable" android:name="jp.naver.line.android.service.LineService"/>
+        <service android:exported="false" android:name="jp.naver.line.android.service.buddy.BuddyServiceImpl"/>
+        <service android:exported="false" android:name="jp.naver.line.android.service.obs.OBSServiceImpl"/>
+        <service android:exported="false" android:name="com.linecorp.line.timeline.activity.privacygroup.controller.PrivacyGroupSyncService"/>
+        <service android:exported="false" android:name="jp.naver.line.android.obs.net.OBSApiService"/>
+        <service android:exported="true" android:name="jp.naver.line.android.common.access.remote.LineRemoteAccessService" android:permission="jp.naver.line.android.permission.LINE_ACCESS">
+            <intent-filter>
+                <action android:name="jp.naver.line.android.access.remote.common.action.CONNECT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="jp.naver.line.android.access.remote.LineAccessServiceForWatch" android:permission="jp.naver.line.android.permission.LINE_ACCESS">
+            <intent-filter>
+                <action android:name="jp.naver.line.android.access.remote.action.CONNECT"/>
+                <action android:name="jp.naver.line.android.access.remote.action.NEW_MESSAGE_RECEIVED"/>
+                <action android:name="jp.naver.line.android.access.remote.action.ON_EVENT"/>
+                <action android:name="jp.naver.line.android.access.remote.action.STOP"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="jp.naver.line.android.access.remote.LineAccessServiceForWearable" android:permission="jp.naver.line.android.permission.LINE_ACCESS">
+            <intent-filter>
+                <action android:name="jp.naver.line.android.access.remote.action.WEARABLE_SEND_MESSAGE_ACTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.naver.line.android.access.remote.LineAccessServiceForNotification"/>
+        <service android:exported="false" android:name="jp.naver.line.android.beacon.service.KitkatBeaconScanService"/>
+        <service android:exported="false" android:name="jp.naver.line.android.beacon.scanner.BeaconScanService"/>
+        <receiver android:exported="false" android:name="jp.naver.line.android.beacon.scanner.BeaconScanReceiver"/>
+        <service android:exported="false" android:name="com.linecorp.linethings.automation.DeviceScanService"/>
+        <receiver android:exported="false" android:name="com.linecorp.linethings.automation.DeviceScanReceiver"/>
+        <service android:exported="false" android:name="com.linecorp.linethings.automation.AutomatedBleCommunicationService"/>
+        <service android:exported="false" android:name="com.linecorp.line.timeline.activity.write.writeform.upload.PostUploadService"/>
+        <service android:exported="false" android:name="com.linecorp.line.album.transfer.AlbumTransferService"/>
+        <receiver android:name="jp.naver.line.android.service.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="jp.naver.line.android.alarm.LineAlarmReceiver"/>
+        <provider android:authorities="jp.naver.line.android.LineStore" android:exported="false" android:name="jp.naver.line.android.cp.ServerHostProvider"/>
+        <receiver android:exported="true" android:name="jp.naver.line.android.util.ad.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.ad.tracking.cpe.agent.ReferrerCatcher">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="@string/npush_service_lable" android:name="jp.naver.android.npush.service.NPushMessageService" android:permission="jp.naver.android.npush.permission.PUSH_MESSAGE" android:process="jp.naver.android.npush">
+            <intent-filter android:priority="22">
+                <action android:name="jp.naver.android.npush.intent.action.SUBSCRIBE"/>
+                <action android:name="jp.naver.android.npush.intent.action.UNSUBSCRIBE"/>
+                <action android:name="jp.naver.android.npush.intent.action.UPGRADE"/>
+                <action android:name="jp.naver.android.npush.intent.action.GETVERSION"/>
+                <action android:name="jp.naver.android.npush.intent.action.GETSTATE"/>
+            </intent-filter>
+        </service>
+        <service android:name="jp.naver.line.android.service.fcm.LineFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="jp.naver.line.android.service.fcm.LineInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.naver.line.android.service.fcm.RegistrationIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.linecorp.age.verification.AgeVerificationActivity" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <receiver android:exported="true" android:name="jp.naver.line.android.service.push.NNIReceiver" android:permission="jp.naver.android.npush.permission.PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="jp.naver.android.npush.intent.action.RECEIVE"/>
+                <category android:name="naverline"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="jp.naver.android.npush.intent.action.SUBSCRIBE_RES"/>
+                <category android:name="naverline"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="jp.naver.android.npush.intent.action.UNSUBSCRIBE_RES"/>
+                <category android:name="naverline"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="jp.naver.android.npush.intent.action.CURRENTSTATE"/>
+                <category android:name="naverline"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="jp.naver.android.npush.intent.action.INFORM_STATUS"/>
+                <category android:name="naverline"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="tracer_app_key" android:value="63759620"/>
+        <meta-data android:name="tracer_hash_key" android:value="b186a79f85a6491e"/>
+        <meta-data android:name="tracer_market_info" android:value="google"/>
+        <meta-data android:name="Line.RequestUrl" android:value="https://promotion-freecoins.line-apps.com/v1/cv"/>
+        <meta-data android:name="Line.ReceiveAllReferrers" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"/>
+        <meta-data android:name="com.lge.support.SPLIT_WINDOW" android:value="true"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_real_app_id"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <provider android:authorities="jp.naver.line.android.line.common.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="jp.naver.line.android.common.LineCommonFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:excludeFromRecents="true" android:name="com.naver.mei.sdk.core.video.ScreenCaptureIntentActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.linecorp.inlinelive.ui.LineLiveActivity" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.linecorp.inlinelive.player.InLinePlayerService" android:process=":player"/>
+        <receiver android:exported="true" android:name="com.linecorp.linelive.player.component.gift.filedownloader.DownloadManagerEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.voip.tone.VoipToneSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.linecorp.voip.core.common.screen.record.ScreenCaptureRequestActivity" android:taskAffinity="com.linecorp.voip" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.voip.ui.base.VoIPServiceActivity" android:resizeableActivity="false" android:taskAffinity="com.linecorp.voip" android:theme="@style/ContactInfoTransparentSystemBar">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.voip.ui.standard.StandardCallActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="com.linecorp.voip" android:theme="@style/ContactInfoTransparentSystemBar">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.voip.ui.groupcall.GroupCallActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="com.linecorp.voip" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.voip.ui.groupcall.GroupMembersActivity" android:screenOrientation="portrait" android:taskAffinity="com.linecorp.voip"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.voip.core.effect.EffectDownloadActivity" android:theme="@style/LineThemeAppCompat.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/line_call_app_name" android:launchMode="singleTask" android:name="com.linecorp.voip.ui.paidcall.PaidCallMainActivity" android:resizeableActivity="false" android:screenOrientation="portrait">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.voip.ui.paidcall.activity.PaidCallActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="com.linecorp.voip" android:theme="@style/ContactInfoTransparentSystemBar">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.PaidCallSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.ChargeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.PurchaseHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.UseHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.CurrencySetupActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.CountryCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.PriceTableActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.AgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.TermsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.linecorp.voip.ui.paidcall.activity.RedeemActivity" android:resizeableActivity="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.applovin.adview.AppLovinInterstitialActivity" android:resizeableActivity="false" android:taskAffinity="com.linecorp.voip"/>
+        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" android:resizeableActivity="false" android:taskAffinity="com.linecorp.voip"/>
+        <service android:exported="false" android:name="com.linecorp.voip.core.common.notification.VoipNotificationCommand"/>
+        <service android:exported="false" android:name="com.linecorp.voip.ui.pip.VoipPipService"/>
+        <receiver android:exported="false" android:name="com.linecorp.voip.core.common.notification.VoipNotificationActionReceiver"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.linecorp.voip.ui.live.ChatLiveFullActivity" android:resizeableActivity="false" android:taskAffinity="com.linecorp.voip">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="fullscreenOnly"/>
+            <meta-data android:name="com.lge.support.SPLIT_WINDOW.SUPPORT_SPLIT" android:value="false"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.voip.ui.standard.LineToCallServiceActivity" android:resizeableActivity="false" android:theme="@style/LineThemeAppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.voip.ui.VoipCallSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.media.picker.MediaPickerActivity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.linecorp.line.camera.LineMixCamera" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.FullScreen"/>
+        <service android:exported="false" android:name="com.linecorp.line.media.picker.controller.TranscodingService" android:process=":remote"/>
+        <provider android:authorities="jp.naver.line.android.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:name="com.linecorp.legy.external.network.LegyConnectivityChangeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.linecorp.multimedia.transcoding.VideoTranscodingService" android:process=":transcoding"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="jp.naver.line.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:enabled="true" android:exported="false" android:name="com.linecorp.android.offlinelink.ble.service.LeServerService">
+            <intent-filter>
+                <action android:name="com.linecorp.android.offlinelink.ble.service.ILeServerService"/>
+            </intent-filter>
+        </service>
+        <activity android:name="io.card.payment.membership.activity.MembershipDataSelectActivity"/>
+        <activity android:name="io.card.payment.membership.activity.MembershipDataCheckActivity"/>
+        <activity android:name="io.card.payment.membership.activity.CreditCardCheckActivity"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode, ocr"/>
+        <provider android:authorities="jp.naver.line.android.workmanager-init" android:directBootAware="false" android:exported="false" android:multiprocess="true" android:name="androidx.work.impl.WorkManagerInitializer"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="jp.naver.line.android.MarketingInitProvider" android:exported="false" android:name="com.facebook.marketing.internal.MarketingInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="jp.naver.line.android.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linecorp.line.timeline.view.post.carousel.PostCarouselItemVideoView android:id="@id/post_carousel_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linecorp.line.timeline.view.post.FaceImageView android:id="@id/post_carousel_face_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ViewStub android:id="@id/image_mark" android:layout="@layout/post_carousel_content_image_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

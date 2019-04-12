@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/stickershop_list_progress" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_circle_blue" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/stickershop_list_noresult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/stickershop_list_noresult_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:src="@drawable/zeropage_img_none04" />
+        <TextView android:gravity="center" android:id="@id/stickershop_list_noresult_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_zeropage_subtitle" />
+    </LinearLayout>
+    <ListView android:id="@id/stickershop_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/list_divider_color" android:dividerHeight="1.0px" android:footerDividersEnabled="false" />
+    <ViewStub android:id="@id/stickershop_error" android:layout="@layout/retryerrorview_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/settings_new_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:background="#ffe8eaee" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RadioGroup android:orientation="horizontal" android:id="@id/addfriend_by_userinfo_status_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="15.0dip">
+                <RadioButton android:textSize="14.0sp" android:textColor="#ff23292e" android:id="@id/addfriend_by_userid_status_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="26.5dip" android:button="@drawable/selector_addfriend_radio_btn" android:text="@string/addfriendbyuserid_id" />
+                <RadioButton android:textSize="14.0sp" android:textColor="#ff23292e" android:id="@id/addfriend_by_userphone_status_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_addfriend_radio_btn" android:text="@string/addfriendbyuserid_phone_number" />
+            </RadioGroup>
+            <Spinner android:gravity="left" android:id="@id/registration_country_list" android:background="@drawable/addfriend_by_userinfo_country_bg" android:paddingLeft="11.0dip" android:paddingRight="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/addfriend_by_userinfo_search_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <jp.naver.line.android.util.text.ClearableEditText android:textSize="16.0sp" android:textColor="@android:color/black" android:textColorHint="@color/text_color_hint" android:gravity="center_vertical" android:id="@id/addfriend_by_userinfo_search_text" android:background="@drawable/v2_img_id_searchbar" android:paddingLeft="11.0dip" android:paddingRight="53.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/addfriendbyuserid_input_userid" android:maxLines="1" android:maxLength="120" android:layout_weight="1.0" android:inputType="textVisiblePassword" android:imeOptions="actionSearch" />
+                <LinearLayout android:layout_gravity="center" android:background="#ffefeff0" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_toLeftOf="@id/addfriend_search_button" />
+                <LinearLayout android:gravity="center" android:id="@id/addfriend_search_button" android:paddingLeft="3.0dip" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_alignTop="@id/addfriend_by_userinfo_search_text" android:layout_alignRight="@id/addfriend_by_userinfo_search_text">
+                    <ImageView android:layout_gravity="center" android:id="@id/addfriend_by_userid_search_button_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/add_input_ic_search_off" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ViewFlipper android:id="@id/addfriend_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="25.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_circle_small" style="?android:progressBarStyleSmall" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff7c869c" android:layout_gravity="center" android:paddingTop="12.0dip" android:paddingBottom="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searching" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@id/addfriend_result_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="64.0dip" android:layout_marginRight="16.0dip">
+                    <jp.naver.line.android.customview.thumbnail.ThumbImageView android:layout_gravity="center" android:id="@id/addfriend_image" android:visibility="visible" android:layout_width="105.32999dip" android:layout_height="105.32999dip" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="19.0sp" android:textColor="#ff111111" android:gravity="center" android:id="@id/addfriend_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff868a92" android:gravity="center" android:id="@id/addfriend_already_friend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47.0dip" android:layout_marginRight="47.0dip" android:text="@string/addfriendbyuserid_already_friend" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/addfriend_add_button" android:background="@drawable/selector_button_r01" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="37.0dip" android:layout_marginTop="16.5dip" android:text="@string/addfriendbyuserid_add_friend" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/addfriend_chat_button" android:background="@drawable/selector_button_r01" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="37.0dip" android:layout_marginTop="27.5dip" android:text="@string/btn_chat" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff7c869c" android:layout_gravity="center_horizontal" android:paddingLeft="25.0dip" android:paddingTop="72.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addfriendbyuserid_no_result" />
+                </LinearLayout>
+            </ViewFlipper>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

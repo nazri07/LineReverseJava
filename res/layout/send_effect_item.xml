@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="53.0dip" android:layout_height="53.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/send_effect_item_select_view" android:background="@drawable/send_effect_select_bg" android:layout_width="@dimen/effect_item_view_size" android:layout_height="@dimen/effect_item_view_size" android:src="@drawable/animation_send_effect_select" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/send_effect_item" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/effect_ic_empty" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/com_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <jp.naver.line.android.common.view.media.ZoomImageView android:gravity="center" android:id="@id/keep_detail_photo_zoom_image_view" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" smallImageFit="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/keep_fragment_detail_photo_progress_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/keep_fragment_detail_photo_progress_bar" android:layout_width="160.0dip" android:layout_height="wrap_content" style="@style/CommonProgressBar" />
+            <TextView android:textColor="@color/com_deepgrey" android:layout_gravity="center_horizontal" android:id="@id/keep_fragment_detail_photo_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <ViewStub android:id="@id/keep_fragment_detail_photo_gif_view_stub" android:layout="@layout/keep_fragment_detail_gif_download_layout" android:inflatedId="@id/pannal_import" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/keep_fragment_detail_expired" />
+        <include layout="@layout/keep_fragment_detail_retry" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/keep_detail_bottom_bar_height">
+        <include layout="@layout/keep_fragment_detail_media_tag_layout" />
+    </RelativeLayout>
+</RelativeLayout>

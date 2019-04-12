@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/certify_bg_01" android:layout_width="fill_parent" android:layout_height="100.66998dip">
+                <ImageView android:id="@id/settings_appdetail_icon" android:layout_width="@dimen/app2app_detail_thumbnail_size" android:layout_height="@dimen/app2app_detail_thumbnail_size" android:layout_marginLeft="14.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/settings_appdetail_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="#ff181f2b" android:id="@id/settings_appdetail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="0.67" android:shadowRadius="0.67" />
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffa0a0a0" android:id="@id/settings_appdetail_provider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="0.67" android:shadowRadius="0.67" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ffb4b4b4" android:id="@id/settings_appdetail_approved_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.3299866dip" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="0.67" android:shadowRadius="0.67" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/settings_appdetail_desc" android:background="#fff7f9fa" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="#fff0f1f3" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/settings_message_onoff_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:id="@id/settings_allow_receive_message" android:background="@drawable/selector_approved_app_setting_btn" android:paddingLeft="15.0dip" android:paddingRight="5.0dip" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/selector_approved_setting_text_color" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/settings_app2app_allow_recevie_message" android:layout_weight="1.0" />
+                    <CheckBox android:id="@android:id/checkbox" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#fff0f1f3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/settings_allow_receive_notification" android:background="@drawable/selector_approved_app_setting_btn" android:paddingLeft="15.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/selector_approved_setting_text_color" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/settings_app2app_allow_recevie_noti" android:layout_weight="1.0" />
+                    <CheckBox android:id="@android:id/checkbox" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#fff0f1f3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <Button android:textSize="15.0sp" android:textColor="@color/selector_approved_setting_text_color" android:gravity="center_vertical" android:id="@id/settings_authorized_channel_edit_permission_btn" android:background="@drawable/selector_approved_app_setting_btn" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="@string/settings_authorized_channel_edit_permission_btn" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@id/settings_appdetail_delete" android:background="@drawable/selector_button_r02_r10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.669983dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.669983dip" android:layout_marginBottom="19.329987dip" android:text="@string/settings_app2app_revoke_detail_btn" style="@style/settings_confirm_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

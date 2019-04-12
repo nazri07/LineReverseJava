@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:tag="layout/player_profile_channel_dialog_fragment_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/profile_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/dismiss_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/profile_header" />
+        <RelativeLayout android:id="@id/profile_header" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="86.0dip" android:layout_marginTop="43.5dip">
+            <TextView android:id="@id/report" android:tag="binding_1" android:text="@string/player_settings_report" style="@style/profile_btn_declaration" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="45.0dip" android:paddingRight="45.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/cast_official_icon" android:visibility="gone" android:src="@drawable/img_live_com_badge_oa_l" style="@style/list_label_oa" />
+                <TextView android:id="@id/name" style="@style/profile_text_name" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_group" android:background="@color/white" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/profile_area">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ToggleButton android:id="@id/btn_notification" android:tag="binding_2" android:visibility="visible" android:textOn="@string/inlineplayer_notice_off" android:textOff="@string/inlineplayer_notice_on" style="@style/profile_btn_dialog" />
+            <TextView android:id="@id/btn_open_live" android:tag="binding_3" android:visibility="visible" android:text="@string/player_settings_openliveapp" style="@style/profile_btn_dialog" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/icon_frame" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/live_player_thumbnail_frame" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/icon_image" android:clickable="true" android:layout_marginBottom="2.0dip" android:layout_alignBottom="@id/icon_frame" style="@style/profile_img_user" />
+</RelativeLayout>

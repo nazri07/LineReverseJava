@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" />
+    <RelativeLayout android:id="@id/recommend_container" android:layout_width="fill_parent" android:layout_height="@dimen/recommendation_sticker_buddy_layout_height">
+        <ProgressBar android:id="@id/recommend_progress" android:visibility="gone" android:layout_width="@dimen/shop_progressbar_size" android:layout_height="@dimen/shop_progressbar_size" android:layout_centerInParent="true" />
+        <jp.naver.line.android.customview.thumbnail.ThumbImageView android:id="@id/recommend_thumbnail" android:layout_width="@dimen/recommendation_sticker_buddy_thumbnail_size" android:layout_height="@dimen/recommendation_sticker_buddy_thumbnail_size" android:layout_marginLeft="16.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="19.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff0f0f0f" android:id="@id/recommend_description_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.0dip" android:layout_toLeftOf="@id/recommend_check_box" android:layout_toRightOf="@id/recommend_thumbnail" android:layout_centerVertical="true" android:lineSpacingExtra="4.0sp" />
+        <ImageView android:id="@id/recommend_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="34.0dip" android:src="@drawable/selector_checkbox_with_selected_status" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

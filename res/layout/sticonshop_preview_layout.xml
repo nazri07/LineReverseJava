@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/main_preview_image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sticonshop_sticon_preview_left_margin" android:layout_marginRight="@dimen/sticonshop_sticon_preview_right_margin" android:adjustViewBounds="true" android:layout_marginStart="@dimen/sticonshop_sticon_preview_left_margin" android:layout_marginEnd="@dimen/sticonshop_sticon_preview_right_margin" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/preview_progress_bar" android:layout_width="@dimen/shop_progressbar_size" android:layout_height="@dimen/shop_progressbar_size" android:layout_centerInParent="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dynamic_preview" android:background="@color/transparent" android:paddingLeft="@dimen/sticonshop_sticon_preview_left_margin" android:paddingRight="@dimen/sticonshop_sticon_preview_right_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sticonshop_sticon_preview_left_margin" android:paddingEnd="@dimen/sticonshop_sticon_preview_right_margin" />
+</RelativeLayout>

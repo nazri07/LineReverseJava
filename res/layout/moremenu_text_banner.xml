@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/more_menu_top_banner_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/moretab_banner_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/more_menu_top_banner_base_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/more_menu_top_banner_text_are" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.5sp" android:textStyle="bold" android:textColor="#ff3f465c" android:gravity="center_vertical" android:id="@id/more_menu_top_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" />
+                <TextView android:textSize="12.5sp" android:textColor="#ff666666" android:id="@id/more_menu_top_banner_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:includeFontPadding="false" />
+            </LinearLayout>
+            <jp.naver.toybox.drawablefactory.DImageView android:layout_gravity="center_vertical" android:id="@id/item_icon" android:layout_width="81.0dip" android:layout_height="@dimen/moretab_banner_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="22.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

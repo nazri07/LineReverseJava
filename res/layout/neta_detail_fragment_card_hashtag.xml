@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.linecorp.line.timeline.neta.detail.behavior.NetaDetailHeaderBehavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="506.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <include layout="@layout/neta_detail_bg" />
+                <View android:background="@drawable/neta_detail_dim" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+                <View android:layout_gravity="bottom" android:background="@drawable/neta_detail_dim_bottom" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+                <include layout="@layout/neta_detail_title" />
+                <include layout="@layout/neta_detail_popular" />
+                <include layout="@layout/neta_detail_loading" />
+                <include layout="@layout/neta_detail_header" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.linecorp.line.timeline.view.LoadMoreRecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.linecorp.line.timeline.neta.detail.behavior.NetaDetailContentBehavior" />
+        <include layout="@layout/neta_detail_toolbar" />
+        <include layout="@layout/neta_detail_action" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <ViewStub android:id="@id/retry_viewstub" android:layout="@layout/neta_detail_retry" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

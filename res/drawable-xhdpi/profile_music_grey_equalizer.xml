@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/grey_01" />
+    <item android:duration="50" android:drawable="@drawable/grey_02" />
+    <item android:duration="50" android:drawable="@drawable/grey_03" />
+    <item android:duration="50" android:drawable="@drawable/grey_04" />
+    <item android:duration="50" android:drawable="@drawable/grey_05" />
+    <item android:duration="50" android:drawable="@drawable/grey_06" />
+    <item android:duration="50" android:drawable="@drawable/grey_07" />
+    <item android:duration="50" android:drawable="@drawable/grey_08" />
+    <item android:duration="50" android:drawable="@drawable/grey_09" />
+    <item android:duration="50" android:drawable="@drawable/grey_10" />
+    <item android:duration="50" android:drawable="@drawable/grey_11" />
+    <item android:duration="50" android:drawable="@drawable/grey_12" />
+    <item android:duration="50" android:drawable="@drawable/grey_13" />
+    <item android:duration="50" android:drawable="@drawable/grey_14" />
+    <item android:duration="50" android:drawable="@drawable/grey_15" />
+    <item android:duration="50" android:drawable="@drawable/grey_16" />
+    <item android:duration="50" android:drawable="@drawable/grey_17" />
+    <item android:duration="50" android:drawable="@drawable/grey_18" />
+</animation-list>

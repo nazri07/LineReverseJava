@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/addfriend_tab_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/addfriend_tab_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:gravity="center_horizontal" android:id="@id/addfriend_tab_item_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/v2_add_friend_top_button_text" />
+    <TextView android:gravity="center_horizontal" android:id="@id/addfriend_bottom_tab_item_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/v2_add_friend_bottom_button_text" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/control_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/voipcall_mute_btn" android:layout_width="@dimen/call_button_size" android:layout_height="@dimen/call_button_size" android:src="@drawable/voip_icon_mute" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/voipcall_outgoing_center_btn" android:layout_width="@dimen/call_button_size" android:layout_height="@dimen/call_button_size" android:src="@drawable/voip_icon_videocall" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/voipcall_speaker_btn" android:layout_width="@dimen/call_button_size" android:layout_height="@dimen/call_button_size" android:src="@drawable/voip_icon_speaker" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/voipcall_end_btn" android:layout_width="@dimen/call_button_size" android:layout_height="@dimen/call_button_size" android:layout_marginTop="17.5dip" android:src="@drawable/btn_freecall_reject_selector" android:layout_below="@id/control_buttons" android:layout_centerHorizontal="true" android:contentDescription="@string/access_call_off" />
+</RelativeLayout>

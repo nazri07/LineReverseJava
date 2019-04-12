@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/register_scroll" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/card_scan" android:background="@drawable/pay_shape_white_rectangle_r2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_marginTop="7.5dip" android:layout_marginRight="7.5dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_icon_scancard" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/pay_register_card_scan" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_btn_next" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/support_card_brand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="17.5dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="13.0dip" android:layout_below="@id/card_scan">
+            <TextView android:textSize="13.0sp" android:textColor="#ff707070" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_register_card_accepted_card" />
+            <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/supported_card_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/buttons_container" android:background="@drawable/pay_shape_white_rectangle_r2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="7.5dip" android:layout_below="@id/support_card_brand">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="19.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="84.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/pay_register_card_card_no" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff808693" android:textColorHint="#ffe6e6e6" android:id="@id/card_no" android:background="@color/transparent" android:nextFocusDown="@id/card_expire" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:hint="@string/pay_join_please_input_data" android:singleLine="true" android:layout_weight="7.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff808693" android:layout_gravity="right" android:id="@id/card_brand" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_weight="3.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="84.0dip">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="19.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="84.0dip" android:layout_weight="2.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/pay_register_card_expire" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <EditText android:textSize="16.0sp" android:textColor="#ff808693" android:textColorHint="#ffe6e6e6" android:id="@id/card_expire" android:background="@color/transparent" android:nextFocusDown="@id/card_cvc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:hint="@string/pay_register_card_expire_hint" android:singleLine="true" android:layout_weight="7.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:background="#fff2f2f2" android:layout_width="1.0px" android:layout_height="84.0dip" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="84.0dip" android:layout_weight="3.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:paddingTop="19.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/pay_register_card_cvc" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/card_cvc_help" android:paddingLeft="18.0dip" android:paddingTop="19.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pay_icon_info3" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="16.0sp" android:textColor="#ff808693" android:textColorHint="#ffe6e6e6" android:id="@id/card_cvc" android:background="@color/transparent" android:nextFocusDown="@id/first_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:hint="@string/pay_register_card_cvc_hint" android:singleLine="true" android:layout_weight="7.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="19.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="84.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/pay_register_card_first_name" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff808693" android:textColorHint="#ffe6e6e6" android:id="@id/first_name" android:background="@color/transparent" android:nextFocusDown="@id/last_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:hint="@string/pay_hint_input_first_name" android:singleLine="true" android:layout_weight="7.0" android:inputType="textVisiblePassword" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="19.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="84.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/pay_register_card_last_name" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff808693" android:textColorHint="#ffe6e6e6" android:id="@id/last_name" android:background="@color/transparent" android:nextFocusDown="@id/nick_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:hint="@string/pay_hint_input_last_name" android:singleLine="true" android:layout_weight="7.0" android:inputType="textVisiblePassword" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="19.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="84.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff404040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/pay_register_card_nick_name" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff808693" android:textColorHint="#ffe6e6e6" android:id="@id/nick_name" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:hint="@string/pay_join_please_input_data" android:singleLine="true" android:layout_weight="7.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/buttons_container">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="11.5dip" android:layout_marginRight="11.0dip" android:layout_marginBottom="28.0dip">
+                <CheckBox android:id="@id/main_card_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/pay_selector_agreement_checkbox" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:text="@string/pay_register_card_main_card" />
+            </LinearLayout>
+            <LinearLayout android:background="#ffebecf0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/register_button_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/register_button" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_payment_register" style="@style/pay_common_full_button_green" />
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/save_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+                <Button android:id="@id/save_button" android:layout_width="fill_parent" android:layout_height="@dimen/pay_common_full_button_height" android:text="@string/pay_save" android:layout_alignParentBottom="true" style="@style/pay_common_full_button_green" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

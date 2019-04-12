@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="single image by message" android:layout_weight="1.0" android:onClick="onClickSingleImage" />
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="multi image by message" android:layout_weight="1.0" android:onClick="onClickMultiImage" />
+    </TableRow>
+    <TableRow>
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="single video" android:layout_weight="1.0" android:onClick="onClickSingleVideo" />
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="multi video" android:layout_weight="1.0" android:onClick="onClickMultiVideo" />
+    </TableRow>
+    <TableRow>
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="single image by post" android:layout_weight="1.0" android:onClick="onClickSingleImageByPost" />
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="multi image by post" android:layout_weight="1.0" android:onClick="onClickMultiImageByPost" />
+    </TableRow>
+    <TableRow>
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="cache release" android:layout_weight="1.0" android:onClick="onClickCacheRelease" />
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="crop" android:layout_weight="1.0" android:onClick="onClickCropActivity" />
+    </TableRow>
+</TableLayout>

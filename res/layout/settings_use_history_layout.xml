@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setting_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:gravity="center" android:id="@id/no_use_history_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/call_use_no_history" android:includeFontPadding="false" android:layout_weight="1.0" />
+    <ListView android:id="@id/use_history_list" android:visibility="gone" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@null" android:divider="@null" />
+</LinearLayout>

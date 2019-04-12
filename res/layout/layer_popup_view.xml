@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:background="#fff2f3f5" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="97.32999dip">
+        <LinearLayout android:gravity="center" android:id="@id/banner_img_frame" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/banner_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/close" android:padding="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/popup_banner_img_x01" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/banner_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toLeftOf="@id/close" android:layout_toRightOf="@id/banner_img_frame" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff5b647c" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.5sp" android:textColor="#ff5f6471" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffd9dbdf" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    <LinearLayout android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <Button android:textSize="14.5sp" android:textColor="#ff5f6471" android:id="@id/left_btn" android:background="@drawable/selector_button_15" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/btn_div" android:background="#ffd9dbdf" android:layout_width="0.6700001dip" android:layout_height="fill_parent" />
+        <Button android:textSize="14.5sp" android:textColor="#ff5c6d9d" android:id="@id/right_btn" android:background="@drawable/selector_button_15" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

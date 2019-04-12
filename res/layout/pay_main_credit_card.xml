@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:id="@id/pay_main_card_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pay_empty_card_layout" android:background="@drawable/pay_shape_main_empty_rectangle_r5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="192.5dip" android:layout_marginLeft="16.5dip" android:layout_marginRight="16.5dip">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.5dip" android:src="@drawable/pay_btn_main_register" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/pay_main_register_card" android:shadowColor="#7f000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/imageView1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.linecorp.linepay.legacy.activity.main.view.MainCardPageContainer android:id="@id/pager_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.linecorp.linepay.common.PayCardAspectRatioViewPager android:layout_gravity="center_horizontal" android:id="@id/pay_main_card_pager" android:layout_width="200.0dip" android:layout_height="0.0dip" />
+    </com.linecorp.linepay.legacy.activity.main.view.MainCardPageContainer>
+    <com.linecorp.linepay.legacy.activity.main.view.CreditCardPageNavigation android:gravity="bottom|center" android:id="@id/pay_main_card_navigation" android:layout_width="fill_parent" android:layout_height="17.0dip" />
+    <View android:id="@id/pay_main_card_navigation_bottom_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</merge>

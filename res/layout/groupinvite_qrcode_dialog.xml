@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/tm_profile_popup_h_bg_nobtn" android:layout_width="325.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.5dip" android:text="@string/myhome_invite_qr_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff959caa" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.5dip" android:layout_marginRight="15.0dip" android:text="@string/myhome_invite_qr_detail" android:maxLines="2" />
+    <ImageView android:id="@id/group_qrcode_image" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="37.5dip" />
+    <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/group_qrcode_action" android:background="@drawable/v2_selector_button_bottom_green" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.5dip" android:layout_marginTop="40.0dip" android:layout_marginRight="12.5dip" android:text="@string/shareto_album" />
+    <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/group_qrcode_update" android:background="@drawable/v2_selector_button_bottom_grey" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.5dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.5dip" android:layout_marginBottom="15.0dip" android:text="@string/myhome_update_qr" />
+</LinearLayout>

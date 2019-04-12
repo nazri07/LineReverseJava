@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center|top" android:paddingTop="19.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mycode_refresh_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_mycode_qr_reset_btn" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff7d7f8b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/pay_one_time_key_refresh" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff00c300" android:id="@id/mycode_refresh_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/one_time_key_list_barcode_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageView android:id="@id/one_time_key_list_barcode_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff010101" android:gravity="center_horizontal" android:id="@id/one_time_key_list_barcode_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:includeFontPadding="false" android:layout_below="@id/one_time_key_list_barcode_image" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/one_time_key_list_barcode_image_expand_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/pay_btn_code_normal" android:layout_toRightOf="@id/one_time_key_list_barcode_num" android:layout_below="@id/one_time_key_list_barcode_image" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/one_time_key_list_qrcode_layout" android:layout_width="212.0dip" android:layout_height="212.0dip">
+        <ImageView android:id="@id/one_time_key_list_qrcode_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/pay_img_qr_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="19.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

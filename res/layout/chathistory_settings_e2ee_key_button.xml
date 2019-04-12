@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.customview.settings.SettingButton android:layout_width="fill_parent" android:layout_height="wrap_content" custom:descText="@string/hidden_chat_settigns_publickey_description" custom:titleText="@string/hidden_chat_publickey"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" />

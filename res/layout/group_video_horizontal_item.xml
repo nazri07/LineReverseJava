@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/horizontal_item_layout" android:layout_width="@dimen/group_video_horizontal_thumbnail_size_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/group_video_horizontal_thumbnail_size_height">
+        <com.linecorp.andromeda.video.view.ATextureView android:id="@id/video_groupcall_item_render_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <jp.naver.line.android.customview.FitAndCenterCropImageView android:id="@id/video_groupcall_item_profile" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/video_groupcall_item_dimmed" android:background="#66000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/video_groupcall_item_profile_gradient" android:background="@drawable/group_video_gra_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/video_select_layout" android:background="@drawable/videocall_img_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/video_groupcall_item_pause" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <FrameLayout android:id="@id/video_ic_loading_layout" android:background="@color/groupcall_video_background_main_02" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/video_ic_waiting" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/animation_group_video_loading" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/video_ic_not_support_video" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/videocall_img_video02" />
+    </FrameLayout>
+</LinearLayout>

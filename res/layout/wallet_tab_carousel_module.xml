@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="128.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip">
+        <ImageView android:id="@id/main_image" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginBottom="14.5dip" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/wallet_module_main_sub_text_color" android:ellipsize="end" android:id="@id/main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="1.5sp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/wallet_module_main_sub_text_color" android:ellipsize="end" android:id="@id/sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#ff0bbb7a" android:ellipsize="end" android:id="@id/point_cache_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5dip" android:maxLines="1" android:includeFontPadding="false" android:drawableLeft="@drawable/selector_wallet_module_text_point_icon" android:drawablePadding="3.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/wallet_module_account_text_color" android:ellipsize="end" android:id="@id/account_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

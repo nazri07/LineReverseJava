@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.customview.LayerEventView android:id="@id/lan" android:background="@android:color/holo_orange_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/layer_banner_view_height" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:background="@color/view_common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <include layout="@layout/home_my_profile" />
+                <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="70.0dip" app:tabMode="scrollable" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

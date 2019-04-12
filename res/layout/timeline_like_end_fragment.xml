@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/timeline_list_end_root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/screen_myhome_listend_listview" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="true" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0px" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/screen_myhome_listend_error_layer" android:background="@color/home_default_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/screen_myhome_listend_title" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/screen_myhome_listend_loading_layer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="24.669983dip" android:layout_height="24.669983dip" android:layout_marginRight="6.669983dip" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff808080" android:id="@id/screen_myhome_listend_no_data_layer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/appapp_title_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/app2app_list_title_row_height">
+        <TextView android:id="@id/friendlist_row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/settings_app2app_approved_app_title" android:includeFontPadding="false" style="@style/Text.Registration.Account.Title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appapp_channel_row" android:background="@drawable/row_user" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/app2app_list_row_height">
+        <ImageView android:id="@id/appapp_icon_view" android:layout_width="@dimen/app2app_list_thumbnail_size" android:layout_height="@dimen/app2app_list_thumbnail_size" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/appapp_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App Title" android:singleLine="true" style="@style/Text.Registration.Account.AppTitle" />
+            <TextView android:id="@id/appapp_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date 2015.03.11 6:30 PM" android:singleLine="true" style="@style/Text.Registration.Account.Date" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|right" android:id="@id/appapp_arrow" android:paddingLeft="8.579987dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_timeline_icon_more" />
+    </LinearLayout>
+</LinearLayout>

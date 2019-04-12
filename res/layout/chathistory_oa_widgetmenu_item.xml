@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/official_account_widgetmenu_item" android:background="@drawable/official_account_widgetmenu_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/official_account_widgetmenu_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.naver.toybox.drawablefactory.DImageView android:id="@id/official_account_widgetmenu_item_icon" android:layout_width="@dimen/official_account_widgetmenu_item_icon_size" android:layout_height="@dimen/official_account_widgetmenu_item_icon_size" android:layout_marginLeft="@dimen/official_account_widgetmenu_item_padding_left" android:layout_marginRight="@dimen/official_account_widgetmenu_item_view_gap" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:ellipsize="end" android:id="@id/official_account_widgetmenu_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/official_account_widgetmenu_item_padding_right" android:singleLine="true" android:layout_toRightOf="@id/official_account_widgetmenu_item_icon" android:layout_centerVertical="true" style="@style/text_header_check_num01" />
+    <View android:id="@id/official_account_widgetmenu_item_divider" android:background="@color/official_account_widgetmenu_item_divider" android:layout_width="fill_parent" android:layout_height="@dimen/common_one_line" android:layout_alignParentBottom="true" />
+</RelativeLayout>

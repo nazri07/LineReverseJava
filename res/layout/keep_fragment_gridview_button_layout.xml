@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keep_item_button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/keep_retry_button" android:background="@drawable/ke_list_icon_retry02" android:visibility="gone" android:layout_width="@dimen/keep_retry_button_width" android:layout_height="@dimen/keep_retry_button_height" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="@dimen/keep_grid_checkbox_margin" android:layout_marginRight="@dimen/keep_grid_checkbox_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/keep_grid_checkbox_margin" android:layout_alignParentEnd="true">
+        <CheckBox android:id="@id/keep_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/keep_selector_grid_checkbox" />
+    </RelativeLayout>
+</RelativeLayout>

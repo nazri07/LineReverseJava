@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white90" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/delete_btn" android:layout_width="wrap_content" android:layout_height="@dimen/album_detail_edit_bottom_height" android:src="@drawable/selector_album_ic_delete" />
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/share_btn" android:layout_width="wrap_content" android:layout_height="@dimen/album_detail_edit_bottom_height" android:src="@drawable/selector_album_ic_share" />
+    <Space android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/keep_btn" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/album_detail_edit_bottom_height" android:src="@drawable/album_ic_keep" />
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/download_btn" android:layout_width="wrap_content" android:layout_height="@dimen/album_detail_edit_bottom_height" android:src="@drawable/selector_album_ic_save" />
+</LinearLayout>

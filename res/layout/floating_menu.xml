@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/floating_bg" android:background="@color/floating_button_overlay_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <com.linecorp.line.timeline.floatingmenu.FloatingMenuButton android:id="@id/collapse_menu_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/floating_menu_right_margin" android:layout_marginBottom="@dimen/floating_menu_bottom_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:icon="@drawable/floating_ic_x" />
+</RelativeLayout>

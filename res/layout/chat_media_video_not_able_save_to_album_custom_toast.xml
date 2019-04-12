@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_chat_media_custom_toast_background" android:paddingTop="@dimen/chat_media_custom_toast_container_vertical_padding" android:paddingBottom="@dimen/chat_media_custom_toast_container_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/chat_media_custom_toast_image_bottom_margin" android:src="@drawable/toast_img_noti" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/chat_media_custom_toast_text_size" android:textColor="@color/white" android:gravity="center" android:paddingLeft="@dimen/chat_media_custom_toast_text_horizontal_padding" android:paddingRight="@dimen/chat_media_custom_toast_text_horizontal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/chat_media_custom_toast_max_width" android:text="@string/chat_more_gallery_alert_videotoalbum" />
+</LinearLayout>

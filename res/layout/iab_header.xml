@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.naver.line.android.activity.iab.IabHeader android:layout_gravity="center|top" android:id="@id/iab_header" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="@dimen/iab_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/iab_header_close" android:background="@drawable/selector_iab_header_btn_bg" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center|left" android:id="@id/iab_header_close_image" android:layout_width="@dimen/iab_close_icon_size" android:layout_height="@dimen/iab_close_icon_size" android:layout_marginLeft="15.0dip" android:src="@drawable/iab_header_ic_x" android:scaleType="fitXY" />
+        </FrameLayout>
+        <LinearLayout android:gravity="start|center|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/iab_title_font_size" android:id="@id/iab_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" android:includeFontPadding="false" style="@style/text_iab_title01" />
+            <TextView android:id="@id/iab_header_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" android:includeFontPadding="false" style="@style/text_iab_subtitle" />
+        </LinearLayout>
+        <ImageView android:id="@id/iab_header_share_line" android:background="@drawable/selector_iab_header_btn_bg" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/iab_header_ic_line" android:scaleType="center" />
+        <ImageView android:id="@id/iab_header_more" android:background="@drawable/selector_iab_header_btn_bg" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/iab_header_ic_more" android:scaleType="center" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom|center" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+</jp.naver.line.android.activity.iab.IabHeader>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/dummy" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/arrow_icon_view" android:layout_width="48.0dip" android:layout_height="wrap_content" android:src="@drawable/timeline_img_tabarrow02" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/content_root" android:background="@color/noticenter_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <jp.naver.line.android.customview.ZeroView android:id="@id/zeroview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/noticenter_title_layout" android:layout_width="fill_parent" android:layout_height="40.5dip" android:layout_alignParentTop="true">
+            <TextView android:textSize="13.0sp" android:textColor="@color/noticenter_title_text_color" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/notification_center_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/setting_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/list_category_ic_setting_normal" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/access_timeline_noti_settings" />
+        </RelativeLayout>
+        <View android:id="@id/noticenter_divider" android:background="#ffe0e4ec" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_below="@id/noticenter_title_layout" />
+        <RelativeLayout android:id="@id/noticenter_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/noticenter_divider">
+            <ScrollView android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="18.5dip" android:paddingRight="18.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/error_image_view" android:layout_width="187.0dip" android:layout_height="158.5dip" android:src="@drawable/tm_retry_image" android:scaleType="fitCenter" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff96999e" android:gravity="center_horizontal" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/myhome_noticenter_error_message" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff96999e" android:gravity="center_horizontal" android:id="@id/maintenance_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="(Maintenance Time)" />
+                    <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff68748f" android:gravity="center" android:id="@id/retry_btn" android:background="@drawable/btn_noticenter_retry" android:layout_width="120.0dip" android:layout_height="34.5dip" android:layout_marginTop="15.0dip" android:text="@string/myhome_try_again" />
+                </LinearLayout>
+            </ScrollView>
+            <jp.naver.line.android.customview.SwipeRefreshLayoutForListView android:id="@id/swiperefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/list" android:background="#00000000" android:scrollbars="vertical" android:fadingEdge="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:smoothScrollbar="false" />
+            </jp.naver.line.android.customview.SwipeRefreshLayoutForListView>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

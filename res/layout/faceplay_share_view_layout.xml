@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/result_share_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="5.5dip" android:layout_marginBottom="14.5dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/faceplay_share_select_all_selector" />
+        <TextView android:textSize="13.0sp" android:textColor="@drawable/faceplay_select_all_text_selector" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/faceplay_result_selectall" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/result_share_recycle" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:enabled="false" android:textSize="17.0dip" android:textStyle="bold" android:textColor="@drawable/faceplay_share_button_selector" android:layout_gravity="center" android:id="@id/result_share_button" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:text="@string/faceplay_share" />
+</merge>

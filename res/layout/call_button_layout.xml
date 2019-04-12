@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/call_button_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_incomming_arrow" android:layout_centerInParent="true" />
+    <com.linecorp.voip.ui.freecall.view.VoipAnimateCallButton android:id="@id/accept_button" android:background="@drawable/call_accept_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:scaleType="matrix" android:layout_toLeftOf="@id/call_button_arrow" android:layout_centerVertical="true" />
+    <com.linecorp.voip.ui.freecall.view.VoipAnimateCallButton android:id="@id/reject_button" android:background="@drawable/call_reject_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/btn_freecall_reject_selector" android:scaleType="matrix" android:layout_toRightOf="@id/call_button_arrow" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/end_button" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_freecall_reject_selector" android:scaleType="center" android:layout_centerInParent="true" />
+</merge>

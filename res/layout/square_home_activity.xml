@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.customview.SwipeRefreshLayoutForListView android:orientation="vertical" android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar_layout" android:fitsSystemWindows="true" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/contactinfo_collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/square_home_joined_cover_height" android:minHeight="@dimen/header_height" app:contentScrim="#00000000" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:statusBarScrim="#00000000">
+                    <jp.naver.line.android.customview.FitAndCenterCropImageView android:id="@id/group_profile_thumb_image" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_collapseMode="parallax" />
+                    <View android:background="#4c000000" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_collapseMode="pin" />
+                    <View android:layout_gravity="top" android:background="@drawable/group_img_gra_top" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="100.0dip" app:layout_collapseMode="pin" />
+                    <View android:layout_gravity="bottom" android:background="@drawable/group_img_gra_bottom" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="360.0dip" app:layout_collapseMode="pin" />
+                    <include layout="@layout/square_home_cover_content" />
+                    <include layout="@layout/square_home_cover_header" />
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+                <include android:visibility="gone" layout="@layout/square_home_tab_layout" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/appbar_layout" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffafb6c3" android:gravity="center" android:id="@id/square_home_empty_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="@dimen/square_home_empty_margin_top" android:layout_marginRight="50.0dip" android:layout_below="@id/appbar_layout" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <com.linecorp.line.timeline.floatingmenu.FloatingMenuButton android:layout_gravity="end|bottom|center" android:id="@id/floating_action_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_marginBottom="15.0dip" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </jp.naver.line.android.customview.SwipeRefreshLayoutForListView>
+</merge>

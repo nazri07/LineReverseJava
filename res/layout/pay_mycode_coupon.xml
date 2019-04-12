@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/pay_my_code_payment_method_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:layout_marginBottom="11.5dip">
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff404040" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_coupon" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_alignParentStart="true" />
+            <Button android:textSize="11.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/pay_btn_mycode_coupon_selection" android:background="@drawable/pay_mycode_coupon_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:minHeight="30.0dip" android:text="@string/pay_coupon_search" android:layout_centerVertical="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/pay_rv_mycode_coupon_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

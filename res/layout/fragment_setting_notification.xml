@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/common_settings_root" android:background="@color/settings_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_below="@id/header">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/common_setting_container" android:paddingBottom="7.3299866dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/enableNotificationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:descText="@string/settings_notifications_warning_msg" app:titleText="@string/settings_notifications" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/muteNotificationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_notifications_mute_all" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/selectSoundButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/sound_notify" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/settingSoundNotificationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/sound" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/settingVibrationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/vibrate" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/settingLedButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/led" />
+            <jp.naver.line.android.customview.settings.BaseSettingCategoryTitleView android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="@string/notification_display" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/settingShowNotificationDetailButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:descText="@string/settings_notifications_show_detail_desc" app:titleText="@string/settings_notifications_show_detail" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/mentionNotificationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:descText="@string/settings_notifications_mention_guide" app:titleText="@string/settings_notifications_mention" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/pushPopupTypeOnActiveButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_notifications_popup_background" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/pushPopupTypeOnSleepButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_notifications_popup_in_sleep" />
+            <jp.naver.line.android.customview.settings.BaseSettingCategoryTitleView android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="@string/notification_individual_setting" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/payNotificationButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_notification_linepay" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/groupInviteButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_notifications_group_invite" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/timelineButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_timeline_notification" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/squareButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@string/settings_notifications_square" />
+            <jp.naver.line.android.customview.settings.SettingButton android:id="@id/notificationServiceButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:descText="@string/settings_app2app_description" app:titleText="@string/settings_app2app_approved" />
+            <jp.naver.line.android.customview.settings.ReloadSettingButton android:id="@id/unapprovedButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:descText="@string/settings_app2app_unlinked_description" app:titleText="@string/settings_app2app_allow_unauthrized_app_message" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/main_topbar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/gnb_shadow_height" android:src="@drawable/gnb_gra" android:scaleType="fitXY" android:layout_below="@id/header" android:contentDescription="@null" />
+</RelativeLayout>

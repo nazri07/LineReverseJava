@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.naver.line.android.common.view.header.Header android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="25.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/platform_img_clova" />
+            <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/clova_line_2fa_trans_aggrement_desc1" android:lineSpacingExtra="2.5sp" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffb3b3b3" android:gravity="center_horizontal" android:id="@id/e2ee_app2app_request_key_confirm_description" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:text="@string/clova_line_2fa_trans_aggrement_desc2" android:lineSpacingExtra="3.5sp" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/selectchat_send_timeline_btn_height">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/selector_red_btn_text" android:id="@id/clova_app_auth_cancel_btn" android:background="@drawable/selector_button_02" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/v2_common_button_bottom" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/selector_gray_btn_text" android:id="@id/clova_app_auth_allow_btn" android:background="@drawable/selector_button_01" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/clova_line_2fa_trans_aggrement_allow" android:layout_weight="1.0" style="@style/v2_common_button_bottom" />
+    </LinearLayout>
+</LinearLayout>

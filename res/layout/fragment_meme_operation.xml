@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/operate_root_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/input_top_space" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="6.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip">
+        <com.linecorp.line.timeline.view.KeyPreImeEditText android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff1f1f1f" android:textColorHint="#4c9f9f9f" android:id="@id/edit_text" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:hint="@string/timeline_mememaker_placeholder_entertext" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionDone" />
+        <ImageView android:id="@id/btn_clear_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/meme_ic_x_normal" />
+        <ImageView android:id="@id/btn_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/meme_ic_write_normal" />
+    </LinearLayout>
+    <View android:background="#ff1f1f1f" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" />
+</LinearLayout>

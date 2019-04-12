@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chathistory_announcement_unfold_content" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/chathistory_announcement_unhold_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_item_folder_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/chathistory_announcement_unfold_item" layout="@layout/chathistory_announcement_unfold_item" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_item_folder_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/chathistory_announcement_horizontal_divider" layout="@layout/common_horizontal_divider" />
+                    <include android:id="@id/chathistory_announcement_unfold_item" layout="@layout/chathistory_announcement_unfold_item" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_item_folder_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/chathistory_announcement_horizontal_divider" layout="@layout/common_horizontal_divider" />
+                    <include android:id="@id/chathistory_announcement_unfold_item" layout="@layout/chathistory_announcement_unfold_item" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_item_folder_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/chathistory_announcement_horizontal_divider" layout="@layout/common_horizontal_divider" />
+                    <include android:id="@id/chathistory_announcement_unfold_item" layout="@layout/chathistory_announcement_unfold_item" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_item_folder_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/chathistory_announcement_horizontal_divider" layout="@layout/common_horizontal_divider" />
+                    <include android:id="@id/chathistory_announcement_unfold_item" layout="@layout/chathistory_announcement_unfold_item" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/chathistory_announcement_unfold_content_divider_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/chathistory_announcement_unhold_scroll_view">
+            <include android:id="@id/chathistory_announcement_unfold_content_horizontal_divider" layout="@layout/common_horizontal_divider" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/chathistory_announcement_unhold_buttons_holder" android:layout_width="fill_parent" android:layout_height="@dimen/announcement_unfold_footer_height" android:layout_below="@id/chathistory_announcement_unfold_content_divider_holder">
+            <FrameLayout android:id="@id/chathistory_announcement_hide_button_holder" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+                <TextView android:textSize="12.5sp" android:textColor="#ff4a5e89" android:layout_gravity="center" android:id="@id/chathistory_announcement_hide_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/announcement_hide" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/chathistory_announcement_minimize_button_holder" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/chathistory_announcement_hide_button_holder" android:layout_alignBaseline="@id/chathistory_announcement_hide_button_holder" android:layout_alignBottom="@id/chathistory_announcement_hide_button_holder" android:layout_toEndOf="@id/chathistory_announcement_hide_button_holder">
+                <TextView android:textSize="12.5sp" android:textColor="#ff4a5e89" android:layout_gravity="center" android:id="@id/chathistory_announcement_minimize_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/announcement_minimize" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/chathistory_announcement_hold_button_holder" android:layout_width="48.0dip" android:layout_height="@dimen/announcement_unfold_footer_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/access_announcement_fold" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center" android:id="@id/chathistory_announcement_hold_button" android:background="@android:color/transparent" android:layout_width="14.0dip" android:layout_height="8.0dip" android:src="@drawable/chathistory_announcement_notice_img_arrow_up" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/chathistory_announcement_unfold_bottom_shadow" android:background="#1f000000" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+</LinearLayout>

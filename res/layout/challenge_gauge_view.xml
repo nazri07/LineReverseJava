@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gauge_group" android:tag="layout/challenge_gauge_view_0" android:visibility="visible" android:layout_width="77.0dip" android:layout_height="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/gauge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/gauge_progress_container" android:tag="binding_1" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/gauge_bg" android:background="@drawable/img_live_gauge_s_ani_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.linecorp.linelive.player.component.widget.CircularClipLayout android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="3.5dip" android:layout_marginTop="3.5dip">
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/gauge_light" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.5dip" android:src="@drawable/img_live_gauge_s_ani_bright" android:alpha="0.0" />
+            </com.linecorp.linelive.player.component.widget.CircularClipLayout>
+            <ProgressBar android:id="@id/gauge_progress_bar" android:tag="binding_3" android:background="@android:color/transparent" android:layout_width="52.0dip" android:layout_height="52.0dip" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/challenge_gauge_s_progress_bar" style="?android:progressBarStyleHorizontal" />
+            <ImageView android:id="@id/gauge_fire" android:background="@drawable/img_live_gauge_s_ani_fire" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView android:id="@id/gauge_completion" android:tag="binding_4" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="0.0dip" android:src="@drawable/challenge_gauge_complete_animation" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="8.0dip" android:textStyle="bold" android:gravity="center" android:id="@id/gauge_count" android:tag="binding_5" android:background="@drawable/img_live_event_gauge_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</RelativeLayout>

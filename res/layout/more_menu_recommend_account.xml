@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_container" android:background="@drawable/common_btn_bg_normal" android:layout_width="fill_parent" android:layout_height="193.66998dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="14.0dip">
+            <TextView android:id="@id/item_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/more_tab_service_recommend_oa" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" style="@style/text_more_category_title03" />
+            <TextView android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/more_tab_service_recommend_oa_more" android:singleLine="true" android:includeFontPadding="false" style="@style/text_more_category_subtitle08" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/horizontal_recycler_view" android:paddingLeft="21.5dip" android:paddingRight="21.5dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View android:id="@id/more_menu_divider" android:background="@color/moremenu_divider" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/registration_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/registration_setting_use_contacts_panel" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff010101" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/settings_add_friends_my_list" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/registration_setting_use_contacts" android:layout_width="@dimen/setting_checkbox_width" android:layout_height="@dimen/setting_checkbox_height" style="@style/setting_check_box" />
+            </LinearLayout>
+            <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="12.0dip" android:text="@string/registration_confirm_sending_contacts_message1" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message2" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:id="@id/registration_setting_use_contacts_desc2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message3" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message5" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/registration_setting_use_contacts_row4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message8" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message6" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginTop="21.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/registration_setting_allow_add_me_panel" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff010101" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/settings_add_friends_other_list" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/registration_setting_allow_add_me" android:layout_width="@dimen/setting_checkbox_width" android:layout_height="@dimen/setting_checkbox_height" style="@style/setting_check_box" />
+            </LinearLayout>
+            <View android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff676767" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="12.0dip" android:text="@string/registration_confirm_sending_contacts_message4" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message7" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/registration_img_bullet01" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffbfc1c4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_confirm_sending_contacts_message5" android:lineSpacingExtra="@dimen/reg_text_line_space_extra" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:enabled="true" android:id="@id/registration_btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/registration_button_height" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/confirm" style="@style/registration_green_and_gray_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

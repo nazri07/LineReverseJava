@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/template_container" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/template_bg" android:background="#ff6c7079" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/template_dim_image" android:background="#72000000" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/template_image" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/layout_input_frame" android:layout_width="253.0dip" android:layout_height="81.0dip" android:layout_marginBottom="81.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.linecorp.line.timeline.activity.birthday.write.BirthdayPostEditText android:textSize="18.0sp" android:textColor="#ffb5b7c1" android:textColorHint="#b3b5b7c1" android:gravity="center" android:id="@id/text_celebrate_msg" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:hint="@string/timeline_bd_text_placeholder" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/text_input_frame" android:background="@drawable/timeline_birthday_write_text_input_border" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/button_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="29.0dip" android:src="@drawable/selector_timeline_write_ic_camera02" android:text="" />
+    <ImageView android:id="@id/button_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="29.0dip" android:src="@drawable/selector_timeline_write_ic_play" android:text="" />
+    <ImageView android:gravity="bottom|center|right" android:layout_gravity="bottom|center|right" android:id="@id/button_camera_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/selector_timeline_write_ic_camera03" android:text="" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/template_loading_view" android:background="#ffd6d8dc" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/template_loading_image" android:background="#ffd6d8dc" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_timeline_birthday_write_template_load_retry" />
+    </LinearLayout>
+</FrameLayout>
